@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+  <base href="https://www-poc.dell.com/">
+    <meta charset="utf-8" />
+    <link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="di-dwa" content="8f0cc8d3-10c5-4929-9942-33f449eb77d8" />
+    <title>Sign In | Dell US</title>
+
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="dist/css/Override.4639d27049c2df89dc14eda9a7f0c1da.css" rel="stylesheet" />
+    <link href="dist/css/footer.aea04ac00b9e51c8068b80b95052196b.css" rel="stylesheet" />
+    <link href="dist/css/phone-otp.7ebdd97ec417d042bac5b233af503cbc.css" rel="stylesheet">
+
+    
+<style type="text/css">
+    @font-face {
+        font-family: 'icon-brand';
+        font-style: normal;
+        font-weight: normal;
+        src: url('fonts/icon-brand.eot');
+        src: url('fonts/icon-brand.eot?#iefix') format('embedded-opentype'),
+             url('fonts/icon-brand.woff2') format('woff2'),
+             url('fonts/icon-brand.woff') format('woff'),
+             url('fonts/icon-brand.ttf') format('truetype'),
+             url('fonts/icon-brand.svg#svgicon-brand') format('svg');
+    }
+
+    @font-face {
+        font-family: 'roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url('fonts/roboto-normal.eot');
+        src: url('fonts/roboto-normal.eot?#iefix') format("embedded-opentype"),
+             url('fonts/roboto-normal.woff2') format("woff2"),
+             url('fonts/roboto-normal.woff') format("woff"),
+             url('fonts/roboto-normal.ttf') format("truetype"),
+             url('fonts/roboto-normal.svg#svgroboto-normal') format("svg")
+    }
+
+    @font-face {
+        font-family: 'roboto';
+        font-style: normal;
+        font-weight: 300;
+        src: url('fonts/roboto-300.eot');
+        src: url('fonts/roboto-300.eot?#iefix') format("embedded-opentype"),
+             url('fonts/roboto-300.woff2') format("woff2"),
+             url('fonts/roboto-300.woff') format("woff"),
+             url('fonts/roboto-300.ttf') format("truetype"),
+             url('fonts/roboto-300.svg#svgroboto-300') format("svg")
+    }
+</style>
+
+            <style type="text/css">
+        .dell-blue-background{background-color:transparent!important;position:absolute;z-index:10;padding-left:2.5%}.icon-brand-alienware:before{color:#007db8}.icon-brand-dell:before{color:#0076ce!important;font-size:33px!important;content:'\e902'!important}.icon-brand-dellemc:before{color:#007db8}.icon-brand-delltechnologies:before{color:#007db8}.icon-brand-delltechnologiesVert:before{color:#007db8}footer.navbar{background:#444!important}.footer-bottom-section .disclaimer p{color:#f9f9f9!important}.footer-top-section{background:#444!important;border-bottom:1px solid #ccc!important}.footer-shadow-section{box-shadow:none!important}@media(max-width:767px){footer.navbar ul.navbar-nav li{border-bottom:1px solid #ccc!important}.footer-top-section{border-bottom:none!important}}@supports (selector(:nth-child(1 of x))) or (-webkit-touch-callout:none){.dell-blue-background{height:0!important}.header{-webkit-transform:translate3d(0,0,0)}}@supports (-webkit-touch-callout:none){.content{display:block!important}.leftside{display:flex}.rightside{display:flex}}.phone-otp-disable-valueprop{padding-top:60px!important}#linkGuestCotinue{color:#fff!important}#linkGuestCotinue:visited{color:#fff!important}
+            </style>
+    <link href="dist/css/icon-ui.min.cca3e558492d2d350d3e94c2cf365942.css" rel="stylesheet" />
+    <link href="css/icon-small.min.css" rel="stylesheet" />
+    <meta name="COUNTRY" content="us" />
+<meta name="LANGUAGE" content="en" />
+<meta name="SEGMENT" content="dhs" />
+<meta name="CUSTOMERSET" content="19" />
+<meta name="PAGENAME" content="Login" />
+<meta name="CONNECTIONID" content="5f5a55ab-02b1-44a2-a75e-deb981ec7e11" />
+<meta name="s_account" content="dellglobalonline" />
+    
+    <script type="text/javascript">
+    var generalErrorMessage = 'We are sorry but there seems to be a problem. Please try again after some time.';
+    var connectionId = '5f5a55ab-02b1-44a2-a75e-deb981ec7e11';
+    var fpQueryString = '?response_type=id_token&amp;client_id=a491198d-efd1-4a36-885b-3a96e84e13b4&amp;redirect_uri=https%3A%2F%2Fwww-poc.dell.com%2Fdci%2Ffp%2Fdi%2Fv3%2Ffp%2Fsaml%2Fauthorize%3FClient_Id%3D5f5a55ab-02b1-44a2-a75e-deb981ec7e11%26ContextId%3D20f6281252c64fc5ad3ff877604ca5db&amp;tag=cid=5f5a55ab-02b1-44a2-a75e-deb981ec7e11&amp;state=fp&amp;scope=openid&amp;code_challenge=E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM&amp;code_challenge_method=S256&amp;nonce=20f62812-52c6-4fc5-ad3f-f877604ca5db&amp;contextid=20f62812-52c6-4fc5-ad3f-f877604ca5db';
+    var googleOneTapTokenEndpoint = 'https://www-sit-g2.dell.com/di/v3/fp/authorize/googleOneTap?state=fp&amp;ContextId=20f6281252c64fc5ad3ff877604ca5db&amp;error=sociallogin&amp;error_description=googleOneTap';
+    var enableCustomFingerPrint = 'True';
+    var fingerPrintExcludeComponentList = "";
+    if (enableCustomFingerPrint.toLowerCase() === "true" && 'userAgent, webdriver, language, colorDepth, deviceMemory' !== "") {
+       fingerPrintExcludeComponentList = 'userAgent, webdriver, language, colorDepth, deviceMemory';
+    }
+    var enablePhoneLogin = 'False';
+
+    Dell = window.Dell || {};
+    Dell.Metrics = Dell.Metrics || {};
+    Dell.Metrics.sc = Dell.Metrics.sc || {};
+    Dell.Metrics.sc.country = "us";
+    Dell.Metrics.sc.language = "en";
+    Dell.Metrics.sc.segment = "dhs";
+    Dell.Metrics.sc.customerset = "19";
+    Dell.Metrics.sc.cms = "stp";
+    Dell.Metrics.sc.pagename = "us|en|dhs|19|stp|dell.di|identity|global|Login";
+    Dell.Metrics.sc.applicationname = "Login(DI)";
+    Dell.Metrics.sc.dc = "dell";
+    Dell.Metrics.sc.module = "csb_di";
+    Dell.Metrics.sc.connectionId = connectionId;
+    Dell.Metrics.sc.cmdbId = "1000552";
+</script>
+    
+<script type="text/javascript">
+    var jsonObj = {"country":"us","region":"us","language":"en","customerSet":"19","segment":"dhs","isLocaleSelectionRequired":false};
+    var pageName = 'Login';
+    jsonObj["pagename"] = pageName;
+    var localeData = jsonObj;
+    var env = 'G2';
+    var environment = ((env == "P2") || (env == "S2") || (env == "PC1") || (env == "S3B")) ? "Prod" : "Development";
+</script>
+
+    <script src="https://afcs.dellcdn.com/boomerang/sit/boomerang-nonspaWithClicks.js" type="text/javascript"></script>
+    <script src="boomer.js"></script>
+        <script src="//nexus.dell.com/dell/dev/Bootstrap.js" type="text/javascript"></script>
+    <script src="dist/js/DeviceViewportSetting.941c1154ccfb881be3a1.js"></script>
+</head>
+<body style="min-height:100%;" dir="LTR">
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">www-poc.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+    <div id="body-wrapper" class="body-wrapper" role="main">
+            <div id="header" class="header">
+                <div class="dell-blue-background">
+                    <div class="container">
+                        <div class="padding-top-small padding-bottom-small icon-ui-header">
+                            <a class="logo-image" href="http://www-poc.dell.com/en-us" aria-label="Dell Technologies Home">
+                                <div class="icon-brand-dell text-white"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div id="content" class="content headerbackground">
+            
+
+<div id="google_id_onload"
+     data-prompt_parent_id="google_id_onload"
+     class="google-one-tap">
+</div>
+
+<div id="sign-in-container" class="dds__container-fluid dds__px-2 dds__px-sm-2 dds__px-md-2 dds__px-lg-0">
+    <div class="dds__row dds__h-100">
+        <div class="dds__col-2 dds__col--sm-6 dds__col--md-6 phone-otp-padding-bottom-section leftside" dir="LTR">
+            <div class="dds__message-bar ie-not-support-message">
+                <i class="dds__message-bar__icon dds__icon--alert-info-cir" aria-hidden="true"></i>
+                <p>Some features are not available with Internet Explorer 11 you&#x2019;re using. Please use other browsers to sign in.</p>
+            </div>
+
+            <div id="signInContainer" class="phone-otp-signin-section">
+                
+<form method="post" id="frmSignIn" autocomplete="off" name="frmSignIn" onsubmit="event.preventDefault();">
+    <input type="hidden" id="connectionId" name="ConnectionId" value="5f5a55ab-02b1-44a2-a75e-deb981ec7e11" />
+    <input type="hidden" id="signInQueryString" name="ClientQueryString" value="?response_type=id_token&amp;client_id=a491198d-efd1-4a36-885b-3a96e84e13b4&amp;redirect_uri=https%3A%2F%2Fwww-poc.dell.com%2Fdci%2Ffp%2Fdi%2Fv3%2Ffp%2Fsaml%2Fauthorize%3FClient_Id%3D5f5a55ab-02b1-44a2-a75e-deb981ec7e11%26ContextId%3D20f6281252c64fc5ad3ff877604ca5db&amp;tag=cid=5f5a55ab-02b1-44a2-a75e-deb981ec7e11&amp;state=fp&amp;scope=openid&amp;code_challenge=E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM&amp;code_challenge_method=S256&amp;nonce=20f62812-52c6-4fc5-ad3f-f877604ca5db&amp;contextid=20f62812-52c6-4fc5-ad3f-f877604ca5db">
+    <input type="hidden" id="pwdHasedQueryString" name="HashedQueryString" value="4cbf652709f5b331ae076ce85249207ed4912e5d363a07133de2f1de7bac5eef">
+    <input type="hidden" id="urlFragPwd" name="urlFragString">
+    <input type="hidden" id="userUtils" value="eyJuIjoibGJxb0FpSkdJVzVQcThjU2NYNHhMZi1HNk9RTHZoR1VneXFoSVFEaWhzTkVNNUtkWEh5RjJmV1F6T1ZsQjMxRHJtNHNXVXpYREFDeDVSazFPTEJETEp4bk1CWkthYk1VSUZFamt3Mjl1RGpzanZGeTlMNXVwZUlLd18zMWxUUHRxV2lobWlaVHJGNkVHU3BGbTZXeldsZkFuX25SMUhsWThnaENFQ2o3c1pLVHVyd1dpUUhjbW5lR21GMWJ2OWtubmd2bDNDSHZESjlIRWdjV1k4Y0s0Y0dLV1RPQ29oSlpfSEZteDN3Tnl1NVRxbU1hZVFkUUh6MXBEU0VBSnRDQ2pvWDVON0F4bjFjbDVVNlBYSHZWd0k0aEtlQVVWNDBaOTRYOEQ4bi1oQ1ZCQUlqRkJ3M083cEJrTzhSMTdGb1A4MURTeVFFb0F5VXdFdzRnT1NrSEtRIiwiZSI6IkFRQUIiLCJrdHkiOiJSU0EifQ==">
+
+
+    
+<div class="phone-otp-Signin-label dds__mb-0 dds__text-center">
+        <h1 class="phone-otp-title username-container">Sign In</h1>
+        <h1 class="phone-otp-title password-container hidden-section">Verify Your Identity</h1>
+</div>
+
+
+
+
+    
+    <div class="validation-summary-container-padding">
+        
+    <div id="divMessagebar"
+         name="validationSummaryContainer"
+         data-dds="message-bar"
+         class="dds__message-bar"
+         role="alert"
+         aria-describedby="divMessageBarContent"
+         aria-labelledby="divMessageBarContent" style="display:none;">
+        
+        <span class="dds__icon dds__icon--alert-error dds__message-bar__icon" aria-hidden="true"></span>
+
+        <div 
+            id="divMessageBarContent"
+            name="message-bar-content"
+            class="dds__message-bar__content"></div>
+    </div>
+
+    </div>
+
+    <div class="dds__row">
+        <div id="signInSection" class="dds__col-2">
+            <div class="dds__mb-0  dds__pb-4 username-container">
+                
+
+<div class="phone-otp-email-or-phone-number" id="email-or-phonenumber">
+    <div class="phone-otp-email">
+        <label class="mdc-text-field text-field mdc-text-field--outlined phone-otp-label" for="SignInModel_EmailAddress">
+            <input class="mdc-text-field__input" aria-labelledby="email-or-phone-number-email-label-id" aria-describedby="email-or-phone-number-helper-id" aria-controls="email-or-phone-number-helper-id" autofocus="autofocus" autocomplete="username" type="text" data-val="true" data-val-regex="Please enter a valid email address." data-val-regex-pattern="^\s*([a-zA-Z0-9_\-\.\&#x2B;\&#x27;\%\$]&#x2B;)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]&#x2B;\.)&#x2B;))([a-zA-Z]{2,25}|[0-9]{1,3})(\]?)\s*$" data-val-required="Please enter your email address." id="SignInModel_EmailAddress" name="SignInModel.EmailAddress" value="">
+            <span class="mdc-notched-outline">
+                <span class="mdc-notched-outline__leading"></span>
+                <span class="mdc-notched-outline__notch">
+                    <span class="mdc-floating-label" id="email-or-phone-number-email-label-id">Email Address</span>
+                </span>
+                <span class="mdc-notched-outline__trailing"></span>
+            </span>
+        </label>
+        <div class="mdc-text-field-helper-line phone-otp-helper-line phone-otp-helper-line--invald">
+            <span class="phone-otp-helper-text field-validation-valid" id="email-or-phone-number-helper-id" aria-hidden="true" data-valmsg-for="SignInModel.EmailAddress" data-valmsg-replace="true"></span>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        
+
+<div id="premierSSOSection" class="dds__col-2 premier-section-margin-top hidden-section">
+    <div name="premierSSOContainer" class="premier-sso-section phone-otp-padding-bottom-section">
+        <div id="SSOTick" class="premier-ssoimage">
+            <img src="images/GreenTick.svg" name="imgSSOTick">
+        </div>
+        <p class="premier-ssomessage dds__font-style-small">Single sign-on enabled. Please continue to sign in using your SSO credentials.</p>
+    </div>
+    <div class="dds__row dds__d-block dds__mx-0 dds__pb-4 dds__mb-3 phone-otp-sso-button-section">
+        <input type="button" id="btnSSoContinue" class="dds__button dds__button--block" value="Continue" data-metrics="{&quot;btnname&quot;:&quot;email|deniedDomain&quot;}" />
+    </div>
+</div>
+
+        <div id="passwordSection" class="dds__col-2 dds__pt-0 dds__pb-4 dds__pt-sm-1 dds__pt-md-1 password-container hidden-section">
+            <div class="dds__col-2 dds__d-flex dds__justify-content-center dds__text-center phone-otp-padding-bottom-section">
+                <label style="font-weight:bold; white-space:nowrap">Sign In as </label>
+                <span>&nbsp;</span>
+                <span id="lblUserIdentifier" style="overflow:hidden; text-overflow:ellipsis"></span>
+                <span>&nbsp;</span>
+                <a href="#" id="linkChangeEmail" class="phone-otp-font-properties dds__link" >Change</a>
+            </div>
+            
+<input data-val="true" data-val-required="The IsRTLLanguage field is required." id="hdnIsRTLLanguageId_UserInputSecret" name="SignInModel.IsRTLLanguage" type="hidden" value="False" />
+<label for="userPwd_UserInputSecret" class="mdc-text-field text-field mdc-text-field--outlined phone-otp-label">
+    <input id="userPwd_UserInputSecret" class="mdc-text-field__input mdc-text-field_password" aria-labelledby="floatingLabel_UserInputSecret" aria-controls="helperText_UserInputSecret" aria-describedby="helperText_UserInputSecret" maxlength="128" autocomplete="current-password" type="password" data-val="true" data-val-regex="Please create a new password as per the password criteria." data-val-regex-pattern="(^(?=.*[0-9]&#x2B;.*)(?=.*[A-Z]&#x2B;.*)(?=.*[a-z]&#x2B;.*).{8,128}$)" data-val-required="Please enter your password." name="SignInModel.P_">
+    <a href="#" role="button" class="inline-password-button eye-close" alt="showing input password as hidden text" aria-hidden="false" aria-label="Show Password"><img src="images/Eye.svg" aria-hidden="true" alt="image of showing input password as hidden text" /></a>
+    <a href="#" role="button" class="inline-password-button eye-open" alt="showing input passowrd as plain text" aria-hidden="false" aria-label="Hide Password"><img src="images/eye-open.svg" aria-hidden="true" alt="image of showing input passowrd as plain text" /></a>
+    <span class="mdc-notched-outline">
+        <span class="mdc-notched-outline__leading"></span>
+        <span class="mdc-notched-outline__notch">
+            <span class="mdc-floating-label" id="floatingLabel_UserInputSecret">Password</span>
+        </span>
+        <span class="mdc-notched-outline__trailing"></span>
+    </span>
+</label>
+<div class="mdc-text-field-helper-line phone-otp-helper-line">
+    <span data-valmsg-replace="true" class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg phone-otp-helper-text field-validation-valid" id="helperText_UserInputSecret" aria-hidden="true" data-valmsg-for="SignInModel.P_"></span>
+</div>
+
+        </div>
+    </div>
+
+    <div class="captcha-section hidden-section"></div>
+
+        <div id="passwordLinkSection" class="password-container username-container dds__col-2 dds__text-center phone-otp-padding-bottom-section dds__px-1">
+            <div class="phone-otp-login-forgotpassword-link">
+                <a href="forgotpassword?response_type=id_token&amp;client_id=a491198d-efd1-4a36-885b-3a96e84e13b4&amp;redirect_uri=https%3A%2F%2Fwww-poc.dell.com%2Fdci%2Ffp%2Fdi%2Fv3%2Ffp%2Fsaml%2Fauthorize%3FClient_Id%3D5f5a55ab-02b1-44a2-a75e-deb981ec7e11%26ContextId%3D20f6281252c64fc5ad3ff877604ca5db&amp;tag=cid=5f5a55ab-02b1-44a2-a75e-deb981ec7e11&amp;state=fp&amp;scope=openid&amp;code_challenge=E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM&amp;code_challenge_method=S256&amp;nonce=20f62812-52c6-4fc5-ad3f-f877604ca5db&amp;contextid=20f62812-52c6-4fc5-ad3f-f877604ca5db" id="linkforgotpassword" class="phone-otp-font-properties dds__link dds__link--standalone dwa-internal-link" data-metrics="{&quot;btnname&quot;:&quot;email|forgotpassword&quot;}">Create or Reset password</a>
+            </div>
+        </div>
+    
+    <div id="divContinue" class="dds__col-2 dds__px-0 phone-otp-padding-bottom-section non-sso-container">
+        <div class="dds__d-block dds__pb-2 dds__pb-sm-3 dds__pb-md-3">
+            <input type="button" disabled id="btnContinue" aria-label="Continue" class="dds__button dds__button--block phone-otp-button-width" value="Continue" />
+        </div>
+    </div>
+
+    <div id="signInSectionSubmit" class="password-container hidden-section dds__col-2 dds__px-0 phone-otp-padding-bottom-section">
+       
+            <div class="password-container dds__d-block dds__pb-2 dds__pb-sm-3 dds__pb-md-3">
+                <input type="submit" disabled id="btnSignIn" aria-label="sign in" class="dds__button dds__button--block phone-otp-button-width" value="Sign In" />
+            </div>
+                <div  id ="orDiv" class="dds__d-block dds__pb-2 dds__pb-sm-3 dds__pb-md-3">
+                    <span class="phone-otp-signin-or-label">or</span>
+                </div>
+
+            <div class="dds__d-block">
+                <button id="btnPasskey" disabled aria-label="sign in with passkey" class="dds__button dds__button--secondary dds__button--block" data-metrics="{&quot;btnname&quot;:&quot;Passkey|Signin&quot;}"><img src="images/passkey.svg" alt="Passkey" />&nbsp;&nbsp;Sign In with Passkey</button>
+            </div>
+    </div>
+
+        <div class="username-container dds__col-2 signin-user-create-section phone-otp-padding-bottom-section dds__my-0">
+            <label class="phone-otp-login-text-width-100">Don&#x27;t have a Dell account?</label>
+            <a href="register?response_type=id_token&amp;client_id=a491198d-efd1-4a36-885b-3a96e84e13b4&amp;redirect_uri=https%3A%2F%2Fwww-poc.dell.com%2Fdci%2Ffp%2Fdi%2Fv3%2Ffp%2Fsaml%2Fauthorize%3FClient_Id%3D5f5a55ab-02b1-44a2-a75e-deb981ec7e11%26ContextId%3D20f6281252c64fc5ad3ff877604ca5db&amp;tag=cid=5f5a55ab-02b1-44a2-a75e-deb981ec7e11&amp;state=fp&amp;scope=openid&amp;code_challenge=E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM&amp;code_challenge_method=S256&amp;nonce=20f62812-52c6-4fc5-ad3f-f877604ca5db&amp;contextid=20f62812-52c6-4fc5-ad3f-f877604ca5db" class="phone-signin-createaccount-properties dds__link dds__link--standalone dwa-internal-link" id="btnCreateAccount" data-metrics="{&quot;btnname&quot;:&quot;createaccount|sendotp&quot;}">Create an account</a>
+        </div>
+
+
+
+
+
+    
+    
+
+
+
+<input name="DI-CSRF-TOKEN-INPUT" type="hidden" value="CfDJ8GLqXWyIrrVAnfe7qJw7bqq9xJIfLLUMOlIu7I_kCTCvJnKSsAjHK6DCFipbmrH3rFCu9bJkgMvfZ2kcmNWxh_rTG-D5Uip0RYJk4yo37FDZraWpQ-84u-snCFeUTjrMpvy2eDYN9sA19nhqCETG52E" /></form>
+            </div>
+        </div>
+            
+
+<div class="dds__col-2 dds__col--sm-6 dds__col--md-6 dds__px-0 rightside ">
+        <div class="create-account-container dds__p-3">
+            
+
+    <div>
+        <div class="dds__row phone-otp-Signin-label dds__d-block dds__pb-3 dds__mb-0">
+            <h1 class="phone-otp-title">
+                Dell Account Benefits
+            </h1>
+        </div>
+        <div class="prop-alignment dds__d-block dds__text-center">
+            Manage it all from your account
+        </div>
+
+        <div class="dds__row phone-otp-Signin-label prop-alignment valueprop-padding-top dds__mb-0">
+                        <div class="dds__col-2 dds__col--xl-4 dds__col--lg-4 dds__col--md-12 dds__col--sm-6">
+                            <img src="http://contentstudio-sitg3.dell.com/sites/csimages/App-Merchandizing_Images/root/Dell_Rewards_Icon.png" alt="" />
+                            <div class="icon-title">
+                                <div class="dds__col-2 dds__mt-3 dds__mb-2" role="heading" aria-level="4">
+                                    Dell Rewards
+                                </div>
+                            </div>
+                            <div class="icon-subtitle">
+                                <div class="dds__col-2 valueprop-padding-bottom">
+                                    Join Dell Rewards for free and earn up to 9% back in rewards to use toward future Dell.com purchases.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dds__col-2 dds__col--xl-4 dds__col--lg-4 dds__col--md-12 dds__col--sm-6">
+                            <img src="https://contentstudio-sitg3.dell.com/sites/csimages/App-Merchandizing_Images/root/Order_Tracking_Icon.png" alt="" />
+                            <div class="icon-title">
+                                <div class="dds__col-2 dds__mt-3 dds__mb-2" role="heading" aria-level="4">
+                                    Order Tracking
+                                </div>
+                            </div>
+                            <div class="icon-subtitle">
+                                <div class="dds__col-2 valueprop-padding-bottom">
+                                    Track and manage your orders
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dds__col-2 dds__col--xl-4 dds__col--lg-4 dds__col--md-12 dds__col--sm-6">
+                            <img src="http://contentstudio-sitg3.dell.com/sites/csimages/App-Merchandizing_Images/root/Free_Shipping_Icon.png" alt="" />
+                            <div class="icon-title">
+                                <div class="dds__col-2 dds__mt-3 dds__mb-2" role="heading" aria-level="4">
+                                    Profile Setting
+                                </div>
+                            </div>
+                            <div class="icon-subtitle">
+                                <div class="dds__col-2 valueprop-padding-bottom">
+                                    Checkout faster with saved payment methods and addresses
+                                </div>
+                            </div>
+                        </div>
+        </div>
+            <div class="dds__row dds__mt-2">
+                <div class="dds__col-2 prop-alignment">
+                    <img class="phone-otp-banner-image-size" src="http://contentstudio-sitg3.dell.com/sites/csimages/App-Merchandizing_Images/root/Banner_Image_468x468.png"
+                         alt="" />
+                </div>
+            </div>
+    </div>
+
+        </div>
+</div>
+
+    </div>
+</div>
+
+
+
+
+
+        </div>
+
+        <div class="footer center-component component-code" id="footer">
+            <footer class="navbar default-footer">
+                
+
+<div class="footer-about well-gray-light">
+    <div class="dds__container-fluid footer-container dds__container-fluid-footer-margin">
+        <div class="nav navbar-nav about-links">
+                <nav aria-label="Contextual Footer Links Section">
+                    <ul class="nav navbar-nav">
+                            <li class="list-inline-item"><a href="//www-poc.dell.com/en-us/dt/corporate/about-us.htm" id="AboutDellTechnologies">About Dell Technologies</a></li>
+                            <li class="list-inline-item"><a href="//jobs.dell.com/" id="Careers">Careers</a></li>
+                            <li class="list-inline-item"><a href="//www-poc.dell.com/community/English/ct-p/English?profile.language=en" id="Community">Community</a></li>
+                            <li class="list-inline-item"><a href="https://www.delltechnologies.com/en-us/events/calendar.htm" id="Events">Events</a></li>
+                            <li class="list-inline-item"><a href="//www.delltechnologies.com/partner/en-us/partner/partner.htm" id="PartnerProgram">Partner Program</a></li>
+                            <li class="list-inline-item"><a href="https://www.delltechnologies.com/en-us/premier-solutions/index.htm" id="Premier">Premier</a></li>
+                            <li class="list-inline-item"><a href="//www-poc.dell.com/en-us/shop/dell/cp/reseller_store_locator" id="FindaReseller">Find a Reseller</a></li>
+                            <li class="list-inline-item"><a href="https://www.delltechnologies.com/en-us/index.htm" id="DellTechnologies">Dell Technologies</a></li>
+                            <li class="list-inline-item"><a href="//dfs.dell.com/Pages/DFSHomePage.aspx" id="MakeaPayment">Make a Payment</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="navbar footer-menu">
+        <div class="footer-about footer-top-section">
+            <div class="footer-shadow-section"></div>
+            <div class="dds__container-fluid footer-container dds__container-fluid-footer-margin">
+                <div class="nav navbar-nav term-links">
+                    <nav aria-label="Legal Footer Links Section">
+                        <ul class="nav navbar-nav">
+                                    <li><a href="//www-poc.dell.com/learn/us/en/uscorp1/site-terms-of-use-copyright" id="Copyright&#xA9;2026DellInc.ThisisSITCS(c).">Copyright &#xA9; 2026 Dell Inc. This is SIT CS(c).</a></li>
+                                    <li><a href="//www-poc.dell.com/learn/us/en/uscorp1/terms-of-sale" id="TermsofSale">Terms of Sale</a></li>
+                                    <li><a href="//www-poc.dell.com/learn/us/en/uscorp1/policies-privacy" id="PrivacyStatement">Privacy Statement</a></li>
+                                    <li><a href="//www-poc.dell.com/preferences/pcrp?c=us&amp;l=en&amp;requestType=OptOutOfSale" id="MyPrivacyChoices&lt;imgwidth=&quot;30&quot;height=&quot;15&quot;src=&quot;https://i.dell.com/is/content/DellContent/content/dam/ss2/non-product-images/icons/ccpa-opt-out-icon.svg&quot;alt=&quot;CaliforniaConsumerPrivacyAct(CCPA)Opt-OutIcon&quot;style=&quot;vertical-align:middle;margin:0000.5em;&quot;&gt;&lt;/img&gt;">My Privacy Choices &lt;img width=&quot;30&quot; height=&quot;15&quot; src=&quot;https://i.dell.com/is/content/DellContent/content/dam/ss2/non-product-images/icons/ccpa-opt-out-icon.svg&quot; alt=&quot;California Consumer Privacy Act (CCPA) Opt-Out Icon&quot; style=&quot;vertical-align: middle; margin:0 0 0 0.5em;&quot;&gt;&lt;/img&gt;</a></li>
+                                    <li><a href="//www-poc.dell.com/learn/us/en/uscorp1/policies-ads-and-emails" id="Ads&amp;Emails">Ads &amp; Emails</a></li>
+                                    <li><a href="//www-poc.dell.com/learn/us/en/uscorp1/terms" id="Legal&amp;Regulatory">Legal &amp; Regulatory</a></li>
+                                    <li><a href="//www-poc.dell.com/learn/policies-returns?s=corp" id="Returns">Returns</a></li>
+                                    <li><a href="//www-poc.dell.com/en-us/lp/accessibility" id="Accessibility">Accessibility</a></li>
+                                    <li><a href="https://corporate.delltechnologies.com/en-us/social-impact.htm" id="SocialImpact">Social Impact</a></li>
+                                    <li><a href="https://corporate.delltechnologies.com/en-us/social-impact/advancing-sustainability/how-to-recycle.htm" id="ProductRecycling">Product Recycling</a></li>
+                                    <li><a href="//www.delltechnologies.com/asset/en-us/solutions/business-solutions/legal-pricing/statement-against-modern-slavery-human-trafficking-and-child-labor.pdf" id="Anti-Slavery,HumanTraffickingChildLabor">Anti-Slavery, Human Trafficking &amp; Child Labor</a></li>
+                                    <li><a href="//www-poc.dell.com/en-us/lp/privacy-center" id="PrivacyCenter">Privacy Center</a></li>
+                                    <li><a href="//www-poc.dell.com/en-us/lp/contact-us" id="ContactUs">Contact Us</a></li>
+                                    <li><a href="//www-poc.dell.com/en-us/sitemap" id="SiteMap">Site Map</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            </footer>
+        </div>
+    </div>
+    <div id="divLoading" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgba(121, 118, 119, 0.70); z-index: 30001; display:none">
+        <h3 style="position: absolute; top: 50%; left: 50%; color: Black;">
+            <img src="images/loading_animation.gif">
+        </h3>
+    </div>
+    <script src="reference/jquery/jquery.min.js"></script>
+    <script src="reference/jquery-validation/jquery.validate.min.js"></script>
+    <script src="reference/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="reference/bootstrap/v5_3/js/bootstrap.bundle.min.js"></script>
+     <script>
+        $(document).ready(function() {
+            if($('[name^="urlFragString"]').length > 0) {
+            $('[name^="urlFragString"]').val(window.location.hash);
+            }
+        });
+    </script>
+    
+    <script type="text/javascript">
+        var showCaptchaOnLoad = false;
+        var weakPasswordLabel = 'weak password ';
+        var mediumPasswordLabel = 'medium password';
+        var strongPasswordLabel = 'strong password';
+        var UserinputLengthMessage = 'Password length must be greater than 8 characters';
+        var userinputMinlength = '5';
+        var userinputMaxlength = '128';
+        var deniedDomainsObj = ["U\u002BtGh2MJ7d3s08SJk8pchraSdwE=","EdyiulX1OuNNPi/iUGQXBHuPKN0=","ZHyLFoo82GdXJhPD7NXHzKdjxkI=","jS84t2/I97eGqxF7lTyiiQyuVE4=","aOA/9zIXlqOW\u002BxuS1QPlJX8KxMw=","y\u002BZIkJA0wGJMIF/iGdP70QBSxxU=","2XW9dYpW/ORi1xI6fxDE3CqdTcM=","SecZPOdSVlHD6LtNmyczUybH\u002Bf0=","O4ORzUvGHjqptAQGiCTzGhlNKco=","ZAWvlSra3VivSjpTLvjgN36CiRY=","Hqrv\u002BHQW/iCYerk3qD3DBntedWU=","e3yeRNSxb5Dsuruy9XIiaZrIYoQ=","\u002Bhx1K8O\u002BR1m0b6buq/tHJ623MPg=","PZJstGKpO\u002BzvcWXCk9ZHgXUDjHs=","PMEiTc2zTcFrJLJIQ3FLBsvDDU8=","SQgJg5/ZTOQTdQnWnhrlvRTtuSA=","hizEV4aaAM1H2o5K291kJ2LKETg=","WmTtPKKWsXLgt6dOGtRRIh7v/2w=","xHixpTbC\u002B94Y8t3wVKgLYRsb7HM=","W2qTxrYYNAVD2VnUR\u002BK9m64gzKo=","CzU0\u002BqeXy2Qo98HF1T9GWNL\u002Bl0o=","rsXr0rC2/wmHXwjjHMbrV1MX/TU=","MRm/KShCUVWuFpMQ1AlwrkDU8Gg=","W18MWGxnM3fcR3ltnSntbS4FHVA=","wV7Pcltwa8827lDj3aahsgzoT24=","CEfNkjUyqevVZJ10OvvZ1Y56jFA=","eMt/2Ys2G0ynkgHEYmrJErqiE0c=","yXlfNMbh5TI1vTLESAj\u002BNwX6oOU=","V90wI392LG\u002BsEzIsa09ND8uQJCc=","iXhfiYc5pW1NquAr1rQuahaL7lg=","qp4uKhrfj94UAHfU5eja0dySFKE=","PP6GwC/36plFp2iezhr1NJwhNUA=","YXf98B31YBQNkA8Qsj4jZ5hSE84=","WjlT84JiUGhvq8CwwqEbf15b96M=","r5ORTBMDRz7GQwtIaTg/QSJD6yU=","x5oi4\u002BH4o\u002BGIMOMoBKQ2rwUY6o8=","d4Gf31TWaH8YvcS524l6s37kqzI=","h6eNpvI/rz3by5CLQQIFEKsbXXI=","dFjD53gD/1QSgT4peaOpqdzKefc=","IpC6QJdouYeta/MHaYASbFGLtBI=","JL2AwJ2ihufHsV0HinSs1DsIWmU=","Gr\u002BzTf\u002BMfxnAAVM0Sfz67VROxOk=","NKJi5VTm\u002BEP92B/B85HP1wjgEkY=","Izy3VAO5jU6UgQr04rN8\u002BB/n0ts=","RikZTDK5MMJ4BSwqY0/on54cAWc=","oukt5kA8cv53krzG4svrCa8hiCk=","4wzh3eWR8LXHLhduzgIi43I7h9g=","EhUNW2DZYro3CQNzC7a3hN4T5tI=","i2tEeu\u002BvtljRpHXnq4Advrd2YrQ=","\u002BzDw57x7JeNdWOW2PiIZi/IEc6s=","arDHcIzUdvTsbjdsObhxCKgWOrY=","a8HeiwihNgHIhZ9A6k7sjzh3xvg=","TE7it7v6b/Y3HXftzV68NBxOyQY=","Wzx8FFs6bo0KOoei1lHv2s2U3Ks=","XyiLVhpCFORr2E5rc9ddUocZDd4=","AQQd/zLYershlSRRWnbmTzWNkkM=","MWtugbcOv\u002B6xrEuQ35ZMk09I/J0=","Rl/xvFc0jEKxJK/n5igQeo4/jU8=","HSd5CscbArzkdcUWAvRQ\u002BXZBqxw=","6qjwi3qYB3M5/BpSi58H7MlH5RM=","mmBtzsTyUln1wNPp7tsvCdLg6Zo=","eDR8DoUYyJv512NFsMiAgELubZ4=","ROguVlHB5mjuYROFqdB\u002Bg5UQt/I=","Znva5Ku832RADkTKzq5/UggkTE0=","j5dGHluE6\u002BwWQFA4cVYFA0bagA4=","vPKzmTh5y4vytQfWwnLjCmvCPNI=","Vj6/Sw\u002Beg484EHxJvvRJvlc6ZhE=","NQaRAP6Tr4pBcEajNg9ERoUafM4=","MVYWrdUX4XlHSqUVR8A9JN9l3eM=","sGkLry4WLS0saqiXD4dhubsbDi4=","We3PYgntiRwND7olmv87rKtCwzw=","I1JJaFrJygmUdqo\u002Bnp6YCSNxPZI=","ZTQ0G61kPZibbaH0Qxdr5Fieggo=","s0yiSbYyraqKN8qse5Kg91WXEhg=","4sKL5AkiAJSl5Ft6IR\u002BN2lerjq4=","OdFImHKAjim6bDk8p4LSApXOXck=","/pvlaCV/V29\u002BwT2HTPtgQBVmH7c=","kp2EgYxPBeQwVDfaniEN6lUG/wY=","A5eAujdBEQKKpIYPeqKadzrWyd8=","f85T0yhrBPbq4bnEyK64TJsMor8=","RZEITj4n94e4njkx5S1g2smE0nw=","FZKIH2aLaYUUG8H2hldFhBnaJs8=","4K03iXM\u002BlaUtzotGodSpSyB11W0=","oZ3P8cMYXucIQ264eHj9XwnHBNI=","eEA3qWiVC5cRM2VrvPqC\u002Bj9vrMA=","pBIV7\u002Bb6vgc85gcnwC3WZDsa9hM=","Ukr5oGzxNxZNXKDg8vXxbVdKnuk=","3VEOgRe\u002BDCx4mYexTVgNlwKOP5c=","9vK\u002B\u002BY1SvDHIP19rljFX733nX5s=","AioPPsjHhAYn1upXuht\u002BjjCoHbs=","faaQYLYLstEHAwBjpYTIh8jKX00=","UzppPrFg7bEjSkhSH6awWz68WXg=","bsfdFLhaQ6V7k1TRV5FtpQJL8kk=","HvNIYY\u002BQ8HkDcYVX2vDVUnpFMxo=","6HEEmOJuWa1DcmzzSZv2p1/AhXY=","baT7LaXbLtSM904G3ZO\u002BhwLkAaU=","RH8TtWDcpDt3CJYjfEJghreD\u002B0g=","TjEkMpLBPkpCMthZw/bmdNv2I20=","wHO6abCjFEHCnZeyiBKaXbsObUM=","ARCmU0bkZko6HZmHEiCbHbuR/Og=","jjs0qFdrbCweICp5EaMA42y3g\u002Bw=","k3WhS91\u002BYpWB\u002Bz0z1NfwNdPAhQo=","CfZXQGVNePpEG\u002B3vyXh6Ot6YkZs=","DRlmtNK4zXCRCNx4XdvztFe2H2A=","ZHvfOhomj\u002BWSxTdLV1mcalvSxrc=","vuQ/tWiUeJZwEdtk0fAtTNPrUDI=","lw2/0Q42ft6Xin1rVWQJRXXbeLo=","xoVWHFPoOT4WraW27eJfldUdE7Q=","lIYqQrVQVeRalOQ9SHP9Vi9aaCg=","8ooW/kIQxyVpaH46Fv1LnLjsnUc=","vMG62pGROW\u002BzDzdLfyoj2KN/kYQ=","0/lfiAwIxI5SRTJw2BmVPYNy2l8=","KYdwsx73lBkRC9QEZuRmQwn21NI=","55SdiqncB1j1CCBvXyY05duMsPc=","WJ/9c7s8ksBPfw9YNTft7S5aUxs=","p0cf7HmDHCuMSa1Q4Z5eL9QcFSQ=","\u002BCbx65WLsrLHBZIgdfNEYEO1/5M=","VP4ljoOG0fM1SLBXVlXICkYQb1Q=","0fNoe3Yc5TKGTkKo2zNEQtn1BwM=","JU/MNfTgmjEN8kHBF7kkb7mMGcU=","lXOg0GQwZAsat4bTSJYJn15k010=","ihw87GCRM4o/LO7o4hVeZwkZFG0=","IHfjxhEE9XKIgjc0AkrpxBWQnp8=","/2dMUPVcKYgk8QZqQ\u002B1Pnvx/SAU=","la4rsQQOtF5kr83alB9zczSNHEg=","tyO2sTk5nfXHJ4e1hCVfdruSd88=","r7sA2JDZ/YKN6OjlR\u002B9uGLFzWBA=","WBnJVrvpRc0SJVJwwU6072PUyVk=","g3erfvnRC6J8TDLL3fa4lCUV5XQ=","WjQCaoxL3TfYTkSPECgZScWeBpc=","Oq6L9NDbVPLKGqLXLxuWr5Cip0E=","Ev9vdkZ4OHKmGA2\u002BV2xeonbzoNo=","V52d1AjK1iRvLvfaYDDF3ca51eI=","3TCOs4TWRFyzaGYD5SLhj9Wc53c=","tgyMYaQ7RXFriBZnaRyT5BDTqAA=","bRbBDEzWMvbDZTLt98ShKbqObDg=","0vvOlGWvJR5SY7VtxUKhooMSDIA=","j0ZF97vKhsHqDw4cRsV\u002B5MLwrNs=","oDj4U\u002B9UYkkaMCqWeWEmnnTSZNg=","j9cJRFynkB2blMB7XLTMXaNs8Uk=","KK7wcO30TdSzhUe5fxo00guhduw=","RJWL8ejquNNJocfH9dvD/pxdZrw=","z6uzU/K/no\u002BqOeJwlJaM9OBzYek=","8IexvRuMG0T9aeLIJK88oRnKX9Q=","OdXXW2Lkcd67og777NJS7XleYy8=","pO01\u002BNPaEI41ZN0Tz5eR8V35ZeQ=","TNFQlDwQ25O2BzyjY\u002BbNs0cse6s=","fFc3a2RYJ1bFNC09VlQCRQpYUDs=","\u002B2zKevheMw8L2jrz8upGUXCGNxU=","OcXbyWwORnlJ/X8puSDM8eSwr0I=","VNNyUttP4b2WvV8Naa3xMN0qNTw=","RRn1did15K9tYDTVu9ACbySxcDw=","lfVV\u002BFQ\u002B1m06LPMgnrvW\u002BtwRuhc=","5wdoAEa8TqvNnLPM9k73Gbc6WE4=","4UuoS9RvxhFO960XkJmEf9Z8ies=","4JCec8C3c92wdu4B0gNIkHp/PVg=","cLltWH5\u002B6914YKNMihYa8jRGyuc=","Flz/gKx8eMzyvwxStMj8JCfPRI0=","5U\u002BLALPsMveOoiy78TqhMrdPULA=","8uBpKqPhIdWc/66ccn/o9viEdMk=","7HI4QuFaBljyt2iqGnlmqg9i4Ts=","BsqcT7/ifoH49KSCZKhwbnY8Dww=","V8fuqhraxe\u002BFKuwqH/5qSbABtT8=","7Ai33R2Ny0O4j18dhOHOsYn02DU=","xK2j\u002BiDy5AF0ko4uAVclejac148=","E6opj1BGPe8Em5okJUmDteeYQ8I=","YG1rHLwW9a3lDWDuUBnxPsuVte8=","6RHZL6AfPoAejARceDiAVL96pmQ=","WE4UNPpNqu2POsZBDTQAM8NHDzI=","EK2q1rrHzpgzpoSDL1I/azyIQRw=","qYmsm7dmnJjGqwhF\u002BCHkiVE412M=","xUtM/zVxm9ovEz8wE/Zvgn7yntM=","nJPmsp2\u002BBFzrZ1zBJic1N8QhJJQ=","9HxZTHh51x/F0EHg2RHCPqQoDXU=","j3PjGcRwpXi\u002BcI6kYM91WiW14yE=","qPROIe3hm88IxcdOqOHG5m\u002BpxjE=","ETsLYw7wT6UKVMsvMlm/Kjs0I38=","0\u002BZ50shXLIgXnzk88sfWewMwHgg=","tFV6shK2/xsaYAAsh5wwFb7wJWs=","0/rtQWch0\u002B8a5f0JrpxQRlVe2F4=","u9DfDzngrWnD8YKDh694prtDLk4=","J9vzYvw7nj00ILj5Bp6\u002BeXTbrLg=","LJjDY4LkVl0VBET0\u002BY43T9URvmY=","cSI45/uWcmfAKn4XTN1soeuczFM=","ORg/N751j1YccmDmOFk8OCpqgXc=","0AF/PaX3WR6vU\u002BFZE9Fj5WOWiWw=","XqA3F\u002BVwrw640bEDg3xcdpNXg3c=","GS6amb4kH8gJJ/h3/nYX1L7Mxak=","ewQXDSPUE2VJYI3nt6GKHLXgHy0=","DHmmLbW2zbNrgG6JsLpQl6dZGD0=","g6Niim\u002BmnhYMgpOcPGLdmHmTqwE=","D43veAcT8\u002By0hGtOikYq4mMX5Yg=","NHixO/F9dmDqYpL6nzM68jJfGi4=","b5xBdWpF2PDHXugnTjEl5nC\u002Bp1I=","6L9w/SHjMB5VmyogZQzjYv2yjhU=","\u002Bobpu4O5tQ0Rsi4r18u7ofNtuGA=","VMhHWZML\u002B\u002B6bzAGmt\u002BA56yHpOaA=","DOD9meB0eTGFxU2ivkEN39YyDGs=","qG\u002B0tACOWEVlp4NaCcuJI1qnP3E=","tBNS0repbiFRPHhNm5fBGbO3/w8=","yDgl8rC7spjq2edz92KguadOyJY=","yhyKOasNWBYrkmCgScDtPs6bni4=","SezHfNn\u002BrazySKctXceZKsyyGOc=","/op75o\u002BMIUw3gxa21yRU4lkwIU8=","i6NTvymTfg03ncIDQwgeOQ2xM4g=","H87Ew9O/M/u7o1LHTYfb1Tbb9fA=","AAgLVPAJECEQpzWtiAWRNPtD\u002BfM=","XfWD8mIcjiNkszxf0KcXJdDmaLY=","H/fC7HGrPf1niRrrQpmXphgW3Rw=","ykaLfF\u002BN6U2I3SHbwx9mIZKHnpE=","jdqsMDt7zAJL1M7I41EqtdAPplM=","XjDzTFGx\u002BG6197M7i281HlJJxa0=","W8eENF1l91ngQxHCDlRFYku7yq8=","yuaIlu8PnN/cvb7UGDB2\u002B\u002B6RttQ=","QvvGQ6poUpN\u002B\u002BZiAhYG6PM5EiSY=","VC6tbZZX6\u002BnOFWfPpVBAqWKdwGo=","WeGDLOo/gYy5IanOsj\u002BDZHa/uJE=","PI93gbsFZiNn5dLC7KBAkO/bwUM=","CsLBrxM7QxC04LZPaPwSSf/pI4Y=","GxPhlhviX1aG3L3Sl5VpTAZsE\u002Bk=","rn\u002B37/6MGDch8Sa\u002Bf7b/Judh8ZE=","Nf\u002BEnBzb4mQXlalLCjrV6hQX3zY=","PjC\u002BONc66atokkC2hpGKKKKGX5c=","wDgQme7s26d/e/gTyYON738sUbQ=","jUrcWmbvI6cC9thLCXzMRtnnzWQ=","JdNEbW\u002B5kt7FDvbPek2G7Q\u002B08Nk=","rqrzyY66q5ysfRAJKbQJ77PxoO0=","ijGR6LRypukjiZwdNM7\u002BbCw9zD8=","UrCKkt2eHK3DfakLceGgKiRUbrU=","omff5G9xMfXJ6/tuASHZoxQDNqA=","b\u002B2embhM3jsV21qPrzDLKYeNNnk=","MehWU215kM/SkEjDg2wdVeOYaPw=","EBJ\u002BRADHUt8XkvbZSqdRuJkgrlU=","F2tuWLhF1yXyux7XY3BBWuiziPU=","t5q8G3GZ1/4FIkdW9Ejt/Wrb/84=","LxxQ3VIgps8B2fDSUllq/LAr2/o=","0HjO6aSVezRX1CpS\u002B7y9sZ1he5k=","Gg4B6f9uejgCodwN9Qn0vL5W8CM=","2So1kxPrYzaDtT4YtgJT4ougLQY=","DJT8x67cOaFIWxcJ2y6qlj6jXhA=","CCgFBn13dc8m\u002BlugIKwIcSeNvus=","NNYrxow8x7nlmR7Q4m7\u002BFAz0k7E=","4kNtPXbfkINvdWhDJWq44XLFrlM=","T0EK0O78Z8dT86wpdN8KS0hC06g=","LymhI56KeBK40kMY\u002BMQpbED6pqQ=","n2JqzNs\u002BhWAAUhmcsI6hHrRWmAY=","7lcgRP/3s4owjle\u002BQ2LvR3UHOSo=","x5sGeTJhp/2mIfL/UfeZkXeBGZY=","Rcl0gcIfBx\u002BRkp1q6tTicZvIVuc=","uCzaWEJ3xlB\u002BLRVCzCutAFyKAdY=","zOQ\u002B8Hl48Y5dwCRuJZsWyZUEqZQ=","d91HCqotKGHOTvTwEa16Mi/r0Fo=","6\u002B5eMfyGdJCDFF4NArKhLLdimWQ=","ovcPgM9dv79Nsx3g6Gh7QhJhvSg=","68PUi6qSWCi10dy8crGSdqh0iZs=","AgL5T7lZDm0StkaUYmKzR/bL44E=","kpiRzZzj1JP4057gWwU4CJ6MOx8=","FUvDNech5C17Bqjj5M7Lmr90EZ0=","Ikb4BKVT\u002BesyUGKVuvBnTlT6oHU=","pouRdKIYdaxv3HAg7as\u002BOIQXLQg=","Io3ebz0NWc\u002BcTITlWdKRBfyFYHI=","wWQ\u002B0uuup\u002BpdzTYYv77xb1zBP58=","8ct4BcFZ5\u002BTnljgbw5BDLZj31sI=","Goob5Ari5\u002Bn6n3MXdUqNCIB8iXs=","q57LqwvLYEmXcT2s0P7Kg/QO/jQ=","aef47utCCyPNMee8CFJC7vwjdpw=","lqbX5\u002BiNkXmRnRpJBgYfoRsMEzs=","mp\u002BzuGdvgzfNxYHpZxLcL1Jl/zM=","LM0IBmPaJEX1o66E9gNfpF5Y4aA=","B0N\u002B2TvFaYbmUJDE6acJzTajxCI=","Kq1F/GpytR2xSq8lp5Kg6y/I3xM=","golb8dtMaUsbwBbmT796SashvvE=","N6QmPqE4EeyAgek81Ff0Cd5/vFA=","jx1mkhKI48sAl46otliZecVAR9c=","I0Rd7vxXprv1CUC98QlEOTUVhS4=","FLKNNfOz8CHJ5DdI0Wx28ZUuo1c=","GBB8OdcPEGsKRHFy7DsI63lv1pY=","J\u002B7zOYFffta/v\u002BzrU13X\u002B2kHcos=","iMU8gmfgf8Pf0Ik71UqBWnQ1zfI=","CpAAW2hBBz/gd3\u002Bef/Dx3HncqzY=","hqx2wp3c8rYcsNq889ePvy86ano=","lKSc4bMIu8YUbri2OMZmxfE0rmM=","61jfGK0aceuz3Zj8qQ3Alsg7Fuo=","uU7pwL4vSvzP5WuZ3BlnzpTj2\u002B0=","JIf/7YKz3MbYlCNQQAcluHL0NGg=","9oYqKyFIHw9Op\u002BBXl3f6054oCjM=","oES0K3SH660653tBUHlGl5jBq7Y=","V8c3sOObwFUyKgIzdKYC7JmQIq4=","iwLrmJtodwooH7/Ie4vAj27ZjiI=","05oEz7jrm8H6qrqTUy2pSwFRSmU=","tYeCLhqM/pr4NkPC7haL//IZGqY=","W74X\u002BaRoomb4Y0aDR4OnKHifZuE=","DReehtEGcbociE/7460WGcp66Mw=","8wixDZyzXg7eOY\u002BQyIciQEKbI90=","G/3BP8JFh/PPjm8dvMpw8/dAkZ0=","VvXZp2SQ\u002BJdNGssHgdq7MsldKYQ=","lRDMzS41l0sfv3\u002B9Hau/T7Hh5Iw=","vY2Q8DiiH7lR70UPJoPfAhRTStE=","TXoA7OJjW\u002BRoVt9c5D/IyiegoNk=","g3\u002BEn6pKhQO\u002BkqtvmyGnaznuObU=","VozlWBzSQCzr\u002BqXvPqreQp\u002Bmnnk=","bKUcVaeUuFUux2c/Gk3UPtwZN\u002B8=","H4uIkHL8F3xDAxJn4z38EQzbGPk=","cb/C93f1O3EacIu//kt8Ysprt1Q=","hyE0C0DTM7IEivclNWntwlxzB3s=","8NfNxszrYIS3jWK9aSoQdUoaCFc=","FI40wPNLytBAxxkJr9W4k5kENCQ=","UB12qWEse4Gly1iQCRP7wxzm8EE=","I44JS1k97EF40OonU/N\u002BuE93PlA=","mHEhwD8TK81EsYuInQXcHYKpYrY=","eIXt4KQETjq8agc/SQ8Bdrh/ljE=","K98ewy2XWS4TEn7wXNw9R1W2hcw=","CnvqaDx3Hcc1qXBq3QYlN0vT6VU=","faUuKIaKVZh0/1rUgXtDdyi3B6o=","BvdYUE32TYZuIht0d4A2vS4wbwU=","QioZPmDVpyscPUJN9VQ4/7dHWqQ=","lTShdNbRkVlHH8MF1YO9ZiBFiKI=","liWnZumwKMg821iwYjE5v6GGfF8=","BGTnnekwWcZjiR9Aar1LVbf8Z3s=","J4uy9xYp0kuw4FvC9mm7NSrJ480=","x1hKMTt4gCKJIBRg7iBetqgW4tE=","yn3MRF69AyS3m16Yom2PKzF3zzc=","jc\u002Bsg2GafkH8dbS43aBFDpgwEq0=","MkbVpnIJDsirZy/03t9LedfDJp0=","NZu0OX53hsmlu7rO16756XuvQzk=","FSbHp/\u002Bgj7PyYVHI3Z9bHdut5wQ=","d4sViWGq5xEeq9f7P9p1Dkc07fM=","jTO9FlohJPStMFRGnCSWU3KKbkU=","XEML\u002Bu3vaiOtQeZNnBKdDA8W4AI=","t0s2I5d4qgqx2Gbp/wt84vEs8N4=","TLaUtvxsXnYt/RFgO/DkyEenRkQ=","8ab3QPiXCmGcpSx5wSR/A6mkIUY=","iSnDe/44mQ8w2LNVT36Z1eNfjK4=","BxWwHPCso1MxIAsLIt3ZNoO8wu8=","dnyq3GE5kvs4T88MvI20MkS0YRI=","tmGoCjuCvV4fmnBaEIWjUQhWZ24=","YsYp52ndeHn2\u002BflTBQY8FR58Jno=","xF0Y0oU89yjwrKLh7fANsw/p4qI=","JHYMF0\u002BtQv\u002BnamLkXe9DVG7WsvU=","erB0HmpcewwKm3938SPRNranf\u002Bk=","QeY46cogwfKVz9bkSccb5NA7jEk=","2t1nyiWV2LAWLkWCMV/pX\u002Bx0oWM=","Lo0dQbDPDgMZXJa27OM4a71wMBI=","0okY75JI253P4\u002BM8tlJlBPvg6s0=","mvOxsgUvQq9DfAONd9PMFPuZhSw=","Oct/D747v6oSx5SQNQWmHUZispc=","TvYEXjBY6XUjeYLjr/UOQ\u002BseH2U=","gxkQ\u002B1csXsV9\u002BVxOqXaCjtETI0E=","Kq3Tm8Etd6gOq5JTSafdRfkPmaE=","IvsiDfTppBt877ooYSNWJqT5iWw=","FhGE1t\u002B4VpKrifYS1sS0VlU/xvI=","ws0PZRk2/EJOJG7CTqrKozQDaQ0=","lrA9HiRAZ1\u002Bpf3n71O4R21I5/FE=","156zCZlg0gOy2\u002B2fiQEzd1iZEVU=","RZUV77uQk2HWnvuIpBzbOjMj\u002Bis=","hHN039M6tpqy0zkwUUKiNhlNOU0=","o2lEOc6nB4NeHSL4\u002BdfSOdoQouI=","DmmusIU8hrwDFhs4lr7W3al5iZo=","tSd4JoYlVWXoEq0JOPntXGmhfpE=","MHX2eKAyhC8ljHbJ6sR\u002BmW9lp9c=","WTqNX\u002BstWgeCwZhUSreqBxdKcoA=","cdpTONQA1MnoQZooU5LtXCz/8qM=","\u002Betb5RmJ2y\u002BX4VnlnF5dnFGNx28=","mL3F4gde2Aabk8cpYuK3vuJZ6yg=","ez70/FW07vczvIWT/sJ8n1s7KJs=","sBVUWhghuSzqBnyqNLVXVlFHPIw=","iIdW4Byd9dFOe4okU9WH9ZlrY6E=","DzwYJKBV859R6Efnbnx3IAa6sL0=","evRDrW/xyGM1rRJZEpNtbqIEM9Y=","VnvljNkLJqXYfmvycq2bVOWl9ss=","upyXrCvw6TGPEEERg1KYUF9hfCY=","lRRsZRo2lknOxXxHaGx8FVRzWck=","vWDvbw6VHS\u002Bg3RRN8ahvWvGq1zU=","pU3TlsQSFDxm51xg9ujooVi47S4=","zpUCeTbFrutBd25gsbADgNcX3rU=","w3oW07l/lQCtabRTv0DEdVfJVDw=","TXgD34HUHUzl8tv3kPz5LNdhptg=","5fV7KwjaUQd5Y0z2\u002ByKT\u002BfYhdZ0=","44EsNkVyk6Cd2X/om8U\u002B67PsIDo=","1g1agr6YNcT723KkM0w5BjF5J1o=","hHUULuY4NGjOgWEnWrXBAJuaH9s=","vOiAjMtskCdPrLJrZq0xbdUuY0k=","CeI/dyrXndmoZOKhpSwL2c4Utks=","KXHifRgMEwsuXxVpzXh8TsECdZ0=","hF2iVbcqUSwS5obvwNrGc4kiQ4Q=","ADrs1RUaxVDMQJ9rao167nDXRDk=","KDPaU\u002BfRrwn1HI1c4HCLWwBPVBU=","uKczi1l0LghUuFtupOWpCyQSrRc=","ap1E4UwoaaZG7bWSk5D3FC0Ov70=","VnnO/EiQQqycIzpRCSUr\u002BJL05EY=","/3RQ5rPzd9QzaNY1axgioRF6cPI=","EWFdIqhPlhKj4QfG14\u002BcwumoSmM=","qxLfimFMRSWASV3NgF\u002BOKTZoruw="];
+        var testDomainsObj = ["O3dvT8/ANXOwh8TzdST6mqqy8b8=","vSb8rX5hMsD4JfV7kDbNDYXz0fY=","gc6sZCvGfzHY2rsXxEC5FBebfNY=","UAQPk2jZS/XQlmIqzrqxLw\u002BLq4Y=","AtS0uVNti7cfwL0Irvx5NmmXMyk=","rHDnFoWdzQ9/6bavtJZG43VGv18=","RW3f1GOHdvWf8LOuG9H/yP3O3Kw=","oywovCvwbCVeh0pTZczgd99Zabs=","R4q1y\u002BF8N/NuCxk8eKkljYs1alc=","Z2Y/OFC3MsEZ3pJ3hZjI3wY171M=","p5vhNKWNHzWo4lVTljiB/cB9rIg=","QjUHRxiGR7dygZw8or07HlcCj90=","iM6CwrvHpGvZd1jaLLA4SY0dowU=","695sFS57iPJj21DVk6YZVyV6lfY=","lxQd7ts0lrzykIZ/e2Oe/0OtEnc=","lQX1QAxMrwQaLXxKns0BMx4lDgI=","8zZq9n80hTkr7XkCdK4uSZsw2hM=","6X63IGj/fDo6pxgOzDg6N6NWX4E="];
+        var domainDeniedErrorCode = 'deny_domain';
+        var enablePremier = false;
+        var enableSSOMessage = true;
+        var isPasskeyEnabled = true;
+        var isClientSideFailureLoggingEnabled = false;
+        var notAllowedErrorMessage = "We couldn’t complete the sign-in. The session timed out or was interrupted. Please try again.";
+        var constraintErrorMessage = "This device does not support passkeys. <br>Make sure your device is updated with the latest version, your screen lock and Bluetooth are turned on, and that you're using a supported browser.";
+        var abortErrorMessage = 'The action was interrupted. Please try again.';
+        var securityErrorMessage = 'For your safety, this action was stopped. Make sure you are using a secure connection.';
+        var unknownErrorMessage = 'An unexpected issue occurred. Try again in a moment.';
+    </script>
+
+    <link rel="stylesheet" href="dist/css/phone-otp.7ebdd97ec417d042bac5b233af503cbc.css">
+    <script src="dist/js/MaterialUIComponentRef.5462e1350feb91476577.js"></script>
+    <script src="dist/js/outlinedTextBox.0894e87290916355c71c.js"></script>
+    <script src="dist/js/outlinedPhoneNumberField.e8b6b7ad85eb3f028446.js"></script>
+    <script src="dist/js/outlinedPasswordField.9bb77f1acd82d7aa8ce7.js"></script>
+    <script src="dist/js/socialSignIn.af98b6822080f9de8a95.js"></script>
+
+    <script src="dist/js/signinBootstrapper.f649301acf895d86da31.js"></script>
+
+
+</body>
+</html>

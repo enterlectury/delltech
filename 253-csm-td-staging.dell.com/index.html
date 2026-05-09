@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="https://csm-td-staging.dell.com/">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title></title>
+
+    <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="/styles/styles.min.css" rel="stylesheet"/>
+
+    <link as="script" href="/libs/systemjs/dist/system.min.js" rel="preload"/>
+    <link as="script" href="/libs/zone.js/dist/zone.min.js" rel="preload"/>
+    <link as="script" href="/libs/regenerator-runtime/runtime.js" rel="preload"/>
+
+    <link as="script" href="/runtime/sirius.config.js" rel="preload"/>
+    <link as="script" href="/runtime/init.js" rel="preload"/>
+    <link as="script" href="/runtime/index.js" rel="preload"/>
+
+    <script src="/libs/systemjs/dist/system.min.js"></script>
+    <script src="/libs/zone.js/dist/zone.min.js"></script>
+    <script src="/libs/regenerator-runtime/runtime.js"></script>
+
+    <script src="/runtime/sirius.config.js"></script>
+    <script src="/runtime/init.js"></script>
+</head>
+<body style="overflow: initial;">
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">csm-td-staging.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+<div id="splash-screen-full-screen-overlay"></div>
+<div id="sirius-progress-indicator-full-screen-overlay"></div>
+<div id="sirius-dialogs-wrapper"></div>
+<div class="site-wrapper">
+    <div class="site-content" id="site-content">
+    </div>
+    <div class="site-overlay">
+    </div>
+</div>
+<script src="/runtime/index.js"></script>
+</body>
+</html>

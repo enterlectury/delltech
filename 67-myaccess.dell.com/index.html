@@ -1,0 +1,779 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+    <head>
+  <base href="https://myaccess.dell.com/">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex,nofollow" />
+
+        <!-- Styles generated from theme -->
+        <link href="/api/internal/brand/theme/style-sheet?touch-point=SIGN_IN_PAGE&amp;v=abc4780733b2999dc5536ea4bf18a7237d32beafe91e2f7611b8af3ecb8ae0d0dfb208992a3b1ecefd0c0f9333f4b59d" rel="stylesheet" type="text/css">
+
+        <!-- Favicon from theme -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+        <title>myaccess.dell.com - Sign In</title>
+        <!-- Core widget js and css -->
+<script type="text/javascript"
+        src="https://myaccess.dell.com/assets/js/sdk/okta-signin-widget/7.44.2/js/okta-sign-in.min.js" integrity="sha384-EV7pGMOTc4xKpzoUAzOqiMsfvdCihnetYo0qgzxOChf46yEsDLvvO/0eLIYDta/l" crossorigin="anonymous"></script>
+<link rel="stylesheet"
+      type="text/css"
+      href="https://myaccess.dell.com/assets/js/sdk/okta-signin-widget/7.44.2/css/okta-sign-in.min.css"
+      integrity="sha384-Q8YNAEc6nfN33qNpPh3+oYA8H9UumofLRDCLUdO4mGqrwT+DbffCWNZhITd0sZ2V"
+      crossorigin="anonymous">
+
+<!-- Customizable css theme options. Link your own stylesheet or override styles inline. -->
+<link rel="stylesheet"
+      type="text/css" href="" integrity="" crossorigin="anonymous">
+
+<!-- styles for custom sign in -->
+<link rel="stylesheet" type="text/css" href="https://myaccess.dell.com/assets/loginpage/css/custom-signin.a91af2abfd04662e499bd3e151150dbf.css" integrity="sha384-BhMidK4jYIQaVFKNVHUvbfdgrt4NVlnlTZMsOMWLdWkme3j1JcshKDNQiMssd7sN" crossorigin="anonymous">
+
+
+<script type="text/javascript" nonce="4zJBSqzaA-Ee2-2cPHycfg">
+    window.onerror = function (msg, _url, _lineNo, _colNo, error) {
+        if (window.console && window.console.error) {
+            if (error) {
+                console.error(error);
+            } else {
+                console.error(msg);
+            }
+        }
+
+        // Return true to suppress "Script Error" alerts in IE
+        return true;
+    };
+</script>
+
+
+        <style nonce="4zJBSqzaA-Ee2-2cPHycfg">
+            html { font-size: 87.5%; }
+            body { background-image: none; background-size: cover; background-repeat: no-repeat; background-position: center center; min-height: 100vh; }
+            .sign-in-with-idp { display: none !important; }
+            #code-version { position: fixed; bottom: 8px; right: 12px; font-size: 11px; color: #b0b0b0; -ms-user-select: none; user-select: none; }
+            .debug-tag { background: #9933cc; color: #fff; padding: 2px 6px; border-radius: 3px; font-size: 10px; margin-left: 6px; }
+            #debug-modal { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 9999; align-items: center; justify-content: center; }
+            #debug-modal.show { display: flex; }
+            #debug-modal-content { position: relative; background: #fff; padding: 24px; border-radius: 8px; min-width: 280px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+            #debug-modal h3 { margin: 0 0 16px 0; color: #333; font-size: 16px; }
+            #debug-modal button { display: block; width: 100%; padding: 12px; margin: 8px 0; border: none; border-radius: 4px; font-size: 14px; cursor: pointer; }
+            #debug-modal .btn-disable { background: #cc3300; color: #fff; }
+            #debug-modal .btn-enable { background: #339933; color: #fff; }
+            #debug-modal .btn-close { position: absolute; top: 8px; right: 8px; width: 28px; height: 28px; padding: 0; margin: 0; background: none; color: #999; font-size: 24px; line-height: 1; border-radius: 50%; }
+            #debug-modal .btn-close:hover { background: #e0e0e0; color: #333; }
+            #debug-modal .btn-toggle { background: #666; color: #fff; }
+            #debug-modal .btn-toggle.active { background: #9933cc; }
+            #debug-modal-version { margin-top: 16px; padding-top: 12px; border-top: 1px solid #e0e0e0; font-size: 16px; font-weight: 600; color: #666; }
+            #debug-status { font-size: 12px; color: #666; margin: 8px 0; padding: 8px; background: #f5f5f5; border-radius: 4px; text-align: left; }
+            #debug-status .status-item { margin: 4px 0; }
+            #debug-status .status-label { font-weight: 600; color: #333; }
+            #debug-status .status-on { color: #339933; }
+            #debug-status .status-off { color: #cc3300; }
+        </style>
+    </head>
+
+    <body>
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">myaccess.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+        <div id="okta-login-container"></div>
+        <div id="code-version"></div>
+
+        <!-- Debug Modal (long-press on version) -->
+        <div id="debug-modal">
+            <div id="debug-modal-content">
+                <button class="btn-close" id="btn-close-modal">&times;</button>
+                <h3>Debug Options</h3>
+                <div id="debug-status"></div>
+                <button class="btn-disable" id="btn-disable-probe">Disable IdP Probe</button>
+                <button class="btn-toggle" id="btn-toggle-advanced">Advanced Debug: OFF</button>
+                <div id="debug-modal-version"></div>
+            </div>
+        </div>
+
+        
+<div id="okta-sign-in" class="auth-container main-container unsupported-message-container" style="display:none">
+    <div id="unsupported-cookie" class="unsupported-message" style="display:none">
+        <h2 class="o-form-head">Cookies are required</h2>
+        <p>Cookies are disabled on your browser. Please enable Cookies and refresh this page.</p>
+        <a class="button button-primary" target="_blank" href=".">
+            Refresh
+        </a>
+    </div>
+</div>
+<div id="inactive-tab-main-div" style="display:none;">
+    <div class="inactive-tab-container">
+        <div class="inactive-tab-header">
+            <img src="https://myaccess.dell.com/fs/bco/1/fs01ap75crlXC4vJA0x8" alt="Dell" class="report-org-logo">
+            <div class="divider"></div>
+        </div>
+        <div class="inactive-tab-content">
+            <h2 class="inactive-tab-content-title">The page has timed out</h2>
+            <p class="inactive-tab-details">If this page does not reload automatically, please refresh your browser.</p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" nonce="4zJBSqzaA-Ee2-2cPHycfg">
+  var signInSuccessCallBackFunction;
+  var oktaData = {"redirectUri":"\x2Fapp\x2Fdell_1000275qvidianportal1000275task10707702_1\x2Fexk1ff773vcVvX7TC0x8\x2Fsso\x2Fsaml","isMobileSso":false,"orgSyncToAccountChooserEnabled":true,"fromUri":"","isMobileClientLogin":false,"requestContext":{"app":{"type":"object","value":{"name":"dell_1000275qvidianportal1000275task10707702_1","label":"1000275_Qvidian\x20Portal\x20\x281000275\x29_TASK10707702","id":"0oa1ff773vdFsDQ7L0x8"}},"authentication":{"request":{},"protocol":{},"client":{"name":"dell_1000275qvidianportal1000275task10707702_1","label":"1000275_Qvidian\x20Portal\x20\x281000275\x29_TASK10707702","id":"0oa1ff773vdFsDQ7L0x8"},"type":"object","value":{"request":{},"protocol":{}}},"target":{"clientId":"0oa1ff773vdFsDQ7L0x8","name":"dell_1000275qvidianportal1000275task10707702_1","label":"1000275_Qvidian\x20Portal\x20\x281000275\x29_TASK10707702"}},"countryIso":"IN","inactiveTab":{"elementId":"inactive\x2Dtab\x2Dmain\x2Ddiv","avoidPageRefresh":true,"enabled":true},"signIn":{"logoText":"myaccess.dell.com\x20logo","brandName":"myaccess.dell.com","language":"en","consent":{"cancel":function(){window.location.href='https\x3A\x2F\x2Fmyaccess.dell.com\x2Flogin\x2Fstep\x2Dup\x2Fredirect\x3FstateToken\x3D02.id.oTAd3eKTmVxj_H0vicR3GF481XrWhsgo\x2Dqj56gop';}},"i18n":{"en":{"mfa.challenge.password.placeholder":"Password","help":"Help","password.forgot.email.or.username.tooltip":"Email\x20or\x20Username","needhelp":"Need\x20help\x20signing\x20in\x3F","primaryauth.username.placeholder":"Email","password.forgot.email.or.username.placeholder":"Email\x20or\x20Username","account.unlock.email.or.username.tooltip":"Email\x20or\x20Username","unlockaccount":"Unlock\x20account\x3F","account.unlock.email.or.username.placeholder":"Email\x20or\x20Username","primaryauth.password.placeholder":"Password","primaryauth.title":"Sign\x20In","forgotpassword":"Forgot\x20password\x3F"}},"features":{"isBotProtectionEnabled":false,"hideSignOutLinkInMFA":false,"emailRecovery":true,"deviceFingerprinting":true,"showIdentifier":true,"consent":true,"useDeviceFingerprintForSecurityImage":true,"customExpiredPassword":true,"router":true,"showPasswordToggleOnSignInPage":true,"securityImage":true,"autoPush":true,"smsRecovery":false,"idpDiscovery":false,"selfServiceUnlock":false,"webauthn":true,"passwordlessAuth":true,"showPasswordRequirementsAsHtmlList":true,"registration":false,"rememberMe":true,"callRecovery":false,"multiOptionalFactorEnroll":true},"baseUrl":"https\x3A\x2F\x2Fmyaccess.dell.com","assets":{"baseUrl":"https\x3A\x2F\x2Fmyaccess.dell.com\x2Fassets\x2Fjs\x2Fsdk\x2Fokta\x2Dsignin\x2Dwidget\x2F7.44.2"},"customButtons":[],"idpDiscovery":{"requestContext":""},"logo":"https\x3A\x2F\x2Fmyaccess.dell.com\x2Ffs\x2Fbco\x2F1\x2Ffs01ap75crlXC4vJA0x8","stateToken":"02.id.oTAd3eKTmVxj_H0vicR3GF481XrWhsgo\x2Dqj56gop","helpLinks":{"help":"","forgotPassword":"https\x3A\x2F\x2Fdell.identitynow.com\x2Fr\x2Fdefault\x2Fpassword\x2Dmanagement","unlock":"","custom":[]},"piv":{}},"accountChooserDiscoveryUrl":"https\x3A\x2F\x2Flogin.okta.com\x2Fdiscovery\x2Fiframe.html"};
+
+  var runLoginPage = function(fn) {
+    var mainScript = document.createElement('script');
+    mainScript.src = "https://myaccess.dell.com/assets/js/mvc/loginpage/initLoginPage.pack.f45aba2fcd86049fdc0a4446a0b4aa60.js";
+    mainScript.integrity = "sha384-Ti1AVzmYlM/NMC9etUiz87VUWhwg+Bo9yxzyhSC6H+BcvWDdE/RfZIEFxIsvkfcf";
+    mainScript.crossOrigin = "anonymous";
+    document.getElementsByTagName('head')[0].appendChild(mainScript);
+    fn && mainScript.addEventListener('load', function () { setTimeout(fn, 1) });
+  };
+
+  var OktaUtil = {
+    _addClass: function(el, className) {
+      if(el) {
+        var elementClasses = el.className.split(" ");
+        if (elementClasses.indexOf(className) == -1) {
+          el.className += " " + className;
+        }
+      }
+    },
+
+    _removeElement: function(el) {
+      if(el) {
+        el.parentNode.removeChild(el);
+      }
+    },
+
+    _hideElement: function(el) {
+      if(el) {
+        el.style.display = 'none';
+      }
+    },
+
+    _isDocumentVisible: function() {
+      return document.visibilityState === 'visible';
+    },
+
+    addLoginContainerClass: function () {
+      this._addClass(document.getElementById('okta-login-container'), 'login-container');
+    },
+
+    showUnsupportedCookieWarning: function () {
+      document.getElementById('okta-sign-in').removeAttribute('style');
+      document.getElementById('unsupported-cookie').removeAttribute('style');
+    },
+
+    removeUnsupportedCookieWarning: function () {
+      this._removeElement(document.getElementById('okta-sign-in'));
+    },
+
+    hideOktaLoginContainer: function () {
+      this._hideElement(document.getElementById('okta-login-container'));
+    },
+
+    isChromeOs:  function () {
+      return /\bCrOS\b/.test(navigator.userAgent);
+    },
+
+    addChromeOSScript: function() {
+      var chromeOSScript = document.createElement('script');
+      chromeOSScript.src = "/js/google/users-1.0.js";
+      document.getElementsByTagName('head')[0].appendChild(chromeOSScript);
+    },
+
+    getSignInWidgetConfig: function () {
+        if (oktaData.inactiveTab && oktaData.inactiveTab.enabled && !this._isDocumentVisible() && !oktaData.inactiveTab.avoidPageRefresh) {
+            // Show a loading state and wait for the visibility event
+            this.hideOktaLoginContainer();
+            // remove stateToken so SIW does not attempt a login flow
+            oktaData.signIn.stateToken = undefined;
+        }
+        return oktaData.signIn;
+    },
+
+    completeLogin: function (res) {
+      signInSuccessCallBackFunction(res);
+    },
+
+    getRequestContext: function () {
+      return oktaData.requestContext;
+    },
+
+    setRedirectUri: function (uri) {
+      oktaData.redirectUri = uri;
+    },
+
+    init: function () {
+      if (!navigator.cookieEnabled) {
+        this.showUnsupportedCookieWarning();
+        this.hideOktaLoginContainer();
+      } else {
+        this.removeUnsupportedCookieWarning();
+
+        if (oktaData.inactiveTab && oktaData.inactiveTab.enabled && !this._isDocumentVisible()) {
+          try {
+            oktaData.inactiveTab.renderFnBackup = OktaSignIn.prototype.renderEl;
+          } catch (err) {
+            // no op - graceful handling OktaSignIn undefined case
+          }
+
+          // pause render sign-in widget when browser tab is inactive
+          if (!oktaData.inactiveTab.renderFnBackup) {
+            // for older SIW, renderFnBackup is undefined, fallback to full page reload
+            oktaData.inactiveTab.fallbackFullPageReload = true;
+            // Show a loading state and wait for the visibility event
+            this.hideOktaLoginContainer();
+            // remove stateToken so SIW does not attempt a login flow
+            oktaData.signIn.stateToken = undefined;
+          } else {
+            // for newer SIW, override renderEl function so SIW does not attempt a login flow
+            OktaSignIn.prototype.renderEl = function () {
+              oktaData.inactiveTab.renderArgsBackup = arguments;
+              oktaData.inactiveTab.signInInstance = this;
+              try {
+                return new Promise(function (resolve, reject) {
+                  oktaData.inactiveTab.renderResolve = resolve;
+                  oktaData.inactiveTab.renderReject = reject;
+                });
+              } catch (err) {
+                // return nothing if promise is not supported, since promise chaining won't work anyway
+              }
+            }
+          }
+
+          // event handler to resume render sign-in widget
+          document.addEventListener('visibilitychange', function checkVisibilityAndCallSuccess() {
+            if (document.visibilityState === 'visible') {
+              try {
+                document.removeEventListener('visibilitychange', checkVisibilityAndCallSuccess);
+                const inactiveTabDiv = document.getElementById(oktaData.inactiveTab.elementId);
+                inactiveTabDiv.style.display = 'none';
+
+                // resume render sign-in widget
+                if (oktaData.inactiveTab.renderFnBackup && oktaData.inactiveTab.renderArgsBackup) {
+                  OktaSignIn.prototype.renderEl = oktaData.inactiveTab.renderFnBackup;
+                  var result = oktaData.inactiveTab.signInInstance.renderEl.apply(oktaData.inactiveTab.signInInstance, oktaData.inactiveTab.renderArgsBackup);
+                  if (result && result.then) {
+                    result.then(oktaData.inactiveTab.renderResolve, oktaData.inactiveTab.renderReject);
+                  }
+                }
+              } catch (err) {
+                oktaData.inactiveTab.fallbackFullPageReload = true;
+              }
+              if (oktaData.inactiveTab.fallbackFullPageReload) {
+                location.reload();
+              }
+            }
+          });
+        }
+
+        // add class if app login banner is present
+        if (oktaData.isAppBannerVisible) {
+          this.addLoginContainerClass();
+        }
+
+        oktaData.isCustomSignIn = true;
+        oktaData.hasChromeOSFeature = this.isChromeOs();
+        if (oktaData.hasChromeOSFeature) {
+          this.addChromeOSScript();
+        }
+        runLoginPage(function () {
+          var res = OktaLogin.initLoginPage(oktaData);
+          oktaData.signIn = res.signIn;
+          signInSuccessCallBackFunction = res.signInSuccessCallbackFn;
+
+        });
+      }
+    }
+  };
+  OktaUtil.init();
+  //# sourceURL=OktaUtil.js
+</script>
+
+
+
+        <!-- Clean Loader Message -->
+        <div id="notification-container" style=" padding-top:100px; text-align:center; ">
+            <h2 id="notification-container-message" style="width:400px; background:#fff; margin:10px auto; text-align:center; color:#5e5e5e; font-weight:600; line-height:1.5; padding-top:10px; padding-bottom:10px; box-shadow:0 2px 4px rgba(0,0,0,.2);">
+                Authentication in Progress
+            </h2>
+        </div>
+
+        <script type="text/javascript" nonce="4zJBSqzaA-Ee2-2cPHycfg">
+
+            // == CONFIGURATION ==============================================================
+            var locationOrigin = window.location.origin || (window.location.protocol + '//' + window.location.hostname + (window.location.port ? ':' + window.location.port : ''));
+            var config = OktaUtil.getSignInWidgetConfig();
+
+            /////////// Change this to your Entra IdP ID ///////////
+            var idpId = window.location.href.indexOf('myaccess-uat') !== -1
+                ? '0oalpefma9mZIsane1d7'   // myaccess-uat (Preview)
+                : '0oa1d8uo1wbFzoggd0x8';  // default (prod)
+
+            var probeIdpEnabled = true; // Set to false to disable IdP probing
+            var skipProbeClientIds = []; // Client IDs (application IDs) that should skip IdP probing
+            var widgetRendering = false;
+			config.features.skipIdpFactorVerificationBtn = true;
+
+            // Check localStorage override for probeIdpEnabled
+            var PROBE_DISABLED_KEY = 'okta_idp_probe_disabled';
+            var ADVANCED_DEBUG_KEY = 'okta_advanced_debug';
+            var ADVANCED_DEBUG_TTL_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
+            var advancedDebugEnabled = false;
+
+            function isAdvancedDebugOn() {
+                try {
+                    var raw = localStorage.getItem(ADVANCED_DEBUG_KEY);
+                    if (!raw) return false;
+                    var data = JSON.parse(raw);
+                    if (Date.now() - data.enabledAt > ADVANCED_DEBUG_TTL_MS) {
+                        localStorage.removeItem(ADVANCED_DEBUG_KEY);
+                        return false;
+                    }
+                    return true;
+                } catch (e) {
+                    return false;
+                }
+            }
+
+            try {
+                if (localStorage.getItem(PROBE_DISABLED_KEY) === 'true') {
+                    probeIdpEnabled = false;
+                    console.log('IdP probing disabled via localStorage override.');
+                }
+                if (isAdvancedDebugOn()) {
+                    advancedDebugEnabled = true;
+                    console.log('Advanced debug mode enabled.');
+                }
+            } catch (e) {}
+
+            // Debug logging helper - verbose output when advanced debug is enabled
+            function debugLog(message, data) {
+                if (advancedDebugEnabled) {
+                    if (data !== undefined) {
+                        console.log('[DEBUG] ' + message, data);
+                    } else {
+                        console.log('[DEBUG] ' + message);
+                    }
+                }
+            }
+
+            // Get the Application Information
+            function getApp() {
+                if (!OktaUtil) return undefined;
+
+                var requestContext = OktaUtil.getRequestContext();
+                if (requestContext && requestContext.app && requestContext.app.value) {
+                    return requestContext.app.value;
+                }else{
+                    return "unknown"
+                }
+            }
+
+            var codeVersion = "v20260325";
+            function updateVersionDisplay() {
+                var el = document.getElementById('code-version');
+                if (advancedDebugEnabled) {
+                    el.innerHTML = codeVersion + ' <span class="debug-tag">Debug</span>';
+                } else {
+                    el.textContent = codeVersion;
+                }
+            }
+            updateVersionDisplay();
+
+            // == DEBUG MODAL (long-press on version) ========================================
+            (function() {
+                var versionEl = document.getElementById('code-version');
+                var modal = document.getElementById('debug-modal');
+                var pressTimer = null;
+                var longPressDuration = 1000; // 1 second
+
+                function updateModalState() {
+                    // Update IdP probe button
+                    var disableBtn = document.getElementById('btn-disable-probe');
+                    var isProbeDisabled = localStorage.getItem(PROBE_DISABLED_KEY) === 'true';
+                    if (isProbeDisabled) {
+                        disableBtn.textContent = 'Enable IdP Probe';
+                        disableBtn.className = 'btn-enable';
+                    } else {
+                        disableBtn.textContent = 'Disable IdP Probe';
+                        disableBtn.className = 'btn-disable';
+                    }
+
+                    // Update advanced debug button
+                    var advancedBtn = document.getElementById('btn-toggle-advanced');
+                    var isAdvancedOn = isAdvancedDebugOn();
+                    if (isAdvancedOn) {
+                        advancedBtn.textContent = 'Advanced Debug: ON';
+                        advancedBtn.classList.add('active');
+                    } else {
+                        advancedBtn.textContent = 'Advanced Debug: OFF';
+                        advancedBtn.classList.remove('active');
+                    }
+
+                    // Update status display
+                    var statusEl = document.getElementById('debug-status');
+                    var probeStatusClass = isProbeDisabled ? 'status-off' : 'status-on';
+                    var probeStatusText = isProbeDisabled ? 'DISABLED' : 'ENABLED';
+                    var advancedStatusClass = isAdvancedOn ? 'status-on' : 'status-off';
+                    var advancedStatusText = isAdvancedOn ? 'ON' : 'OFF';
+
+                    var appInfo = getApp();
+                    var appLabel = (appInfo && appInfo !== 'unknown' && appInfo.label) ? appInfo.label : (appInfo || 'unknown');
+
+                    statusEl.innerHTML =
+                        '<div class="status-item"><span class="status-label">IdP Probe:</span> <span class="' + probeStatusClass + '">' + probeStatusText + '</span></div>' +
+                        '<div class="status-item"><span class="status-label">Advanced Debug:</span> <span class="' + advancedStatusClass + '">' + advancedStatusText + '</span></div>' +
+                        '<div class="status-item"><span class="status-label">IdP ID:</span> ' + idpId.substring(0, 10) + '...</div>' +
+                        '<div class="status-item"><span class="status-label">App:</span> ' + appLabel + '</div>' +
+                        '<div class="status-item"><span class="status-label">App ID:</span> ' + (appInfo && appInfo.id ? appInfo.id : 'unknown') + '</div>';
+
+                    // Update version display
+                    var versionDisplay = document.getElementById('debug-modal-version');
+                    versionDisplay.textContent = codeVersion;
+                }
+
+                function showModal() {
+                    updateModalState();
+                    modal.classList.add('show');
+                }
+
+                function hideModal() {
+                    modal.classList.remove('show');
+                }
+
+                // Long press detection
+                versionEl.addEventListener('mousedown', function(e) {
+                    pressTimer = setTimeout(showModal, longPressDuration);
+                });
+                versionEl.addEventListener('mouseup', function() { clearTimeout(pressTimer); });
+                versionEl.addEventListener('mouseleave', function() { clearTimeout(pressTimer); });
+
+                // Touch support
+                versionEl.addEventListener('touchstart', function(e) {
+                    pressTimer = setTimeout(showModal, longPressDuration);
+                });
+                versionEl.addEventListener('touchend', function() { clearTimeout(pressTimer); });
+                versionEl.addEventListener('touchcancel', function() { clearTimeout(pressTimer); });
+
+                // Close modal on backdrop click
+                modal.addEventListener('click', function(e) {
+                    if (e.target === modal) hideModal();
+                });
+
+                // Button handlers
+                document.getElementById('btn-close-modal').addEventListener('click', hideModal);
+
+                document.getElementById('btn-disable-probe').addEventListener('click', function() {
+                    var isDisabled = localStorage.getItem(PROBE_DISABLED_KEY) === 'true';
+                    if (isDisabled) {
+                        localStorage.removeItem(PROBE_DISABLED_KEY);
+                        alert('IdP probing enabled. Reload to take effect.');
+                    } else {
+                        localStorage.setItem(PROBE_DISABLED_KEY, 'true');
+                        alert('IdP probing disabled for future visits.');
+                    }
+                    updateModalState();
+                });
+
+                document.getElementById('btn-toggle-advanced').addEventListener('click', function() {
+                    if (isAdvancedDebugOn()) {
+                        localStorage.removeItem(ADVANCED_DEBUG_KEY);
+                        advancedDebugEnabled = false;
+                    } else {
+                        localStorage.setItem(ADVANCED_DEBUG_KEY, JSON.stringify({ enabledAt: Date.now() }));
+                        advancedDebugEnabled = true;
+                    }
+                    updateVersionDisplay();
+                    updateModalState();
+                });
+            })();
+
+            // == INITIALIZATION =============================================================
+            var oktaSignIn = new OktaSignIn(config);
+
+            var original_stateToken = (typeof oktaData !== 'undefined' && oktaData.signIn && oktaData.signIn.stateToken)
+                ? oktaData.signIn.stateToken
+                : null;
+
+            // == LOCALSTORAGE - Probe State (simple flag with TTL) ==========================
+            var PROBE_STATE_KEY = 'okta_idp_probe_state';
+            var PROBE_STATE_TTL_MS = 5 * 60 * 1000; // 5 minutes
+
+            function getProbeState() {
+                try {
+                    var raw = localStorage.getItem(PROBE_STATE_KEY);
+                    if (!raw) return null;
+                    var state = JSON.parse(raw);
+                    if (Date.now() - state.startedAt > PROBE_STATE_TTL_MS) {
+                        clearProbeState();
+                        return null;
+                    }
+                    return state;
+                } catch (e) {
+                    return null;
+                }
+            }
+
+            function setProbeState() {
+                try {
+                    localStorage.setItem(PROBE_STATE_KEY, JSON.stringify({
+                        startedAt: Date.now(),
+                        idpId: idpId
+                    }));
+                } catch (e) {}
+            }
+
+            function clearProbeState() {
+                try { localStorage.removeItem(PROBE_STATE_KEY); } catch (e) {}
+            }
+
+            // == UI HELPERS =================================================================
+            function removeNotificationContainer() {
+                var el = document.getElementById('notification-container');
+                if (el) el.innerHTML = '';
+            }
+
+            function my_renderWidget(stateToken) {
+                if (widgetRendering) return;
+                widgetRendering = true;
+                removeNotificationContainer();
+
+                var opts = { el: '#okta-login-container' };
+                if (stateToken) opts.stateToken = stateToken;
+
+                oktaSignIn.renderEl(opts, OktaUtil.completeLogin, function(error) {
+                    console.log(error.message, error);
+                    // update the notification-container-message with error message
+                    var msgEl = document.getElementById('notification-container-message');
+                    if (msgEl) msgEl.textContent = error.message;
+                });
+            }
+
+            // == IDP PROBE ==================================================================
+            function initiateIdpProbe() { // Moved from iframe to redirect method
+                var probeUrl = locationOrigin + '/sso/idps/' + idpId;
+                console.log('Initiating IdP probe via redirect to:', probeUrl);
+
+                var form = document.createElement('form');
+                form.method = 'POST';
+                form.action = probeUrl;
+                var input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'stateToken';
+                input.value = original_stateToken;
+                form.appendChild(input);
+
+                document.body.appendChild(form);
+                form.submit();
+            }
+
+            // == DSSO CHECK =================================================================
+            function checkDsso() {
+                var isDssoFlow = window.location.href.indexOf('agentlessDsso/auth') !== -1 ||
+                                 window.location.href.indexOf('login/agentlessDsso/idx') !== -1;
+
+                debugLog('checkDsso() called', { url: window.location.href, isDssoFlow: isDssoFlow });
+
+                if (!isDssoFlow) return Promise.resolve({ handled: false });
+
+                console.log('DSSO flow detected, introspecting stateToken...');
+                debugLog('stateToken for introspection', original_stateToken);
+
+                return oktaSignIn.authClient.idx.introspect({ stateHandle: original_stateToken })
+                    .then(function(result) {
+                        var rawIdxState = result.rawIdxState;
+                        debugLog('rawIdxState', rawIdxState);
+
+                        // Case 1: DSSO fully successful - rawIdxState.success exists
+                        if (rawIdxState && rawIdxState.success) {
+                            console.log('DSSO successful (rawIdxState.success), render widget directly.');
+                            debugLog('rawIdxState.success', rawIdxState.success);
+                            my_renderWidget(original_stateToken);
+                            return { handled: true };
+                        }
+
+                        // Case 2: Check remediation to determine if user was identified
+                        if (rawIdxState && rawIdxState.remediation && rawIdxState.remediation.value && rawIdxState.remediation.value.length > 0) {
+                            var firstRemediationName = rawIdxState.remediation.value[0].name;
+                            console.log('DSSO remediation name:', firstRemediationName);
+                            debugLog('All remediations', rawIdxState.remediation.value.map(function(r) { return r.name; }));
+
+                            // If remediation is "identify", DSSO failed - user not identified, probe IdP
+                            if (firstRemediationName === 'identify') {
+                                console.log('DSSO failed (remediation=identify), will probe IdP.');
+                                debugLog('User not identified, IdP probe required');
+                                return { handled: false };
+                            }
+
+                            // Any other remediation (e.g., challenge-authenticator, select-authenticator-authenticate)
+                            // means DSSO succeeded in identifying user & verified PW, but more steps needed (like MFA)
+                            console.log('DSSO partially successful (user identified, remediation=' + firstRemediationName + '), render widget directly.');
+                            debugLog('User identified via DSSO', rawIdxState.user);
+                            my_renderWidget(original_stateToken);
+                            return { handled: true };
+                        }
+
+                        // Fallback: no success and no remediation - probe IdP
+                        console.log('DSSO state unclear, will probe IdP.');
+                        debugLog('No success and no remediation found');
+                        return { handled: false };
+                    })
+                    .catch(function(error) {
+                        console.error('DSSO introspection failed:', error);
+                        debugLog('Introspection error details', { message: error.message, stack: error.stack });
+                        return { handled: false };
+                    });
+            }
+
+            // == URL CONDITIONS =============================================================
+            var saml2FlowRegex = new RegExp('^' + locationOrigin.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '/sso/saml2/[^/]+/?$');
+            var tokensVerifyRegex = new RegExp('^' + locationOrigin.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '/tokens/[^/]+/verify/?$');
+            var isOrg2Org = new RegExp('^' + locationOrigin.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '/app/okta_org2org/[^/]+/sso/saml/?$');
+
+            var passThroughConditions = [
+                tokensVerifyRegex.test(window.location.href),
+                window.location.href.indexOf('/reset_password/') !== -1,
+                window.location.href.indexOf('/activate') !== -1,
+                saml2FlowRegex.test(window.location.href), 
+                isOrg2Org.test(window.location.href)
+            ];
+
+            // == MAIN =======================================================================
+            function main() {
+                console.log('=== Flow Started ===');
+                debugLog('Configuration', {
+                    idpId: idpId,
+                    probeIdpEnabled: probeIdpEnabled,
+                    advancedDebugEnabled: advancedDebugEnabled,
+                    codeVersion: codeVersion,
+                    url: window.location.href
+                });
+                debugLog('stateToken', original_stateToken);
+
+
+                // log app info
+                // console.log('getApp():', getApp());
+
+                // Check for existing session, skip probe if found, and render widget directly
+                return oktaSignIn.authClient.session.exists()
+                    .then(function(sessionExists) {
+                        debugLog('Session check result', sessionExists);
+                        if (sessionExists) {
+                            console.log('Active session exists.');
+                            clearProbeState();
+                            my_renderWidget();
+                            return;
+                        }
+                        return continueAfterSessionCheck();
+                    })
+                    .catch(function(e) {
+                        debugLog('Session check error', e.message);
+                        return continueAfterSessionCheck();
+                    });
+            }
+
+            function continueAfterSessionCheck() {
+                // Pass-through conditions, render widget directly
+                debugLog('Pass-through conditions', passThroughConditions);
+                if (passThroughConditions.some(Boolean)) {
+                    console.log('Pass-through condition, render widget directly.');
+                    my_renderWidget(original_stateToken);
+                    return;
+                }
+
+                var probeState = getProbeState();
+                var isCallback = window.location.href.indexOf('/callback') !== -1;
+                debugLog('Flow state', { probeState: probeState, isCallback: isCallback });
+
+                // Returning from probe, render widget directly
+                if (isCallback && probeState) {
+                    console.log('Returning from IdP probe, render widget directly.');
+                    clearProbeState();
+                    my_renderWidget(original_stateToken);
+                    return;
+                }
+
+                // External callback (not from our probe)
+                if (isCallback && !probeState) {
+                    console.log('External callback, render widget directly.');
+                    my_renderWidget();
+                    return;
+                }
+
+                // Already probed (page reload)
+                if (probeState) {
+                    console.log('Already probed, render widget directly.');
+                    clearProbeState();
+                    my_renderWidget(original_stateToken);
+                    return;
+                }
+
+                // Prisma Browser Check
+                // var isPrismaBrowser = window.navigator.userAgent.indexOf('Prisma') !== -1;
+                // debugLog('Prisma browser check', { isPrismaBrowser: isPrismaBrowser });
+
+                // if (isPrismaBrowser) {
+                //    console.log('Prisma browser detected, skipping probe and rendering widget.');
+                //    my_renderWidget(original_stateToken);
+                //    return;
+                //}
+
+
+                // Skip for Specific Applications (CSC and Prisma) based on app ID
+                var currentApp = getApp();
+                var currentAppId = (currentApp && currentApp !== 'unknown' && currentApp.id) ? currentApp.id : null;
+                if (skipProbeClientIds.length > 0 && currentAppId) {
+                    var isSkippedClient = skipProbeClientIds.indexOf(currentAppId) !== -1;
+                    debugLog('App ID skip check', { appId: currentAppId, isSkippedClient: isSkippedClient });
+                    if (isSkippedClient) {
+                        console.log('App ID in skip list, skipping probe and rendering widget.');
+                        my_renderWidget(original_stateToken);
+                        return;
+                    }
+                }
+
+                // Check DSSO flow
+                return checkDsso().then(function(dssoResult) {
+                    debugLog('DSSO check result', dssoResult);
+                    if (dssoResult.handled) return;
+
+                    // Initiate probe
+                    if (probeIdpEnabled) {
+                        console.log('Initiating IdP probe...');
+                        debugLog('Probe will redirect to', locationOrigin + '/sso/idps/' + idpId);
+                        setProbeState();
+                        initiateIdpProbe();
+                        return;
+                    }
+
+                    debugLog('IdP probing disabled, rendering widget directly');
+                    my_renderWidget(original_stateToken);
+                });
+            }
+
+            // == START ======================================================================
+            main().catch(function(error) {
+                console.error('Main flow error:', error);
+                my_renderWidget(original_stateToken);
+            });
+
+        </script>
+    </body>
+</html>

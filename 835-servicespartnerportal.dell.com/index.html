@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="bg-white">
+<head>
+  <base href="https://servicespartnerportal.dell.com/">
+    <meta charset="UTF-8">
+    <title>Partner Portal | Login</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="/assets/application-e8cefaef8378dd3fe7b667c52a4478a5.css"/>
+    <script type="text/javascript" src="/assets/application-7325a32b05f0b95c0c325b8350a4357c.js" ></script>
+    
+    <meta charset="UTF-8">
+    <meta name="layout" content="popup_di">
+    
+
+    
+
+<script nonce="4d63ab82d4c7a1dcc4048f476cb20c0e">bazadebezolkohpepadr="130462952"</script><script type="text/javascript" src="https://servicespartnerportal.dell.com/akam/13/7c6b46d" nonce="4d63ab82d4c7a1dcc4048f476cb20c0e" defer></script></head>
+<body class="bg-white">
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">servicespartnerportal.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+<div class="box form-box bg-gray" style="border-top: none; border-radius: 20px; width: 500px ">
+    <div class="overlay" id="pleaseWait" style="display: none">
+        <div class="loading-img"></div>
+    </div>
+    <div class="header" style="padding: 10px">
+        <h2><img src="/assets/dellWhite-fda9256ad5ae2b61894a7f876c5f2c2d.png" style="width: 40px"/> Services Partner Portal</h2>
+    </div>
+    <div id="messages">
+        <div id="infoMessageBox" class="pad margin no-print" style="display: none">
+            <div class="alert alert-info" style="margin-bottom: 0 !important;">
+                <i class="fa fa-info"></i>
+                <div id="infoMessageContent"></div>
+            </div>
+        </div>
+        <div id="errorMessageBox" class="pad margin no-print" style="display: none">
+            <div class="alert alert-danger" style="margin-bottom: 0 !important;">
+                <i class="fa fa-ban"></i>
+                <div id="errorMessageContent"></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <input type="hidden" name="sid" id="sid" value="$2a$04$IgvT.ypeh3VW5pwHmx2PoOKyRx6LUfM9hP.7HpntU4xL8Rq/INWfK" />
+    
+    
+
+
+
+
+
+
+            <div class="footer bg-gray" style="height: 210px;">
+                <p><strong style="color: black; font-size: 19px; margin-left:110px; font-family: Sans-serif">Services Dell Partner Portal</strong></p>
+                <p style="color: black; font-size: 15px; margin-left: 97px; font-family: Sans-serif">Your Dell service and support connection</p>
+                <button type="button" id="loginBtn" class="btn bg-light-blue btn-block" style="width: 200px; margin-left: 130px; margin-top: 50px;">
+                    Sign In
+                </button>
+            </div>
+
+            <div class="footer bg-gray">
+                <button class="popup" style="width: 200px; margin-left:130px; border:none; color: dodgerblue; background-color: #E8E8E8; font-size: 18px; margin-top: -30px;" onclick="displayDisclaimer()">Disclaimer</button>
+            </div>
+
+
+<script>
+
+    var clientId = '4e0c4e38-406d-4a38-9dc1-499c929b9c7b'
+    var redirectUri = 'https://servicespartnerportal.dell.com/validateUsers'
+    var code_challenge_method = 'S256'
+    var response_type = 'code'
+    var scope = 'profile%20openid%20adprofile%20email'
+    var state = '123'
+    var authorizationEndpoint = 'https://www.dell.com/dci/fp/oidc/authorize'
+    var codeVerifierFromPropetry = 'dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk'
+    var codeChallengeFromPropetry = 'E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM'
+
+    
+
+    var codeVerifier = generateCodeVerifier(43);
+    var codeChallenge = generateCodeChallenge(codeVerifier);
+
+    function generateCodeVerifier(length) {
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~';
+        let randomValues = new Uint8Array(length);
+        window.crypto.getRandomValues(randomValues);
+        let result = [];
+        randomValues.forEach(value => {
+            result.push(characters[value % characters.length]);
+        });
+        return result.join('');
+    }
+
+     async function generateCodeChallenge(codeVerifier) {
+        const code_challenge = await resolveAfter2Seconds(codeVerifier);
+        this.codeChallenge = code_challenge;
+    }
+    function resolveAfter2Seconds(x) {
+        return new Promise((resolve) => {
+            setTimeout(async () => {
+                var digest = await crypto.subtle.digest("SHA-256",
+                    new TextEncoder().encode(codeVerifier))
+                const hash = btoa(String.fromCharCode(...new Uint8Array(digest)))
+                    .replace(/=/g, '').replace(/\+/g, '-').replace(/\//g, '_')
+                var hashed =   resolve(hash);
+                return hashed;
+            }, 2000);
+        });
+    }
+
+    function setCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (30*3*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
+
+    document.getElementById('loginBtn').addEventListener('click', function() {
+        if(codeChallenge==null || codeChallenge==undefined || codeChallenge=='' || codeChallenge instanceof Promise){
+            codeChallenge = codeChallengeFromPropetry;
+            codeVerifier = codeVerifierFromPropetry;
+        }
+        console.log('codeVerifier',codeVerifier)
+        console.log('codeChallenge',codeChallenge)
+        setCookie('codeVerifier',codeVerifier,7);
+        setCookie('codeChallenge',codeChallenge,7);
+        // document.cookie = "PF-UAT.PERSISTENT=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+        const authUrl = authorizationEndpoint+'?response_type='+response_type+'&client_id='+clientId+'' +
+            '&redirect_uri='+redirectUri+'&code_challenge='+codeChallenge+'&code_challenge_method='+code_challenge_method+
+            '&scope='+scope+'&state='+state+"&code_verifier="+codeVerifier
+        window.location.href = authUrl;
+    });
+
+    // Handle the OAuth callback
+    // function handleOAuthCallback() {
+    //     const params = new URLSearchParams(window.location.search);
+    //     const code = params.get('code'); // Get the authorization code from the URL
+    //
+    //     if (code) {
+    //         const OauthController =dppWebURL+'validateUsers?code='+code
+    //         // const OauthController =dppWebURL+'/validateusers?code='+code
+    //         window.location.href = OauthController;
+    //     }
+    // }
+    //
+    // // Check if this is a callback
+    // if (window.location.pathname === '/login/auth') {
+    //     handleOAuthCallback();
+    // } else {
+    //     // Store the current URL before redirecting
+    //     localStorage.setItem('originalUrl', window.location.href);
+    // }
+    //
+    function displayDisclaimer() {
+        const popup = document.getElementById("textField");
+        popup.classList.toggle("show");
+    }
+
+</script>
+
+</div>
+
+<div class="box form-box bg-gray" id="textField" style="border:1px solid #000;display: none; margin-top: 30px; padding: 10px; background-color: #E8E8E8; width: 800px">
+    <p>
+        Service Dell Partner Portal's information technology resources ("Dell IT Resources") are Dell property and are made available to Dell Technologies Partner Program ("DTPP") members
+        and select third parties solely for business purposes approved by Dell. Your use of Dell IT Resources  must comply with the DTPP Agreement and other applicable Dell terms and
+        conditions ("Dell Agreements") and must not involve any unauthorized or inappropriate use of the resources as determined solely by Dell, including, by way of example and not
+        limitation, accessing information that you have not been authorized to access, hacking, circumventing technical security controls implemented by Dell, engaging in web scraping
+        of content hosted on the Dell IT Resources, disclosing confidential information of Dell or third parties, utilizing the credentials of other users, or otherwise using Dell
+        resources in a way that violates the Dell Agreements. Users must not share their credentials for accessing the Dell IT Resources with anyone. Dell reserves the right to monitor
+        for and intervene in the event of any inappropriate use of the Dell IT Resources, which includes, but is not limited to, monitoring, reviewing, and deleting any data or content
+        that users access, create, receive, or maintain  with or on Dell IT Resources, and monitoring for traffic that appears to be unauthorized or engaged in unauthorized activities.
+        Unauthorized or inappropriate use of Dell IT Resources may result in access restrictions or revocation, account deletion, DTPP removal, Dell Agreement termination, and any other
+        remedies available to Dell. By signing into or using Dell IT Resources, you expressly consent to these actions and monitoring activities.
+    </p>
+</div>
+
+<script src="https://nexus.dell.com/dell/gbx/Bootstrap.js" async crossorigin="anonymous"></script>
+<noscript><img src="https://servicespartnerportal.dell.com/akam/13/pixel_7c6b46d?a=dD00NTU0NDczMzI2ZDE2MTVjMWE2MDUxOWVjNTMxOGFjYWRjZmFlMmZhJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+</html>

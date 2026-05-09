@@ -1,0 +1,552 @@
+
+
+
+
+
+
+<html>
+
+
+
+
+
+<head>
+  <base href="https://www.dellcrm.dell.com/">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>戴尔零售终端管理平台 Dell Retail Channel Management System</title>
+
+    
+
+    <link rel="shortcut icon" href="favicon.ico" />
+
+
+
+    <script type="text/javascript">
+
+
+
+        function check() {
+
+            var title = document.getElementById("txtUserName");
+
+            var pwd = document.getElementById("txtPword").value;
+
+
+
+            var titlevalue = title.value;
+
+
+
+            if (titlevalue == "") {
+
+                alert('请输入用户名！');
+
+                return false;
+
+            }
+
+            if (pwd == "") {
+
+                alert('请输入密码！');
+
+                return false;
+
+            }
+
+
+
+            return true;
+
+        }
+
+
+
+        function OpenChild() {
+
+            var MyArgs = "0";
+
+            var WinSettings = "toolbar=0;center:yes;resizable:no;dialogHeight:750px;dialogWidth:768px"
+
+            var MyArgs = window.showModalDialog("Child.aspx", window, WinSettings);
+
+        }
+
+
+
+
+
+        function PageOnLoad() {
+
+            var t = '';
+
+            //if (t == "Force") {
+
+            //    alert('对不起，因为有其他用户在使用您的电脑，您被强迫下线');
+
+            //}
+
+            //else
+
+            //{
+
+
+
+            //}
+
+
+
+        }
+
+
+
+        function Image2_onclick() {
+
+            document.getElementById("txtUserName").value = "";
+
+            document.getElementById("txtPword").value = "";
+
+            document.getElementById("txtCode").value = "";
+
+            document.getElementById("txtUserName").focus();
+
+        }
+
+
+
+    </script>
+
+    <script src="/JScript/jquery-1.2.6.pack.js" type="text/javascript"></script>
+
+    <script src="/JScript/dialog.js" type="text/javascript"></script>
+
+
+
+    <style type="text/css">
+
+        <!--
+
+        body, td, th {
+
+            font-family: 宋体;
+
+            font-size: 12px;
+
+        }
+
+        -->
+
+        .STYLE5 {
+
+            color: white;
+
+            font-weight: bolder;
+
+            font-size: 15px;
+
+        }
+
+        .auto-style1 {
+
+            height: 32px;
+
+        }
+
+        .transparentButton {
+
+            opacity: 0.5;
+
+        }
+
+    </style>
+
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch","rua.ceh":"false","rua.ueh":"false","rua.ieh.st":"0"}]);</script>
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="QVXP9-ZPNYY-JDUJT-HCR95-A7JLN",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"QVXP9-ZPNYY-JDUJT-HCR95-A7JLN";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="slccli4laxztc2ptp42a-f-4a13d6941-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1462351","ak.ai":parseInt("910183",10),"ak.ol":"0","ak.cr":20,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"25e5695d","ak.r":37301,"ak.a2":n,"ak.m":"","ak.n":"ff","ak.cport":57223,"ak.gh":"139.5.243.45","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1777565492","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==/0aWyi9QugZ41nWMH6GmX6JxDYOZrbWOu98VZvG3SLk+J5DDWso7bYjXLus6vuAo7wdddE167LIu7m7YG6EfdJ6KU5qXoF6MyBCzA4D+/U7h4Qe4sMx3CXaYMjpUW6SQbp1PfyDhjKetr4FTP5f/1Cn4AOX62FD17tWz4rw94DiOJNE2J7g98drUrBtqo0WdmorJ3rcRYIJsyTAVndvlxN3rJs46RgRFDyUQujI0Dn7UCFnUsj0z8m2nQ+yOiaDGhpSlBF6hnN4dikwL32DVcLfoLVWDGGZfS2PyjAltsLdMZvuRnnie+nPENOsAAovA2syr81N9ialCPOznCUT7lTbhkyzU+Ozmn+T26nwNTRIDk7trJBv2yl27CFcHOoaEvrJV686yhvT7/nvbnw/VcbmBDtul7y13KS9aMkaIhVI=","ak.pv":"8","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script><script nonce="ab480d13683e30274a1a679f227a7c77">bazadebezolkohpepadr="711383330"</script><script type="text/javascript" src="https://www.dellcrm.dell.com/akam/13/2a66d862" nonce="ab480d13683e30274a1a679f227a7c77" defer></script></head>
+
+
+
+<body leftmargin="0" topmargin="0" onload="PageOnLoad()">
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">www.dellcrm.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+
+    <form method="post" action="./" id="form1">
+
+<div class="aspNetHidden">
+
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE0NzQyNTExNDEPZBYCZg9kFgICBg8PFgIeCEltYWdlVXJsBQ5DaGVja0NvZGUuYXNweGRkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYCBQxJbWFnZUJ1dHRvbjEFDEltYWdlQnV0dG9uMhKauHBsvhxaV7gHA8w1dRUxLo/i" />
+
+</div>
+
+
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+var theForm = document.forms['form1'];
+
+if (!theForm) {
+
+    theForm = document.form1;
+
+}
+
+function __doPostBack(eventTarget, eventArgument) {
+
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+
+        theForm.__EVENTTARGET.value = eventTarget;
+
+        theForm.__EVENTARGUMENT.value = eventArgument;
+
+        theForm.submit();
+
+    }
+
+}
+
+//]]>
+
+</script>
+
+
+
+
+
+<script src="/WebResource.axd?d=UpTigKo1qfslcfppqUh-qPgMRcOr6t1f_4nIb7koa2BMbzSovlt6IJYy-z7n847RBBjWM1zpw-dzcafDWctOAOH2KFk1&amp;t=638901593280000000" type="text/javascript"></script>
+
+
+
+
+
+<script src="/WebResource.axd?d=hKGv0aWhA4Ayr_VFPES66yL14GdXtcnajZSim0PC9I0dOPu3vE7reNSFmAjmn7yL6P0y_rdKbduDvEzA9ZgklxaMju01&amp;t=638901593280000000" type="text/javascript"></script>
+
+<div class="aspNetHidden">
+
+
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C2EE9ABB" />
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAg3Qzv6u/BHxWhWBWZMWtn1Y3plgk0YBAefRz3MyBlTcJ/LwH5ry6sSYXt1oNnbbeuFa3z02QmQnYFjj3wKxfjr6ZACrx5RZnllKSerU+IuKmLNV+2mZgnOAlNG5DVTg1vlsOoPW3rv9if9K2mThiNhC8i+VS0de/i+PvA+kg3v8zp3eqhFe95kl1WEUpYoEydWZu29" />
+
+</div>
+
+        <center>
+
+
+
+            <table width="1024" height="768" border="0" cellspacing="0" cellpadding="0" background="images/bg.jpg">
+
+                <tr>
+
+                    <td width="708" height="630">
+
+                        <img src="images/new01.jpg" width="708" height="630" /></td>
+
+                    <td width="316">
+
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="316">
+
+                            <tr>
+
+                                <td>
+
+                                    <img name="dellrcm_r1_c2" src="images/dellrcm_r1_c2.jpg" width="316" height="337" border="0" id="dellrcm_r1_c2" alt="" /></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="316">
+
+                                        <tr>
+
+                                            <td>
+
+                                                <img name="dellrcm_r2_c2" src="images/dellrcm_r2_c2.jpg" width="65" height="115" border="0" id="dellrcm_r2_c2" alt="" /></td>
+
+                                            <td>
+
+
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="104">
+
+                                                    <tr>
+
+                                                        <td>
+
+                                                            <img name="dellrcm_r2_c3" src="images/dellrcm_r2_c3.jpg" width="104" border="0" id="dellrcm_r2_c3" alt="" /></td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td background="images/dellrcm_r4_c3.jpg" height="20">
+
+                                                            <input name="txtUserName" type="text" id="txtUserName" style="width: 100px; height: 15px; border: 1px solid #ffffff; background: #ffffff;" />
+
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>
+
+                                                            <img name="dellrcm_r5_c3" src="images/dellrcm_r5_c3.jpg" width="104" border="0" id="dellrcm_r5_c3" alt="" /></td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td background="images/dellrcm_r4_c3.jpg" height="20">
+
+                                                            <input name="txtPword" type="password" id="txtPword" style="width: 100px; height: 15px; border: 1px solid #ffffff; background: #ffffff;" autocomplete="off" /></td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>
+
+                                                            <img name="dellrcm_r9_c3" src="images/dellrcm_r9_c3.jpg" width="104" border="0" id="dellrcm_r9_c3" alt="" /></td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td background="images/dellrcm_r4_c3.jpg" height="20">
+
+                                                            <input name="txtCode" type="text" id="txtCode" style="width: 100px; height: 15px; border: 1px solid #ffffff; background: #ffffff;" /></td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>
+
+                                                            <img name="dellrcm_r13_c3" src="images/dellrcm_r13_c3.jpg" width="104" border="0" id="dellrcm_r13_c3" alt="" /></td>
+
+                                                    </tr>
+
+                                                </table>
+
+
+
+                                            </td>
+
+                                            <td>
+
+                                                <img name="dellrcm_r2_c4" src="images/dellrcm_r2_c4.jpg" width="18" height="115" border="0" id="dellrcm_r2_c4" alt="" /></td>
+
+                                            <td>
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="63">
+
+                                                    <tr>
+
+                                                        <td>
+
+                                                            <img name="dellrcm_r2_c5" src="images/dellrcm_r2_c5.jpg" width="63" height="6" border="0" id="dellrcm_r2_c5" alt="" /></td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>
+
+                                                            <input type="image" name="ImageButton1" id="ImageButton1" src="images/dellrcm_r3_c5.jpg" onclick="return check();" /></td>
+
+                                                    </tr>
+
+
+
+                                                    <tr>
+
+                                                        <td>
+
+                                                            <img name="dellrcm_r6_c5" src="images/dellrcm_r6_c5.jpg" width="63" height="5" border="0" id="dellrcm_r6_c5" alt="" /></td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>
+
+                                                            <!--edit by jingkun xu 2011-6-23-->
+
+                                                            <!--<img src="images/dellrcm_r7_c5.jpg" id="Img1" border="0" />-->
+
+                                                            <img src="images/dellrcm_reset.jpg" id="Image2" border="0" style="cursor: hand;" onclick="return Image2_onclick()" /></td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>
+
+                                                            <img name="dellrcm_r10_c5" src="images/dellrcm_r10_c5.jpg" width="63" height="5" border="0" id="dellrcm_r10_c5" alt="" /></td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td width="63" height="32">
+
+                                                            <input type="image" name="ImageButton2" id="ImageButton2" src="CheckCode.aspx" />
+
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>
+
+                                                            <img name="dellrcm_r14_c5" src="images/dellrcm_r14_c5.jpg" width="63" height="3" border="0" id="dellrcm_r14_c5" alt="" /></td>
+
+                                                    </tr>
+
+                                                </table>
+
+                                            </td>
+
+                                            <td>
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="63">
+
+                                                    <tr>
+
+                                                        <td class="auto-style1">
+
+                                                            <a onclick="return;" id="Button3" href="javascript:__doPostBack(&#39;Button3&#39;,&#39;&#39;)" style="font-size:15px;">单点登陆</a>
+
+
+
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td style="height: 38px;" valign="middle" align="middle">
+
+                                                            
+
+                                                            <a href='ResetPassword.aspx' style="color: white; font-size: 15px">忘记密码</a>
+
+                                                        </td>
+
+                                                    </tr>
+
+
+
+                                                </table>
+
+                                            </td>
+
+                                        </tr>
+
+                                    </table>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+
+                                    <img name="dellrcm_r15_c2" src="images/dellrcm_r15_c2.jpg" width="316" height="178" border="0" id="dellrcm_r15_c2" alt="" /></td>
+
+                            </tr>
+
+                        </table>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td colspan="2" height="138" bgcolor="ebedec" style="background-image: url('images/dellrcm_r16_c1.jpg'); background-repeat: no-repeat; background-position: center;" align="center">
+
+                        
+
+                        请点击这里阅读
+
+                        <a href="Profile/PolicyExplainedNoMenu.aspx">《帐户管理说明》</a>
+
+                        <input name="Hidden1" type="hidden" id="Hidden1" />
+
+
+
+                        
+
+       
+
+                    </td>
+
+                </tr>
+
+
+
+            </table>
+
+        </center>
+
+    
+
+
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+javascript:openurl('PopNote.aspx?w=1',800,400,'');WebForm_AutoFocus('txtUserName');//]]>
+
+</script>
+
+</form>
+
+<noscript><img src="https://www.dellcrm.dell.com/akam/13/pixel_2a66d862?a=dD1hNzNiNTQ2YmM3OGYxYWMyYjkzYmNmMTQ0ZmEzZmE0ZmQ1MTMzYzcwJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,440 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <base href="https://pjm.dell.com/">
+
+    <title>Login | DELL PJM</title>
+
+    <link rel='icon' href='/images/favicon.svg' type='image/x-icon' />
+
+    <link rel="stylesheet" href="/css/dell-boss-ui.customize.css" />
+
+    <link rel="stylesheet" href="/css/font-awesome.css" />
+
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+
+    <link href="/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+    <link href="/css/common.css" rel="stylesheet" />
+
+    <link href="/css/login.css" rel="stylesheet" />
+
+    <script src="/lib/jquery/dist/jquery-3.4.1.min.js"></script>
+
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">pjm.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+
+    <div id="loading" style="display: none; z-index: 99999999 !important">
+
+        <i class="icon-ui-loading" aria-hidden="true"></i>
+
+    </div>
+
+    <div class="login-container">
+
+        <div class="panel-login fade-in">
+
+            <div class="center-content">
+
+                <div class="logo-container">
+
+                    <img src="/images/logo-guest.png" alt="" />
+
+                </div>
+
+                <div class="margin-left-5 welcome-container">
+
+                    <p class="m-0">Welcome to </p>
+
+                    <p class="welcome-container__sub-title">DELL PJM</p>
+
+                </div>
+
+                <div class="row top-offset-20">
+
+                    <a class="btn btn-primary btn-lg m-auto" style="border-radius:5px; padding: 10px 20px; font-weight: bold;" href="/Home">
+
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp; Login
+
+                    </a>
+
+                </div>
+
+                <div class="row top-offset-20 text-wrap" style="color:white">
+
+                    We use cookies to give you the best possible online experience of
+
+                    our website. If you continue, we'll assume you're happy for your web
+
+                    browser to receive all cookies from our website.
+
+                    <p>See our <span><a href="#" id="cookie-policy"> cookie policy</a> </span>for more information on cookies and how to manage them.<p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="cookie-policy-modal"
+
+         class="modal fade in"
+
+         role="dialog"
+
+         tabindex="-1"
+
+         style="z-index: 999999;padding-left: 17px;">
+
+        <div class="modal-dialog modal-lg modal-policy">
+
+            <div class="modal-content">
+
+                <div class="modal-header margin-bottom-0">
+
+                    <button type="button"
+
+                            class="close"
+
+                            data-dismiss="modal"
+
+                            aria-hidden="true">
+
+                        ×
+
+                    </button>
+
+                    <h3 class="modal-title">COOKIE POLICY</h3>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="row" style="padding: 15px; padding-top:0">
+
+                        <h5 class="">RT's Cookie Policy</h5>
+
+                        <p>
+
+                            This website is owned by Dell Inc. Here is our cookie policy for
+
+                            this site and the types of cookies we use on it.
+
+                        </p>
+
+                        <h5 class="">What are Cookies?</h5>
+
+                        <p>
+
+                            Cookies are small files that websites place on the device you’re
+
+                            using to browse the site. Cookies are commonly used to record
+
+                            some aspect of your visit to a site, such as choices you’ve made
+
+                            or preferences you’ve set during your visit.
+
+                        </p>
+
+                        <h5 class="">How and Why We Use Cookies</h5>
+
+                        <p>
+
+                            We use cookies to give you the best experience when you visit
+
+                            our website. By using cookies, we can make it easier for you to
+
+                            do many things, such as managing your accounts, or login
+
+                            details.
+
+                        </p>
+
+                        <h5 class="">Keeping Your Personal Information Safe</h5>
+
+                        <p>
+
+                            Our cookies do not store personal information such as your name,
+
+                            address, phone number or email in a format that can be read by
+
+                            others. The cookies we use cannot read or search your computer,
+
+                            smartphone or web-enabled device to obtain information about you
+
+                            or your family, or read any material kept on your hard drive.
+
+                        </p>
+
+                        <p>
+
+                            We do use a small number of cookies that store encrypted
+
+                            versions of information where you have asked us to, such as the
+
+                            ‘Remember me’ function that allows us to remember your Account
+
+                            username for subsequent visits. However, this is encrypted so
+
+                            that only RT can read this information. The website that
+
+                            places a cookie owns that cookie. This means only that website
+
+                            and other sites that it has agreed to share information with can
+
+                            read the information stored using a cookie.
+
+                        </p>
+
+                        <h5 class="">Links to Sites Provided by Others</h5>
+
+                        <p>
+
+                            If you follow a link from our website to another website, please
+
+                            be aware that the owner of the other website will have their own
+
+                            privacy and cookie policies for their site. We recommend you
+
+                            read their policies as we are not responsible or liable for what
+
+                            happens at their site.
+
+                        </p>
+
+                        <h5 class="">How to Manage and Switch off Cookies</h5>
+
+                        <p>
+
+                            Your web browser provides settings that allow you to manage or
+
+                            switch off cookies. If you do switch off cookies, remember that
+
+                            you may not be able to use all of the services on our websites.
+
+                            You can find out more about managing and switching off cookies
+
+                            at the independent website:
+
+                            <a href="https://www.allaboutcookies.org">www.allaboutcookies.org</a>
+
+                        </p>
+
+                        <h5 class="">
+
+                            The Types of Cookies We Use on This Site
+
+                        </h5>
+
+                        <h6 class="text-block"><em>Strictly necessary cookies</em></h6>
+
+                        <p>
+
+                            These cookies are essential for our online services and tools to
+
+                            work. They collect or record information that we need to make
+
+                            our site work.
+
+                        </p>
+
+                        <p>Common uses for this type of cookie include:</p>
+
+                        <ul>
+
+                            <li style="list-style: unset;">
+
+                                Allowing users to log in or access private areas of a site.
+
+                            </li>
+
+                        </ul>
+
+                        <p>
+
+                            These cookies only last for a single browsing session – when you
+
+                            leave our site, they are removed.
+
+                        </p>
+
+                        <p>Full details of cookies used</p>
+
+                        <table class="table table-hover table-striped">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th class="">Name of cookie</th>
+
+                                    <th class="">Type of cookie</th>
+
+                                    <th class="">Expiry period</th>
+
+                                    <th class="">Reason for use of cookie</th>
+
+                                    <th class="">Level of tracking</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>ARRAffinity</td>
+
+                                    <td>Session cookie</td>
+
+                                    <td>End of visit</td>
+
+                                    <td>Strictly necessary</td>
+
+                                    <td>None</td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="submit" class="btn btn-default" data-dismiss="modal">
+
+                        <i class="fa fa-close" aria-hidden="true"></i>&nbsp;&nbsp;Close
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="reset-password-modal" class="modal fade" role="dialog" style="z-index: 99999;" data-backdrop="static" data-keyboard="false">
+
+        <div class="modal-dialog dell-modal">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+
+                        ×
+
+                    </button>
+
+                    <h3 class="modal-title">Reset Password</h3>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="col-xs-12">
+
+                        <div class="form-group">
+
+                            <label>Please enter your corporate email to reset the password.</label>
+
+                            <div>
+
+                                <label>Corporate Email: <i class="text-danger">*</i></label>
+
+                                <input type="email" autofocus class="form-control" id="reset-password-corporate-email" name="email" placeholder="corporate email..." onfocusout="guest.validateCorpEmail();">
+
+                                <span class="text-danger " id="email-error" style="display:none;"></span>
+
+                                <lable id="lblSuccessMessage" class="text-success" style="display:none;"></lable>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <a id="send-request-token-button" class="btn btn-primary text-white" onclick="guest.sendRequestedToken();"><i class="fa fa-send" aria-hidden="true"></i>&nbsp;&nbsp;Send</a>
+
+                </div>
+
+            </div>
+
+            <!-- /.modal-content -->
+
+        </div>
+
+        <!-- /.modal-dialog -->
+
+    </div>
+
+    <script>
+
+        $(function () {
+
+            $("#cookie-policy").click(function () {
+
+                $("#cookie-policy-modal").modal("show");
+
+            });
+
+        });
+
+    </script>
+
+    <script src="/js/application/guest/index.js?v=msAARLeTXqKs_OjY0WpGo2mp-jrQ7DuhLLrIuhHSNhY"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+

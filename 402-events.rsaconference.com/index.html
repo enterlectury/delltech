@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <base href="https://events.rsaconference.com/">
+  <script src="https://events.rainfocus.com/pages/rainfocus/global/redirecturls.js"></script>
+  <script type="text/javascript">
+    if (rfEventsRedirectUrls === undefined) {
+      // if the rfEventsRedirectUrls object doesn't exist, populate with the original list. Updates should be made to the JS landing page listed above for future edits.
+      var rfEventsRedirectUrls = {};
+//      rfEventsRedirectUrls['localhost']      = 'http://www.espn.com';
+      rfEventsRedirectUrls['vmware.rainfocus.com']      = 'https://www.vmworld.com';
+      rfEventsRedirectUrls['my.vmworld.com']            = 'https://www.vmworld.com';
+      rfEventsRedirectUrls['vmware-stg.rainfocus.com']  = 'https://www-lt.vmworld.com';
+      rfEventsRedirectUrls['my-stg.vmworld.com']        = 'https://www-lt.vmworld.com';
+      rfEventsRedirectUrls['cisco.rainfocus.com']       = 'http://www.ciscolive.com/global/';
+      rfEventsRedirectUrls['cisco-stg.rainfocus.com']   = 'http://www.ciscolive.com/global/';
+      rfEventsRedirectUrls['oracle.rainfocus.com']      = 'http://www.oracle.com/openworld';
+      rfEventsRedirectUrls['oracle-stg.rainfocus.com']  = 'http://www.oracle.com/openworld';
+      rfEventsRedirectUrls['rsa.rainfocus.com']         = 'https://www.rsaconference.com/';
+      rfEventsRedirectUrls['rsa-stg.rainfocus.com']     = 'https://www.rsaconference.com/';
+      rfEventsRedirectUrls['sage.rainfocus.com']        = 'https://www.sage.com/sage-summit/';
+      rfEventsRedirectUrls['sage-stg.rainfocus.com']    = 'https://www.sage.com/sage-summit/';
+      rfEventsRedirectUrls['samsung.rainfocus.com']     = 'https://www.samsungdevelopers.com/sdc2016';
+      rfEventsRedirectUrls['samsung-stg.rainfocus.com'] = 'https://www.samsungdevelopers.com/sdc2016';
+
+      var redirected = false;
+      var url = document.location.href;
+      for (var domain in rfEventsRedirectUrls) {
+        if (rfEventsRedirectUrls.hasOwnProperty(domain)) {
+          if (url.indexOf(domain) > -1) {
+            redirected = true;
+            document.location.href = rfEventsRedirectUrls[domain];
+          }
+        }
+      }
+      if (!redirected) {
+        document.location.href = 'http://www.rainfocus.com';
+      }
+    }
+  </script>
+</head>
+<body>
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">events.rsaconference.com</span>
+</div>
+<div style="height: 48px;"></div>
+</body>
+</html>

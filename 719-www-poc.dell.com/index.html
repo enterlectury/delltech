@@ -1,0 +1,126 @@
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">www-poc.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+<head>
+  <base href="https://www-poc.dell.com/">
+    <title>DI ErrorPage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: roboto, Arial, Helvetica, sans-serif;
+            width: 100%;
+            height: 100%;
+        }
+
+        .body-wrapper {
+            width: 100%;
+            height: 100%;
+            display: table;
+        }
+
+        .header {
+            padding: 10px;
+            display: table-header-group;
+            height: 80px;
+            color: #fff;
+        }
+
+        .dell-blue-background {
+            background-color: #0085C3;
+            height: 80px;
+        }
+
+        .ltr .padding-left-small {
+            padding-left: 20px;
+        }
+
+        .container {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .icon-ui-header {
+            /* width: 65px; */
+            width: 50px;
+            height: 80px;
+        }
+
+        .icon-brand-dell:before {
+            content: "\e900";
+        }
+
+        .panel-default {
+            padding: 0;
+            margin-bottom: 21px;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .content {
+            margin-left: auto;
+            margin-right: auto;
+            width: 970px;
+            padding: 20px;
+            margin-top: 30px;
+            border: 1px solid rgb(221, 221, 221);
+        }
+    </style>
+    <div class="dell-blue-background">
+    </div>
+    <div class="content">
+        <h2>An error occurred while processing your request.</h2>
+            <p>
+                <strong>Environment:</strong> <code>G2-SR2</code>
+            </p>
+        <p>
+            <strong>Status Code:</strong> <code>400</code>
+        </p>
+
+        <p>
+            <strong>Trace Id:</strong> <code>9dbdb320f82fda6a144775681f3584fc</code>
+        </p>
+
+        <p>
+            <strong>Timestamp:</strong> <code>2026-04-30T16:09:04Z</code>
+        </p>
+
+        <p>
+            <strong>Description:</strong> <code>invalid_request :: SAML2.0 validation failed</code>
+        </p>
+
+    </div>
+    <script>
+        Dell = window.Dell || {};
+        Dell.Metrics = Dell.Metrics || {};
+        Dell.Metrics.sc = Dell.Metrics.sc || {};
+        Dell.Metrics.sc.country = "us";
+        Dell.Metrics.sc.language = "en";
+        Dell.Metrics.sc.segment = "corp";
+        Dell.Metrics.sc.customerset = "19";
+        Dell.Metrics.sc.pagename = "DellIdentity:Error";
+        Dell.Metrics.sc.applicationname = "DellIdentity";
+    </script>
+    
+        <script crossorigin="anonymous"
+                src="//nexus.dell.com/dell/gbxDev/Bootstrap.js"></script>
+    
+
+    
+</head>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <base href="https://developer.dell.com/">
+    <meta charset="utf-8"/>
+    <title>Dell Technologies Developer</title>
+    <base href="/"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="preconnect" href="https://cdn-prod.scdn6.secure.raxcdn.com"/>
+
+    <script>
+      Dell = window.Dell || {};
+      Dell.Metrics = Dell.Metrics || {};
+      Dell.Metrics.sc = Dell.Metrics.sc || {};
+      Dell.Metrics.sc.country = 'US';
+      Dell.Metrics.sc.language = 'en-US';
+      Dell.Metrics.sc.segment = 'corp';
+      Dell.Metrics.sc.customerset = '';
+      Dell.Metrics.sc.cms = 'ddh';
+      Dell.Metrics.sc.applicationname = 'Dell Developer Hub';
+      Dell.Metrics.sc.pagename = 'us|en|corp|ddh';
+      Dell.Metrics.sc.badgeid = '';
+
+      document.addEventListener(
+        'updateDellMetrics',
+        function (event) {
+          for (var key in event.properties) {
+            if (properties.hasOwnProperty(key)) {
+              Dell.Metrics.sc[key] = event.properties[key];
+            }
+          }
+        },
+        false
+      );
+    </script>
+  <link rel="stylesheet" href="ddh-styles.css"></head>
+  <body>
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">developer.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+    <app-root></app-root>
+
+    <footer class="analytics-footer"></footer>
+    <script src="https://nexus.dell.com/dell/external/Bootstrap.js" type="text/javascript"></script>
+  <script src="ddh-polyfills.js" type="module"></script><script src="ddh-main.js" type="module"></script></body>
+</html>

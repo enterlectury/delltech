@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="https://snppoprocess-dit.dell.com/">
+  <meta charset="utf-8">
+  <title>DI Gateway</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="stylesheet" crossorigin href="https://dds.dell.com/components/2.46.2/css/dds-reboot.min.css" />
+  <link rel="stylesheet" crossorigin href="https://dds.dell.com/components/2.46.2/css/dds-fonts.min.css" />
+  <link rel="stylesheet" crossorigin href="https://dds.dell.com/components/2.46.2/css/dds-icons.min.css" />
+  <link rel="stylesheet" crossorigin href="https://dds.dell.com/components/2.46.2/css/dds-helpers.min.css" />
+  <link rel="stylesheet" crossorigin href="https://dds.dell.com/components/2.46.2/css/dds-main.min.css" />
+
+  <style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#header-container {
+  flex-shrink: 0;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+#footer-container {
+  flex-shrink: 0;
+}
+
+</style>
+
+
+<script >bazadebezolkohpepadr="130462952"</script><script type="text/javascript" src="https://snppoprocess-dit.dell.com/akam/13/7c6b46d"  defer></script></head>
+
+
+<body>
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">snppoprocess-dit.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+<div class="page-wrapper">
+  <div id="header-container" class="header-container"></div>
+
+  <main class="dds__bg-white dds__p-xxl">
+    <div class="dds__container dds__container--md">
+      <h1 class="dds__display-02 dds__m-b-md">Unauthorized Access</h1>
+      <p class="dds__body-02">
+       You're not authorized to access this resource. If you need access, contact your administrator for help.
+        <em>(Error 401)</em>
+      </p>
+      <div class="dds__m-t-lg">
+        <span class="dds__body-01">Go to</span>
+        <a href="https://www.dell.com" class="dds__link dds__m-l-xs">Dell.com</a>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-container" class="footer-container"></div>
+</div>
+
+
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      // Load Header
+      fetch('https://www.dell.com/csbapi/masthead/masthead/minimal/stp/us/en/bsd/04')
+        .then(response => {
+          console.log("received header response");
+          if (!response.ok) throw new Error('Failed to fetch header content');
+          return response.text();
+        })
+        .then(html => {
+          document.getElementById('header-container').innerHTML = html;
+          const style = document.createElement('style');
+          style.textContent = `
+            .UMH {
+              border-bottom: 0px solid #d2d2d2 !important;
+            }
+          `;
+          document.head.appendChild(style);
+        })
+        .catch(error => console.error('Error loading header:', error));
+  
+      // Load Footer
+      fetch('https://www.dell.com/csbapi/masthead/unifiedfooter/stp/us/en/bsd/04?minimal=true&onlyfooter=true&birdseed=false&contextualfooter=false&siteswitcher=false')
+        .then(response => {
+          console.log("received footer response");
+          if (!response.ok) throw new Error('Failed to fetch footer content');
+          return response.text();
+        })
+        .then(html => {
+          document.getElementById('footer-container').innerHTML = html;
+          const style = document.createElement('style');
+          style.textContent = `
+            footer {
+              border-top: 0px solid #d2d2d2 !important;
+            }
+            footer#mh-unified-footer > nav.ft-legal-links-section {
+              padding-top: 8px !important;
+              padding-bottom: 1px !important;
+            }
+          `;
+          document.head.appendChild(style);
+        })
+        .catch(error => console.error('Error loading footer:', error));
+    });
+  </script>
+  
+<noscript><img src="https://snppoprocess-dit.dell.com/akam/13/pixel_7c6b46d?a=dD00NTU0NDczMzI2ZDE2MTVjMWE2MDUxOWVjNTMxOGFjYWRjZmFlMmZhJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+
+</html>

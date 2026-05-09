@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="https://de.staging-auoutlet.dell.com/">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title> Dell.com </title>
+	<meta name="robots" content="NOINDEX,NOFOLLOW">
+	<!-- add icon link -->
+	<link rel="icon" href="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/dell_logo_2020_40px.png.mst.png" type="image/x-icon">
+	<style>
+		.chat_section {
+			position: fixed;
+			top: 40%;
+			z-index: 5;
+			right: 0;
+			padding: 0;
+			-webkit-box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 30%);
+			box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 30%);
+		}
+	
+		.chat-header {
+			position: absolute;
+			left: 0;
+			top: -1px;
+			background: #007db8;
+			-webkit-transform: rotate(90deg);
+			transform: rotate(90deg);
+			-webkit-transform-origin: top left;
+			transform-origin: top left;
+			padding: 0 15px;
+			line-height: 28px;
+			-webkit-box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 30%);
+			box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 30%);
+			z-index: -1;
+			right: inherit;
+			font-size: 14px;
+			font-weight: normal;
+			width: 170px;
+			height: 28px;
+			text-align: center;
+			color: #ffffff;
+			border-radius: 0;
+		}
+	
+		.chat-to-buy {
+			color: white;
+			cursor: pointer;
+		}
+	
+		.image-content {
+			position: absolute;
+			top: 216px;
+			left: 43px;
+			font-size: 14px;
+			font-family: roboto, Arial, Helvetica, sans-serif;
+		}
+	
+		.center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			bottom: 20px;
+		}
+	
+		.topnav p {
+			position: relative;
+			text-align: center;
+			bottom: 20px;
+			font-size: 14px;
+			left: 20px;
+			font-family: 'Roboto', sans-serif;
+		}
+	
+		.header img {
+			float: left;
+			width: 50px;
+			height: 50px;
+			margin: 0px 9px;
+		}
+	
+		.banner img {
+			width: 100%;
+		}
+	
+		ul.chat-buy li {
+			list-style-type: none;
+			display: inline-block;
+		}
+	
+		.header h1 {
+			position: relative;
+			top: 18px;
+			left: 10px;
+			text-align: center;
+			font-size: 18px;
+			margin: 10px 0;
+			color: #444;
+			line-height: normal;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 300;
+		}
+	
+	
+		/* Add a black background color to the top navigation */
+	
+		.topnav {
+			position: relative;
+			text-align: center;
+		}
+	
+	
+		/* Style the links inside the navigation bar */
+	
+		.topnav a {
+			float: left;
+			color: #444;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+			font-size: 14px;
+			font-weight: 400;
+			font-family: roboto, Arial, Helvetica, sans-serif;
+			line-height: 1.15;
+			text-transform: none;
+		}
+	
+	
+		/* Change the color of links on hover */
+	
+		.topnav a:hover {
+			background-color: none;
+			color: black;
+		}
+	
+		.text-center {
+			text-align: center;
+		}
+	
+		.page-footer .footer-content-top ul li {
+			display: inline-block;
+			margin: 0 13px 0 0;
+			padding: 3px 0 0;
+			line-height: normal;
+		}
+	
+		.text-center {
+			text-align: center;
+		}
+	
+		.page-footer .footer-content-top {
+			border-top: 1px solid rgba(0, 0, 0, .2);
+			padding: 12px 10px;
+		}
+	
+		.page-footer .container {
+			margin: 0 auto;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	
+		.page-footer .newsletter-title {
+			font-size: 12px;
+			text-transform: uppercase;
+			margin-bottom: 25px;
+			color: #fff;
+		}
+	
+		#footer-content-5 {
+			display: flex;
+			align-items: center;
+			top: 18px;
+			position: relative;
+		}
+	
+		.page-footer .footer-content-top .col-md-4 #footer-content-5 .select {
+			width: 110px;
+			height: 20px;
+		}
+	
+		.page-footer #footer-content-5>div {
+			display: inline-block;
+		}
+	
+		.page-footer .newsletter.footer-box .select {
+			position: relative;
+			height: 38px;
+			background: 0 0;
+			box-shadow: none;
+		}
+	
+		.page-footer .footer-content-top .col-md-4 #footer-content-5 .select select {
+			border: none;
+			color: #444;
+			font-family: roboto, Arial, Helvetica, sans-serif;
+			width: auto;
+			padding-left: inherit;
+		}
+	
+		.page-footer .newsletter.footer-box .select:before {
+			width: 30px;
+			position: absolute;
+			top: 1px;
+			right: 1px;
+			bottom: 1px;
+			background: 0 0;
+			content: '';
+			pointer-events: none;
+		}
+	
+		.page-footer .newsletter.footer-box .select:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			width: 0;
+			height: 0;
+			right: 10px;
+			bottom: 0;
+			margin: auto;
+			border-style: solid;
+			border-width: 5px 5px 0;
+			border-color: #fff transparent transparent;
+			pointer-events: none;
+		}
+	
+		.page-footer .newsletter.footer-box .select select {
+			font-size: 14px;
+			border: none;
+			box-shadow: none;
+			border-radius: 0;
+			background: 0 0;
+			height: 100%;
+			width: 100%;
+			color: #fff;
+			cursor: pointer;
+			outline: none;
+			padding-top: 1px;
+			padding-right: 35px;
+			padding-left: 15px;
+			border: 1px solid #fff;
+			border-radius: 4px;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			-o-border-radius: 4px;
+			-ms-border-radius: 4px;
+			-moz-appearance: none;
+			-webkit-appearance: none;
+		}
+	
+		.img-responsive {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	
+		.page-footer .bottom-links {
+			padding: 0;
+			list-style: none;
+			margin: 0;
+			display: inline-block;
+		}
+	
+		strong.footer-text {
+			font-size: 11px;
+			padding: 2px 6px;
+			color: #fff;
+			font-family: roboto, Arial, Helvetica, sans-serif;
+		}
+	
+		p.footer-text-content {
+			font-size: 11px;
+			padding: 2px 6px;
+			color: #fff;
+			font-family: roboto, Arial, Helvetica, sans-serif;
+		}
+	
+	
+		/***Footer Section***/
+	
+		.page-footer {
+			background: #eee;
+		}
+	
+		@media (min-width: 1200px) {
+			.page-footer .container {
+				width: 1170px !important;
+			}
+		}
+	
+		.page-footer .footer-content-top {
+			border-top: 1px solid rgba(0, 0, 0, 0.2);
+			padding: 12px 10px;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-content-top {
+				padding: 0;
+			}
+	
+			.topnav a {
+				font-size: 42px;
+			}
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-content-top .container {
+				padding: 0;
+			}
+		}
+	
+		.page-footer .footer-content-top ul {
+			float: left;
+			padding: 0;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-content-top ul {
+				width: 100%;
+				text-align: left;
+			}
+		}
+	
+		.page-footer .footer-content-top ul li {
+			display: inline-block;
+			margin: 0 13px 0 0;
+			padding: 3px 0 0;
+			line-height: normal;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-content-top ul li {
+				margin: 0;
+				padding: 12px 20px;
+				border-bottom: 1px solid #aaa;
+				display: block;
+			}
+		}
+	
+		.page-footer .footer-content-top ul li a {
+			font-family: roboto, Arial, Helvetica, sans-serif;
+			color: #444;
+			font-size: 14px;
+			text-decoration: none;
+		}
+	
+		.page-footer .footer-content-top ul li a:hover {
+			color: #00447c;
+		}
+	
+		.page-footer .footer-content-top .col-md-4 {
+			padding-left: 0;
+			padding-right: 0;
+			float: right;
+			width: auto;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-content-top .col-md-4 {
+				float: left;
+			}
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-content-top .col-md-4 .newsletter {
+				padding: 12px 0px;
+			}
+		}
+	
+		.page-footer .footer-content-top .col-md-4 .newsletter p.h5 {
+			display: none;
+		}
+	
+		.page-footer .footer-content-top .col-md-4 #footer-content-5 img {
+			padding-left: 0;
+		}
+	
+		.page-footer .footer-content-top .col-md-4 #footer-content-5 .select {
+			width: 110px;
+			height: 20px;
+		}
+	
+		.page-footer .footer-content-top .col-md-4 #footer-content-5 .select:after {
+			border-color: #444 transparent transparent transparent;
+		}
+	
+		.page-footer .footer-content-top .col-md-4 #footer-content-5 .select select {
+			border: none;
+			color: #444;
+			font-family: roboto, Arial, Helvetica, sans-serif;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-content-top .col-md-4 #footer-content-5 .select select {
+				padding-left: 20px;
+			}
+		}
+	
+		.page-footer .footer-bottom {
+			background: #444;
+			padding: 12px 10px;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-bottom {
+				padding: 0;
+			}
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-bottom .container {
+				padding: 0;
+			}
+		}
+	
+		.page-footer .footer-bottom ul {
+			line-height: normal;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-bottom ul {
+				width: 100%;
+				text-align: left;
+			}
+		}
+	
+		.page-footer .footer-bottom ul li {
+			display: inline-block;
+			margin: 0 2px 0 0;
+			line-height: normal;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-bottom ul li {
+				padding: 12px 20px;
+				margin: 0;
+				border-bottom: 1px solid #5eb0d7;
+				display: block;
+			}
+		}
+	
+		.page-footer .footer-bottom ul li a {
+			font-size: 11px;
+			padding: 2px 6px;
+			color: #fff;
+			font-family: roboto, Arial, Helvetica, sans-serif;
+			text-decoration: none;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-bottom ul li a {
+				font-size: 14px;
+				padding: 0;
+			}
+		}
+	
+		@media screen and (max-width: 767px) {
+			.topnav a {
+				font-size: 14px;
+				float: left;
+				display: flex;
+			}
+	
+			.header h1 p {
+				display: inline-block;
+				position: relative;
+				bottom: 36px;
+			}
+	
+			.topnav {
+				position: relative;
+				bottom: 16px;
+				width: 100%;
+				right: 36px;
+			}
+	
+			.page-footer .footer-content-top,
+			.page-footer .footer-bottom {
+				width: 100%;
+				float: left;
+			}
+	
+			.center {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				position: relative;
+				left: 20px;
+				text-align: center;
+			}
+		}
+	
+		.columns a:hover {
+			text-decoration: none;
+		}
+	
+		.hpg-cat-label a {
+			color: #444 !important;
+			text-decoration: none;
+		}
+	
+		.hpg-hero-section {
+			position: relative;
+		}
+	
+		.hpg-hero-section .hpg-card-text {
+			position: absolute;
+			width: 100vw;
+			top: 106px;
+			top: 0;
+			bottom: 0;
+			height: calc(100% - 106px);
+			height: 100%;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+	
+		.hpg-hero-section .hpg-card-text[data-theme=dark]>div {
+			color: #eee !important;
+		}
+	
+		.hpg-hero-section .hpg-card-text[data-theme=light]>div {
+			color: #444 !important;
+		}
+	
+		.hpg-hero-section .hpg-card-copy-title {
+			font-size: 15px;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+	
+		.hpg-hero-section .hpg-card-copy-headline {
+			font-size: 29px;
+			color: #00447d;
+			text-align: center;
+			position: relative;
+			right: 10px;
+		}
+	
+		.hpg-hero-section .hpg-card-copy-promotext {
+			font-size: 16px;
+			text-align: center;
+			margin: 24px 30px 0;
+			font-family: roboto;
+		}
+	
+		.hpg-hero-section .hpg-card-copy-cta-holder {
+			margin-top: 20px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+		}
+	
+		.hpg-hero-section .hpg-card-text .hpg-card-inner-div {
+			width: 50%;
+			/* text-align: center;*/
+		}
+	
+		:root {
+			--tabletMastheadHeight: 60px;
+			--desktopMastheadHeight: 106px;
+			--mobileMastheadHeight: 128px;
+		}
+	
+		.hpg-hero-section .hpg-card-text .hpg-card-inner-div .hpg-card-copy .hpg-card-copy-cta-holder .hpg-card-copy-cta {
+			border-style: solid;
+			border-width: 1px;
+			padding: 5px 15px;
+			margin: 18px 5px;
+			text-decoration: none;
+		}
+	
+		.hpg-hero-section .hpg-card-copy-cta-holder[data-hover-theme]>a {
+			border-color: #3485c2;
+			color: #3485c2;
+		}
+	
+		.hpg-hero-section .hpg-card-copy-cta-holder[data-hover-theme=dark]>a {
+			color: #eee !important;
+			border-color: #eee !important;
+		}
+	
+		@media only screen and (max-width:767px) {
+			.hpg-hero-section .hpg-card-text {
+				height: 50%;
+				display: flex;
+				-webkit-box-align: center;
+				align-items: center;
+				right: 0;
+				left: 0;
+			}
+	
+			.hpg-hero-section .hpg-card-text .hpg-card-inner-div .hpg-card-copy .hpg-card-copy-cta-holder .hpg-card-copy-cta {
+				border-style: solid;
+				border-width: 1px;
+				padding: 5px 15px;
+				margin: 10px 5px;
+				text-decoration: none;
+			}
+	
+			.hpg-hero-section .hpg-card-copy-promotext {
+				text-align: center;
+				margin: 8px 22px 0;
+			}
+	
+			.hpg-hero-section .hpg-card-copy-title {
+				font-size: 14px;
+			}
+	
+			.hpg-hero-section .hpg-card-copy-headline {
+				font-size: 20px;
+				text-align: center;
+			}
+	
+			.hpg-hero-section .hpg-card-copy-promotext {
+				font-size: 16px;
+			}
+	
+			.hpg-hero-section .hpg-card-copy-cta-holder .hpg-card-copy-cta {
+				padding-left: 12px;
+				padding-right: 12px;
+			}
+	
+			.hpg-hero-section .hpg-mobile-container {
+				height: auto;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+			}
+	
+			.hpg-hero-section .hpg-mobile-container .hpg-card-text[data-placement] {
+				top: 0;
+			}
+	
+			.hpg-hero-section .hpg-card-text .hpg-card-inner-div {
+				width: 100%;
+			}
+	
+			.hpg-hero-section .hpg-mobile-container .hpg-card-text[data-placement] {
+				top: 0;
+			}
+	
+			.hpg-hero-section .hpg-card-text .hpg-card-inner-div .hpg-card-copy {
+				margin: 0;
+				width: 100%;
+			}
+	
+			.hpg-hero-section .hpg-mobile-container .hpg-card-text[data-placement=bottom] {
+				top: 48%;
+			}
+	
+			.hpg-hero-section .hpg-card-text {
+				height: 50%;
+				display: flex;
+				-webkit-box-align: center;
+				align-items: center;
+				right: 0;
+				left: 0;
+			}
+		}
+	
+		@media (min-width: 767px) {
+			html[lang=de] .hpg-hero-section .hpg-card-text .hpg-card-inner-div {
+				width: 40%;
+			}
+		}
+	</style>
+</head>
+<body>
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">de.staging-auoutlet.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+	<a href="https://www.dell.com/de-de" style="
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: flex;
+	margin-left: 12px;
+"> <img src="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/dell_logo_2020_40px.png.mst.png" alt="logo"> </a>
+	<div class="hpg-hero-section">
+		<div>
+			<picture>
+				<source srcset="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/1035_DE_Splitter_FY23Q4_wk10_2400x696.jpg"
+					data-mst-lazy-srcset="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/1035_DE_Splitter_FY23Q4_wk10_2400x696.jpg" media="(min-width: 768px)">
+				<noscript>
+					<source srcset="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/1035_DE_Splitter_FY23Q4_wk10_2400x696.jpg" media="(min-width: 768px)">
+				</noscript>
+				<source srcset="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/1035_DE_Splitter_FY23Q4_wk10_1200x1660_1_.jpg"
+					data-mst-lazy-srcset="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/1035_DE_Splitter_FY23Q4_wk10_1200x1660_1_.jpg"
+					media="(max-width: 767px)">
+				<noscript>
+					<source srcset="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/1035_DE_Splitter_FY23Q4_wk10_1200x1660_1_.jpg" media="(max-width: 767px)">
+				</noscript> <img src="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/1035_DE_Splitter_FY23Q4_wk10_2400x696.jpg"
+					data-mst-lazy-src="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/1035_DE_Splitter_FY23Q4_wk10_2400x696.jpg" alt="SALE" style="width: 100%;"
+					class=" lazyloaded">
+				<noscript><img src="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/1035_DE_Splitter_FY23Q4_wk10_2400x696.jpg" alt="SALE"></noscript>
+			</picture>
+		</div>
+		<div class="hpg-mobile-container">
+			<div class="hpg-card-text" data-theme="light" data-placement="bottom" data-text-placement="left">
+				<div class="hpg-card-inner-div">
+					<div class="hpg-card-copy">
+						<div class="hpg-card-copy-promotext" style="color: #444;">Danke fÃ¼r Ihr Interesse an Dell
+							Outlet-Produkten.</div>
+						<div class="hpg-card-copy-promotext style=" color:#444;">Leider kÃ¶nnen wir auf Dell.com in
+							Deutschland keine generalÃ¼berholten Produkte mehr anbieten.</div>
+						<div class="hpg-card-copy-promotext" style="color:#444;">Bitte nutzen Sie die unten stehenden
+							Kategorien, um vielfÃ¤ltige Produkte von Dell zu erkunden.</div>
+						<div class="hpg-card-copy-cta-holder hpg-card-content-cta-holder" data-hover-theme="light"
+							style="margin-top: 15px; color:#ba2758;"><a style="margin-left:0px;"
+								class="hpg-card-copy-cta hpg-card-content-cta"
+								href="https://www.dell.com/de-de/shop/deals">Exklusive Angebote</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="navigation-class">
+		<div class="navigation-class">
+			<div class="topnav">
+				<ul class="chat-buy">
+					<ul class="chat-buy">
+						<li>
+							<a id="sfdc_link" class="chat_link sfdc_link" href="#" rel="noopener"
+								style="pointer-events: auto; cursor: pointer;">
+								<picture> <img class=""
+										style="max-width: 20px; height: auto; display: inline-block; vertical-align: top;"
+										src="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/1145_Global_Ameexchatdrawericon_20x20_1.jpg"> </picture> <span style="color: #007db8;">Chat mit dem Vertrieb</span> Mo - Fr: 8:30 - 17:30, Sa: 11:00 - 19:00
+							</a>
+						</li>
+						<li>
+							<a class="chat_link" href="tel:08001203355" target="_blank" rel="noopener">
+								<picture> <img class=""
+										style="max-width: 20px; height: auto; display: inline-block; vertical-align: top;"
+										src="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/1145_Global_Ameexchatdrawericon_20x20_2.jpg"> </picture>
+										<span style="color: #007db8;">Anruf beim Vertrieb: 0800 270 33 55</span> GebÃ¼hrenfrei, Mo - Fr: 9:00 - 17:30
+							</a>
+						</li>
+					</ul>
+			</div>
+		</div>
+		<footer class="page-footer">
+			<div class="footer-style-08 text-center">
+				<div class="footer-content-top" style="margin-bottom: 33px;">
+					<div class="container">
+						<ul>
+							<li data-testid="footer-row2-links"><a class=""
+									href="https://www.delltechnologies.com/partner/de-de/partner/partner.htm?~ck=mn">Partnerprogramm</a>
+							</li>
+							<li data-testid="footer-row1-links"><a class=""
+									href="https://www.dell.com/learn/de/de/decorp1/about-dell">Unternehmensinformationen</a>
+							</li>
+							<li data-testid="footer-row1-links"><a class=""
+									href="https://corporate.delltechnologies.com/de-de/social-impact.htm">Unternehmerische
+									Verantwortung</a></li>
+							<li data-testid="footer-row1-links"><a class=""
+									href="https://www.delltechnologies.com/de-de/what-we-do/customer-engagement-programs/index.htm">Fokus
+									Kunde</a></li>
+							<li data-testid="footer-row1-links"><a class=""
+									href="https://karriere.dell.com/?~ck=mn">Karriere</a></li>
+							<li data-testid="footer-row1-links"><a class=""
+									href="https://www.dell.com/learn/de/de/decorp1/about-dell-newsroom?s=corp">Aktuelles
+									und
+									Presse</a></li>
+							<li data-testid="footer-row1-links"><a class=""
+									href="https://www.delltechnologies.com/de-de/index.htm?~ck=mn">Dell Technologies</a>
+							</li>
+						</ul>
+						<div class="col-md-4 col-sm-5">
+							<div class="newsletter footer-box">
+								<p class="newsletter-title h5">Land auswÃ¤hlen</p>
+								<div id="footer-content-5" class="classfooter">
+									<div class="select">
+										<select onChange="window.location.href=this.value" id="footer-country"
+											aria-label="select country">
+											<option value=" " title="de">Deutschland</option>
+											<option value="https://www.dell.com/en-nz/outlet?cyid=2" title="nz">
+												Neuseeland </option>
+											<option value="https://www.dell.com/en-sg/outlet?cyid=3" title="sg">Singapur
+											</option>
+											<option value="https://www.dell.com/en-my/outlet?cyid=4" title="my">Malaysia
+											</option>
+											<option value="https://www.dell.com/ja-jp/outlet?cyid=5" title="jp">Japan
+											</option>
+											<option value="https://www.dell.com/pt-br/outlet?cyid=6" title="br">
+												Brasilien </option>
+											<option value="https://www.dell.com/en-ie/outlet?cyid=7" title="ie">Irland
+											</option>
+											<option value="https://www.dell.com/fr-fr/outlet?cyid=8" title="fr">
+												Frankreich </option>
+											<option value="https://www.dell.com/en-au/outlet?cyid=9" title="au">
+												Australien </option>
+											<option
+												value="https://www1.la.dell.com/content/default.aspx?c=mx&amp;l=es&amp;s=gen&amp;~ck=cr"
+												title="mx">Mexiko</option>
+											<option value="https://www.dell.com/learn/us/en/22/campaigns/outlet?cyid=8"
+												title="us">USA</option>
+											<option value="https://www.dell.com/learn/uk/en/ukdfh1/campaigns/splitter"
+												title="gb">Vereinigtes KÃ¶nigreich</option>
+										</select>
+									</div>
+									<div>
+										<picture>
+											<source srcset="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/437_DE_Footericon_FY23Q2_100x100.png"
+												data-mst-lazy-srcset="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/437_DE_Footericon_FY23Q2_100x100.png"
+												type="image/webp" data-mst-class="img-responsive">
+											<noscript>
+												<source srcset="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/437_DE_Footericon_FY23Q2_100x100.png"
+													type="image/webp" data-mst-class="img-responsive" />
+											</noscript><img id="footerflag" class="img-responsive lazyloaded"
+												src="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/437_DE_Footericon_FY23Q2_100x100.png"
+												data-mst-lazy-src="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/437_DE_Footericon_FY23Q2_100x100.png"
+												alt="german flag" width="20" height="20">
+											<noscript><img id="footerflag" class="img-responsive"
+													src="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/437_DE_Footericon_FY23Q2_100x100.png" alt="german flag"
+													width="20" height="20"></noscript>
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="footer-refurbished">
+							<ul class="bottom-links">
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://www.dell.com/learn/de/de/decorp1/site-terms-of-use-copyright">Â©
+										2023
+										Dell</a></li>
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://www.dell.com/learn/de/de/decorp1/policies-ads-and-emails">Anzeigen
+										und
+										E-Mails</a></li>
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://www.dell.com/learn/de/de/decorp1/policies-privacy">Datenschutzhinweis</a>
+								</li>
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://www.dell.com/learn/de/de/decorp1/terms">Rechtliches und
+										Compliance</a> </li>
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://www.dell.com/learn/de/de/decorp1/terms-of-sale">Verkaufsbedingungen</a>
+								</li>
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://www.dell.com/learn/de/de/decorp1/legal-notices">Impressum /
+										Anbieterkennzeichnung Â§ 5 TMG</a></li>
+								<li data-testid="footer-row1-links"><a class=""
+										href="https://www.dell.com/support/home/de-de?app=community&amp;~ck=mn&amp;lwp=rt">Die
+										Dell EMC Community</a></li>
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://www.delltechnologies.com/de-de/events/index.htm#/upcoming/Country:de">Veranstaltungen</a>
+								</li>
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://corporate.delltechnologies.com/de-de/social-impact/advancing-sustainability/how-to-recycle.htm">Dell
+										Recycling</a></li>
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://www.dell.com/learn/de/de/decorp1/terms-of-sale?ref=footer">GeschÃ¤ftsbedingungen</a>
+								</li>
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://www.dell.com/support/incidents-online/de/de/dedhs1/email/unresolved">Nicht
+										behobene Probleme</a></li>
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://www.dell.com/learn/de/de/decorp1/policies-privacy?ref=footer">Datenschutz</a>
+								</li>
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://www.dell.com/support/contents/de-de/category/Contact-Information?~ck=mn">Kontakte</a>
+								</li>
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://www.dell.de/sitemap">Wegweiser</a></li>
+								<li data-testid="footer-row2-links"><a class=""
+										href="/de-de/outlet/dell-outlet-gutscheinbedingungen">Dell Outlet
+										Gutscheinbedingungen</a></li>
+							</ul>
+						</div>
+						<br><strong class="footer-text">GeschÃ¤ftsbedingungen fÃ¼r die generalÃ¼berholte Systeme</strong>
+						<br>
+						<p class="footer-text-content">Zertifizierte Ã¼berholte Produkte sind zuvor geÃ¶ffnete/verwendete
+							Produkte. Diese Produkte werden einem strengen Ãberholungsprozess unterworfen, um eine hohe
+							QualitÃ¤t und eine hohe Leistung zu erreichen. Ãberholte Produkte weisen unter UmstÃ¤nden
+							sichtbare optische MÃ¤ngel auf, die keine Auswirkungen auf die Leistung haben. Alle
+							Ã¼berholten Produkte umfassen eine standardmÃ¤Ãige begrenzte GewÃ¤hrleistung von einem Jahr.
+							Preise und Spezifikationen sind zum Datum der VerÃ¶ffentlichung korrekt, kÃ¶nnen jedoch ohne
+							vorherige AnkÃ¼ndigung geÃ¤ndert werden. Dell kann nicht dafÃ¼r garantieren, dass die
+							aufgelisteten Angebote und Preise verfÃ¼gbar sind.</p>
+						<p class="footer-text-content">Fehler: Auch wenn wir bestrebt sind, Preisfehler und andere
+							Fehler zu vermeiden, kommt es hin und wieder zu Fehlern und Dell behÃ¤lt sich das Recht vor,
+							Bestellungen, die aus solchen Fehlern hervorgehen, abzulehnen.</p>
+						<p class="footer-text-content">Alle Systeme sind nur begrenzt verfÃ¼gbar. Die Produkte werden
+							nach dem Prinzip 'Wer zuerst kommt, mahlt zuerst' verkauft. Das oben abgebildete Produkt
+							dient nur zu Illustrationszwecken. Der Inhalt ist nur fÃ¼r deutsche Kunden und Benutzer
+							bestimmt.</p>
+						<p class="footer-text-content">Service vor Ort: Techniker, Ersatzteile oder Einheiten (je nach
+							Servicevertrag) werden nach einer telefonischen Problembehandlung bei Bedarf bereitgestellt.
+							Dies ist abhÃ¤ngig von der TeileverfÃ¼gbarkeit, geografischen EinschrÃ¤nkungen (Service vor
+							Ort/am nÃ¤chsten Arbeitstag sind in manchen Regionen nicht verfÃ¼gbar) und den Bedingungen der
+							ServicevertrÃ¤ge. Servicezeiten hÃ¤ngen von der Uhrzeit des Anrufs bei Dell ab. Ersatzteile
+							sind unter UmstÃ¤nden Ã¼berholte Teile.</p>
+						<p class="footer-text-content">Marken: Ultrabook, Celeron, Celeron Inside, Core Inside, Intel,
+							das Intel Logo, Intel Atom, Intel Atom Inside, Intel Core, Intel Inside, das Intel
+							Inside-Logo, Intel vPro, Itanium, Itanium Inside, Pentium, Pentium Inside, vPro Inside,
+							Xeon, Xeon Phi und Xeon Inside sind Marken von Intel Corporation in den USA und/oder anderen
+							LÃ¤ndern.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script>
+			function starttSfdcChat() {
+				var ua = window.navigator.userAgent;
+				if (ua.indexOf("Trident/7.0") > -1) {
+					alert('Chat wird im IE nicht unterstÃ¼tzt');
+				} else {
+					starttChat();
+				}
+			}
+
+			function gettCookie(name) {
+				var cookieArr = document.cookie.split(";");
+				for (var i = 0; i < cookieArr.length; i++) {
+					var cookiePair = cookieArr[i].split("=");
+					if (name == cookiePair[0].trim()) {
+						return decodeURIComponent(cookiePair[1]);
+					}
+				}
+				return false;
+			}
+			async function loaddScript(src) {
+				return new Promise(function (resolve, reject) {
+					var s;
+					s = document.createElement("script");
+					s.src = src + "?v=" + Date.now();
+					s.onload = resolve;
+					s.onerror = reject;
+					s.defer = true;
+					document.head.appendChild(s);
+				});
+			}
+			async function starttChat() {
+				var snapInObject = {
+					name: "",
+					emailAddress: "",
+					languageCode: "de",
+					countryCode: "de",
+					sourceSite: "https://www.dell.com/de-de/outlet"
+				};
+				await loaddScript("https://dcsf.my.salesforce-sites.com/liveAgentSetupFlow/resource/DellOutletEmbeddedsvc/DellOutletEmbeddedsvc/DellOutletEmbeddedsvc.js");
+				triggerSnapin(snapInObject);
+				if (sessionStorage.getItem("SFDC__chat__session__started") == 1 || gettCookie("SFDC__chat__session__started") == 1) {
+					window.onload = starttChat();
+				}
+			}
+			window.addEventListener('onChatRequestSuccess', e => {
+				console.log("addEventListener", e),
+					sessionStorage.setItem("SFDC__chat__session__started", 1),
+					document.cookie = "SFDC__chat__session__started = 1",
+					dellmetrics_trackvalue = 'onChatRequestSuccess',
+					document.getElementById("sfdc_link").style.pointerEvents = "none",
+					document.getElementById("sfdc_link").style.cursor = "default";
+			});
+			window.addEventListener('afterDestroy', e => {
+				console.log("addEventListener", e), dellmetrics_trackvalue = 'afterDestroy',
+					document.cookie = "SFDC__chat__session__started=; expires=Thu, 01 Jan 1970 00:00:00 UTC;",
+					sessionStorage.removeItem('SFDC__chat__session__started'),
+					document.getElementById("sfdc_link").style.pointerEvents = "auto",
+					document.getElementById("sfdc_link").style.cursor = "pointer";
+			});
+			window.addEventListener('onChatEndedByChasitor', e => {
+				console.log("addEventListener", e), dellmetrics_trackvalue = 'onChatEndedByChasitor',
+					document.cookie = "SFDC__chat__session__started=; expires=Thu, 01 Jan 1970 00:00:00 UTC;",
+					sessionStorage.removeItem('SFDC__chat__session__started'),
+					document.getElementById("sfdc_link").style.pointerEvents = "auto",
+					document.getElementById("sfdc_link").style.cursor = "pointer";
+			});
+			window.addEventListener('onChatEndedByAgent', e => {
+				console.log("addEventListener", e), dellmetrics_trackvalue = 'onChatEndedByAgent',
+					document.cookie = "SFDC__chat__session__started=; expires=Thu, 01 Jan 1970 00:00:00 UTC;",
+					sessionStorage.removeItem('SFDC__chat__session__started'),
+					document.getElementById("sfdc_link").style.pointerEvents = "auto",
+					document.getElementById("sfdc_link").style.cursor = "pointer";
+			});
+			window.addEventListener('onChatEndedByChatbot', e => {
+				console.log("addEventListener", e), dellmetrics_trackvalue = 'onChatEndedByChatbot',
+					document.cookie = "SFDC__chat__session__started=; expires=Thu, 01 Jan 1970 00:00:00 UTC;",
+					sessionStorage.removeItem('SFDC__chat__session__started')
+			});
+			window.addEventListener('afterMaximize', e => {
+				console.log("addEventListener", e), sessionStorage.setItem('ChatMaximized', true),
+					document.getElementById("sfdc_link").style.pointerEvents = "none",
+					document.getElementById("sfdc_link").style.cursor = "default";
+			});
+			window.addEventListener('afterMinimize', e => {
+				console.log("addEventListener", e), sessionStorage.setItem('ChatMinimized', true),
+					document.getElementById("sfdc_link").style.pointerEvents = "none",
+					document.getElementById("sfdc_link").style.cursor = "default";
+			});
+			window.addEventListener('onChatTransferSuccessful', e => {
+				console.log("addEventListener", e), sessionStorage.setItem('onChatTransferSuccessful', true)
+			});
+			window.addEventListener('onAgentMessage', e => {
+				console.log("addEventListener", e), sessionStorage.setItem('onAgentMessage', true)
+			});
+			window.addEventListener('onChatReconnectSuccessful', e => {
+				console.log("addEventListener", e), sessionStorage.setItem('onChatReconnectSuccessful', true)
+			});
+			window.addEventListener('onConnectionError', e => {
+				console.log("addEventListener", e), sessionStorage.setItem('onConnectionError', true)
+			});
+			window.addEventListener('onChatEstablished', e => {
+				console.log("addEventListener", e), sessionStorage.setItem('onChatEstablished', true)
+			});
+			var a = document.getElementById("sfdc_link");
+			a.onclick = function () {
+				starttSfdcChat();
+				document.getElementById("sfdc_link").style.pointerEvents = "none";
+				document.getElementById("sfdc_link").style.cursor = "default";
+				return false;
+			}
+		</script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<html  lang="en-US">
+<head>
+  <base href="https://poweredgec.dell.com/">
+    <script src="jquery.js" type="text/javascript"></script>
+<title>Dell PowerEdge C Server | System Management</title>
+<style>
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(odd) {
+  background-color: #AFEEEE;
+}
+</style>
+</head>
+<body>
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">poweredgec.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+	<h1 style="color:#0085c3;">Dell PowerEdge C Server System Management</h1>
+
+	<h2 style="color:#444;">PowerEdge firmware scrapers</h2>
+
+	<span style="color:#30a106;">
+        <table class="simple">
+	<tr>
+	<td> <a href="/latest_poweredge-c.html">PE-C_fw </a> &nbsp;&nbsp;</td>
+	<td> <a href="/latest_poweredge-13g.html">PE-13G_fw </a> &nbsp;&nbsp;</td>
+	<td> <a href="/latest_poweredge-12g.html">PE-12G_fw </a> &nbsp;&nbsp;</td>
+	<td> <a href="/latest_poweredge-11g.html">PE-11G_fw </a> &nbsp;&nbsp;</td>
+	<td> <a href="/latest_poweredge-10g.html">PE-10G_fw </a> &nbsp;&nbsp;</td>
+	<td> <a href="/latest_poweredge-9g.html">PE-9G_fw </a> &nbsp;&nbsp;</td>
+	<td> <a href="/latest_poweredge-8g.html">PE-8G_fw </a> &nbsp;&nbsp;</td>
+	<td> <a href="/latest_powervault.html">PowerVault </a> &nbsp;&nbsp;</td>
+	</tr>
+	</table>
+	</span>
+
+	<p>See also: <a href="latest_fw.html">Old, simple firmware PowerEdge C scraper</a> (may still be useful at times).</p>
+
+	<hr>
+	<h2>Direct links to support.dell.com pages, per platform</h2>
+			<table class="simple">
+				<tr>
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c1100">C1100</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c2100">C2100</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c5125">C5125</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c5220">C5220</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c6100">C6100</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c6105">C6105</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c6220">C6220</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c6145">C6145</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c8000">C8000</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c410x">C410X</a> &nbsp;&nbsp;</td> 
+				</tr>
+			</table>
+
+
+<h3>Quick Start Guide </h3>
+<p>See also: <a href="files/QSG_PowerEdge_C_System_Management.pdf">Quick Start Guide</a>.
+	A very short technical resource to get you up and running quickly.</p>
+
+	<h3>System Management Pack</h3>
+	<p>See also: <a href="files/sys_mgmt_pack-2014-10-15.tgz">System Management Pack</a>.
+	All PE-C tools, bundled.  Also available separately:</p>
+			<table class="simple">
+				<tr>
+				<td><strong>ldstate</strong>
+				<td>2013-11-23
+				<td><a href="files/ldstate-2013-11-23.tgz">tgz</a>
+				<td><a href="files/dell-pec-ldstate-2013.11.23.rpm">rpm</a>
+				<td><a href="CHANGELOG.ldstate">changelog</a>
+				<td>quickly see health/config of every storage device in the system. 
+				<a href="files/ldstate_overview.pdf">why does this help?</a>
+				</tr>
+
+				<tr>
+				<td><strong>bmc tool</strong>
+				<td>2014-10-15
+				<td><a href="files/bmc-2014-10-15.tgz">tgz</a>
+				<td><a href="files/dell-pec-bmc-tool-2014.10.15.rpm">rpm</a>
+				<td><a href="CHANGELOG.bmc">changelog</a>
+				<td>configure and monitor the bmc.  wraps ipmitool; makes it scriptable and 1-to-many.
+				</tr>
+
+				<tr>
+				<td><strong>setupbios</strong>
+				<td>2013-10-03
+				<td><a href="files/setupbios-2013-10-03.tgz">tgz</a>
+				<td><a href="files/dell-pec-setupbios-2013.10.03.rpm">rpm</a>
+				<td><a href="CHANGELOG.setupbios">changelog</a>
+				<td>BIOS config tool; set or diff settings from the command line; fan-out to cluster.
+				</tr>
+
+				<tr>
+				<td><strong>ipmiflash</strong>
+				<td>2013-02-11
+				<td><a href="files/ipmiflash-2013-02-11.tgz">tgz</a>
+				<td><a href="files/dell-pec-ipmiflash-2013.02.11.rpm">rpm</a>
+				<td><a href="CHANGELOG.ipmiflash">changelog</a>
+				<td>direct remote BMCs to flash update BIOS, BMC, FCB firmware
+				</tr>
+
+				<tr>
+				<td><strong>pecagent</strong>
+				<td>2013-02-11
+				<td><a href="files/pecagent-2013-02-11.tgz">tgz</a>
+				<td><a href="files/dell-pec-pecagent-2013.02.11.rpm">rpm</a>
+				<td><a href="CHANGELOG.pecagent">changelog</a>
+				<td>SNMP agent; monitors using bmc and ldstate.
+				</tr>
+
+				<tr>
+				<td><strong>pec-logs</strong>
+				<td>2014-09-23
+				<td><a href="files/pec-logs-2014-09-23.tgz">tgz</a>
+				<td>
+<!--
+				<td><a href="files/dell-pec-pecagent-2013.02.11.rpm">rpm</a> &nbsp;&nbsp;
+-->
+				<td><a href="CHANGELOG.pec-logs">changelog</a>
+				<td>hopefully nothing goes wrong... but if it does, this tool will help debug.
+				</tr>
+
+				<tr>
+				<td><strong>pxe image</strong>
+				<td>
+				<td><a href="files/pec-pxe-image-2013-10-22.tgz">tgz</a>
+				<td>
+				<td>
+				<td>preconfigured PXE/USB OS image that you can easily extend for discovery/provisioning.
+				</tr>
+
+			</table>
+
+<p>The <a href="https://lists.us.dell.com/mailman/listinfo/poweredgec-tools"> PowerEdge-C Tools & System Management mailing list</a> is a good place for support on these.</p>
+<p><a href="files/Best_Practices_for_System_Management_in_the_Hyperscale_Cloud.pdf">Webinar</a> deck on system management, presented early 2012.  Offers both a Cloud Computing philosophy, and the specifics regarding how to implement.</p>
+		
+<h3>PowerEdge C System Management Overview</h3>
+	<p>See also: <a href="files/PowerEdge_C_System_Management.pptx">High level overview</a>.</p>
+
+	<h3>PXE image</h3>
+	<p>See also: <a href="files/pec-pxe-image-2013-10-22.tgz">PXE image</a>.
+	A network-bootable, provisioning PXE image is offered.  This is a known, good image that all of the tools work in.  The image contains simple, BASH and Perl script based methods of:</p>
+		<ul>
+			<li> analyzing/inventorying the server</li> 
+			<li> pulling down provisioning packages from an FTP server
+			<li> pushing inventory and machine detection info back up
+			<li> flash updating of BIOS/BMC/FCB, if desired/required
+			<li> ... literally anything you can script!
+		</ul> 
+
+<h3>C410X validation image</h3> 
+<p>Refer to the <a href="files/PEC_C410x_Live_Image_v1.0.iso">C410X validation image</a> which includes tools and <a href="files/c410x_Validation_USB_Creation-20120319.pdf">instructions</a> for putting it on a USB stick.</p>
+<p>Or, alternatively, just browse all <a href="files/">available files</a>, including historical.</p>
+
+<hr>
+<h2>Direct links to the various support.dell.com pages, per platform</h2>
+			<table class="simple">
+				<tr>
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c1100">C1100</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c2100">C2100</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c5125">C5125</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c5220">C5220</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c6100">C6100</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c6105">C6105</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c6220">C6220</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c6145">C6145</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c8000">C8000</a> &nbsp;&nbsp;</td> 
+				     <td> <a href="http://www.dell.com/support/drivers/us/en/555/Product/poweredge-c410x">C410X</a> &nbsp;&nbsp;</td> 
+				</tr>
+			</table>
+	<br>
+</body>

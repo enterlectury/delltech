@@ -1,0 +1,257 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <base href="https://acme-public.pki.dell.com/">
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ACME @ ECSAPI</title>
+
+    <link rel="stylesheet" href="css/site.css">
+
+
+
+
+
+<script >bazadebezolkohpepadr="1602454966"</script><script type="text/javascript" src="https://acme-public.pki.dell.com/akam/13/5f8385a7"  defer></script></head>
+
+<body>
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">acme-public.pki.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+
+    <div class="container">
+
+        <header class="header">
+
+            <img src="/images/DT.png" />
+
+        </header>
+
+
+
+        <section class="hero">
+
+            <h1>Automatic Certificate Management Environment (ACME)</h1>
+
+            <p>Automated certificate issuance and renewal for apps, services, and Kubernetes â powered by our ECSAPI-based ACME gateway and Keyfactor.</p>
+
+
+
+        </section>
+
+
+
+        <section id="about" class="grid">
+
+            <article class="card">
+
+                <h3>What is ACME &amp; why it matters</h3>
+
+                <p>ACME automates domain control validation and certificate lifecycle â issuance, renewals, and revocation â via a standard protocol.</p>
+
+                <ul class="list">
+
+                    <li>Reduce outages from expired certs; renew early and automatically.</li>
+
+                    <li>Lower operational toil; integrate into CI/CD and GitOps.</li>
+
+                    <li>Consistent policy enforcement via centralized issuance.</li>
+
+                </ul>
+
+            </article>
+
+
+
+            <article class="card">
+
+                <h3>Our architecture</h3>
+
+                <p>We expose multi-tenant ACME  endpoints from ECSAPI and broker enrollment to Keyfactor Command. Directory URLs follow a hierarchy:</p>
+
+                <div class="code">/acme/&lt;tenant&gt;/&lt;use-case&gt;/directory</div>
+
+                <p class="note">Validation via HTTP-01 or DNS-01. Certificates issued by integrated CAs.</p>
+
+            </article>
+
+
+
+            <article class="card">
+
+                <h3>Quick start</h3>
+
+                <ol class="list">
+
+                    <li>Get your Directory URL and EAB key</li>
+
+                    <br />
+
+                    <li>Pick a client and configure it</li>
+
+                    <br />
+
+                    <li>Choose HTTP-01 or DNS-01 validation.</li>
+
+                </ol>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+
+
+
+
+            </article>
+
+        </section>
+
+        <br />
+
+        <section>
+
+            <h2>Highâlevel architecture</h2>
+
+            <img class="arch" src="images/architecture.png" id="clients">
+
+
+
+            <br />
+
+            <h2>Supported ACME clients</h2>
+
+
+
+            <div class="grid">
+
+                <!--<article class="card">
+
+                    <h3>uacme (C)</h3>
+
+                    <p>Lightweight C based ACME  client suitable for Embedded Systems like IDRACS, Xerox and routers.</p>
+
+                    <div class="code">uacme -s &lt;DIRECTORY_URL&gt; new \
+
+                        -t hhtp-01 -d example.com -d "test.example.com"
+
+                    </div>
+
+                    <p class="small"> <a href="https://github.com/ndilieto/uacmeProject"> click me </a></p>
+
+                </article>-->
+
+
+
+                <article class="card">
+
+                    <h3>Certbot</h3>
+
+                    <p>Popular, wellâdocumented Python client. Works with HTTPâ01 or DNSâ01 for web based apps or servers</p>
+
+                    <div class="code">certbot certonly --server &lt;DIRECTORY_URL&gt; \
+
+                        --manual --preferred-challenges http-01 -d example.com -d "*.example.com"
+
+                    </div>
+
+                    <p class="small"> <a href="https://certbot.eff.org/certbot.eff.org">https://certbot.eff.org/certbot.eff.org </a></p>
+
+                </article>
+
+
+
+                <article class="card">
+
+                    <h3>cert-manager (Kubernetes)</h3>
+
+                    <p>K8s controller that renews certs automatically using Issuer resources.</p>
+
+                    <div class="code">apiVersion: cert-manager.io/v1
+
+kind: ClusterIssuer
+
+metadata: { name: keyfactor-acme }
+
+spec:
+
+acme:
+
+server: &lt;DIRECTORY_URL&gt;
+
+externalAccountBinding:
+
+keyID: &lt;KID&gt;
+
+keySecretRef: { name: eab-secret, key: secret }
+
+keyAlgorithm: HS256
+
+privateKeySecretRef: { name: keyfactor-acme-account }
+
+solvers:
+
+- dns01: { route53: { region: us-east-1 } }
+
+                    </div>
+
+                    <p class="small"> <a href="https://cert-manager.io/docs/configuration/acme/Docs"> https://cert-manager.io/docs/configuration/acme/Docs</a></p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <hr />
+
+        <section>
+
+            <h2>Useful links</h2>
+
+            <ul class="list">
+
+                <li> <a href="https://www.rfc-editor.org/rfc/rfc8555.html"> RFC 8555 â ACME </a> </li>
+
+                <li><a href="https://cert-manager.io/docs/configuration/acme/"> Cert-Manager KOB </a></li>
+
+                <li><a href="https://certbot.eff.org/"> Cert-Bot</a></li>
+
+            </ul>
+
+        </section>
+
+
+
+        <p class="footer">Designed by ECSAPI Team x Crypto Team | Data Security | Â© 2025 - Dell Technologies</p>
+
+    </div>
+
+<noscript><img src="https://acme-public.pki.dell.com/akam/13/pixel_5f8385a7?a=dD1iMDY3NmQzZjFkYjJmNjUzOGY2ZmU0ZjIyNmVkNDI1ODc1MDk0NjNlJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+
+</html>

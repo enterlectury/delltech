@@ -1,0 +1,3373 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="https://ea2cn-prod-outlet.dell.com/">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title> Dell.com </title>
+	<meta name="robots" content="NOINDEX,NOFOLLOW">
+	<!-- add icon link -->
+	<link rel="icon" href="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/dell_logo_2020_40px.png.mst.png" type="image/x-icon">
+	<style>
+		.main_header_text
+		{
+		text-align: center;
+		}
+		 .outlet-nav-card {
+            background-color: #ffffff;
+            border-radius: 2rem;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05), 0 4px 8px rgba(0, 20, 40, 0.06);
+            width: 100%;
+            max-width: 880px;
+            padding: 1.2rem 2rem;
+            transition: all 0.2s ease;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            gap: 0.5rem 1.2rem;
+            padding: 0 12px;
+        }
+
+        .nav-links li {
+            width: 100%;/* keep items intrinsic width so nav can scroll */
+        }
+
+        .nav-links li a {
+            display: inline-block;
+            text-decoration: none;
+            font-weight: 520;
+            font-size: 0.9rem;
+            letter-spacing: -0.01em;
+            color: #1e2b3c;
+            padding: 12px 14px;
+            white-space: nowrap;
+            transition: color 0.15s, border-color 0.15s;
+            border-bottom: 4px solid transparent;
+            scroll-margin: 0;
+			width: 100%;
+        }
+
+        .nav-links li a:hover {
+            color: #0076b7;
+        }
+        .nav-links li a.active {
+            color: #0076b7;
+            border-bottom-color: #0076b7;
+        }
+        .why-dell-div
+        {
+        	background-color: #212731;
+        }
+        .why-dell-header p,.where-to-buy p 
+        {
+        	color: #fff;
+        	font-size: 16px;
+        }
+        .why-dell-header 
+        {
+        	padding: 10px;
+        }
+        .doc-section-content p {
+		    color: #d4d7da;
+		    font-size: 12px;
+		    line-height: 30px;
+		    padding: 40px;
+		}
+
+		.doc-section h2{
+			font-weight: 400;
+		}
+        
+        .nav-decoration {
+            margin-top: 1.1rem;
+            border-bottom: 2px dashed #cbd5e1;
+            opacity: 0.5;
+            width: 100%;
+        }
+        .hpg-card-copy-promotext a
+        {
+        	color: #3894c1;;
+        }
+        /* sticky navigation */
+        .nav-links-section {
+            position: sticky;
+            top: 0;
+            background: #ffffff;
+            z-index: 1000;
+            transition: box-shadow 0.18s ease, backdrop-filter 0.18s ease;
+        }
+
+        /* visual shadow when nav is stuck/scrolled */
+        .nav-links-section.scrolled {
+            box-shadow: 0 6px 18px rgba(16, 24, 40, 0.08);
+            backdrop-filter: blur(4px);
+        }
+        /* make smooth scrolling via CSS and add offset for anchor targets */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* use a variable so JS can update the offset dynamically based on nav height */
+        section, .product-range, .doc-section, .why-dell-div, #navigation-class {
+            scroll-margin-top: var(--nav-height,60px); /* fallback 60px */
+        }
+        /* when viewport is narrow, fix the nav and ensure content isn't hidden */
+        @media (max-width: 767px) {
+            .nav-links-section {
+                position: sticky;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+            
+        }
+         table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #aaa;
+            padding: 8px 10px;
+            vertical-align: top;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+            font-weight: 600;
+        }
+        /* simple list spacing */
+        ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+        hr {
+            margin: 6px 0;
+            border: none;
+            border-top: 1px dotted #ccc;
+        }
+        .logo-placeholder {
+            display: inline-block;
+            background: #e0e0e0;
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            margin-right: 6px;
+            font-size: 14px;
+        }
+        .company-name {
+            font-weight: bold;
+        }
+        .base {
+            font-size: 13px;
+            color: #555;
+        }
+
+        @media (max-width: 767px) {
+            .outlet-nav-card {
+                padding: 1rem 1.2rem;
+
+            }
+            .nav-links {
+                justify-content: flex-start;
+				overflow-x: scroll;
+            }
+            .nav-links li a {
+                font-size: 1.05rem;
+            }
+        }
+
+		.chat_section {
+			position: fixed;
+			top: 40%;
+			z-index: 5;
+			right: 0;
+			padding: 0;
+			-webkit-box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 30%);
+			box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 30%);
+		}
+	
+		.chat-header {
+			position: absolute;
+			left: 0;
+			top: -1px;
+			background: #007db8;
+			-webkit-transform: rotate(90deg);
+			transform: rotate(90deg);
+			-webkit-transform-origin: top left;
+			transform-origin: top left;
+			padding: 0 15px;
+			line-height: 28px;
+			-webkit-box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 30%);
+			box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 30%);
+			z-index: -1;
+			right: inherit;
+			font-size: 14px;
+			font-weight: normal;
+			width: 170px;
+			height: 28px;
+			text-align: center;
+			color: #ffffff;
+			border-radius: 0;
+		}
+	
+		.chat-to-buy {
+			color: white;
+			cursor: pointer;
+		}
+	
+		.image-content {
+			position: absolute;
+			top: 216px;
+			left: 43px;
+			font-size: 14px;
+			font-family: roboto, Arial, Helvetica, sans-serif;
+		}
+	
+		.center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			bottom: 20px;
+		}
+	
+		.topnav p {
+			position: relative;
+			text-align: center;
+			bottom: 20px;
+			font-size: 14px;
+			left: 20px;
+			font-family: 'Roboto', sans-serif;
+		}
+	
+		.header img {
+			float: left;
+			width: 50px;
+			height: 50px;
+			margin: 0px 9px;
+		}
+	
+		.banner img {
+			width: 100%;
+		}
+	
+		ul.chat-buy li {
+			list-style-type: none;
+			display: inline-block;
+		}
+	
+		.header h1 {
+			position: relative;
+			top: 18px;
+			left: 10px;
+			text-align: center;
+			font-size: 18px;
+			margin: 10px 0;
+			color: #444;
+			line-height: normal;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 300;
+		}
+	
+	
+		/* Add a black background color to the top navigation */
+	
+		.topnav {
+			position: relative;
+			text-align: center;
+		}
+	
+	
+		/* Style the links inside the navigation bar */
+	
+		.topnav a {
+			float: left;
+			color: #444;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-align: center;
+			font-size: 14px;
+			font-weight: 400;
+			font-family: roboto, Arial, Helvetica, sans-serif;
+			line-height: 1.15;
+			text-transform: none;
+		}
+	
+	
+		/* Change the color of links on hover */
+	
+		.topnav a:hover {
+			background-color: none;
+			color: black;
+		}
+	
+		.text-center {
+			text-align: center;
+		}
+	
+		.page-footer .footer-content-top ul li {
+			display: inline-block;
+			margin: 0 13px 0 0;
+			padding: 3px 0 0;
+			line-height: normal;
+		}
+	
+		.text-center {
+			text-align: center;
+		}
+	
+		.page-footer .footer-content-top {
+			border-top: 1px solid rgba(0, 0, 0, .2);
+			padding: 0px 0px 26px 0px;
+		}
+	
+		.page-footer .container {
+			margin: 0 auto;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	
+		.page-footer .newsletter-title {
+			font-size: 12px;
+			text-transform: uppercase;
+			margin-bottom: 25px;
+			color: #fff;
+		}
+	
+		#footer-content-5 {
+			display: flex;
+			align-items: center;
+			top: 30px;
+			position: relative;
+		}
+	
+		.page-footer .footer-content-top .col-md-4 #footer-content-5 .select {
+			width: 110px;
+			height: 20px;
+		}
+	
+		.page-footer #footer-content-5>div {
+			display: inline-block;
+		}
+	
+		.page-footer .newsletter.footer-box .select {
+			position: relative;
+			height: 38px;
+			background: 0 0;
+			box-shadow: none;
+		}
+	
+		.page-footer .footer-content-top .col-md-4 #footer-content-5 .select select {
+			border: none;
+			color: #444;
+			font-family: roboto, Arial, Helvetica, sans-serif;
+			width: auto;
+			padding-left: inherit;
+		}
+	
+		.page-footer .newsletter.footer-box .select:before {
+			width: 30px;
+			position: absolute;
+			top: 1px;
+			right: 1px;
+			bottom: 1px;
+			background: 0 0;
+			content: '';
+			pointer-events: none;
+		}
+	
+		.page-footer .newsletter.footer-box .select:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			width: 0;
+			height: 0;
+			right: 10px;
+			bottom: 0;
+			margin: auto;
+			border-style: solid;
+			border-width: 5px 5px 0;
+			border-color: #fff transparent transparent;
+			pointer-events: none;
+		}
+	
+		.page-footer .newsletter.footer-box .select select {
+			font-size: 14px;
+			border: none;
+			box-shadow: none;
+			border-radius: 0;
+			background: 0 0;
+			height: 100%;
+			width: 100%;
+			color: #fff;
+			cursor: pointer;
+			outline: none;
+			padding-top: 1px;
+			padding-right: 35px;
+			padding-left: 15px;
+			border: 1px solid #fff;
+			border-radius: 4px;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			-o-border-radius: 4px;
+			-ms-border-radius: 4px;
+			-moz-appearance: none;
+			-webkit-appearance: none;
+		}
+	
+		.img-responsive {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	
+		.page-footer .bottom-links {
+			padding: 0;
+			list-style: none;
+			margin-bottom: 0;
+			margin-top: 8px;
+		}
+	
+		strong.footer-text {
+			font-size: 11px;
+			padding: 2px 6px;
+			color: #fff;
+			font-family: roboto, Arial, Helvetica, sans-serif;
+		}
+	
+		p.footer-text-content {
+			font-size: 11px;
+			padding: 2px 6px;
+			color: #fff;
+			font-family: roboto, Arial, Helvetica, sans-serif;
+		}
+	
+	
+		/***Footer Section***/
+	
+		.page-footer {
+			background: #eee;
+		}
+	
+		@media (min-width: 1200px) {
+			.page-footer .container {
+				width: 1170px !important;
+			}
+		}
+	
+		.page-footer .footer-content-top {
+			border-top: 1px solid rgba(0, 0, 0, 0.2);
+			padding: 2px 1px 26px 19px;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-content-top {
+				padding: 0;
+			}
+	
+			.topnav a {
+				font-size: 42px;
+			}
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-content-top .container {
+				padding: 0;
+			}
+		}
+	
+		.page-footer .footer-content-top ul {
+			float: left;
+			padding: 0;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-content-top ul {
+				width: 100%;
+				text-align: left;
+			}
+		}
+	
+		.page-footer .footer-content-top ul li {
+			display: inline-block;
+			margin: 0 13px 0 0;
+			padding: 3px 0 0;
+			line-height: normal;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-content-top ul li {
+				margin: 0;
+				padding: 12px 20px;
+				border-bottom: 1px solid #aaa;
+				display: block;
+			}
+		}
+	
+		.page-footer .footer-content-top ul li a {
+			font-family: roboto, Arial, Helvetica, sans-serif;
+			color: #444;
+			font-size: 14px;
+			text-decoration: none;
+			font-weight: 100;
+		}
+	
+		.page-footer .footer-content-top ul li a:hover {
+			color: #00447c;
+		}
+	
+		.page-footer .footer-content-top .col-md-4 {
+			padding-left: 0;
+			padding-right: 0;
+			float: right;
+			width: auto;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-content-top .col-md-4 {
+				float: left;
+			}
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-content-top .col-md-4 .newsletter {
+				padding: 12px 0px;
+			}
+		}
+	
+		.page-footer .footer-content-top .col-md-4 .newsletter p.h5 {
+			display: none;
+		}
+	
+		.page-footer .footer-content-top .col-md-4 #footer-content-5 img {
+			padding-left: 0;
+		}
+	
+		.page-footer .footer-content-top .col-md-4 #footer-content-5 .select {
+			width: 110px;
+			height: 20px;
+		}
+	
+		.page-footer .footer-content-top .col-md-4 #footer-content-5 .select:after {
+			border-color: #444 transparent transparent transparent;
+		}
+	
+		.page-footer .footer-content-top .col-md-4 #footer-content-5 .select select {
+			border: none;
+			color: #444;
+			font-family: roboto, Arial, Helvetica, sans-serif;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-content-top .col-md-4 #footer-content-5 .select select {
+				padding-left: 20px;
+			}
+		}
+	
+		.page-footer .footer-bottom {
+			background: #444;
+			padding: 12px 10px;
+			text-align: left;
+			font-weight: 400;
+    		line-height: 24px;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-bottom {
+				padding: 0;
+			}
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-bottom .container {
+				padding: 0;
+			}
+		}
+	
+		.page-footer .footer-bottom ul {
+			line-height: normal;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-bottom ul {
+				width: 100%;
+				text-align: left;
+			}
+		}
+	
+		.page-footer .footer-bottom ul li {
+			display: inline-block;
+			margin: 0 2px 0 0;
+			line-height: normal;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-bottom ul li {
+				padding: 12px 20px;
+				margin: 0;
+				border-bottom: 1px solid #5eb0d7;
+				display: block;
+			}
+		}
+	
+		.page-footer .footer-bottom ul li a {
+			font-size: 11px;
+			padding: 2px 6px;
+			color: #fff;
+			font-family: roboto, Arial, Helvetica, sans-serif;
+			text-decoration: none;
+		}
+	
+		@media (max-width: 767px) {
+			.page-footer .footer-bottom ul li a {
+				font-size: 14px;
+				padding: 0;
+			}
+		}
+	
+		@media screen and (max-width: 767px) {
+			.topnav a {
+				font-size: 14px;
+				float: left;
+				display: flex;
+			}
+	
+			.header h1 p {
+				display: inline-block;
+				position: relative;
+				bottom: 36px;
+			}
+	
+			.topnav {
+				position: relative;
+				bottom: 16px;
+				width: 100%;
+				right: 36px;
+			}
+	
+			.page-footer .footer-content-top,
+			.page-footer .footer-bottom {
+				width: 100%;
+				float: left;
+			}
+	
+			.center {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				position: relative;
+				left: 20px;
+				text-align: center;
+			}
+		}
+	
+		.columns a:hover {
+			text-decoration: none;
+		}
+	
+		.hpg-cat-label a {
+			color: #444 !important;
+			text-decoration: none;
+		}
+	
+		.hpg-hero-section {
+			position: relative;
+		}
+	
+		.hpg-hero-section .hpg-card-text {
+			position: absolute;
+			width: 100vw;
+			top: 106px;
+			top: 0;
+			bottom: 0;
+			height: calc(100% - 106px);
+			height: 100%;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+	
+		.hpg-hero-section .hpg-card-text[data-theme=dark]>div {
+			color: #eee !important;
+		}
+	
+		.hpg-hero-section .hpg-card-text[data-theme=light]>div {
+			color: #444 !important;
+		}
+	
+		.hpg-hero-section .hpg-card-copy-title {
+			font-size: 15px;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+	
+		.hpg-hero-section .hpg-card-copy-headline {
+			font-size: 29px;
+			color: #00447d;
+			text-align: center;
+			position: relative;
+			right: 10px;
+		}
+	
+		.hpg-hero-section .hpg-card-copy-promotext {
+			font-size: 16px;
+			text-align: left;
+			margin: 24px 80px 0;
+			font-family: roboto;
+		}
+	
+		.hpg-hero-section .hpg-card-copy-cta-holder {
+			margin-top: 20px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+		}
+	
+		.hpg-hero-section .hpg-card-text .hpg-card-inner-div {
+			width: 50%;
+			/* text-align: center;*/
+		}
+	
+		:root {
+			--tabletMastheadHeight: 60px;
+			--desktopMastheadHeight: 106px;
+			--mobileMastheadHeight: 128px;
+		}
+	
+		.hpg-hero-section .hpg-card-text .hpg-card-inner-div .hpg-card-copy .hpg-card-copy-cta-holder .hpg-card-copy-cta {
+			border-style: solid;
+			border-width: 1px;
+			padding: 5px 15px;
+			margin: 18px 5px;
+			text-decoration: none;
+		}
+	
+		.hpg-hero-section .hpg-card-copy-cta-holder[data-hover-theme]>a {
+			border-color: #3485c2;
+			color: #3485c2;
+		}
+	
+		.hpg-hero-section .hpg-card-copy-cta-holder[data-hover-theme=dark]>a {
+			color: #eee !important;
+			border-color: #eee !important;
+		}
+	
+		@media only screen and (max-width:767px) {
+			.hpg-hero-section .hpg-card-text {
+				height: 50%;
+				display: flex;
+				-webkit-box-align: center;
+				align-items: center;
+				right: 0;
+				left: 0;
+			}
+			.hpg-hero-section .hpg-card-text .hpg-card-inner-div .hpg-card-copy .hpg-card-copy-cta-holder .hpg-card-copy-cta {
+				border-style: solid;
+				border-width: 1px;
+				padding: 5px 15px;
+				margin: 10px 5px;
+				text-decoration: none;
+			}
+	
+			.hpg-hero-section .hpg-card-copy-promotext {
+				text-align: center;
+				margin: 8px 22px 0;
+			}
+	
+			.hpg-hero-section .hpg-card-copy-title {
+				font-size: 14px;
+			}
+	
+			.hpg-hero-section .hpg-card-copy-headline {
+				font-size: 20px;
+				text-align: center;
+			}
+	
+			.hpg-hero-section .hpg-card-copy-promotext {
+				font-size: 16px;
+			}
+	
+			.hpg-hero-section .hpg-card-copy-cta-holder .hpg-card-copy-cta {
+				padding-left: 12px;
+				padding-right: 12px;
+			}
+	
+			.hpg-hero-section .hpg-mobile-container {
+				height: auto;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+			}
+	
+			.hpg-hero-section .hpg-mobile-container .hpg-card-text[data-placement] {
+				top: 0;
+			}
+	
+			.hpg-hero-section .hpg-card-text .hpg-card-inner-div {
+				width: 100%;
+			}
+	
+			.hpg-hero-section .hpg-mobile-container .hpg-card-text[data-placement] {
+				top: 0;
+			}
+	
+			.hpg-hero-section .hpg-card-text .hpg-card-inner-div .hpg-card-copy {
+				margin: 0;
+				width: 100%;
+			}
+	
+			.hpg-hero-section .hpg-mobile-container .hpg-card-text[data-placement=bottom] {
+				top: 48%;
+			}
+	
+			.hpg-hero-section .hpg-card-text {
+				height: 50%;
+				display: flex;
+				-webkit-box-align: center;
+				align-items: center;
+				right: 0;
+				left: 0;
+			}
+		}
+	
+		@media (min-width: 767px) {
+			html[lang=de] .hpg-hero-section .hpg-card-text .hpg-card-inner-div {
+				width: 40%;
+			}
+		}
+
+		       @media (min-width: 1024px) {
+		    	    .dent-content {
+        margin-bottom: 42px;
+    }
+		    }
+
+		        @media (min-width: 768px) and (max-width: 1023px) {
+		        	.dent-content {
+        margin-bottom: 70px;
+    }
+		    }
+
+
+			
+			/* category section 5 columns */
+.pg-section-wrapper,.where-to-buy {
+    background-color: #141d28;
+    padding: 40px 20px;
+    width: 100%;
+}
+.pg-container {
+    display: flex;
+    gap: 12px;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.pg-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+	position: relative;
+}
+.pg-image-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.pg-image-box img {
+    max-width: 90%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.pg-label {
+	position: absolute;
+	bottom: 40px;
+    color: #ffffff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.pg-card:hover .pg-label {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+}
+@media (max-width: 1024px) {
+    .pg-container {
+        flex-wrap: wrap;
+    }
+    .pg-card {
+        flex: 1 1 calc(33.333% - 12px);
+    }
+}
+@media (max-width: 650px) {
+    .pg-card {
+        flex: 1 1 calc(50% - 12px);
+        min-height: 220px;
+    }
+}
+@media (max-width: 400px) {
+    .pg-card {
+        flex: 1 1 100%;
+    }
+}
+@media (max-width: 767px) {
+	.pg-section-wrapper
+ {
+    background-color: #0d1520;
+    padding: 40px 0px;
+    width: 100%;
+}
+.pg-label {
+    position: absolute;
+        color: #ffffff;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        text-align: center;
+        transition: all 0.3s ease;
+        margin-top: 73%;
+}
+}
+/* Container and Background */
+.doc-section {
+    background-color: #1c2c3b; 
+    padding: 14px 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+}
+.doc-main-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.doc-section-title {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.doc-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.doc-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: auto;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+.doc-icon {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+.doc-label {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0;
+}
+@media (max-width: 992px) {
+    .doc-grid {
+        gap: 15px;
+    }
+    .doc-label {
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .doc-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .doc-card {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        margin-bottom: 15px;
+    }
+}
+    /* Override for mobile */
+    @media (max-width: 767px) {
+        .hpg-card-text[data-text-placement="right"] {
+            left: 0 !important;
+            right: 0 !important;
+            justify-content: center !important;
+        }
+    }
+
+    .chat-span{
+	float: left;
+    color: #444;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: roboto, Arial, Helvetica, sans-serif;
+    line-height: 1.15;
+    text-transform: none;
+
+	}
+
+
+/* Table block */
+
+@media only all and (min-width: 600px) {
+  .vendor-row {
+    -moz-columns: 4;
+    /* How many columns? */
+    background: #A4B8CD;
+    -webkit-columns: 4;
+    columns: 4;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    font-size: 1em;
+    -webkit-column-rule: 2px outset #eee;
+    -moz-column-rule: 2px outset #ddd;
+    column-rule: 2px outset #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    margin-bottom: 5px;
+  }  
+  .vendor-row2 {
+    -moz-columns: 4;
+    /* How many columns? */
+    background: #40586D;
+    -webkit-columns: 4;
+    columns: 4;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    font-size: 1em;
+    -webkit-column-rule: 2px outset #eee;
+    -moz-column-rule: 2px outset #ddd;
+    column-rule: 2px outset #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    margin-bottom: 5px;
+  }
+  p {
+    color:#000;
+    font-size: 18px;
+  }
+
+  div#where-to-buy-block {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 0 20px;
+}
+
+#cp-container-in-en-bsd-006adec1-d1a4-4f43-9e81-4f10fd356b83-outlet-in-why-dell-outlet-band-h3 {
+    background-image: url(https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/na/fy26q3/uhp-hero-banner-mobile-slate-dark-800-1534x800.png);
+}
+
+div#where-to-buy-block h2 {
+    margin: 0;
+    padding: 40px 0 30px;
+}
+
+div#where-to-buy-block .vendor {
+    padding: 10px;
+}
+
+.vendor-detail, .vendor-detail-light {
+    font-family: Roboto, Cordia New, "Microsoft Sans Serif", Utsaah, Devanagari MT, Nirmala UI, Latha, InaiMathi, Gautami, Telugu Sangam MN, Tunga, Kannada Sangam MN, Kartika, Malayalam Sangam MN, Shruti, Gujarati MT, Gujarati Sangam MN, Vrinda, Bangla Sangam MN, Meiryo UI, ã¡ã¤ãªãª, MS UI Gothic Reg, Hiragino Kaku Gothic Reg, ãã©ã®ãè§ã´ Pro W3 Reg, Microsoft YaHei, å¾®è½¯éé», Hiragino Sans GB, Microsoft JhengHei, å¾®è»æ­£é»é«, Malgun Gothic, ë§ì ê³ ë, Gulim, AppleGothic, Apple LiGothic, LiHei Pro, Osaka, STHeiti, åæé»ä½, STXihei, åæç»é», SimHei, é»ä½, Arial Unicode MS, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#where-to-buy-block h2, .vendor-row h3, .vendor-row2 h3 {
+    font-family: Roboto, Cordia New, "Microsoft Sans Serif", Utsaah, Devanagari MT, Nirmala UI, Latha, InaiMathi, Gautami, Telugu Sangam MN, Tunga, Kannada Sangam MN, Kartika, Malayalam Sangam MN, Shruti, Gujarati MT, Gujarati Sangam MN, Vrinda, Bangla Sangam MN, Meiryo UI, ã¡ã¤ãªãª, MS UI Gothic Reg, Hiragino Kaku Gothic Reg, ãã©ã®ãè§ã´ Pro W3 Reg, Microsoft YaHei, å¾®è½¯éé», Hiragino Sans GB, Microsoft JhengHei, å¾®è»æ­£é»é«, Malgun Gothic, ë§ì ê³ ë, Gulim, AppleGothic, Apple LiGothic, LiHei Pro, Osaka, STHeiti, åæé»ä½, STXihei, åæç»é», SimHei, é»ä½, Arial Unicode MS, Arial, sans-serif;
+}
+
+}
+ /* Responsive Styles for Mobile */
+            @media (max-width: 768px) {
+                .business-card {
+                    flex-direction: column;
+                    /* Stack columns vertically */
+                    height: auto;
+                    /* Let the container grow with the content */
+                    width: 100%;
+                    /* Use full screen width */
+                    border-radius: 0;
+                    /* Remove rounded corners for a mobile look */
+                }
+   
+                .column {
+                    border-left: none;
+                    /* Remove vertical lines */
+                    border-bottom: 1px solid #7c8e9f;
+                    /* Add horizontal separator instead */
+                    padding: 30px;
+                }
+                .rwp-webpart__title--centered,.rwp-webpart-ContentLayout
+                {
+                	background-color: #1c2c3b;
+                }
+   
+                .main-title {
+                    font-size: 24px;
+                    /* Slightly smaller text for mobile */
+                }
+            }
+   
+            .business-card {
+                background-color: #a7b9cc;
+                /* Slate blue color from image */
+                width: 100%;
+                height: auto;
+                border: 2px solid #fff;
+                border-radius: 12px;
+                display: flex;
+                overflow: hidden;
+                padding: 20px 0;
+                margin-bottom: 10px;
+            }
+            
+			
+  			.business-card {
+  background-color: #a7b9cc;
+}
+
+.business-card.second-card {
+  background-color: #40586d;
+}
+   
+            .column {
+                flex: 1;
+                padding: 0 25px;
+                display: flex;
+                flex-direction: column;
+                color: #000;
+            }
+   
+            /* Vertical Divider Lines */
+            .divider {
+                border-left: 1px solid #7c8e9f;
+            }
+   
+            /* Column 1 Styles */
+            .main-title {
+                font-size: 24px;
+                line-height: 1.2;
+            }
+   
+            .logo-container {
+                padding: 0px 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+   
+            .logo-container img {
+                max-width: 100%;
+                height: auto;
+            }
+   
+            /* Headings */
+            .section-title {
+                font-size: 24px;
+                margin-bottom: 30px;
+                line-height: 1.1;
+            }
+   
+            /* List and Location Text */
+            .list {
+                list-style: none;
+            }
+   
+            .list li {
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+   
+            .location-group p {
+                margin-bottom: 25px;
+                font-size: 16px;
+                line-height: 1.4;
+            }
+   
+            .location-group strong {
+                font-weight: bold;
+            }
+
+
+	</style>
+
+<style>
+
+            @media screen and (max-width: 767.9px) {
+                .rwp-webpart-TileLayout .grid {
+                    grid-template-columns:1fr!important;
+                    grid-template-rows: auto!important
+                }
+
+                .rwp-webpart-TileLayout .grid .grid-item {
+                    grid-row-start: auto!important;
+                    grid-row-end: auto!important;
+                    grid-column-start: auto!important;
+                    grid-column-end: auto!important
+                }
+            }
+
+            .rwp-webpart-TileLayout .grid {
+                display: grid;
+                overflow: hidden
+            }
+
+            .rwp-webpart-TileLayout .grid.LateralSlide .grid-item {
+                opacity: 0;
+                transform: translateX(-100%)
+            }
+
+            .rwp-webpart-TileLayout .grid.LateralSlide .grid-item.show {
+                opacity: 1;
+                transform: translateX(0);
+                transition: all 1s ease-in-out
+            }
+
+            .rwp-webpart-TileLayout .grid.RiseUp .grid-item {
+                opacity: 0;
+                transform: translateY(100%)
+            }
+
+            .rwp-webpart-TileLayout .grid.RiseUp .grid-item.show {
+                opacity: 1;
+                transform: translateX(0);
+                transition: all 1s ease-in-out
+            }
+
+            .rwp-webpart-TileLayout .grid.Appear .grid-item {
+                opacity: 0
+            }
+
+            .rwp-webpart-TileLayout .grid.Appear .grid-item.show {
+                opacity: 1;
+                transition: all 1.5s ease-in-out
+            }
+
+            .rwp-webpart-TileLayout .grid.grid-gap {
+                grid-gap: 2px
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item {
+                background-color: var(--bg-color);
+                position: relative;
+                overflow: hidden;
+                display: grid
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .cls-image {
+                position: static
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item svg.rwp-icon {
+                max-inline-size: 116px;
+                max-block-size: 72px;
+                margin-block:4px;margin-inline:20px}
+
+            .rwp-webpart-TileLayout .grid .grid-item .content {
+                color: #fff;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                border-radius: inherit
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content .flex-column {
+                display: flex;
+                flex-direction: column;
+                padding: 15px 0
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content .flex-column-left {
+                text-align: left
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content .flex-column-hcenter {
+                text-align: center
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content .flex-column-hcenter .rwp-icon {
+                margin-inline:auto}
+
+            .rwp-webpart-TileLayout .grid .grid-item .content .flex-column-right {
+                text-align: right
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content .flex-column-right .rwp-icon {
+                margin-inline:auto 0}
+
+            .rwp-webpart-TileLayout .grid .grid-item .content.noimage {
+                position: relative
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content.top {
+                align-items: flex-start
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content.vcenter {
+                align-items: center
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content.bottom {
+                align-items: flex-end
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content .left {
+                justify-content: flex-start
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content .hcenter {
+                justify-content: center
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content .right {
+                justify-content: flex-end
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content.bottom.left,.rwp-webpart-TileLayout .grid .grid-item .content.top.left,.rwp-webpart-TileLayout .grid .grid-item .content.vcenter.left {
+                justify-content: flex-start
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content.bottom.hcenter,.rwp-webpart-TileLayout .grid .grid-item .content.top.hcenter,.rwp-webpart-TileLayout .grid .grid-item .content.vcenter.hcenter {
+                justify-content: center
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content.bottom.right,.rwp-webpart-TileLayout .grid .grid-item .content.top.right,.rwp-webpart-TileLayout .grid .grid-item .content.vcenter.right {
+                justify-content: flex-end
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content .overlay-transparent {
+                background-image: linear-gradient(180deg,transparent,0,transparent)
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content .gradient-top:not(.overlay-transparent) {
+                background-image: linear-gradient(0deg,rgba(0,0,0,.54),0,rgba(0,0,0,.54) 90%);
+                width: 100%;
+                display: flex;
+                flex-direction: column
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content .gradient-vcenter:not(.overlay-transparent) {
+                background: linear-gradient(0deg,rgba(0,0,0,.3) 0,0,rgba(0,0,0,.3) 100%,rgba(0,0,0,.3) 0);
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content .gradient-bottom:not(.overlay-transparent) {
+                background-image: linear-gradient(180deg,rgba(0,0,0,.54),0,rgba(0,0,0,.54));
+                width: 100%;
+                display: flex;
+                flex-direction: column
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content .noimage-bottom,.rwp-webpart-TileLayout .grid .grid-item .content .noimage-top,.rwp-webpart-TileLayout .grid .grid-item .content .noimage-vcenter {
+                width: 100%
+            }
+
+            @media screen and (max-width: 767.9px) {
+                .rwp-webpart-TileLayout .grid .grid-item .content .noimage-bottom,.rwp-webpart-TileLayout .grid .grid-item .content .noimage-top,.rwp-webpart-TileLayout .grid .grid-item .content .noimage-vcenter {
+                    padding:5% 0
+                }
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content a {
+                color: #6bc1f3
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content a:focus-visible {
+                border-radius: .125rem;
+                outline: .125rem solid #fff!important;
+                outline-offset: .1875rem;
+                box-shadow: 0 0 0 .25rem #0672cb
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content div {
+                font-size: 16px
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .content div.description,.rwp-webpart-TileLayout .grid .grid-item .content h3.title {
+                margin: 5px 20px
+            }
+
+            @media screen and (min-width: 1024px) {
+                .rwp-webpart-TileLayout .grid .grid-item .content h3.title {
+                    font-size:32px
+                }
+            }
+
+            @media screen and (max-width: 1023.9px) and (min-width:768.9px) {
+                .rwp-webpart-TileLayout .grid .grid-item .content h3.title {
+                    font-size:24px
+                }
+            }
+
+            @media screen and (max-width: 767.9px) {
+                .rwp-webpart-TileLayout .grid .grid-item .content h3.title {
+                    font-size:24px
+                }
+            }
+
+            @media screen and (max-width: 767.9px) {
+                .rwp-webpart-TileLayout .grid .grid-item .content.noimage {
+                    justify-content:center!important;
+                    align-items: center!important
+                }
+
+                .rwp-webpart-TileLayout .grid .grid-item .content.noimage .flex-column-left,.rwp-webpart-TileLayout .grid .grid-item .content.noimage .flex-column-right {
+                    text-align: center
+                }
+
+                .rwp-webpart-TileLayout .grid .grid-item .content.noimage .flex-column-left .rwp-icon,.rwp-webpart-TileLayout .grid .grid-item .content.noimage .flex-column-right .rwp-icon {
+                    margin-inline:auto}
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .arrow-icon {
+                margin-left: 10px
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .arrow-icon svg {
+                padding: 0
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .arrow-icon,.rwp-webpart-TileLayout .grid .grid-item .arrow-icon-obj {
+                max-width: 20px;
+                max-height: 20px;
+                fill: currentColor!important;
+                text-decoration: none;
+                display: inline;
+                white-space: nowrap
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .link-tag {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                z-index: 2;
+                text-decoration: none
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item .link-tag:focus+.content-link,.rwp-webpart-TileLayout .grid .grid-item .link-tag:hover+.content-link {
+                cursor: pointer;
+                text-decoration: underline
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip:hover .grid-cardFlipContainer {
+                transform: rotateY(180deg)
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transition: transform .5s ease-in-out;
+                transform-style: preserve-3d
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .cls-image {
+                position: static
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront svg.rwp-icon {
+                max-inline-size: 116px;
+                max-block-size: 72px;
+                margin-block:4px;margin-inline:20px}
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content {
+                color: #fff;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                border-radius: inherit
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .flex-column {
+                display: flex;
+                flex-direction: column;
+                padding: 15px 0
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .flex-column-left {
+                text-align: left
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .flex-column-hcenter {
+                text-align: center
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .flex-column-hcenter .rwp-icon {
+                margin-inline:auto}
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .flex-column-right {
+                text-align: right
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .flex-column-right .rwp-icon {
+                margin-inline:auto 0}
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.noimage {
+                position: relative
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.top {
+                align-items: flex-start
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.vcenter {
+                align-items: center
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.bottom {
+                align-items: flex-end
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .left {
+                justify-content: flex-start
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .hcenter {
+                justify-content: center
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .right {
+                justify-content: flex-end
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.bottom.left,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.top.left,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.vcenter.left {
+                justify-content: flex-start
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.bottom.hcenter,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.top.hcenter,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.vcenter.hcenter {
+                justify-content: center
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.bottom.right,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.top.right,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.vcenter.right {
+                justify-content: flex-end
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .overlay-transparent {
+                background-image: linear-gradient(180deg,transparent,0,transparent)
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .gradient-top:not(.overlay-transparent) {
+                background-image: linear-gradient(0deg,rgba(0,0,0,.54),0,rgba(0,0,0,.54) 90%);
+                width: 100%;
+                display: flex;
+                flex-direction: column
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .gradient-vcenter:not(.overlay-transparent) {
+                background: linear-gradient(0deg,rgba(0,0,0,.3) 0,0,rgba(0,0,0,.3) 100%,rgba(0,0,0,.3) 0);
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .gradient-bottom:not(.overlay-transparent) {
+                background-image: linear-gradient(180deg,rgba(0,0,0,.54),0,rgba(0,0,0,.54));
+                width: 100%;
+                display: flex;
+                flex-direction: column
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .noimage-bottom,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .noimage-top,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .noimage-vcenter {
+                width: 100%
+            }
+
+            @media screen and (max-width: 767.9px) {
+                .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .noimage-bottom,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .noimage-top,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content .noimage-vcenter {
+                    padding:5% 0
+                }
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content a {
+                color: #6bc1f3
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content a:focus-visible {
+                border-radius: .125rem;
+                outline: .125rem solid #fff!important;
+                outline-offset: .1875rem;
+                box-shadow: 0 0 0 .25rem #0672cb
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content div {
+                font-size: 16px
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content div.description,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content h3.title {
+                margin: 5px 20px
+            }
+
+            @media screen and (min-width: 1024px) {
+                .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content h3.title {
+                    font-size:32px
+                }
+            }
+
+            @media screen and (max-width: 1023.9px) and (min-width:768.9px) {
+                .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content h3.title {
+                    font-size:24px
+                }
+            }
+
+            @media screen and (max-width: 767.9px) {
+                .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content h3.title {
+                    font-size:24px
+                }
+            }
+
+            @media screen and (max-width: 767.9px) {
+                .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.noimage {
+                    justify-content:center!important;
+                    align-items: center!important
+                }
+
+                .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.noimage .flex-column-left,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.noimage .flex-column-right {
+                    text-align: center
+                }
+
+                .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.noimage .flex-column-left .rwp-icon,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .content.noimage .flex-column-right .rwp-icon {
+                    margin-inline:auto}
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .arrow-icon {
+                margin-left: 10px
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .arrow-icon svg {
+                padding: 0
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .arrow-icon,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .arrow-icon-obj {
+                max-width: 20px;
+                max-height: 20px;
+                fill: currentColor!important;
+                text-decoration: none;
+                display: inline;
+                white-space: nowrap
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .link-tag {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                z-index: 2;
+                text-decoration: none
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .link-tag:focus+.content-link,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipFront .link-tag:hover+.content-link {
+                cursor: pointer;
+                text-decoration: underline
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                backface-visibility: hidden;
+                transform: rotateY(180deg)
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .cls-image {
+                position: static
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack svg.rwp-icon {
+                max-inline-size: 116px;
+                max-block-size: 72px;
+                margin-block:4px;margin-inline:20px}
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content {
+                color: #fff;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                border-radius: inherit
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .flex-column {
+                display: flex;
+                flex-direction: column;
+                padding: 15px 0
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .flex-column-left {
+                text-align: left
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .flex-column-hcenter {
+                text-align: center
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .flex-column-hcenter .rwp-icon {
+                margin-inline:auto}
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .flex-column-right {
+                text-align: right
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .flex-column-right .rwp-icon {
+                margin-inline:auto 0}
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.noimage {
+                position: relative
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.top {
+                align-items: flex-start
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.vcenter {
+                align-items: center
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.bottom {
+                align-items: flex-end
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .left {
+                justify-content: flex-start
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .hcenter {
+                justify-content: center
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .right {
+                justify-content: flex-end
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.bottom.left,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.top.left,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.vcenter.left {
+                justify-content: flex-start
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.bottom.hcenter,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.top.hcenter,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.vcenter.hcenter {
+                justify-content: center
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.bottom.right,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.top.right,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.vcenter.right {
+                justify-content: flex-end
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .overlay-transparent {
+                background-image: linear-gradient(180deg,transparent,0,transparent)
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .gradient-top:not(.overlay-transparent) {
+                background-image: linear-gradient(0deg,rgba(0,0,0,.54),0,rgba(0,0,0,.54) 90%);
+                width: 100%;
+                display: flex;
+                flex-direction: column
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .gradient-vcenter:not(.overlay-transparent) {
+                background: linear-gradient(0deg,rgba(0,0,0,.3) 0,0,rgba(0,0,0,.3) 100%,rgba(0,0,0,.3) 0);
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .gradient-bottom:not(.overlay-transparent) {
+                background-image: linear-gradient(180deg,rgba(0,0,0,.54),0,rgba(0,0,0,.54));
+                width: 100%;
+                display: flex;
+                flex-direction: column
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .noimage-bottom,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .noimage-top,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .noimage-vcenter {
+                width: 100%
+            }
+
+            @media screen and (max-width: 767.9px) {
+                .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .noimage-bottom,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .noimage-top,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content .noimage-vcenter {
+                    padding:5% 0
+                }
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content a {
+                color: #6bc1f3
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content a:focus-visible {
+                border-radius: .125rem;
+                outline: .125rem solid #fff!important;
+                outline-offset: .1875rem;
+                box-shadow: 0 0 0 .25rem #0672cb
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content div {
+                font-size: 16px
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content div.description,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content h3.title {
+                margin: 5px 20px;
+				font-weight : 400;
+            }
+
+            @media screen and (min-width: 1024px) {
+                .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content h3.title {
+                    font-size:32px
+                }
+            }
+
+            @media screen and (max-width: 1023.9px) and (min-width:768.9px) {
+                .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content h3.title {
+                    font-size:24px
+                }
+            }
+
+            @media screen and (max-width: 767.9px) {
+                .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content h3.title {
+                    font-size:24px
+                }
+            }
+
+            @media screen and (max-width: 767.9px) {
+                .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.noimage {
+                    justify-content:center!important;
+                    align-items: center!important
+                }
+
+                .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.noimage .flex-column-left,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.noimage .flex-column-right {
+                    text-align: center
+                }
+
+                .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.noimage .flex-column-left .rwp-icon,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .content.noimage .flex-column-right .rwp-icon {
+                    margin-inline:auto}
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .arrow-icon {
+                margin-left: 10px
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .arrow-icon svg {
+                padding: 0
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .arrow-icon,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .arrow-icon-obj {
+                max-width: 20px;
+                max-height: 20px;
+                fill: currentColor!important;
+                text-decoration: none;
+                display: inline;
+                white-space: nowrap
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .link-tag {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                z-index: 2;
+                text-decoration: none
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .link-tag:focus+.content-link,.rwp-webpart-TileLayout .grid .grid-item.flip .grid-cardFlipContainer .grid-cardFlipBack .link-tag:hover+.content-link {
+                cursor: pointer;
+                text-decoration: underline
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.colorchange {
+                background-color: var(--bg-color);
+                transition: background-color .5s ease-in-out
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.colorchange:focus-visible,.rwp-webpart-TileLayout .grid .grid-item.colorchange:hover {
+                background-color: var(--hover-color)
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.colorchange:has(a:focus-visible) {
+                background-color: var(--hover-color)
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.rise {
+                overflow: hidden
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.rise img {
+                transform: scale(1);
+                transition: .4s ease-in-out
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.rise .content div div {
+                transform: translateY(calc(100% - 7.4375rem));
+                transition: .7s cubic-bezier(.19,1,.22,1)
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.rise .content div div .description {
+                opacity: 0;
+                transform: translateY(.875rem);
+                transition: transform .7s cubic-bezier(.19,1,.22,1),opacity .7s cubic-bezier(.19,1,.22,1) .12s
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.rise .content:hover {
+                align-items: center
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.rise .content:hover div div {
+                transform: translateY(0)
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.rise .content:hover div div .description {
+                opacity: 1;
+                transform: translateY(0);
+                transition-delay: 87.5
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.zoom {
+                overflow: hidden
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.zoom img {
+                transform: scale(1);
+                transition: .4s ease-in-out
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.zoom.slow img {
+                transition: .7s ease-in-out
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.zoom.medium img {
+                transition: .4s ease-in-out
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.zoom.fast img {
+                transition: .1s ease-in-out
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.zoom:focus img,.rwp-webpart-TileLayout .grid .grid-item.zoom:hover img {
+                transform: scale(1.3)
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.zoom:focus.slow img,.rwp-webpart-TileLayout .grid .grid-item.zoom:hover.slow img {
+                transition: .7s ease-in-out
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.zoom:focus.medium img,.rwp-webpart-TileLayout .grid .grid-item.zoom:hover.medium img {
+                transition: .4s ease-in-out
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.zoom:focus.fast img,.rwp-webpart-TileLayout .grid .grid-item.zoom:hover.fast img {
+                transition: .1s ease-in-out
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.grayscale img,.rwp-webpart-TileLayout .grid .grid-item.grayscale svg {
+                filter: grayscale(100%)
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.grayscale.slow img,.rwp-webpart-TileLayout .grid .grid-item.grayscale.slow svg {
+                transition: 1s ease-in-out
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.grayscale.medium img,.rwp-webpart-TileLayout .grid .grid-item.grayscale.medium svg {
+                transition: .6s ease-in-out
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.grayscale.fast img,.rwp-webpart-TileLayout .grid .grid-item.grayscale.fast svg {
+                transition: .1s ease-in-out
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.grayscale:focus img,.rwp-webpart-TileLayout .grid .grid-item.grayscale:focus svg,.rwp-webpart-TileLayout .grid .grid-item.grayscale:hover img,.rwp-webpart-TileLayout .grid .grid-item.grayscale:hover svg {
+                filter: grayscale(0)
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item.grayscale img:has(+a:focus-visible) {
+                filter: grayscale(0)
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item--no-border .content {
+                border: none!important
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item--no-txt-overlay.zoom {
+                padding-bottom: 20%
+            }
+
+            @media screen and (max-width: 767.9px) {
+                .rwp-webpart-TileLayout .grid .grid-item--no-txt-overlay.zoom {
+                    padding-bottom:5%
+                }
+            }
+
+            .rwp-webpart-TileLayout .grid .grid-item--no-txt-overlay:not(.zoom) .content.gradient {
+                position: relative;
+                height: auto;
+                border-start-start-radius: 0;
+                border-start-end-radius: 0
+            }
+
+            .rwp-webpart-TileLayout .grid.A_2Tiles_1Row {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(1,1fr)
+            }
+
+            .rwp-webpart-TileLayout .grid.A_2Tiles_1Row .grid-item:first-child {
+                grid-column-start: 1;
+                grid-row-start: 1;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.A_2Tiles_1Row .grid-item:nth-child(2) {
+                grid-column-start: 2;
+                grid-row-start: 1;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.B_3Tiles_1Row {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(1,1fr)
+            }
+
+            .rwp-webpart-TileLayout .grid.B_3Tiles_1Row .grid-item:first-child {
+                grid-column-start: 1;
+                grid-row-start: 1;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.B_3Tiles_1Row .grid-item:nth-child(2) {
+                grid-column-start: 2;
+                grid-row-start: 1;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.B_3Tiles_1Row .grid-item:nth-child(3) {
+                grid-column-start: 3;
+                grid-row-start: 1;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.C_4Tiles_2Rows {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,1fr)
+            }
+
+            .rwp-webpart-TileLayout .grid.C_4Tiles_2Rows .grid-item:first-child {
+                grid-column-start: 1;
+                grid-row-start: 1;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.C_4Tiles_2Rows .grid-item:nth-child(2) {
+                grid-column-start: 2;
+                grid-row-start: 1;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.C_4Tiles_2Rows .grid-item:nth-child(3) {
+                grid-column-start: 1;
+                grid-row-start: 2;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.C_4Tiles_2Rows .grid-item:nth-child(4) {
+                grid-column-start: 2;
+                grid-row-start: 2;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.D_5Tiles_1Big4Small {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,1fr)
+            }
+
+            .rwp-webpart-TileLayout .grid.D_5Tiles_1Big4Small .grid-item:first-child {
+                grid-column-start: 1;
+                grid-row-start: 1;
+                grid-column-end: span 1;
+                grid-row-end: span 2
+            }
+
+            .rwp-webpart-TileLayout .grid.D_5Tiles_1Big4Small .grid-item:nth-child(2) {
+                grid-column-start: 2;
+                grid-row-start: 1;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.D_5Tiles_1Big4Small .grid-item:nth-child(3) {
+                grid-column-start: 3;
+                grid-row-start: 1;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.D_5Tiles_1Big4Small .grid-item:nth-child(4) {
+                grid-column-start: 2;
+                grid-row-start: 2;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.D_5Tiles_1Big4Small .grid-item:nth-child(5) {
+                grid-column-start: 3;
+                grid-row-start: 2;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.E_6Tiles_3Rows {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(3,1fr)
+            }
+
+            .rwp-webpart-TileLayout .grid.E_6Tiles_3Rows .grid-item:first-child {
+                grid-column-start: 1;
+                grid-row-start: 1;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.E_6Tiles_3Rows .grid-item:nth-child(2) {
+                grid-column-start: 2;
+                grid-row-start: 1;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.E_6Tiles_3Rows .grid-item:nth-child(3) {
+                grid-column-start: 1;
+                grid-row-start: 2;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.E_6Tiles_3Rows .grid-item:nth-child(4) {
+                grid-column-start: 2;
+                grid-row-start: 2;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.E_6Tiles_3Rows .grid-item:nth-child(5) {
+                grid-column-start: 1;
+                grid-row-start: 3;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.E_6Tiles_3Rows .grid-item:nth-child(6) {
+                grid-column-start: 2;
+                grid-row-start: 3;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.F_7Tiles_1Big6Small {
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: repeat(2,1fr)
+            }
+
+            .rwp-webpart-TileLayout .grid.F_7Tiles_1Big6Small .grid-item:first-child {
+                grid-column-start: 1;
+                grid-row-start: 1;
+                grid-column-end: span 1;
+                grid-row-end: span 2
+            }
+
+            .rwp-webpart-TileLayout .grid.F_7Tiles_1Big6Small .grid-item:nth-child(2) {
+                grid-column-start: 2;
+                grid-row-start: 1;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.F_7Tiles_1Big6Small .grid-item:nth-child(3) {
+                grid-column-start: 3;
+                grid-row-start: 1;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.F_7Tiles_1Big6Small .grid-item:nth-child(4) {
+                grid-column-start: 4;
+                grid-row-start: 1;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.F_7Tiles_1Big6Small .grid-item:nth-child(5) {
+                grid-column-start: 2;
+                grid-row-start: 2;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.F_7Tiles_1Big6Small .grid-item:nth-child(6) {
+                grid-column-start: 3;
+                grid-row-start: 2;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid.F_7Tiles_1Big6Small .grid-item:nth-child(7) {
+                grid-column-start: 4;
+                grid-row-start: 2;
+                grid-column-end: span 1;
+                grid-row-end: span 1
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-White .grid-item .content,.rwp-webpart-TileLayout .grid--borders-White .grid-item .content .flex-column {
+                border-color: #fff;
+                fill: #fff
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-White .grid-item .content {
+                box-sizing: border-box;
+                border: 1px solid #fff
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Black .grid-item .content,.rwp-webpart-TileLayout .grid--borders-Black .grid-item .content .flex-column {
+                border-color: #000;
+                fill: #000
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Black .grid-item .content {
+                box-sizing: border-box;
+                border: 1px solid #000
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Blue .grid-item .content,.rwp-webpart-TileLayout .grid--borders-Blue .grid-item .content .flex-column {
+                border-color: #0672cb;
+                fill: #0672cb
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Blue .grid-item .content {
+                box-sizing: border-box;
+                border: 1px solid #0672cb
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-LightBlue .grid-item .content,.rwp-webpart-TileLayout .grid--borders-LightBlue .grid-item .content .flex-column {
+                border-color: #41b6e6;
+                fill: #41b6e6
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-LightBlue .grid-item .content {
+                box-sizing: border-box;
+                border: 1px solid #41b6e6
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Quartz .grid-item .content,.rwp-webpart-TileLayout .grid--borders-Quartz .grid-item .content .flex-column {
+                border-color: #eee;
+                fill: #eee
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Quartz .grid-item .content {
+                box-sizing: border-box;
+                border: 1px solid #eee
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Carbon .grid-item .content,.rwp-webpart-TileLayout .grid--borders-Carbon .grid-item .content .flex-column {
+                border-color: #444;
+                fill: #444
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Carbon .grid-item .content {
+                box-sizing: border-box;
+                border: 1px solid #444
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Gray .grid-item .content,.rwp-webpart-TileLayout .grid--borders-Gray .grid-item .content .flex-column {
+                border-color: grey;
+                fill: grey
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Gray .grid-item .content {
+                box-sizing: border-box;
+                border: 1px solid grey
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Granite .grid-item .content,.rwp-webpart-TileLayout .grid--borders-Granite .grid-item .content .flex-column {
+                border-color: #c8c9c7;
+                fill: #c8c9c7
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Granite .grid-item .content {
+                box-sizing: border-box;
+                border: 1px solid #c8c9c7
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Midnight .grid-item .content,.rwp-webpart-TileLayout .grid--borders-Midnight .grid-item .content .flex-column {
+                border-color: #00447c;
+                fill: #00447c
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Midnight .grid-item .content {
+                box-sizing: border-box;
+                border: 1px solid #00447c
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Purple .grid-item .content,.rwp-webpart-TileLayout .grid--borders-Purple .grid-item .content .flex-column {
+                border-color: #6e2585;
+                fill: #6e2585
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Purple .grid-item .content {
+                box-sizing: border-box;
+                border: 1px solid #6e2585
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Berry .grid-item .content,.rwp-webpart-TileLayout .grid--borders-Berry .grid-item .content .flex-column {
+                border-color: #b7295a;
+                fill: #b7295a
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Berry .grid-item .content {
+                box-sizing: border-box;
+                border: 1px solid #b7295a
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Orange .grid-item .content,.rwp-webpart-TileLayout .grid--borders-Orange .grid-item .content .flex-column {
+                border-color: #ee6411;
+                fill: #ee6411
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Orange .grid-item .content {
+                box-sizing: border-box;
+                border: 1px solid #ee6411
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Red .grid-item .content,.rwp-webpart-TileLayout .grid--borders-Red .grid-item .content .flex-column {
+                border-color: #ce1126;
+                fill: #ce1126
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Red .grid-item .content {
+                box-sizing: border-box;
+                border: 1px solid #ce1126
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Green .grid-item .content,.rwp-webpart-TileLayout .grid--borders-Green .grid-item .content .flex-column {
+                border-color: #6ea204;
+                fill: #6ea204
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Green .grid-item .content {
+                box-sizing: border-box;
+                border: 1px solid #6ea204
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Yellow .grid-item .content,.rwp-webpart-TileLayout .grid--borders-Yellow .grid-item .content .flex-column {
+                border-color: #f2af00;
+                fill: #f2af00
+            }
+
+            .rwp-webpart-TileLayout .grid--borders-Yellow .grid-item .content {
+                box-sizing: border-box;
+                border: 1px solid #f2af00
+            }
+
+            .rwp-webpart-TileLayout .grid--overlay-White .grid-item .content .gradient-bottom,.rwp-webpart-TileLayout .grid--overlay-White .grid-item .content .gradient-top,.rwp-webpart-TileLayout .grid--overlay-White .grid-item .content .gradient-vcenter {
+                background: #fff!important
+            }
+
+            .rwp-webpart-TileLayout .grid--overlay-Black .grid-item .content .gradient-bottom,.rwp-webpart-TileLayout .grid--overlay-Black .grid-item .content .gradient-top,.rwp-webpart-TileLayout .grid--overlay-Black .grid-item .content .gradient-vcenter {
+                background: #000!important
+            }
+
+            .rwp-webpart-TileLayout .grid--overlay-Blue .grid-item .content .gradient-bottom,.rwp-webpart-TileLayout .grid--overlay-Blue .grid-item .content .gradient-top,.rwp-webpart-TileLayout .grid--overlay-Blue .grid-item .content .gradient-vcenter {
+                background: #0672cb!important
+            }
+
+            .rwp-webpart-TileLayout .grid--overlay-LightBlue .grid-item .content .gradient-bottom,.rwp-webpart-TileLayout .grid--overlay-LightBlue .grid-item .content .gradient-top,.rwp-webpart-TileLayout .grid--overlay-LightBlue .grid-item .content .gradient-vcenter {
+                background: #41b6e6!important
+            }
+
+            .rwp-webpart-TileLayout .grid--overlay-Quartz .grid-item .content .gradient-bottom,.rwp-webpart-TileLayout .grid--overlay-Quartz .grid-item .content .gradient-top,.rwp-webpart-TileLayout .grid--overlay-Quartz .grid-item .content .gradient-vcenter {
+                background: #eee!important
+            }
+
+            .rwp-webpart-TileLayout .grid--overlay-Carbon .grid-item .content .gradient-bottom,.rwp-webpart-TileLayout .grid--overlay-Carbon .grid-item .content .gradient-top,.rwp-webpart-TileLayout .grid--overlay-Carbon .grid-item .content .gradient-vcenter {
+                background: #444!important
+            }
+
+            .rwp-webpart-TileLayout .grid--overlay-Gray .grid-item .content .gradient-bottom,.rwp-webpart-TileLayout .grid--overlay-Gray .grid-item .content .gradient-top,.rwp-webpart-TileLayout .grid--overlay-Gray .grid-item .content .gradient-vcenter {
+                background: grey!important
+            }
+
+            .rwp-webpart-TileLayout .grid--overlay-Granite .grid-item .content .gradient-bottom,.rwp-webpart-TileLayout .grid--overlay-Granite .grid-item .content .gradient-top,.rwp-webpart-TileLayout .grid--overlay-Granite .grid-item .content .gradient-vcenter {
+                background: #c8c9c7!important
+            }
+
+            .rwp-webpart-TileLayout .grid--theme-Dark .grid-item .content,.rwp-webpart-TileLayout .grid--theme-Dark .grid-item .content h3.title {
+                color: #f5f6f7
+            }
+
+            @media screen and (min-width: 1024px) {
+                .rwp-webpart-TileLayout .grid--theme-Dark .grid-item .content h3.title {
+                    font-size:clamp(1.5rem,1.5rem,2rem);
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: normal
+                }
+            }
+
+            .rwp-webpart-TileLayout .grid--theme-Dark .grid-item .content p.description {
+                color: #b6b6b6
+            }
+
+            @media screen and (min-width: 1024px) {
+                .rwp-webpart-TileLayout .grid--theme-Dark .grid-item .content p.description {
+                    font-size:clamp(1rem,1.25rem,1.5rem);
+                    font-weight: 400
+                }
+            }
+
+            .rwp-webpart-TileLayout .grid--theme-Light .grid-item .content,.rwp-webpart-TileLayout .grid--theme-Light .grid-item .content h3.title {
+                color: #0a0e14
+            }
+
+            @media screen and (min-width: 1024px) {
+                .rwp-webpart-TileLayout .grid--theme-Light .grid-item .content h3.title {
+                    font-size:clamp(1.5rem,1.5rem,2rem);
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: normal
+                }
+            }
+
+            .rwp-webpart-TileLayout .grid--theme-Light .grid-item .content p.description {
+                color: #0a0e14
+            }
+
+            @media screen and (min-width: 1024px) {
+                .rwp-webpart-TileLayout .grid--theme-Light .grid-item .content p.description {
+                    font-size:clamp(1rem,1.25rem,1.5rem);
+                    font-weight: 400
+                }
+            }
+        </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('.nav-links a');
+            const navSection = document.querySelector('.nav-links-section');
+            const sections = Array.from(links).map(link => document.querySelector(link.getAttribute('href')));
+            let lastActive = -1;
+
+            function onScroll() {
+                const offset = 70; // approximate nav height
+                // toggle scrolled shadow when page moved
+                if (navSection) navSection.classList.toggle('scrolled', window.scrollY > 8);
+
+                let activeIndex = sections.findIndex(sec => {
+                    if (!sec) return false;
+                    const rect = sec.getBoundingClientRect();
+                    return rect.top <= offset && rect.bottom > offset;
+                });
+
+                if (activeIndex !== lastActive) {
+                    lastActive = activeIndex;
+                    links.forEach((link, i) => {
+                        if (i === activeIndex) link.classList.add('active');
+                        else link.classList.remove('active');
+                    });
+
+                    // on small screens, try to keep the active nav item centered
+                    if (activeIndex >= 0 && window.innerWidth < 768) {
+                        const el = links[activeIndex];
+                        el && el.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                    }
+                }
+            }
+
+            function scrollToWithOffset(target) {
+                if (!target) return;
+                const navHeight = navSection ? navSection.offsetHeight : 0;
+                const rectTop = target.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({ top: Math.max(0, rectTop - navHeight), behavior: 'smooth' });
+            }
+
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        scrollToWithOffset(target);
+                    }
+                    // center clicked link on small screens, delayed so vertical scroll completes
+                    if (window.innerWidth < 768) {
+                        const self = this;
+                        // small delay improves reliability and avoids needing a second click
+                        setTimeout(() => {
+                            try { self.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' }); } catch (err) {}
+                        }, 220);
+                    }
+                });
+            });
+
+            // If the page is loaded with a hash, scroll to it with offset
+            if (location.hash) {
+                const initialTarget = document.querySelector(location.hash);
+                if (initialTarget) {
+                    // small delay to allow layout/ images to settle
+                    setTimeout(() => scrollToWithOffset(initialTarget), 60);
+                }
+            }
+
+            window.addEventListener('scroll', onScroll);
+            onScroll();
+            // also update on resize to ensure centering works after orientation change
+            window.addEventListener('resize', onScroll);
+
+            // compute CSS variable for nav height to use in scroll-margin and body padding
+            function updateNavHeightVar() {
+                if (navSection) {
+                    const h = navSection.offsetHeight;
+                    document.documentElement.style.setProperty('--nav-height', h + 'px');
+                }
+            }
+            updateNavHeightVar();
+            window.addEventListener('resize', updateNavHeightVar);
+        });
+    </script>
+<link rel="preload" href="/oql2EfmdIF5LCVwQyMI4I4yl2s0/tacamS0wf3zJtr/QlM4AQE/WElSA/lZMVDAB" as="script" type="text/javascript" fetchpriority="low"><script >bazadebezolkohpepadr="85514683"</script><script type="text/javascript" src="https://www.dell.com/akam/13/518d975"  defer></script>
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch","rua.ceh":"false","rua.ueh":"false","rua.ieh.st":"0"}]);</script>
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="PPZDW-V6BN3-Q822L-3Q2JJ-YJVJB",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"PPZDW-V6BN3-Q822L-3Q2JJ-YJVJB";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="slccliyxey74c2ptpx3a-f-6f3b95320-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1453246","ak.ai":parseInt("901122",10),"ak.ol":"0","ak.cr":426,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"25f32f55","ak.r":48478,"ak.a2":n,"ak.m":"","ak.n":"essl","ak.cport":55217,"ak.gh":"23.209.103.30","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1777565174","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==Z+OR+KqZqGQUkReQHz8nuea/dmNi6bMvEfA8xcBTwvB5QvgcdJe8CThJB0OrHAqjQ8KXpySuuXjy01vxQ9GQyZPnd+RI+or9SU6+kCXS6cRxmzhyeqF6/UGcPw0Ndv3s1uvROl068vr8ta1i8zMIQxunrgsdnkcLBTtbti4c01Mfc3bUvPiuFbweTXeTzaWCwegCI/8lj5BOVjm3j3AnqyrULfHCINDQuTivIvbZbQFN85fOYV9ryobBX7UWgUXfboVnK8/gMWCPLT8C+4HzxkoAXN/FRhQ8ITsjuprLVnc1lAhvLJarVec9iQWZ9v2PdMLsMRjsMq+zwo5kHAzeXv1HLenldZVUpPfImk7HfIPd/WxfSlnX2/C1eTq9+Z5dSA/IAoSmJypuhM8DttCjjl7OsGZfQv03Q3pso6Fmx2Q=","ak.pv":"24","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script><script >bazadebezolkohpepadr="130462952"</script><script type="text/javascript" src="https://ea2cn-prod-outlet.dell.com/akam/13/7c6b46d"  defer></script></head>
+<div class="promotional-banner" style="background-color: #0085c3;       margin-bottom: 10px;padding: 10px 0px; text-align: center; color: white; font-family: Arial, Helvetica, sans-serif;">æä»¬çç½ä¸ååºç°å·²å³é­ï¼è¡·å¿æè°¢æ¨å¤å¹´æ¥æç»­çæ¯æä¸åç±ï¼è½ç¶æä»¬ä¸åç´æ¥çéè¿ç½é¡µå¤çè®¢åï¼ä½æ¨ä»å¯éè¿ä¸æ¹ååºçå¯ä¿¡åå®¶è¿è¡è´­ä¹°ï¼ é¢ç¥æ¨è´­ç©æå¿«ï¼</div>
+<body>
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">ea2cn-prod-outlet.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+	<a href="https://www.dell.com/zh-cn/outlet" style="
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: flex;
+	margin-left: 12px;"> 
+
+
+
+	<img src="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/dell_logo_2020_40px.png.mst.png" alt="logo"> </a>
+	<h2 class="main_header_text">Dell Outlet - ç»è¿è®¤è¯çç¿»æ°äº§å</p>
+	<div class="hpg-hero-section">
+		<div>
+			<picture>
+				<source srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/outlet-info-page-india-hero-banner-2800x839.png"
+					data-mst-lazy-srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/outlet-info-page-india-hero-banner-2800x839.png" media="(min-width: 768px)">
+				<noscript>
+					<source srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/outlet-info-page-india-hero-banner-2800x839.png" media="(min-width: 768px)">
+				</noscript>
+				<source srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/cn/fy27q1/outlet-info-page-china-hero-banner-mobile-1200x1660.png"
+					data-mst-lazy-srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/cn/fy27q1/outlet-info-page-china-hero-banner-mobile-1200x1660.png"
+					media="(max-width: 767px)">
+				<noscript>
+					<source srcset="php-learning/hero_banner_china_outlet.png" media="(max-width: 767px)">
+				</noscript> <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/outlet-info-page-india-hero-banner-2800x839.png"
+					data-mst-lazy-src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/outlet-info-page-india-hero-banner-2800x839.png" alt="SALE" style="width: 100%;"
+					class=" lazyloaded">
+				<noscript><img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/outlet-info-page-india-hero-banner-2800x839.png" alt="SALE"/></noscript>
+			</picture>
+		</div>
+		<div class="hpg-mobile-container">
+			<div class="hpg-card-text" data-theme="light" data-placement="bottom" data-text-placement="left">
+				<div class="hpg-card-inner-div">
+					<div class="hpg-card-copy">
+						<div class="hpg-card-copy-promotext" style="color: #fff;">å³äº Dell Outlet.</div>
+						
+						<div class='hpg-card-copy-promotext' style="color:#d4d7da;">å¨æ´å°ï¼æä»¬æä¾ä»¥è¶å¼ä»·äº«åç¿»æ°å°å¼æºåç¬è®°æ¬çµèï¼è¿äºäº§åå·²éè¿ä¸¥æ ¼çç¿»æ°æµç¨ï¼æ¢å¤è³ä¸å¨æ°äº§ååç­çæ§è½åè´¨éæ å</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="nav-links-section">
+	 <ul class="nav-links">
+            <li><a href="#product-range">äº§åèå´</a></li>
+            <li><a href="#doc-section">äº§åç±»å«</a></li>
+            <li><a href="#why-dell-div">ä¸ºä½éæ© Dell Outlet</a></li>
+            <li><a href="#navigation-class">è´­ä¹°æ¸ é</a></li>
+        </ul>
+     </div>
+<div id="product-range" class="product-range">
+	<section class="pg-section-wrapper">
+    <div class="pg-container">
+        <div class="pg-card">
+            <div class="pg-image-box">
+            	<a href="https://www.dell.com/zh-cn/shop/scc/scr/laptops">
+                <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/laptop-in-outlet-info-page-product-range-tile.png" alt="ç¬è®°æ¬"></a>
+            </div>
+            <a href="https://www.dell.com/zh-cn/shop/scc/scr/laptops" class="pg-label">ç¬è®°æ¬</a>
+        </div>
+        <div class="pg-card">
+            <div class="pg-image-box">
+            	<a href="https://www.dell.com/zh-cn/shop/scc/scr/desktops">
+                <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/desktop-in-outlet-info-page-product-range-tile.png" alt="å°å¼æº"></a>
+            </div>
+            <a href="https://www.dell.com/zh-cn/shop/scc/scr/desktops" class="pg-label">å°å¼æº</a>
+        </div>
+        <div class="pg-card">
+            <div class="pg-image-box">
+            	<a href="https://www.dell.com/zh-cn/shop/monitors-monitor-accessories/sac/monitors/all-monitors">
+                <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/monitor-in-outlet-info-page-product-range-tile.png" alt="æ¾ç¤ºå¨ ">
+            </a>
+            </div>
+            <a href="https://www.dell.com/zh-cn/shop/monitors-monitor-accessories/sac/monitors/all-monitors" class="pg-label">æ¾ç¤ºå¨ </a>
+        </div>
+        <div class="pg-card">
+            <div class="pg-image-box">
+            	 <a href="https://www.dell.com/zh-cn/shop/scc/sc/servers">
+                <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/servers-in-outlet-info-page-product-range-tile.png" alt="æå¡å¨"></a>
+            </div>
+            <a href="https://www.dell.com/zh-cn/shop/scc/sc/servers" class="pg-label pg-label-active">æå¡å¨</a>
+        </div>
+        <div class="pg-card">
+            <div class="pg-image-box">
+            	<a href="https://www.dell.com/zh-cn/shop/accessories">
+                <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/keyboard-in-outlet-info-page-product-range-tile.png" alt="éä»¶"></a>
+            </div>
+            <a href="https://www.dell.com/zh-cn/shop/accessories" class="pg-label">éä»¶</a>
+        </div>
+
+    </div>
+</section>
+</div>
+
+
+
+<section id="doc-section" data-id="Product-Category" class=" doc-section cp-tabset__tab-content" aria-label="Product Category">
+                            
+
+    <div id="cp-container-in-en-bsd-514b2394-2b9d-47f8-9606-69ee0a3b55db-outlet-in-product-category" class="cp-container cp-container-d--theme-None cp-container-m--theme-None cp-container-d--transparency-0 cp-container-m--transparency-0 cp-container-d--bg-image-True cp-container-m--bg-image-True cp-container-d--bg-image-parallax-True cp-container-m--bg-image-parallax-True cp-container-d--bg-video-False cp-container-m--bg-video-False">
+
+            <style type="text" data-type="text/css">
+ #cp-container-in-en-bsd-514b2394-2b9d-47f8-9606-69ee0a3b55db-outlet-in-product-category { background-image: url("https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/na/fy26q1/uhp-hero-banner-mobile-slate-dark-700-1534x800.png"); }             </style>
+
+            <style type="text" data-type="text/css">
+ #cp-container-in-en-bsd-514b2394-2b9d-47f8-9606-69ee0a3b55db-outlet-in-product-category { background-image: url("https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/na/fy26q1/uhp-hero-banner-mobile-slate-dark-700-1534x800.png"); }             </style>
+
+
+
+        <div class="cp-container__body cp-container-d__body--width-Wide cp-container-m__body--width-Inherit cp-container-d__body--height-0 cp-container-m__body--height-0 cp-container-d__body--padding-top-Standard cp-container-m__body--padding-top-Standard cp-container-d__body--padding-bottom-Standard cp-container-m__body--padding-bottom-Standard cp-container-d__body--padding-left-Large cp-container-m__body--padding-left-Standard cp-container-d__body--padding-right-Large cp-container-m__body--padding-right-Standard cp-container-d__overlay--verticalalign-Center cp-container-m__overlay--verticalalign-Center cp-container-d__overlay--horizontalalign-Center cp-container-m__overlay--horizontalalign-Center">
+            <div class="cp-container__overlay cp-container-d__overlay--theme-None cp-container-m__overlay--theme-None cp-container-d__overlay--style-Rounded cp-container-m__overlay--style-Rounded cp-container-d__overlay--transparency-0 cp-container-m__overlay--transparency-0 cp-container-d__overlay--width-0 cp-container-m__overlay--width-0 cp-container-d__overlay--padding-None cp-container-m__overlay--padding-None">
+                        
+
+    <section id="in-en-bsd-514b2394-2b9d-47f8-9606-69ee0a3b55db-outlet-in-product-category" data-version="1.0" data-type="TileLayout" data-cid="514b2394-2b9d-47f8-9606-69ee0a3b55db" data-iid="outlet-in-product-category" data-did="1ebee7f6-a334-4879-b582-43cc8cfefa40" class="rwp-webpart rwp-webpart-TileLayout">
+
+                
+            <div class="rwp-webpart__subtitle rwp-webpart__title--centered"><h2 style="color: #ffffff;">è´­ä¹°æ¸ é</h2></div>
+                        
+
+    <div style="grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(1, 1fr); grid-gap:40px;" class="grid Z_Custom Static grid-gap grid--borders-None grid--overlay-Gradient grid--theme-None">
+
+            <div id="in-en-bsd-514b2394-2b9d-47f8-9606-69ee0a3b55db-outlet-in-product-category" class="grid-item flip" style="--bg-color:#; grid-column-start: 1; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; z-index:3;">
+
+            <div class="grid-cardFlipContainer">
+                <div class="grid-cardFlipFront">
+                    
+    
+<script type="application/ld+json">
+    {"@context": "https://schema.org/",
+    "@type": "ImageObject",
+    "contentUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-new-used-icon-front.png",
+    "creator": {
+        "@type": "Organization",
+        "name": "Dell"}}
+</script>
+
+
+
+    <img class="rwp-image" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/cn/fy27q1/cn-outlet-info-page-new-used-icon-front.png" alt="" loading="eager">
+
+
+
+
+                </div>
+                <div class="grid-cardFlipBack">
+                    
+
+
+    <div class="content content-link vcenter hcenter noimage">
+        <div class="  hcenter">
+            <div class="flex-column flex-column-hcenter">
+                
+                <div class="description"><p style="font-size: 20px; text-align: center; color: #8deeff;">å¨æ°æªä½¿ç¨çäº§åè¦ä¹æ¯åºåå°è£çï¼è¦ä¹æ¯å¼ç®±æªä½¿ç¨çï¼ä»æªè¢«å®¢æ·ä½¿ç¨ï¼è½¯ä»¶å°è£å®æ´ãè¿ç±»äº§åéå¸¸æ¯åºå­è¿å©æéè´§è®¢åãå¨æ°æªä½¿ç¨çäº§åæ²¡æä»»ä½å¤è§æä¼¤ã</p></div>
+            </div>
+        </div>
+    </div>
+
+                </div>
+            </div>
+
+    </div>
+            <div id="in-en-bsd-514b2394-2b9d-47f8-9606-69ee0a3b55db-outlet-in-product-category" class="grid-item flip" style="--bg-color:#; grid-column-start: 2; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; z-index:2;">
+
+            <div class="grid-cardFlipContainer">
+                <div class="grid-cardFlipFront">
+                    
+    
+<script type="application/ld+json">
+    {"@context": "https://schema.org/",
+    "@type": "ImageObject",
+    "contentUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-refurbished-icon-front.png",
+    "creator": {
+        "@type": "Organization",
+        "name": "Dell"}}
+</script>
+
+
+
+    <img class="rwp-image" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/cn/fy27q1/cn-outlet-info-page-new-used-icon-front.png" alt="" loading="eager">
+
+
+
+
+                </div>
+                <div class="grid-cardFlipBack">
+                    
+
+
+    <div class="content content-link vcenter hcenter noimage">
+        <div class="  hcenter">
+            <div class="flex-column flex-column-hcenter">
+                
+                <div class="description"><p style="font-size: 20px; text-align: center; color: #8deeff;">è¿æ°äº§åæ¯æ´å°é«åè´¨è®¤è¯ç¿»æ°æºï¼ç»è¿ä¸¥æ ¼çç¿»æ°æµç¨ï¼ä»¥è¾¾å°æ´é«çè´¨éåæ§è½æ åãè¿äºç¿»æ°äº§åå¯è½æè½»å¾®å¯è§çççµï¼ä½ä¸å½±åæ§è½ï¼æå¤è§ä¸å¨æ°ç¸åã</p></div>
+            </div>
+        </div>
+    </div>
+
+                </div>
+            </div>
+
+    </div>
+            <div id="in-en-bsd-514b2394-2b9d-47f8-9606-69ee0a3b55db-outlet-in-product-category" class="grid-item flip" style="--bg-color:#; grid-column-start: 3; grid-column-end: span 1; grid-row-start: 1; grid-row-end: span 1; z-index:1;">
+
+            <div class="grid-cardFlipContainer">
+                <div class="grid-cardFlipFront">
+                    
+    
+<script type="application/ld+json">
+    {"@context": "https://schema.org/",
+    "@type": "ImageObject",
+    "contentUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-scratch-dent-icon-front.png",
+    "creator": {
+        "@type": "Organization",
+        "name": "Dell"}}
+</script>
+
+
+
+    <img class="rwp-image" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/cn/fy27q1/cn-outlet-info-page-new-used-icon-front.png" alt="" loading="eager">
+
+
+
+
+                </div>
+                <div class="grid-cardFlipBack">
+                    
+
+
+    <div class="content content-link vcenter hcenter noimage">
+        <div class="  hcenter">
+            <div class="flex-column flex-column-hcenter">
+                
+                <div class="description"><p style="font-size: 20px; text-align: center; color: #8deeff;">ççµäº§åæ¯ç»è®¤è¯çç¿»æ°äº§åï¼è½æå¤è§ççµä½ä¸å½±åæ§è½ãè¿ç±»çµèçå±å¹æ å®çæå¹é·ï¼é®çå­ç¬¦å®æ´ï¼è§¦æ§æ¿ææææ æä¼¤ã</p></div>
+            </div>
+        </div>
+    </div>
+
+                </div>
+            </div>
+
+    </div>
+
+</div>
+
+                <script type="text/javascript">if (typeof dellScriptLoader !== 'undefined') dellScriptLoader.load([{"url":"//www.dell.com/cdn/assets/csb/campaignpage/bundles/2.0.0.23194/js/tilelayout-bundle.js","order":"100","crossorigin":false}])</script>
+    </section>
+
+
+            </div>
+        </div>
+    </div>
+
+
+                </section>
+
+
+        <div id="why-dell-div" class="why-dell-div">
+        	<div class="why-dell-header">
+        <p>ä¸ºä½éæ© Dell Outlet</p>
+        <p style="font-size:13px">Dell Outlet æä¾ä»ç¿»æ°æºå°æå¡ä¸æ¯æçå¨æ¹ä½è§£å³æ¹æ¡ï¼å¸®å©æ¨å¨ä¸çºç²è´¨éçåæä¸å®ç°èçã</p>
+    </div>
+        	<div class="hpg-hero-section">
+		<div>
+			<picture>
+				<source srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image1.png"
+					data-mst-lazy-srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image1.png" media="(min-width: 768px)">
+				<noscript>
+					<source srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image1.png" media="(min-width: 768px)">
+				</noscript>
+				<source srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/cn/fy27q1/cn-outlet-info-page-why-dell-outlet-image1-1200x1660.png"
+					data-mst-lazy-srcset=https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/cn/fy27q1/cn-outlet-info-page-why-dell-outlet-image1-1200x1660.png
+					media="(max-width: 767px)">
+				<noscript>
+					<source srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/cn/fy27q1/cn-outlet-info-page-why-dell-outlet-image1-1200x1660.png" media="(max-width: 767px)">
+				</noscript> <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image1.png"
+					data-mst-lazy-src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image1.png" alt="SALE" style="width: 100%;"
+					class=" lazyloaded">
+				<noscript><img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image1.png" alt="SALE"/></noscript>
+			</picture>
+		</div>
+		<div class="hpg-mobile-container">
+			<div class="hpg-card-text" data-theme="light" data-placement="bottom" data-text-placement="left">
+				<div class="hpg-card-inner-div">
+					<div class="hpg-card-copy">
+						<div class="hpg-card-copy-promotext" style="color: #fff;">é«åè´¨ä¸è¶å¼</div>
+						
+						<div class='hpg-card-copy-promotext' style="color:#d4d7da;">Dell Outlet è®©æ¨ä»¥æ´ä¼æ çä»·æ ¼äº«åæ´å°è®¤è¯çè´¨éãæ¯å°ç¿»æ°æºåç»è¿ä¸¥æ ¼æ£æ¥ãæµè¯ï¼å¹¶ç±æä»¬çæéä¿ä¿®æ¯æï¼ç¡®ä¿æ¨è·å¾å¯é çæ§è½ååå®çèçã</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="hpg-hero-section">
+		<div>
+			<picture>
+				<source srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image2.png"
+					data-mst-lazy-srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image2.png" media="(min-width: 768px)">
+				<noscript>
+					<source srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image2.png" media="(min-width: 768px)">
+				</noscript>
+				<source srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/cn/fy27q1/cn-outlet-info-page-why-dell-outlet-image2-1200x1660.png"
+					data-mst-lazy-srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/cn/fy27q1/cn-outlet-info-page-why-dell-outlet-image2-1200x1660.png"
+					media="(max-width: 767px)">
+				<noscript>
+					<source srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/cn/fy27q1/cn-outlet-info-page-why-dell-outlet-image2-1200x1660.png" media="(max-width: 767px)">
+				</noscript> <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image2.png"
+					data-mst-lazy-src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image2.png" alt="SALE" style="width: 100%;"
+					class=" lazyloaded">
+				<noscript><img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image2.png" alt="SALE"/></noscript>
+			</picture>
+		</div>
+		<div class="hpg-mobile-container">
+			<div class="hpg-card-text" style="left: auto;right: 0;justify-content: flex-end;" data-theme="light" data-placement="bottom" data-text-placement="right">
+				<div class="hpg-card-inner-div">
+					<div class="hpg-card-copy">
+						<div class="hpg-card-copy-promotext" style="color: #fff;">ä¸æ°ååç­ä¿ä¿®</div>
+						
+						<div class='hpg-card-copy-promotext' style="color:#d4d7da;">ææ Dell Outlet æ´æºäº§åååå«ä¸å¨æ°æºåç­æ åçæéä¿ä¿®ãè¯¦æè¯·åé<a href="https://www.dell.com/support/contractservices/zh-cn/">æ¡æ¬¾ä¸æ¡ä»¶</a>
+						</div>
+						<div class='hpg-card-copy-promotext' style="color:#d4d7da;">ç¹å»<a href="https://www.dell.com/support/incidents-online/zh-cn/contactus/Dynamic?lwp=rt">æ­¤å¤</a>æ¥çæ¨çä¿ä¿®ä¿¡æ¯ã
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class="hpg-hero-section">
+		<div>
+			<picture>
+				<source srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image3.png"
+					data-mst-lazy-srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image3.png" media="(min-width: 768px)">
+				<noscript>
+					<source srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image3.png" media="(min-width: 768px)">
+				</noscript>
+				<source srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/cn/fy27q1/cn-outlet-info-page-why-dell-outlet-image3-1200x1660.png"
+					data-mst-lazy-srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/cn/fy27q1/cn-outlet-info-page-why-dell-outlet-image3-1200x1660.png"
+					media="(max-width: 767px)">
+				<noscript>
+					<source srcset="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/cn/fy27q1/cn-outlet-info-page-why-dell-outlet-image3-1200x1660.png" media="(max-width: 767px)">
+				</noscript> <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image3.png"
+					data-mst-lazy-src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image3.png" alt="SALE" style="width: 100%;"
+					class=" lazyloaded">
+				<noscript><img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/in/in-outlet-info-page-why-dell-outlet-image3.png" alt="SALE"/></noscript>
+			</picture>
+		</div>
+		<div class="hpg-mobile-container">
+			<div class="hpg-card-text" data-theme="light" data-placement="bottom" data-text-placement="left">
+				<div class="hpg-card-inner-div">
+					<div class="hpg-card-copy">
+						<div class="hpg-card-copy-promotext" style="color: #fff;">å¯æç»­æ§</div>
+						
+						<div class='hpg-card-copy-promotext' style="color:#d4d7da;">Dell Outlet éè¿ç¿»æ°éåçäº§åå¹¶è´è´£ä»»å°åæ¶å¶ä½é¨åï¼æå¤§ååå©ç¨ï¼å ä¸ºå¯æç»­æ§å¨æ¯ä¸ªç¯èé½è³å³éè¦ã</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+	<div id="navigation-class" class="navigation-class">
+	
+
+		<!-- <div class="navigation-class">
+			<div class="topnav">
+				<ul class="chat-buy">
+					<ul class="chat-buy">
+						<li> 
+							      <a id="sdfc_link"  style="color: #007db8;" href="#" class="btn btn-primary">
+									<img class=""
+										style="max-width: 20px; height: auto; display: inline-block; vertical-align: top;"
+										src="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/1145_Global_Ameexchatdrawericon_20x20_1.jpg">
+									ä¸éå®äººåèå¤©</a><span class="chat-span">Mon - Fri: 8:30 - 17:30, Sat: 11:00 - 19:00</span>
+						</li>
+						<li>
+							 <a id="chat_link"  style="color: #007db8;" href="#" class="btn btn-primary">
+									<img class=""
+										style="max-width: 20px; height: auto; display: inline-block; vertical-align: top;"
+										src="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/1145_Global_Ameexchatdrawericon_20x20_2.jpg">
+									è¯·è´çµæä»¬çéå®é¨é¨: 400-881-1858</a><span class="chat-span">GebÃ¼hrenfrei, Mo - Fr: 9:00-18:00</span>
+						</li>
+					</ul>
+			</div>
+		</div> -->
+		
+		<div class="Where-to-Buy-table-block">
+			<section data-id="Where-to-Buy" class="cp-tabset__tab-content" aria-label="Where to Buy">
+                            
+
+    <div id="cp-container-in-en-bsd-006adec1-d1a4-4f43-9e81-4f10fd356b83-outlet-in-why-dell-outlet-band-h3" class="cp-container cp-container-d--theme-None cp-container-m--theme-None cp-container-d--transparency-0 cp-container-m--transparency-0 cp-container-d--bg-image-True cp-container-m--bg-image-True cp-container-d--bg-image-parallax-True cp-container-m--bg-image-parallax-True cp-container-d--bg-video-False cp-container-m--bg-video-False">
+
+            <style type="text" data-type="text/css">
+ #cp-container-in-en-bsd-006adec1-d1a4-4f43-9e81-4f10fd356b83-outlet-in-why-dell-outlet-band-h3 { background-image: url("https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/na/fy26q3/uhp-hero-banner-mobile-slate-dark-800-1534x800.png"); }             </style>
+
+            <style type="text" data-type="text/css">
+ #cp-container-in-en-bsd-006adec1-d1a4-4f43-9e81-4f10fd356b83-outlet-in-why-dell-outlet-band-h3 { background-image: url("https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/na/fy26q3/uhp-hero-banner-mobile-slate-dark-800-1534x800.png"); }             </style>
+
+
+
+        <div id="where-to-buy-block" class="cp-container__body cp-container-d__body--width-Wide cp-container-m__body--width-Inherit cp-container-d__body--height-0 cp-container-m__body--height-0 cp-container-d__body--padding-top-Standard cp-container-m__body--padding-top-Standard cp-container-d__body--padding-bottom-None cp-container-m__body--padding-bottom-Standard cp-container-d__body--padding-left-Standard cp-container-m__body--padding-left-Standard cp-container-d__body--padding-right-Standard cp-container-m__body--padding-right-Standard cp-container-d__overlay--verticalalign-Center cp-container-m__overlay--verticalalign-Center cp-container-d__overlay--horizontalalign-Center cp-container-m__overlay--horizontalalign-Center">
+            <div class="cp-container__overlay cp-container-d__overlay--theme-None cp-container-m__overlay--theme-None cp-container-d__overlay--style-Rounded cp-container-m__overlay--style-Rounded cp-container-d__overlay--transparency-0 cp-container-m__overlay--transparency-0 cp-container-d__overlay--width-0 cp-container-m__overlay--width-0 cp-container-d__overlay--padding-None cp-container-m__overlay--padding-None">
+                        
+
+    <section id="in-en-bsd-006adec1-d1a4-4f43-9e81-4f10fd356b83-outlet-in-why-dell-outlet-band-h3" data-version="1.0" data-type="ContentLayout" data-cid="006adec1-d1a4-4f43-9e81-4f10fd356b83" data-iid="outlet-in-why-dell-outlet-band-h3" data-did="20754611-9f16-4237-b5f8-521ec2491bd7" class="rwp-webpart rwp-webpart-ContentLayout">
+
+                
+            <div class="rwp-webpart__subtitle rwp-webpart__title--centered"><h2 class="rwp-webpart__title rwp-webpart__title--centered " id="in-en-bsd-006adec1-d1a4-4f43-9e81-4f10fd356b83-outlet-in-why-dell-outlet-band-h2-title" style="text-align: center;color: #ffffff;font-weight: 300;font-size: 28px;">è´­ä¹°æ¸ é</h2></div>
+                        
+    <div class="rwp-contentlayout">
+       
+   
+   
+        <div class="business-card">
+            <div class="column">
+                <h1 class="main-title">æ²³åé¿æ³½çµå­ç§ææéå¬å¸</h1>
+                <div class="logo-container">
+                    <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/cn/fy27q1/pinduoduo-cn-info-page-product-where-to-buy-tile.png" alt="Ariston Logo">
+                </div>
+            </div>
+   
+            <div class="column divider">
+                <h2 class="section-title">ä»£çäº§å</h2>
+                <ul class="list">
+                    <li>å®¶ç¨ç¬è®°æ¬</li>
+                    <li>å°å¼æºåæ¾ç¤ºå¨</li>
+                    <li>å¤æäººç¬è®°æ¬</li>
+                </ul>
+            </div>
+   
+            <div class="column divider">
+                <h2 class="section-title">æ¼å¤å¤åºéº</h2>
+                <div class="location-group">
+                    <p>æ´å°é¿æ³½å®ç¿»æºä¸ååº</p>
+                </div>
+            </div>
+        </div>
+        <div class="business-card second-card">
+            <div class="column">
+                <h1 class="main-title">åäº¬é¸¿åè¯ä¿¡æ¯ç§ææéå¬å¸</h1>
+                <div class="logo-container">
+                    <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/cn/fy27q1/pinduoduo-cn-info-page-product-where-to-buy-tile.png" alt="Ariston Logo">
+                </div>
+            </div>
+   
+            <div class="column divider">
+                <h2 class="section-title">ä»£çäº§å</h2>
+                <ul class="list">
+                    <li>å®¶ç¨ç¬è®°æ¬</li>
+                    <li>å°å¼æº</li>
+                    <li>å¤æäººç¬è®°æ¬</li>
+                    <li>æ¾ç¤ºå¨åå¨è¾¹äº§å</li>
+                </ul>
+            </div>
+   
+            <div class="column divider">
+                <h2 class="section-title">æ¼å¤å¤åºéº</h2>
+                <div class="location-group">
+                    <p>æ´å°é¸¿åè¯å®ç¿»æºä¸ååº</p>
+                </div>
+            </div>
+        </div>
+        <div class="business-card">
+            <div class="column">
+                <h1 class="main-title">æ²³åç¿¼æç§ææéå¬å¸</h1>
+                <div class="logo-container">
+                    <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/outlet/apj/cn/fy27q1/pinduoduo-cn-info-page-product-where-to-buy-tile.png" alt="Ariston Logo">
+                </div>
+            </div>
+   
+            <div class="column divider">
+                <h2 class="section-title">ä»£çäº§å</h2>
+                <ul class="list">
+                    <li>å®¶ç¨ç¬è®°æ¬</li>
+                    <li>å°å¼æºåæ¾ç¤ºå¨</li>
+                    <li>å¤æäººç¬è®°æ¬</li>
+                </ul>
+            </div>
+   
+            <div class="column divider">
+                <h2 class="section-title">æ¼å¤å¤åºéº</h2>
+                <div class="location-group">
+                    <p>æ´å°ç¿¼æå®ç¿»æºä¸ååº</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+        </section>
+		</div>
+		
+</div>
+		<footer class="page-footer">
+			<div class="footer-style-08 text-center">
+				<div class="footer-content-top" style="margin-bottom: 33px;">
+					<div class="container">
+						<ul>
+							<li data-testid="footer-row2-links"><a class=""
+									href="https://corporate.delltechnologies.com/zh-cn/about-us.htm?~ck=mn">å¬å¸ä¿¡æ¯</a>
+							</li>
+							<li data-testid="footer-row1-links"><a class=""
+									href="https://corporate.delltechnologies.com/zh-cn/social-impact.htm">ä¼ä¸ç¤¾ä¼è´£ä»»</a>
+							</li>
+							<li data-testid="footer-row1-links"><a class=""
+									href="https://www.delltechnologies.com/zh-cn/events/calendar.htm?~ck=mn">æ´»å¨
+									Verantwortung</a></li>
+							<li data-testid="footer-row1-links"><a class=""
+									href="//chinajobs.dell.com/?~ck=mn">å·¥ä½æºä¼</a></li>
+							<li data-testid="footer-row1-links"><a class=""
+									href="https://www.dell.com/community/zh/categories/æ´å°ç¤¾åº">æ´å°ç¤¾åº</a></li>
+							
+							<li data-testid="footer-row1-links"><a class=""
+									href="https://www.delltechnologies.com/zh-cn/index.htm?~ck=mn">Dell Technologies</a>
+							</li>
+						</ul>
+						<div class="col-md-4 col-sm-5"><div class="newsletter footer-box"><p class="newsletter-title h5">éæ©å½å®¶/å°åº</p><div id="footer-content-5" class="classfooter"><div class="select"><select onchange="window.location.href=this.value" id="footer-country" aria-label="select country">
+											<option value=" " title="de">ä¸­å½å¤§éå°åº</option>
+											<option value="https://www.dell.com/en-au/outlet" title="au">
+												æ¾³å¤§å©äº </option>
+											<option value="https://www.dell.com/en-sg/outlet?cyid=1" title="sg">æ°å å¡
+											</option>
+											<option value="https://www.dell.com/en-my/outlet?cyid=2" title="my">é©¬æ¥è¥¿äº
+											</option>
+											<option value="https://www.dell.com/pt-br/outlet?cyid=3" title="br">å·´è¥¿
+											</option>
+											<option value="https://www.dell.com/en-ie/outlet?cyid=4" title="ie">
+												ç±å°å° </option>
+						
+											<option value="https://www.dell.com/en-us/dfh/lp/outlet?cyid=5" title="us">
+												ç¾å½ </option>
+											<option value="https://www.dellrefurbished.co.uk/" title="gb">
+												è±å½ </option>
+										</select>
+
+
+
+
+
+									</div><div><img id="footerflag" class="img-responsive ls-is-cached lazyloaded" src="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/437_DE_Footericon_FY23Q2_100x100.png" data-mst-lazy-src="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/437_DE_Footericon_FY23Q2_100x100.png" alt="china flag" width="20" height="20"><noscript><img id="footerflag" class="img-responsive" src="https://deoutlet-webpages.s3.eu-central-1.amazonaws.com/Images/437_DE_Footericon_FY23Q2_100x100.png" alt="china flag" width="20" height="20"></noscript></div></div></div></div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="footer-refurbished">
+							<ul class="bottom-links">
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://www.dell.com/zh-cn/lp/legal/site-terms-of-use-copyright">Â©
+										2026
+										Dell</a></li>
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://www.dell.com/zh-cn/lp/legal/terms-of-sale">éå®æ¡æ¬¾</a></li>
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://www.dell.com/zh-cn/lp/legal/policies-privacy">éç§å£°æ</a>
+								</li>
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://www.dell.com/zh-cn/lp/legal/terms">æ³å¾åæ³è§</a> </li>
+								<li data-testid="footer-row2-links"><a class=""
+										href="https://corporate.delltechnologies.com/zh-cn/social-impact/advancing-sustainability/how-to-recycle.htm">äº§ååæ¶</a>
+								</li>
+							</ul>
+						</div>
+						<br><strong class="footer-text">ç¿»æ°ç³»ç»æ¡æ¬¾åæ¡ä»¶</strong>
+						<br>
+						<p class="footer-text-content">ç»è®¤è¯çç¿»æ°äº§åæ¯ä»¥åæå¼/ä½¿ç¨è¿çäº§åãè¿äºäº§åç»è¿äºä¸¥æ ¼çç¿»æ°è¿ç¨ï¼ä»¥è¾¾å°æ´é«çè´¨éåæ§è½æ åãç¿»æ°äº§åå¯è½å­å¨ä¸äºä¸å½±åæ§è½çå¤è§ççµãææç¿»æ°äº§åååå«æ åç 1å¹´æéä¿ä¿®ï¼é¤éå¦æè¯´æï¼ãä»·æ ¼åè§æ ¼å¨åå¸ä¹æ¥æ­£ç¡®æ è¯¯ï¼ä½åç°è´§ä¾åºéå¶ï¼ä¹å¯è½éæ¶æ´æ¹ï¼æä¸å¦è¡éç¥ãæ´å°ä¸è½ä¿è¯æ¨è½å¤äº«åå°æåçä¿éæ´»å¨åä»·æ ¼ãæ´å°å®æ¹ç¿»æ°æºä¸æ´å°å®ç½å¬å¸çåæ°æºåºåéç½®åéä»¶å¯è½ä¸ä¸è´ï¼ä¾å¦ä¸åå«Microsoft Officeè½¯ä»¶è®¸å¯è¯ç­ï¼ï¼å·ä½çç¿»æ°äº§åä¿¡æ¯è¯·ä»¥è¯¥äº§åçè¯¦æé¡µé¢å±ç¤ºçåå®¹ä¸ºåï¼è¯·æ¨å¨ä¸åä¹åä»ç»éè¯»å¹¶ååäºè§£ãå¨æ³å¾åè®¸çæå¤§èå´åï¼æ´å°ä¸å¤©ä¼éæºãå®æ¹ç¿»æ°æºæç¡®åé¤æ³å®ä¸åä¹å¡ãå¦éæ´å¤ä¿¡æ¯ï¼è¯·å¨è¯¢å¨çº¿éå®é¡¾é®ã</p>
+
+						<p class="footer-text-content">ä¸å¾æç¤ºçäº§åå¾çä»ä¾åèã</p>
+						<p class="footer-text-content">éè¯¯ï¼è½ç¶æä»¬ä¼å°½åæ£æ¥ä»·æ ¼ãåºå­æ°éåå¶ä»éè¯¯ï¼ä½å¶å°ä»ä¼åºç°çå¿½éè¯¯ï¼å æ­¤æ´å°ä¿çæç»ç±æ­¤ç±»éè¯¯æå¼åä¹è®¢åçæå©ã</p>
+						<p class="footer-text-content">éè´§æ¿ç­ï¼å¦ææ¨æ¯ä¸ªäººæ¶è´¹èä¸ºäºçæ´»æ¶è´¹è´­ä¹°äºæ´å°å®ç¿»æºäº§åå¯ä»¥äº«å7å¤©æ çç±éè´§æ¿ç­ï¼éè´§éæ¬¾è¯·èç³»æ´å°å®¢æ·å³æé¨çµè¯ï¼400-881-1856ãå¦ææ¨ä¸ºéä¸ªäººæ¶è´¹èï¼å¼å·å¬å¸åç¥¨ï¼è´­ä¹°æ´å°å®ç¿»æºäº§ååä¸äº«å7å¤©æ çç±éè´§æ¿ç­ãå·²æ¿æ´» Windowsç³»ç»çä¸»æºï¼ä¸æ¯æ 7 å¤©æ çç±éè´§ãç±äºWindows 11ç³»ç»å¨é¦æ¬¡èç½ä½¿ç¨æ¶ä¼èªå¨æ¿æ´»ï¼è¯·æ¨ç¡®è®¤éæ±ååèç½ææ¿æ´»ä½¿ç¨ã</p>
+						<p class="footer-text-content">ç°åºæå¡ï¼å¨éè¿çµè¯è¿è¡æéå¤çåï¼å¦æå¿è¦å°åç°åºæ´¾é£ææ¯äººåï¼æ´¾éæ¿æ¢é¨ä»¶æè®¾å¤ï¼æ ¹æ®æå¡ååï¼ãåé¶ä»¶å¯ç¨æ§ãå°çä½ç½®éå¶ï¼å¨æäºå°åºä¸æä¾ç°åºæå¡å/æä¸ä¸å·¥ä½æ¥æå¡ï¼åæå¡ååæ¡æ¬¾éå¶ãæå¡æ¶é´æ ¹æ®åæ´å°æçµè¯çæ¶é´è¿è¡æåºãæ¿æ¢ä»¶å¯è½ä¸ºç¿»æ°ä»¶ã</p>
+						<p class="footer-text-content">å®ä»·ï¼æ­¤ç«ç¹ä¸æä¾çå®ä»·æ¯æ´å°çå¨çº¿ç´éå®ä»·ï¼éç¨äºä¸å¤©ä¼éæºãç¿»æ°æºã</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		 <script>
+         const deploymentIDs = {
+            de: '6fe15e56-113e-4f79-ac1d-ed3a9319459e', //german
+            en: 'ee01c3a6-f49f-419c-aa12-da53cf82ef39', //english
+            es: '7f94bc17-9c4e-476c-b780-ac03d973dab5', //spanish
+            fr: '4125f07e-f609-452d-8db8-e4a96b4753e3', //french
+            it: '3a008259-b7af-4b92-b76d-554a271e9a7b', //italian
+            ja: '6b2e0ae4-8866-45d4-977f-2b26eeb6a8ea', //japanses
+            nl: '5d0ba1fd-0b6c-44a6-88c4-55b0913acc97', //dutch
+            pt: 'f02ebb87-aee8-4448-9e91-b933542b7756', //portuguese
+            sv: 'a617c207-5e89-4965-bf8b-bfe9459b38af', //swedish
+            zh: '455e4314-8177-451b-a9fa-098d33a812ca', //china
+            'zh-hk': '47feeec1-c4d1-404d-90d7-ebfbb79038fe'//china traditional
+         };
+
+         const state = {
+            deploymentID: null,
+            participantData: null
+         };
+
+         const dbSet = () => {
+               Genesys('command', 'Database.set', {
+                  messaging: {
+                     customAttributes: state.participantData
+                  }
+               });
+            };
+
+         const init = (pd = {}) => {
+            if(!pd || typeof pd !== 'object' || Array.isArray(pd)) {
+               console.error('init: pd must be an object');
+               return;
+            }
+
+            if(
+               !pd.languageCode 
+               || !pd.sourceSite 
+               || typeof pd.languageCode !== 'string' 
+               || typeof pd.sourceSite !== 'string'
+               || !/^[a-zA-Z]{2}-[a-zA-Z]{2}/.test(pd.languageCode)
+            ) {
+               console.error('init: pd.languageCode or pd.sourceSite are invalid');
+               return;
+            }
+            
+            pd.languageCode = pd.languageCode.toLowerCase();
+            state.participantData = pd;
+
+            if(deploymentIDs.hasOwnProperty(pd.languageCode)) {
+               state.deploymentID = deploymentIDs[pd.languageCode];
+            } else if(deploymentIDs.hasOwnProperty(pd.languageCode.substring(0, 2))) {
+               state.deploymentID = deploymentIDs[pd.languageCode.substring(0, 2)];
+            }
+
+            (function (g, e, n, es, ys) {
+               g['_genesysJs'] = e;
+               g[e] = g[e] || function () {
+                  (g[e].q = g[e].q || []).push(arguments)
+               };
+               g[e].t = 1 * new Date();
+               g[e].c = es;
+               ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+            })(window, 'Genesys', 'https://apps.mypurecloud.com/genesys-bootstrap/genesys.min.js', {
+               environment: 'prod',
+               deploymentId: state.deploymentID
+            });
+ Genesys("subscribe", "Launcher.ready", () => {
+                document.cookie = "GenesysChat = opened";
+                Genesys("command", "Messenger.open");
+            });
+            Genesys("subscribe", "Messenger.closed", () => {
+                document.getElementById("sdfc_link").style.pointerEvents = "visible";
+                document.cookie = "GenesysChat" + '=; Max-Age=-99999999; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=';
+            });
+            Genesys('subscribe', 'Messenger.ready', dbSet);
+            Genesys('subscribe', 'MessagingService.conversationDisconnected', dbSet);
+            Genesys('subscribe', 'MessagingService.conversationCleared', dbSet);
+         }
+
+         window.dellSalesChat = {
+            init
+         }
+      </script>
+       <script>
+            function getCookie(name) {
+                const value = `; ${document.cookie}`;
+                const parts = value.split(`; ${name}=`);
+                if (parts.length === 2) {
+                    return parts.pop().split(';').shift();
+                }
+                return null;
+            }
+            document.addEventListener('DOMContentLoaded', function() {
+                if (getCookie('GenesysChat') == 'opened') {
+                    geneSysChatOpen();
+
+                }
+            });
+         document.getElementById('sdfc_link')?.addEventListener('click', (e) => {
+			console.log('sfdc_link clicked');
+    e.preventDefault();
+    geneSysChatOpen();
+});
+
+            function geneSysChatOpen() {
+                document.getElementById("sdfc_link").style.pointerEvents = "none";
+                window.dellSalesChat.init({
+                    sourceSite: 'https://www.dell.com/zh-cn',
+                    languageCode: 'zh-Hans',
+                    countryCode: 'CN',
+                    firstName: "",
+                    lastName: "",
+                    emailAddress: "",
+                    categoryID: ''
+                });
+            }
+        </script>
+<script type="text/javascript"  src="/oql2EfmdIF5LCVwQyMI4I4yl2s0/tacamS0wf3zJtr/QlM4AQE/WElSA/lZMVDAB"></script><link rel="stylesheet" type="text/css"  href="/oql2EfmdIF5LCVwQyMI4I4yl2s0/SL/Uj0fAQE/VHgoE/34yXj9Y"><script  src="/oql2EfmdIF5LCVwQyMI4I4yl2s0/SL/Uj0fAQE/CTxBI/CBxJjkq" async defer></script><div id="sec-overlay" style="display:none;"><div id="sec-container"></div></div><noscript><img src="https://www.dell.com/akam/13/pixel_518d975?a=dD00ODM3MzQyZWQxZGE0ZjQyZTkwNzQ0YjViYzhlYjI3NmYxYjU2ZTkxJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript><script type="text/javascript"  src="/oql2EfmdIF5LCVwQyMI4I4yl2s0/SLcamS5O/TARAAQE/YV0tY/2gpKHgPAg?v=2b3428ab-39be-df3b-5f5e-ea31ab2517d2" defer></script><noscript><img src="https://ea2cn-prod-outlet.dell.com/akam/13/pixel_7c6b46d?a=dD00NTU0NDczMzI2ZDE2MTVjMWE2MDUxOWVjNTMxOGFjYWRjZmFlMmZhJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+</html>
+

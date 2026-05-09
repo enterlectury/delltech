@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <base href="https://dfs.dell.com/">
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Dell Financial Services" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="stylesheet" href="https://uicore.dellcdn.com/0.1.7/css/dds-fonts.min.css" async/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      media="all"
+      async
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <script id="DellMetrics">
+      var routeMapping = { '#/': 'home' };
+      var hash = window.location.hash;
+      var formatEvent = ev =>
+        [ev]
+          .map(p => unescape(p))
+          .map(p => p.toLowerCase())
+          .map(p => p.replace(/[^\w]/gi, ''))
+          .pop();
+      Dell = window.Dell || {};
+      Dell.Metrics = Dell.Metrics || {};
+      Dell.Metrics.sc = Dell.Metrics.sc || {};
+      // dynamic values based on site
+      Dell.Metrics.sc.country = 'us';
+      Dell.Metrics.sc.language = 'en';
+      // always set as corp
+      Dell.Metrics.sc.segment = 'corp';
+      // always set as empty string
+      Dell.Metrics.sc.customerset = '';
+      // always set to external for 3rd party sites
+      Dell.Metrics.sc.cms = 'external';
+      // relevant unique page name or empty string
+      Dell.Metrics.sc.pagename =
+        'us|en|corp|publicpages|' + (routeMapping[hash] || formatEvent(hash));
+      // relevant application name
+      Dell.Metrics.sc.applicationname = 'Public Pages';
+      function scrollToTarget(ev) {
+        const id = ev?.target?.attributes?.scrollto?.value;
+        if(!id) return;
+        const element = document.querySelector(id);
+        if (element) element.scrollIntoView();
+      };
+
+    </script>
+    <script type="module" crossorigin src="/assets/index-57c35577.js"></script>
+    <link rel="stylesheet" href="/assets/index-18e5fab9.css">
+  <link rel="preload" href="/CVIz/TiY_/tV/d2q5/uWkQ/h5w7LbXD7hkXLDwY/PCRj/WSAl/HFcMQisB" as="script" type="text/javascript" fetchpriority="low"><script nonce="0b25d0d382799cd3e3317f16c30ddcd2">bazadebezolkohpepadr="130462952"</script><script type="text/javascript" src="https://dfs.dell.com/akam/13/7c6b46d" nonce="0b25d0d382799cd3e3317f16c30ddcd2" defer></script></head>
+  <body class="d-flex flex-column">
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">dfs.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root" class="h-100"></div>
+    
+  <script type="text/javascript" nonce="0b25d0d382799cd3e3317f16c30ddcd2" src="/CVIz/TiY_/tV/d2q5/uWkQ/h5w7LbXD7hkXLDwY/PCRj/WSAl/HFcMQisB"></script><noscript><img src="https://dfs.dell.com/akam/13/pixel_7c6b46d?a=dD00NTU0NDczMzI2ZDE2MTVjMWE2MDUxOWVjNTMxOGFjYWRjZmFlMmZhJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+</html>

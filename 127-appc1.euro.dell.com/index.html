@@ -1,0 +1,758 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+Set common variables that all existing page states (LOGIN, LOGOUT, and SSO_FAILURE) will use.
+The request scope makes these values accessible to other jsp pages.
+-->
+
+
+
+
+
+<!-- Branding -->
+
+
+
+
+
+
+
+<!-- Supported login options -->
+
+
+
+
+
+
+
+
+<!-- Variables unique to the login state page of the sign-in flow. -->
+
+
+<!doctype html>
+<html lang="en_US">
+    <head>
+  <base href="https://appc1.euro.dell.com/">
+        <title>VMware Cloud Director</title>
+
+        
+
+
+
+    
+    
+        <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,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">
+    
+
+
+<!--
+By default, IE forces intranet sites to use compatibility mode.
+When the browser is in compatibility mode our application fails to load.
+The tag below forces IE to use the highest standard mode allowing our app to load on our intranet.
+-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<link href="/login/css/clarity-base.css?t=23400185" rel="stylesheet" id="clarity-base">
+<link href="/login/css/webapp-auth.css?t=23400185" rel="stylesheet">
+
+    
+    
+    
+    
+        <link href="css/theme-default.css?t=23400185" rel="stylesheet" id="theme-default">
+    
+
+
+<style>
+    .branded-background {
+        
+    }
+</style>
+
+    </head>
+
+    <body>
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">appc1.euro.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+Set common variables that all existing page states (LOGIN, LOGOUT, and SSO_FAILURE) will use.
+The request scope makes these values accessible to other jsp pages.
+-->
+
+
+
+
+
+<!-- Branding -->
+
+
+
+
+
+
+
+<!-- Supported login options -->
+
+
+
+
+
+
+
+<div id="blankCanvas"></div>
+
+<div>
+    <div class="login-wrapper branded-background">
+        <vcd-login-view>
+            <form id="login-form" class="login" novalidate="" onsubmit="return onSubmit()">
+                <div class="login-header"></div>
+
+                <div id="vcdLoginView">
+                    <section class="title">
+                        <div class="welcome">
+                            
+                                
+                                
+                                    
+                                
+                            
+                            VMware Cloud Director
+                        </div>
+
+                        <div class="tenant-info">
+                            <h6>Organization</h6>
+                            <h3 class="tenant-name"></h3>
+                            <a id="changeOrgLink" href="/" class="btn btn-sm btn-link change-tenant-btn">
+                                Change Organization
+                            </a>
+                        </div>
+                    </section>
+
+                    <div class="login-group">
+                        <div class="login-group-notifications">
+                            
+
+                            <div id="normalError" class="error active error-login" style="display: none;">
+                                Authentication Error
+                            </div>
+
+                            <div id="lockoutError" class="error active error-login" style="display: none;">
+                                Current user is locked out. Please contact your administrator.
+                            </div>
+
+                        
+                        </div>
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+Set common variables that all existing page states (LOGIN, LOGOUT, and SSO_FAILURE) will use.
+The request scope makes these values accessible to other jsp pages.
+-->
+
+
+
+
+
+<!-- Branding -->
+
+
+
+
+
+
+
+<!-- Supported login options -->
+
+
+
+
+
+
+
+
+<input id="usernameInput" class="clr-input username" placeholder="User name:" type="text">
+
+<input id="passwordInput" class="clr-input password" placeholder="Password:" type="password">
+
+<button id="loginButton" class="btn btn-primary" type="submit">
+    Sign in
+</button>
+
+<a id="otherLoginOptionsLink"
+   class="btn btn-link"
+   style="margin-left: auto; margin-right: auto; margin-top: 1rem; text-transform: uppercase; display: none"
+   onclick="toggleLoginView(); return false;">
+    Other sign in options
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+Set common variables that all existing page states (LOGIN, LOGOUT, and SSO_FAILURE) will use.
+The request scope makes these values accessible to other jsp pages.
+-->
+
+
+
+
+
+<!-- Branding -->
+
+
+
+
+
+
+
+<!-- Supported login options -->
+
+
+
+
+
+
+
+
+<!-- SAML sign in button -->
+
+
+<!-- OIDC sign in button -->
+
+
+<!-- LDAP sign in button -->
+
+                    </div>
+                </div>
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+Set common variables that all existing page states (LOGIN, LOGOUT, and SSO_FAILURE) will use.
+The request scope makes these values accessible to other jsp pages.
+-->
+
+
+
+
+
+<!-- Branding -->
+
+
+
+
+
+
+
+<!-- Supported login options -->
+
+
+
+
+
+
+
+<div id="enterTenantNameView" style="display: none;">
+    <section class="title">
+        <h3 class="welcome"></h3>
+        VMware Cloud Director
+        <h5 class="hint">Use your organization name to continue</h5>
+    </section>
+
+    <div class="login-group">
+        <input id="tenantName" class="clr-input username" placeholder="Organization name" type="text">
+
+        <button id="gotoTenantButton" class="btn btn-primary" type="submit">
+            Next
+        </button>
+
+        
+
+        <div id="tenantError" class="error active error-login"  style="display: none;">
+            Tenant name required
+        </div>
+    </div>
+</div>
+
+                <div class="login-footer">
+                    <div id="manualLoginText" class="local-account-login">
+                        <a class="btn btn-link"
+                            
+                                onclick="showIntegratedLoginForm(); return false;"
+                            
+                            >
+                            Sign in with local account
+                        </a>
+                    </div>
+
+        
+                </div>
+             </form>
+        </vcd-login-view>
+    </div>
+</div>
+
+
+        <script src="js/css-vars-ponyfill.js"></script>
+
+        <script>
+    cssVars({});
+    // Enable/Disable
+    function disable(elemId) {
+        let elem = document.getElementById(elemId);
+        if (elem) {
+            elem.disabled = true;
+        }
+    }
+
+    function enable(elemId) {
+        let elem = document.getElementById(elemId);
+        if (elem) {
+            elem.disabled = false;
+        }
+    }
+
+    // function to check disable and enable
+    function isDisabled(elemId) {
+        let elem = document.getElementById(elemId);
+        if (elem) {
+            return elem.disabled || false;
+        }
+        return true;
+    }
+
+    // Toggle
+
+    function show(elemId) {
+        let elem = document.getElementById(elemId);
+        if (elem) {
+            elem.style.display = '';
+        }
+    }
+
+    function hide(elemId) {
+        let elem = document.getElementById(elemId);
+        if (elem) {
+            elem.style.display = 'none';
+        }
+    }
+
+    function updateLoginButtonView() {
+        if (false) {
+            hide('loginButton');
+        }
+    }
+
+    function adjustHeaderBranding() {
+        
+    }
+
+    function simplePageLoad() {
+        hide('blankCanvas');
+
+        adjustHeaderBranding();
+
+        // Find the SSO button elements on the page, and add a click event listener to set the sso_redirect_org cookie.
+        const ssoButtonIds = ['samlSsoLoginButton', 'oidcSsoLoginButton']
+        for (const buttonId of ssoButtonIds) {
+            let ssoLoginButtonEl = document.getElementById(buttonId);
+            if (!!ssoLoginButtonEl) {
+
+                ssoLoginButtonEl.addEventListener(
+                    'click',
+                    function () {
+                        document.cookie = 'sso_redirect_org=' + "";
+                    }
+                );
+            }
+        }
+    }
+
+    function clearAuthData() {
+        localStorage.removeItem('authtoken');
+        localStorage.removeItem('jwt');
+        localStorage.removeItem('authcontext');
+        localStorage.removeItem('username');
+    }
+</script>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+Set common variables that all existing page states (LOGIN, LOGOUT, and SSO_FAILURE) will use.
+The request scope makes these values accessible to other jsp pages.
+-->
+
+
+
+
+
+<!-- Branding -->
+
+
+
+
+
+
+
+<!-- Supported login options -->
+
+
+
+
+
+
+
+
+<script>
+    let showingSsoButtons = false;
+
+    function loginClicked() {
+        if (isDisabled('loginButton')) {
+            return false;
+        }
+
+        let username = document.getElementById('usernameInput').value;
+        let password = document.getElementById('passwordInput').value;
+        disable('usernameInput');
+        disable('passwordInput');
+        disable('loginButton');
+        hide('normalError');
+        hide('lockoutError');
+        hide('logoutNotification')
+
+        var req = new XMLHttpRequest();
+        req.addEventListener("load", handleSuccess);
+        req.addEventListener("error", handleError);
+
+        let path = "/cloudapi/1.0.0/sessions";
+        let org = "@";
+        if (false) {
+            path += "/provider";
+            org += "System";
+        } else {
+            let tokens = "null".split(":");
+            // If service is invalid (and thus length is anything other than 2)
+            // the user can't have successful login, so no need to explicitly handle that.
+            if (tokens.length == 2) {
+                org += tokens[1];
+            }
+        }
+
+        username += org;
+        var basicAuth = safeBtoa(username + ":" + password);
+        req.open("POST", path, true);
+        req.setRequestHeader("Accept", "application/json;version=38.1");
+        req.setRequestHeader("Content-type", "application/json;version=38.1");
+        req.setRequestHeader("Authorization", "Basic " + basicAuth);
+        req.send();
+
+        return false;
+    }
+
+    // Escapes the string before encoding it via Window#btoa to safely handle the full range of unicode.
+    // See https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding
+    function safeBtoa(str) {
+        return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g,
+            function toSolidBytes(match, p1) { return String.fromCharCode('0x' + p1); }));
+    }
+
+    function handleSuccess(e) {
+        if (e.target.status == 200) {
+            redirectOrReload();
+        } else {
+            handleError(e);
+        }
+    }
+
+    function handleError(e) {
+        if (e.target.responseText && e.target.responseText.indexOf('(lockout)') > -1  ) {
+            hide("normalError");
+            hide("logoutNotification")
+            show("lockoutError");
+        } else {
+            show("normalError");
+            hide("logoutNotification")
+            hide("lockoutError");
+        }
+
+        document.getElementById('passwordInput').value = "";
+        enable('usernameInput');
+        enable('passwordInput');
+        handleLoginEnable();
+    }
+
+    function handleLoginEnable() {
+        if (document.getElementById('usernameInput').value != ""
+            && document.getElementById("passwordInput").value != ""
+            && false) {
+            enable('loginButton');
+        } else {
+            disable('loginButton');
+        }
+
+        // If the service is null, we want to request the user to enter the desired org name
+        if (true) {
+            hide('vcdLoginView');
+            hide('manualLoginText')
+            show('enterTenantNameView');
+        }
+    }
+
+    function showIntegratedLoginForm() {
+        showingSsoButtons = false;
+        hide('manualLoginText')
+        hide('samlSsoLoginButton')
+        hide('oidcSsoLoginButton')
+        hide('ldapLoginButton')
+
+        show('usernameInput');
+        show('passwordInput');
+        show('loginButton');
+
+        if (false) {
+            show('otherLoginOptionsLink')
+        } else {
+            hide('otherLoginOptionsLink')
+        }
+    }
+
+    function showSsoLoginForm() {
+        show('manualLoginText')
+        show('samlSsoLoginButton')
+        show('oidcSsoLoginButton')
+        show('ldapLoginButton')
+
+        hide('usernameInput');
+        hide('passwordInput');
+        hide('loginButton');
+        hide('otherLoginOptionsLink');
+    }
+
+    function renderActiveView() {
+        if (showingSsoButtons) {
+            return showSsoLoginForm();
+        }
+        return showIntegratedLoginForm();
+    }
+
+    function toggleLoginView() {
+        hide('errorNotification')
+        hide('logoutNotification')
+        showingSsoButtons = !showingSsoButtons
+
+        renderActiveView()
+    }
+
+    function onPageLoad() {
+        console.log("null")
+        console.log(getRedirectTo())
+
+        if (false) {
+            clearAuthData();
+        }
+
+        pushHistoryState();
+
+        setSessionCookie();
+
+        simplePageLoad();
+
+        renderActiveView();
+
+        disable('loginButton');
+
+        document.getElementById('tenantName').onkeyup = function(event) {
+            if (event.keyCode == '13') { // ENTER is pressed => submit form
+                onSubmit();
+            }
+        };
+
+        document.getElementById('usernameInput').oninput = function(event) {
+            handleLoginEnable();
+        };
+        document.getElementById('passwordInput').oninput = function(event) {
+            handleLoginEnable();
+        };
+
+        handleLoginEnable();
+
+        // Focus tenant or username input. timeout is required as the dom is not rendered and focus is not set without the timeout
+        window.setTimeout(function() {
+            if (true) {
+                document.getElementById("tenantName").focus();
+            } else {
+                document.getElementById("usernameInput").focus();
+            }
+        }, 150);
+
+    }
+
+    function pushHistoryState() {
+        if (window.history && window.history.pushState) {
+            const isOrganizationEntry = true;
+            // add support for navigating back to the organization entry page
+            window.history.pushState(isOrganizationEntry ? 'organization' : 'login', '');
+        }
+    }
+
+    function setSessionCookie() {
+        let matches = window.location.hash.match(/#vcloud_jwt=([A-Za-z0-9-_=]+\.[A-Za-z0-9-_=]+\.[A-Za-z0-9-_.+/=]+)/g);
+        if (matches !== null) {
+            document.cookie = matches[0].replace('#', '') + '; path=/; Secure';
+            redirectOrReload();
+        }
+    }
+
+    function getRedirectTo() {
+        var doc = new DOMParser().parseFromString("null", "text/html");
+        return doc.documentElement.textContent;
+    }
+
+    function redirectOrReload() {
+        
+            
+            
+            
+            
+        
+    }
+
+    function onSubmit() {
+        if (true) {
+            return redirectToService();
+        } else {
+            return loginClicked();
+        }
+    }
+
+    function redirectToService() {
+        let tenantNameElement = document.getElementById('tenantName')
+        let tenantName = tenantNameElement.value?.trim() || '';
+
+        // If the org name is not valid, empty the field and do not send the request to the backend
+        if (!new RegExp(/^[a-zA-Z0-9_\-\.\!\'\(\),\$]+$/).test(tenantName)) {
+            document.getElementById('tenantName').value = '';
+            return false;
+        }
+
+        if (tenantName == '') {
+            show('tenantError');
+            return false;
+        }
+
+        let systemOrg = 'System'
+        if (tenantName.toLowerCase() === systemOrg.toLowerCase()) {
+            window.location.replace(handleRedirection('/provider'));
+        } else {
+            window.location.replace(handleRedirection('/tenant/' + tenantName));
+        }
+
+        return false;
+    }
+
+    function handleRedirection(service) {
+        if (true) {
+            return service;
+        }
+
+        let redirectTo = getRedirectTo();
+        return service + '?redirectTo=' + encodeURIComponent(redirectTo);
+    }
+
+    window.onload = onPageLoad;
+</script>
+
+
+        <script src="js/inline.bundle.js?t=23400185"></script>
+    </body>
+</html>

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="https://mytoken.us.dell.com/">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MFA Documentation</title>
+  <style>
+    :root {
+      /* Light theme variables */
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+      --header-bg: #ffffff;
+      --sidebar-bg: #ffffff;
+      --table-header-bg: #007bff;
+      --table-header-text: #ffffff;
+      --border-color: #ddd;
+      --landing-bg: #f4f4f4;
+      --landing-text-color: #333;
+      --row-alt-bg: #fafafa;
+      --sorted-col-bg: #3399ff;
+    }
+    body.dark-mode {
+      /* Dark theme overrides */
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --header-bg: #1f1f1f;
+      --sidebar-bg: #1a1a1a;
+      --table-header-bg: #333;
+      --table-header-text: #ffffff;
+      --border-color: #333;
+      --landing-bg: #1f1f1f;
+      --landing-text-color: #fff;
+      --row-alt-bg: #1d1d1d;
+      --sorted-col-bg: #444;
+    }
+    html, body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* HEADER & THEME SWITCH */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: var(--header-bg);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      max-width: 160px;
+      margin-right: 20px;
+    }
+    .logo img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+      transition: filter 0.3s ease;
+    }
+    body.dark-mode .logo img {
+      filter: brightness(1.0) contrast(1.35);
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--text-color);
+      flex: 1;
+      text-align: center;
+    }
+    .toggle-container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .mode-text {
+      font-size: 14px;
+      color: var(--text-color);
+      margin-left: 4px;
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 24px;
+    }
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 24px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: #007bff;
+    }
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+
+    /* MAIN CONTENT & SIDEBAR */
+    .main-content {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+    .sidebar {
+      width: 200px;
+      background-color: var(--sidebar-bg);
+      border-right: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+    }
+    .sidebar h3 {
+      text-align: center;
+      margin: 0;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 18px;
+    }
+    .sidebar button {
+      background: none;
+      border: none;
+      color: var(--text-color);
+      text-align: left;
+      padding: 15px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+    }
+    .sidebar button.active {
+      background-color: #007bff;
+      color: white;
+    }
+    .sidebar button:hover {
+      background-color: rgba(0, 123, 255, 0.1);
+      color: var(--text-color);
+    }
+
+    /* DOCUMENT CONTAINER & TABLE */
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      overflow: hidden;
+    }
+    .search-box {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .table-wrapper {
+      overflow: auto;
+      flex: 1;
+    }
+    table {
+      width: 100%;
+      table-layout: fixed;
+      border-collapse: collapse;
+    }
+    colgroup col:nth-child(1) { width: 10%; }
+    colgroup col:nth-child(2) { width: 40%; }
+    colgroup col:nth-child(3) { width: 15%; }
+    colgroup col:nth-child(4) { width: 20%; }
+    colgroup col:nth-child(5) { width: 15%; }
+    th, td {
+      padding: 16px;
+      border-bottom: 1px solid var(--border-color);
+      word-wrap: break-word;
+    }
+    th {
+      background-color: var(--table-header-bg);
+      color: var(--table-header-text);
+      border-right: 1px solid var(--border-color);
+      border-bottom: none;
+    }
+    th:nth-child(1) {
+      cursor: default;
+    }
+    th.sorted-asc::after {
+      content: "â²";
+      font-size: 12px;
+      margin-left: 5px;
+    }
+    th.sorted-desc::after {
+      content: "â¼";
+      font-size: 12px;
+      margin-left: 5px;
+    }
+    th.sorted {
+      background-color: var(--sorted-col-bg);
+    }
+    tbody tr:nth-child(even) {
+      background-color: var(--row-alt-bg);
+    }
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-color);
+      word-wrap: break-word;
+    }
+    .file-icon-cell {
+      text-align: center;
+    }
+    td:nth-child(2) a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px dashed transparent;
+      transition: border-bottom-color 0.3s;
+    }
+    td:nth-child(2) a:hover {
+      border-bottom-color: currentColor;
+    }
+    .action-buttons {
+      text-align: right;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .action-buttons a {
+      text-decoration: none;
+      padding: 5px 10px;
+      color: white;
+      border-radius: 4px;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    .download { background-color: #28a745; }
+    .preview { background-color: #ffc107; }
+    .action-buttons a:hover { opacity: 0.8; }
+
+    /* PAGINATION */
+    .pagination {
+      text-align: center;
+      padding: 10px 0;
+      border-top: 1px solid var(--border-color);
+      margin-top: auto;
+    }
+    .pagination button {
+      padding: 8px 12px;
+      margin: 0 5px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .pagination button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    /* LANDING MODAL (Theme-Sensitive) */
+    .landing-modal {
+      position: fixed;
+      z-index: 2000;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--landing-bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.5s ease;
+    }
+    .landing-modal.fade-out {
+      opacity: 0;
+    }
+    .landing-logo-top {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 300px;
+    }
+    body.dark-mode .landing-logo-top {
+      filter: brightness(1.0) contrast(1.35);
+    }
+    .landing-content {
+      text-align: center;
+      padding: 20px;
+      background-color: transparent;
+      color: var(--landing-text-color);
+      border: none;
+      border-radius: 8px;
+      max-width: 90%;
+      margin-top: 0;
+    }
+    .landing-content h1 {
+      margin-bottom: 10px;
+    }
+    .landing-content p {
+      margin-bottom: 20px;
+      color: inherit;
+    }
+    .landing-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .landing-buttons button {
+      width: 280px;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+      transition: background-color 0.3s ease;
+    }
+    .landing-buttons button:hover {
+      background-color: #0056b3;
+    }
+
+    /* PDF PREVIEW MODAL */
+    .modal {
+      display: none; /* Important: keep it hidden by default */
+      position: fixed;
+      z-index: 3000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-content {
+      position: relative;
+      background-color: var(--header-bg);
+      border: 1px solid var(--border-color);
+      width: 90%;
+      max-width: 1200px;
+      max-height: 90vh;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .modal-action-bar {
+      width: 99%;
+      padding: 0px;
+      background-color: transparent;
+      text-align: right;
+    }
+    .modal-action-bar .close {
+      font-size: 28px;
+      font-weight: bold;
+      color: var(--text-color);
+      cursor: pointer;
+    }
+    .modal-action-bar .close:hover,
+    .modal-action-bar .close:focus {
+      color: red;
+      text-decoration: none;
+    }
+    .modal-content iframe {
+      width: 100%;
+      flex: 1;
+      border: none;
+      background-color: #fff;
+      min-height: 0;
+    }
+    .modal-footer {
+      text-align: center;
+      padding: 10px;
+      background-color: transparent;
+    }
+    .modal-footer button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 0 5px;
+    }
+    .modal-footer button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+      }
+      .sidebar button {
+        text-align: center;
+      }
+      .container {
+        padding: 10px;
+      }
+      .action-buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">mytoken.us.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+  <!-- Landing Modal -->
+  <div id="landingModal" class="landing-modal">
+    <img src="assets/DellTechnologies_Logo.png" alt="Dell Technologies Logo" class="landing-logo-top" />
+    <div class="landing-content">
+      <h1>Welcome Dell Team Members</h1>
+      <p>Please select one of the options below:</p>
+      <div class="landing-buttons">
+        <button id="selectHSK">For Hardware Security Key (HSK) information, click here</button>
+        <button id="selectRSA">For RSA information, click here</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <a href="/" class="logo" aria-label="Homepage">
+      <img src="assets/DellTechnologies_Logo.png" alt="Dell Technologies Logo" />
+    </a>
+    <div class="title">MFA Documentation</div>
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="themeSwitch" />
+        <span class="slider"></span>
+      </label>
+      <span class="mode-text" id="modeText">â</span>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="sidebar">
+      <h3>MFA Type</h3>
+      <button id="tab-HSK" class="active">HSK</button>
+      <button id="tab-RSA">RSA</button>
+    </div>
+    <div class="container">
+      <input type="text" id="search" class="search-box" placeholder="Search documents..." />
+      <div class="table-wrapper">
+        <table id="documentTable">
+          <colgroup>
+            <col style="width:10%;">
+            <col style="width:40%;">
+            <col style="width:15%;">
+            <col style="width:20%;">
+            <col style="width:15%;">
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="file-icon-cell">Type</th>
+              <th data-sort-column="1">Name</th>
+              <th data-sort-column="2">Size</th>
+              <th data-sort-column="3">Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="docBody"></tbody>
+        </table>
+      </div>
+      <div class="pagination">
+        <button id="prevBtn">Previous</button>
+        <span id="pageIndicator"></span>
+        <button id="nextBtn">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PDF Preview Modal (hidden by default) -->
+  <div id="pdfModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-action-bar">
+        <span id="closeModal" class="close">&times;</span>
+      </div>
+      <iframe id="pdfFrame" src="" frameborder="0"></iframe>
+      <div class="modal-footer">
+        <button id="downloadPdfButton">Download PDF</button>
+        <button id="openPdfNewWindow">Open in New Tab</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/mfadocs.js" ></script>
+</body>
+</html>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <base href="https://wox.dell.com/">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Login | WoX</title>
+
+
+
+	<link href="/Content/LayoutEmptyStyle?v=sKfR04Om9PSrPHAzCtmOzQScnr9nFAcOuWe8pZTDUSM1" rel="stylesheet"/>
+
+
+
+	<script src="/Content/LayoutEmptyScript?v=2u0aRenDpYxArEyILB59ETSCA2cfQkSMlxb6jbMBqf81"></script>
+
+
+
+<script >bazadebezolkohpepadr="130462952"</script><script type="text/javascript" src="https://wox.dell.com/akam/13/7c6b46d"  defer></script></head>
+
+<body>
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">wox.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+
+	
+
+
+
+
+
+<style>
+
+    html, body {
+
+        height: 100%;
+
+    }
+
+
+
+    .app-ver {
+
+        right: 5px;
+
+        bottom: -10px;
+
+        position: absolute;
+
+        z-index: 1;
+
+        opacity: 0.5;
+
+        color: white;
+
+    }
+
+
+
+    body {
+
+        background-image: url(../../content/images/background_login_wox.jpg);
+
+        width: 100%;
+
+        background-repeat: no-repeat;
+
+        background-position: center;
+
+        background-size: cover;
+
+    }
+
+
+
+    .login-form:after {
+
+        content: "";
+
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgTWFjaW50b3NoIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjI4RkZBQTgzNzg1NzExRTU4NTQyODc3OUM4MTZGMUREIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjI4RkZBQTg0Nzg1NzExRTU4NTQyODc3OUM4MTZGMUREIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjhGRkFBODE3ODU3MTFFNTg1NDI4Nzc5QzgxNkYxREQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjhGRkFBODI3ODU3MTFFNTg1NDI4Nzc5QzgxNkYxREQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz66uHInAAAAIUlEQVR42mL5//8/AyMj42YGIGBigABfEMEIkoEBgAADAKvuBwVS8BAjAAAAAElFTkSuQmCC);
+
+        background-size: 3px 3px;
+
+        position: absolute;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        z-index: -1;
+
+    }
+
+
+
+    .login-form {
+
+        width: 40%;
+
+        height: 100vh;
+
+        display: flex;
+
+        -webkit-flex: 1; /* Safari 6.1+ */
+
+        -ms-flex: 1; /* IE 10 */
+
+        flex: 1;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        align-items: center;
+
+        padding: 15px;
+
+    }
+
+
+
+    .panel-login {
+
+        display: table-cell;
+
+        vertical-align: middle;
+
+    }
+
+
+
+    .wrap-login100 {
+
+        border-radius: 10px;
+
+        padding: 0 0 0 50px;
+
+        margin: auto;
+
+    }
+
+
+
+    .logo-WoX-login {
+
+        color: #007db8;
+
+    }
+
+
+
+    .welcome-text {
+
+        color: #ffffff;
+
+        font-size: 48px;
+
+        font-family: Roboto-Light;
+
+        text-align: left;
+
+    }
+
+
+
+    .panel-logo {
+
+        height: 150px;
+
+        position: relative;
+
+        top: -20px;
+
+    }
+
+
+
+    @media (max-width: 980px) {
+
+        .login-form {
+
+            width: 100%;
+
+        }
+
+
+
+        .wrap-login100 {
+
+            padding: 0;
+
+        }
+
+
+
+        body::after {
+
+            left: 0;
+
+        }
+
+    }
+
+
+
+    .fadeInDown {
+
+        -webkit-animation-name: fadeInDown;
+
+        animation-name: fadeInDown;
+
+    }
+
+
+
+    .fadeInUp {
+
+        -webkit-animation-name: fadeInUp;
+
+        animation-name: fadeInUp;
+
+    }
+
+
+
+    .animated {
+
+        -webkit-animation-duration: 1s;
+
+        animation-duration: 1s;
+
+        -webkit-animation-fill-mode: both;
+
+        animation-fill-mode: both;
+
+    }
+
+
+
+    @keyframes fadeInDown {
+
+        0% {
+
+            opacity: 0;
+
+            -webkit-transform: translateY(-20px);
+
+            -ms-transform: translateY(-20px);
+
+            transform: translateY(-20px);
+
+        }
+
+
+
+        100% {
+
+            opacity: 1;
+
+            -webkit-transform: translateY(0);
+
+            -ms-transform: translateY(0);
+
+            transform: translateY(0);
+
+        }
+
+    }
+
+
+
+    @-webkit-keyframes fadeInDown {
+
+        0% {
+
+            opacity: 0;
+
+            -webkit-transform: translateY(-20px);
+
+            transform: translateY(-20px);
+
+        }
+
+
+
+        100% {
+
+            opacity: 1;
+
+            -webkit-transform: translateY(0);
+
+            transform: translateY(0);
+
+        }
+
+    }
+
+
+
+    @-webkit-keyframes fadeInUp {
+
+        0% {
+
+            opacity: 0;
+
+            -webkit-transform: translateY(20px);
+
+            transform: translateY(20px);
+
+        }
+
+
+
+        100% {
+
+            opacity: 1;
+
+            -webkit-transform: translateY(0);
+
+            transform: translateY(0);
+
+        }
+
+    }
+
+
+
+    @keyframes fadeInUp {
+
+        0% {
+
+            opacity: 0;
+
+            -webkit-transform: translateY(20px);
+
+            -ms-transform: translateY(20px);
+
+            transform: translateY(20px);
+
+        }
+
+
+
+        100% {
+
+            opacity: 1;
+
+            -webkit-transform: translateY(0);
+
+            -ms-transform: translateY(0);
+
+            transform: translateY(0);
+
+        }
+
+    }
+
+</style>
+
+<div class="login-form">
+
+    <div class="panel-login">
+
+        <div class="wrap-login100">
+
+            <div class="logo-WoX-login animated fadeInDown">
+
+                <img src="/content/images/Dell_Logo_Wht_rgb.png" alt="DELL - WoX" class="panel-logo" />
+
+            </div>
+
+            <div class="animated fadeInUp">
+
+                <div class="margin-left-5 welcome-text">
+
+                    Welcome to <strong>WoX</strong>
+
+                </div>
+
+                <div class="row top-offset-20">
+
+                    <button id="btn-login" type="button" class="btn btn-primary btn-lg" onclick="loginWithAzure()"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp; Login</button>
+
+
+
+                    <div style="margin-top:30px;color:#f9f9f9;">
+
+                        <a href="https://www.dell.com/">Reset password</a> for NON-DELL Users
+
+                    </div>
+
+                </div>
+
+                <div class="row top-offset-20" style="margin: 8px auto;color: #cacaca;font-size: 0.8em;text-align:justify;">
+
+                    <p style="color:#fff">We use cookies to give you the best possible online experience of our website. If you continue, we'll assume you're happy for your web browser to receive all cookies from our website. See our <a href="#" data-toggle="modal" data-target="#cookie-policy-modal">cookie policy</a> for more information on cookies and how to manage them.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div id="reset-password-modal" class="modal fade" role="dialog">
+
+    <div class="modal-dialog dell-modal">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+
+                    ×
+
+                </button>
+
+                <h3 class="modal-title">Reset Password</h3>
+
+            </div>
+
+            <div class="modal-body">
+
+                <div class="col-xs-12">
+
+                    <div class="form-group">
+
+                        <label>Please enter your corporate email to reset the password.</label>
+
+                        <label>Corporate Email: <i class="text-danger">*</i></label>
+
+                        <input type="email" autofocus class="form-control" id="reset-password-corporate-email" name="email" placeholder="corporate email...">
+
+                        <span class="text-danger " id="email-error" style="display:none;"></span>
+
+                        <lable id="lblSuccessMessage" class="text-success" style="display:none;"></lable>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <a id="send-request-token-button" class="btn btn-primary"><i class="fa fa-send" aria-hidden="true"></i>&nbsp;&nbsp;Send</a>
+
+            </div>
+
+        </div>
+
+        <!-- /.modal-content -->
+
+    </div>
+
+    <!-- /.modal-dialog -->
+
+</div>
+
+<div id="cookie-policy-modal" class="modal fade" role="dialog" style="z-index: 999999;" data-backdrop="static" data-keyboard="false">
+
+    <div class="modal-dialog dell-modal modal-lg">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+
+                    ×
+
+                </button>
+
+                <h3 class="modal-title">Cookie Policy</h3>
+
+            </div>
+
+            <div class="modal-body" style="text-align:justify;">
+
+                <div class="row">
+
+                    <h5 class="text-bold">WoX’s Cookie Policy</h5>
+
+                    <p>This website is owned by Dell Inc. Here is our cookie policy for this site and the types of cookies we use on it.</p>
+
+                    <h5 class="text-bold">What are Cookies?</h5>
+
+                    <p>Cookies are small files that websites place on the device you’re using to browse the site. Cookies are commonly used to record some aspect of your visit to a site, such as choices you’ve made or preferences you’ve set during your visit.</p>
+
+                    <h5 class="text-bold">How and Why We Use Cookies</h5>
+
+                    <p>We use cookies to give you the best experience when you visit our website. By using cookies, we can make it easier for you to do many things, such as managing your accounts, or login details. </p>
+
+                    <h5 class="text-bold">Keeping Your Personal Information Safe</h5>
+
+                    <p>Our cookies do not store personal information such as your name, address, phone number or email in a format that can be read by others. The cookies we use cannot read or search your computer, smartphone or web-enabled device to obtain information about you or your family, or read any material kept on your hard drive.</p>
+
+                    <p>We do use a small number of cookies that store encrypted versions of information where you have asked us to, such as the ‘Remember me’ function that allows us to remember your Account username for subsequent visits. However, this is encrypted so that only WoX can read this information. The website that places a cookie owns that cookie. This means only that website and other sites that it has agreed to share information with can read the information stored using a cookie.</p>
+
+                    <h5 class="text-bold">Links to Sites Provided by Others</h5>
+
+                    <p>If you follow a link from our website to another website, please be aware that the owner of the other website will have their own privacy and cookie policies for their site. We recommend you read their policies as we are not responsible or liable for what happens at their site.</p>
+
+                    <h5 class="text-bold">How to Manage and Switch off Cookies</h5>
+
+                    <p>Your web browser provides settings that allow you to manage or switch off cookies. If you do switch off cookies, remember that you may not be able to use all of the services on our websites. You can find out more about managing and switching off cookies at the independent website: <a href="https://www.allaboutcookies.org">www.allaboutcookies.org</a></p>
+
+                    <h5 class="text-bold">The Types of Cookies We Use on This Site</h5>
+
+                    <h6 class="text-bold"><i>Strictly necessary cookies</i></h6>
+
+                    <p>These cookies are essential for our online services and tools to work. They collect or record information that we need to make our site work.</p>
+
+                    <p>Common uses for this type of cookie include:</p>
+
+                    <ul>
+
+                        <li style="list-style: unset;">Allowing users to log in or access private areas of a site.</li>
+
+                    </ul>
+
+                    <p>These cookies only last for a single browsing session – when you leave our site, they are removed.</p>
+
+                    <p>Full details of cookies used</p>
+
+                    <table class="table table-hover table-striped">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Name of cookie</th>
+
+                                <th>Type of cookie</th>
+
+                                <th>Expiry period</th>
+
+                                <th>Reason for use of cookie</th>
+
+                                <th>Level of tracking</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td></td>
+
+                                <td>Session cookie</td>
+
+                                <td>End of visit</td>
+
+                                <td>Strictly necessary</td>
+
+                                <td>None</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="submit" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close" aria-hidden="true"></i>&nbsp;&nbsp;Close</button>
+
+            </div>
+
+        </div>
+
+        <!-- /.modal-content -->
+
+    </div>
+
+    <!-- /.modal-dialog -->
+
+</div>
+
+
+
+
+
+<div id="loading-guest" style="display: none;">
+
+    <i class="icon-ui-loading" aria-hidden="true"></i>
+
+</div>
+
+<form action="/Guest/Login" id="login-form" method="get" style="margin-top: 0px;"></form><script src='/bundles/Guest?v=YW3nrE6UHKseh90SpWqX6TfnMoibfLsFdHrKI5dAIFw1'></script>
+
+<script src='/bundles/bootstrap?v=lescQEuG5u4jd-GcVDBcbpUOSyTDIg0Kk9zHDX55GCw1'></script>
+
+<style>
+
+</style>
+
+<noscript><img src="https://wox.dell.com/akam/13/pixel_7c6b46d?a=dD00NTU0NDczMzI2ZDE2MTVjMWE2MDUxOWVjNTMxOGFjYWRjZmFlMmZhJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+
+</html>
+

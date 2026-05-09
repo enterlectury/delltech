@@ -1,0 +1,2214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <base href="https://pilot.search.dell.com/">
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="COUNTRY" content="us" />
+
+    <meta name="LANGUAGE" content="en" />
+
+    <meta name="robots" content="noindex, follow" />
+
+    <!-- v 1.0.3296.4495 -->
+
+    <!-- Slice GREEN -->
+
+
+
+    <!-- DNS Prefetching -->
+
+    <link rel="dns-prefetch" href="http://i.dell.com" />
+
+    <link rel="dns-prefetch" href="http://snpi.dell.com" />
+
+    <link rel="dns-prefetch" href="http://nexus.dell.com" />
+
+    <link rel="dns-prefetch" href="http://pilot.search.dell.com" />
+
+
+
+    <title>Dell Search</title>
+
+    <input type="hidden" id="refreshed" value="no">
+
+    <script type="text/javascript">
+
+        var e = document.getElementById("refreshed");
+
+        if (e.value == "no") e.value = "yes";
+
+        else {
+
+            e.value = "no";
+
+            location.reload();
+
+        }
+
+    </script>
+
+
+
+
+
+<script>
+
+    var Dell = window.Dell || {};
+
+    Dell.Metrics = Dell.Metrics || {};
+
+    Dell.Metrics.sc = Dell.Metrics.sc || {};
+
+
+
+    Dell.Metrics.sc.country = 'us';
+
+    Dell.Metrics.sc.language = 'en';
+
+    Dell.Metrics.sc.segment = 'gen';
+
+    Dell.Metrics.sc.customerset = '';
+
+    Dell.Metrics.sc.pagename = 'us|en|searchnextresults';
+
+    Dell.Metrics.sc.detailpagename = 'us|en|searchnextresults';
+
+    Dell.Metrics.sc.site = 'searchnext';
+
+    Dell.Metrics.sc.cms = 'searchNext';
+
+    Dell.Metrics.sc.server = 'searchnext';
+
+</script>
+
+
+
+<script src="//nexus.dell.com/dell/pilotsearch/Bootstrap.js"></script>
+
+
+
+    <link href="/unifiedsearch/Content/themes/base/css?v=S-zQ78JrAzML_1efeX5_PcvcUJkva-SJIe1tYmUSk5U1" rel="stylesheet"/>
+
+
+
+
+
+    <link href="/unifiedsearch/Content/bootstrap?v=Gac04Dug2cXgu07-5BPUoP-STpGAlBImAAkvrl1fXj41" rel="stylesheet"/>
+
+
+
+    <link href="/unifiedsearch/Content/css?v=LqTsDUNe9V7cfVzKAHZW8Xf9wtt081KYCwtvMbTXVm81" rel="stylesheet"/>
+
+
+
+    <link href="/unifiedsearch/Content/css2?v=QkErgOn4yxc5dtObSdf1E-i85XcjSxg1DgziOef3sXE1" rel="stylesheet"/>
+
+
+
+    <script src="/unifiedsearch/bundles/jquery?v=7_1CNMYMa3kaXxi6-OrW52g-420c0c4V38zb8ToQ37k1"></script>
+
+
+
+    <script src="/unifiedsearch/bundles/js?v=huXFBQ3MYcuEAne8hwipCpzNIhHspUeRBmfqazGsuJ01"></script>
+
+
+
+    
+
+    <script type="text/javascript">
+
+        var Dell = window.Dell || {};
+
+        Dell.SearchUx = Dell.SearchUx || {};
+
+        Dell.SearchUx.InfrastructureProductCategory = 'enterprise-products';
+
+
+
+        var correlationId = 'unifiedsearch|UNIPWS3BUX06|Unknown|cc5dba25-db5c-4a21-9421-914dc851bb3c|us|gen|en||1.0.3296.4495';
+
+        var correlationIdField = 'Dell_TraceID';
+
+        var defaultPageSize = { "xs": 8, "small": 8, "medium": 8, "large": 8 };
+
+        var relativeRootUrl = '/unifiedsearch/';
+
+        var absoluteRootUrl = 'http://pilot.search.dell.com/';
+
+        var premierSearchUrl = '/unifiedsearch/pplus/search?term=';
+
+
+
+        var templateLocation = '/unifiedsearch/' + 'template';
+
+
+
+        var feedbackUrl = '/queryunderstandingapi/x/feedback';
+
+        var noResultsFeedbackUrl = '/queryunderstandingapi/x/noresultsfeedback';
+
+        var clickTrackingUrl = '/queryunderstandingapi/x/ct';
+
+        var estimatedShipDateUrl = 'True' == 'True' ? (window.location.protocol + '//' + window.location.host + '/queryunderstandingapi/esd') : '/queryunderstandingapi/esd';
+
+        console.log("estimatedShipDateUrl->" + estimatedShipDateUrl);
+
+
+
+        var buildNumber = '1.0.3296.4495';
+
+        var sliceName = 'GREEN';
+
+        var enableDellAnalytics = document.location.hash != '#notracking' && true;
+
+        var pathName = '/';
+
+        var isPremier = false;
+
+
+
+        var searchNextSearchService = 'True' == 'True' ? (window.location.protocol + '//' + window.location.host + '/queryunderstandingapi/4/{0}/{1}/19/searche-v/products?term=') : '/queryunderstandingapi/4/{0}/{1}/19/searche-v/products?term=';
+
+        console.log("estimatedShipDateUrl->" + searchNextSearchService);
+
+        var searchNextSuggestionService = '/queryunderstandingapi/2/suggest?term=';
+
+        var queryHistoryUrl = '//pilot.search.dell.com/queryunderstandingapi/4/suggest?term=';
+
+        var emcVirtualAssistantRecipe = 'emcvirtualassistant';
+
+        var UseDellEMCTheme = 'False' == 'True';
+
+        var suggestRecipe = 'suggestion';
+
+        var premierSnpROCartUrl = 'https://www.dell.com/premier/checkout/api/cartitems/ver2';
+
+        var premierSnpROCheckOutUrl = 'https://www.dell.com/premier/checkout';
+
+        var premierSystemConfigUrl = 'https://www.dell.com/premier/configure/{0}/{1}/{2}/?productId={3}';
+
+
+
+        var lwpCookie = getCookie('lwp');
+
+        var c = getValueFromCookie(lwpCookie, 'c');
+
+        var l = getValueFromCookie(lwpCookie, 'l');
+
+        var cs = getValueFromCookie(lwpCookie, 'cs');
+
+        var cartAPIFormat = l + "-" + c + "/" + cs;
+
+
+
+        var legacyPremierCartEnabledCustomerSets = 'all';
+
+        var legacyPremierCartEnabledCountries = 'all';
+
+        var islegacyPremierCartEnabled = (cs && (legacyPremierCartEnabledCustomerSets.toLowerCase() == "all" || legacyPremierCartEnabledCustomerSets.toLowerCase().indexOf(cs.toLowerCase()) !== -1))
+
+            || (c && (legacyPremierCartEnabledCountries.toLowerCase() == "all" || legacyPremierCartEnabledCountries.toLowerCase().indexOf(c.toLowerCase()) !== -1));
+
+
+
+        var premierCartCountUrl = islegacyPremierCartEnabled ? 'https://www.dell.com/premier/checkout/purchase/cart/api/premiercartcount/' + cartAPIFormat : '/unifiedsearch/api/premiercartcount';
+
+        var cartItemsUrl = islegacyPremierCartEnabled ? 'https://www.dell.com/premier/checkout/purchase/cart/api/premiercartitem/' + cartAPIFormat : '/unifiedsearch/api/premiercartitem';
+
+        var premierSystemsUrl = islegacyPremierCartEnabled ? 'https://www.dell.com/premier/checkout/purchase/cart/api/premiersystemcartitem/' + cartAPIFormat : '/unifiedsearch/api/premiersystemcartitem';
+
+
+
+        var legacyPremierCartCheckOutUrl = 'https://www.dell.com/premier/checkout/{0}/{1}/{2}';
+
+        if (islegacyPremierCartEnabled && legacyPremierCartCheckOutUrl) {
+
+            premierSnpROCheckOutUrl = legacyPremierCartCheckOutUrl.format(c, l, cs);
+
+        }
+
+
+
+        var csrfToken = '';
+
+
+
+        if (decodeURIComponent(sessionStorage['SearchNextUrlReferrer']).indexOf('www.dell.com/support') == -1) {
+
+            sessionStorage['SearchNextUrlReferrer'] = '';
+
+        }
+
+
+
+        var userName = '';
+
+
+
+        var requestError = 'False' == 'True';
+
+        var topCompatibleProducts = 'False' == 'True';
+
+        var leftNav = 'True' == 'True';
+
+        var showStickyNavigation = 'True' == 'True';
+
+        var isShowTabbedView = 'True' == 'True';
+
+        var isDefaultDealsTabEnabled = 'False' == 'True';
+
+        var isMobileFiltersOverlay = 'False' == 'True';
+
+        var isSupportListView = 'False' == 'True';
+
+        var isDefaultListView = 'False' == 'True';
+
+        var isInfiniteScroll = 'False' == 'True';
+
+        var isGridSwitchCalled = false;
+
+        var gridView = 'True' == 'True';
+
+
+
+        $.removeCookie((isPremier ? "PremierGridView" : "GridView"), { path: "/" });
+
+        $.cookie((isPremier ? "PremierGridView" : "GridView"), gridView, { expires: 14, path: "/" });
+
+        var getGeolocation = 'False' == 'True';
+
+
+
+        var landingCategories = '' ? ''.split(',') : new Array();
+
+        var landingRefinements = '' ? ''.split(',') : new Array();
+
+        var rootUrl = 'http://pilot.search.dell.com/unifiedsearch/';
+
+        var productSelectorData = null;
+
+        var productSelectorBaseUrl = '//pilot.search.dell.com/queryunderstandingapi/ProductSelector/';
+
+        var compareUrl = 'https://www.dell.com/{lang}-{country}/shop/compare?ocs=';
+
+        var showPopularSupportDocumentsBanner = 'False';
+
+
+
+        var calculatorData = ko.observable();
+
+        var financeRate = ko.observable();
+
+        var newMinimumPayment = ko.observable();
+
+        var newMinimumPaymentFormatted = ko.observable();
+
+        var PayoffTerm = ko.observable();
+
+        var newPayoffTerm = ko.observable();
+
+        var TotalWithInterest = ko.observable();
+
+        var newTotalWithInterest = ko.observable();
+
+        var sampleInterestRate = ko.observable();
+
+
+
+        var geolocation = ko.observable();
+
+        if (getGeolocation) {
+
+            getLocation();
+
+        }
+
+        var calculatorClickCount = 0;
+
+        var calculatorSliderUseCount = 0;
+
+        var calculatorDropdownCount = 0;
+
+        var epSettings='qFcena/Br9C3yQYWyDPOkg==';
+
+    </script>
+
+
+
+
+
+        <script type="text/javascript" src="https://afcs.dellcdn.com/boomerang/latest/boomerang-nonspaWithClicks.min.js"></script>
+
+    <script type="text/javascript">
+
+        (function () {
+
+            try {
+
+                console.log('Boomerang is Enabled.');
+
+
+
+                var boomerangApi = 'https://boomerang.dell.com/api/beacon';
+
+                var appId = 'dell_ecommerce_unified_search';
+
+                var pageName = "us".toUpperCase() + '|' + "en".toUpperCase() + '|' + "gen".toUpperCase() + '|' + '|UNIFIED|SEARCHRESULTS';
+
+
+
+                var requestOrigin = 'DELL.COM';
+
+                if (isPremier)
+
+                    requestOrigin = 'PREMIER';
+
+
+
+
+
+                if (window.BOOMR) {
+
+
+
+                    BOOMR.init({
+
+                        autorun: true,
+
+                        beacon_type: "POST",
+
+                        instrument_xhr: true,
+
+                        Errors: {
+
+                            enabled: true,
+
+                            sendAfterOnload: true
+
+                        },
+
+                        Continuity: {
+
+                            enabled: true,
+
+                            afterOnload: true,
+
+                            waitAfterOnload: 1000,
+
+                            monitorStats: false,
+
+                            monitorInteractions: false
+
+                        },
+
+                        beacon_url: boomerangApi,
+
+                        clicks: {
+
+                            click_url: boomerangApi,
+
+                            track_spa_clicks: true
+
+                        },
+
+                        log: function () { },
+
+                        applicationInfo: {
+
+                            getAppId: function getAppId() {
+
+                                return appId;
+
+                            },
+
+                            getServerName: function getServerName() {
+
+                                return "";
+
+                            },
+
+                            getUserObj: function getUserObj() {
+
+                                return {
+
+                                    country: "us",
+
+                                    region: "",
+
+                                    language: "en",
+
+                                    segment: "gen",
+
+                                    pagename: pageName,
+
+                                    requestorigin: requestOrigin
+
+                                };
+
+                            }
+
+                        }
+
+                    })
+
+                }
+
+            } catch (e) {
+
+                console.log('Boomerang Initialization Error : ' + e);
+
+            }
+
+        })();
+
+    </script>
+
+
+
+
+
+    <script type="text/javascript">
+
+        (function (doc) {
+
+
+
+            var addEvent = 'addEventListener',
+
+                type = 'gesturestart',
+
+                qsa = 'querySelectorAll',
+
+                scales = [1, 1],
+
+                meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
+
+
+
+            function fix() {
+
+                meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
+
+                doc.removeEventListener(type, fix, true);
+
+            }
+
+
+
+            if ((meta = meta[meta.length - 1]) && addEvent in doc) {
+
+                fix();
+
+                scales = [.25, 1.6];
+
+                doc[addEvent](type, fix, true);
+
+            }
+
+
+
+        }(document));
+
+    </script>
+
+<link rel="preload" href="/UCFGgxm2/vZY/GWl/u6hn-izKTh/3twYtpk6VEJtpQt7iV/XmE7QS8hAQ/RwIweT/NfUgkB" as="script" type="text/javascript" fetchpriority="low"><script >bazadebezolkohpepadr="853925817"</script><script type="text/javascript" src="https://pilot.search.dell.com/akam/13/32e5dea9"  defer></script></head>
+
+<body>
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">pilot.search.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+
+    <div class="body-wrap">
+
+        <div class="body-overlay" style="display: none;"></div>
+
+        <div class="body-overlay-off-canvas" style="display: none;"></div>
+
+
+
+        <header>
+
+            <div id="header">
+
+                
+
+
+
+
+
+
+
+                
+
+
+
+<script>
+
+    var valueUpdate = 'input';
+
+</script>
+
+<!--[if lt IE 9]>
+
+    <script>
+
+        valueUpdate = 'afterkeydown';
+
+    </script>
+
+<![endif]-->
+
+
+
+<div class="essential-content" data-bind="visible: EssentialContent().length">
+
+    <div class="container" data-bind="foreach: EssentialContent">
+
+        <a data-bind="attr: { id: 'essential-content-' + LinkText, href: LinkUrl }, html: LinkText"></a>
+
+    </div>
+
+</div>
+
+
+
+
+
+<div class="polaris-masthead-top-section" data-bind="css:  UseDellEMCTheme ? 'dell-emc-masthead' : '' ">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="dell-logo">
+
+                <a href="//www.dell.com" id="dell-logo"><div class="icon-brand-dell" data-bind="css: UseDellEMCTheme ? 'icon-brand-dellemc' : ''"></div></a>
+
+            </div>
+
+            <form id="search-next-search-form" class="search-form">
+
+                <div class="search-box">
+
+                    <div class="search-input">
+
+                        <input id="search-next-search-box" placeholder="What can we help you find? Did you know you can enter a service tag or express code here?" aria-label="Search Box" title="Search Box" autocomplete="off" type="text" data-bind="value: Term, valueUpdate: valueUpdate, hasFocus: searchHasFocus" />
+
+                    </div>
+
+                    <div class="filter-button hidden-xs hidden-sm">
+
+                        <button id="filter-button" class="hidden btn dropdown-toggle btn-default" type="button" title="Adjust Search Filters" alt="Adjust Search Filters"><b class="link-like-button">Filters</b></button>
+
+                    </div>
+
+                    <div class="search-button">
+
+                        <button class="btn btn-primary" id="search-next-search-button" type="submit">
+
+                            <span class="visible-md-inline visible-lg-inline">Search</span>
+
+                            <span class="icon-small-searchleft visible-xs-inline visible-sm-inline"></span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+            <div class="cart-and-useraccount">
+
+                    <a data-bind="attr: { href: SignInSignOutUrl }" id="signin-button"><span class="icon-small-useraccount"></span> <span class="" id="sign-in">Sign In</span></a>
+
+                    <input id="signin-signout" type="hidden" value="https://www.dell.com/identity/global/in/e39d0e62-9408-4efc-8b42-10b39e614d25?wreply={0}" />
+
+
+
+                    <a href="#" id="responsiveCart-button"><span class="icon-small-cart"></span> <span class="" id="cart">Cart</span></a>
+
+            </div>
+
+            <div class="offcanvas-menu-button hidden-md hidden-lg">
+
+                <a href="#" id="offcanvas-menu-button" style="color: white; display: inline-block; padding: 5px; margin-left: 3px; margin-top: 3px;"><span class="icon-ui-menucollapsed" style="font-size: 20px;"></span></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="polaris-masthead-bottom-section" data-bind="css: UseDellEMCTheme ? 'dell-emc-masthead' : ''">
+
+    <div class="container">
+
+        <div class="row">
+
+            <ul class="nav-list-t1">
+
+                        <li>
+
+                            <a href="//www.dell.com" id="polaris-nav-link-shop">Shop</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="//www.dell.com/support/home" id="polaris-nav-link-support">Support</a>
+
+                        </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="secondary-content" data-bind="visible: SecondaryContent().length">
+
+    <div class="container" data-bind="foreach: SecondaryContent">
+
+        <!-- ko if:$data.LinkText -->
+
+        <img class=" secondary-content-image hidden-xs hidden-sm" data-bind="attr: { src: Image}" />
+
+        <a data-bind="attr: { id: 'secondary-content-' + LinkText, href: LinkUrl }, html: LinkText"></a>
+
+        <!-- /ko -->
+
+        <!-- ko if:$data.Links -->
+
+        <img class=" secondary-content-image hidden-xs hidden-sm" data-bind="attr: { src: Image.url, alt: Image.alt}" />
+
+        <span class="secondary-content-links">
+
+            <span data-bind="html: Description"></span>
+
+            <span class="links" data-bind="foreach: $data.Links">
+
+                <a data-bind="attr: {href: Url, id: 'secondarycontent-link' + $index()}, html: Label"></a>
+
+            </span>
+
+        </span>
+
+        <!-- /ko -->
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+    document.domain = 'dell.com';
+
+</script>
+
+
+
+
+
+    <script>
+
+        $(function () {
+
+
+
+            $("#responsiveCart-button").responsiveCartControl({
+
+                defaultCartLink: '//www.dell.com/en-us/cart',
+
+                cartcountUrl: '/unifiedsearch/api/responsivecartcount'
+
+
+
+            });
+
+            $('#filter-button').tooltip({ placement: 'bottom', container: '#filter-button' });
+
+        });
+
+    </script>
+
+<script src="/unifiedsearch/bundles/masthead?v=F6_0-qmKwrPbPyEZ-pxI8z1H9yO4YLCS1n9hCB4BpTk1"></script>
+
+
+
+<script src="/unifiedsearch/bundles/searchnext?v=KGhKNsK3gItuSkGXZmWHWluGandxyW2UowJ4YuNvvcE1"></script>
+
+
+
+<script>
+
+    $('#offcanvas-menu-button').on('click', function (event) {
+
+        event.preventDefault();
+
+
+
+        $(this).addClass('selected');
+
+
+
+        $('.body-overlay').show();
+
+
+
+        $('.body-wrap').addClass('show-offcanvas-menu').animate({ left: '-255px' });
+
+    });
+
+
+
+    $('.body-overlay').on('click', function (event) {
+
+        $('.body-wrap').animate({ left: '0' }, function () {
+
+            $('.body-wrap').removeClass('show-offcanvas-menu');
+
+
+
+            $('#offcanvas-menu-button').removeClass('selected');
+
+
+
+            $('.body-overlay').hide();
+
+        });
+
+    });
+
+</script>
+
+
+
+            </div>
+
+
+
+            <script>
+
+    var inShop = ' in Shop';
+
+    var inSupport = ' in Support';
+
+    var showAutoSuggestCategories = 'True';
+
+</script>
+
+
+
+<div class="autosuggest-dropdown" data-bind="visible: AutoSuggestVisible, css: { 'autosuggest-dropdownlist': AutoSuggest().TemplateName == 'AutoSuggest' }">
+
+    <div class="row" data-bind="template: AutoSuggest().TemplateName, attr:{ template: AutoSuggest().TemplateName }"></div>
+
+</div>
+
+
+
+<script id="AutoSuggest" type="text/html">
+
+    <div class="col-xs-12 autosuggest autosuggest-container" data-bind="attr:{'template':'AutoSuggest'}">
+
+        <!-- ko if: AutoSuggest().Data -->
+
+        <ul data-bind="foreach: AutoSuggest().Data.Suggestions">
+
+            <!-- ko if: $root.AutoSuggestFocus() == $index() -->
+
+            <li class="autosuggest-focus track" data-bind="html: $root.highlightPartial($data), click: $root.suggestionClicked, attr: { id: 'autosuggest' + $index() }"></li>
+
+            <!-- /ko -->
+
+            <!-- ko ifnot: $root.AutoSuggestFocus() == $index() -->
+
+            <li class="track" data-bind="html: $root.highlightPartial($data), click: $root.suggestionClicked, event: { mouseover: $root.suggestionMouseOver }, attr: { id: 'autosuggest' + $index() }"></li>
+
+            <!-- /ko -->
+
+        </ul>
+
+        <!-- /ko -->
+
+    </div>
+
+</script>
+
+
+
+<script id="virtualAssistantRefinerTemplate" type="text/html">
+
+    <h5 class="bold" data-bind="html: Label"></h5>
+
+    <ul data-bind="foreach: Refinements">
+
+        <li>
+
+            <!-- ko if: Enabled -->
+
+            <div class="checkbox">
+
+                <label data-bind="attr: { id: cleanVAId('refiner-label', $parent.Label, Label) }">
+
+                    <input type="checkbox" data-bind="attr: { id: cleanVAId('refiner-checkbox', $parent.Label, Label) }, checked: Selected, event: { change: $root.checkBoxChange }" />
+
+                    <span data-bind="text: Label"></span>
+
+                </label>
+
+            </div>
+
+            <!-- /ko -->
+
+            <!-- ko ifnot: Enabled -->
+
+            <div class="checkbox disabled-va">
+
+                <label data-bind="attr: { id: cleanVAId('refiner-label', $parent.Label, Label) }">
+
+                    <input type="checkbox" disabled data-bind="attr: { id: cleanVAId('refiner-checkbox', $parent.Label, Label) }, checked: Selected, event: { change: $root.checkBoxChange }" />
+
+                    <span data-bind="text: Label"></span>
+
+                </label>
+
+            </div>
+
+            <!-- /ko -->
+
+        </li>
+
+    </ul>
+
+</script>
+
+
+
+<script id="productInfoRefinerTemplate" type="text/html">
+
+    <h5 class="bold" data-bind="html: Label"></h5>
+
+    <ul data-bind="foreach: Refinements">
+
+        <li>
+
+            <div class="checkbox">
+
+                <label data-bind="attr: { id: cleanVAId('refiner-label', $parent.Label, Label) }">
+
+                    <input type="checkbox" data-bind="attr: { id: cleanVAId('refiner-checkbox', $parent.Label, Label) }, checked: Selected, event: { change: $root.checkBoxChange }" />
+
+                    <span data-bind="text: Label"></span>
+
+                </label>
+
+            </div>
+
+        </li>
+
+    </ul>
+
+</script>
+
+
+
+<script id="virtualAssistantColorTemplate" type="text/html">
+
+    <div class="color-buttons">
+
+        <h5 class="bold" data-bind="html: Label"></h5>
+
+        <div data-bind="foreach: Refinements">
+
+            <!-- ko if: $index() % 4 == 0 -->
+
+            <div class="row color-button-row">
+
+                <div class="col-xs-12">
+
+                    <!-- ko if: Enabled -->
+
+                    <div class="color-button" data-bind="attr: { style: 'background: ' + Hex, id: cleanVAId('refiner', 'Color', Label), title: Label }, color: Selected"></div>
+
+                    <!-- /ko -->
+
+                    <!-- ko ifnot: Enabled -->
+
+                    <div class="color-button color-button-disabled" data-bind="attr: { style: 'background: ' + Hex, id: cleanVAId('refiner', 'Color', Label), title: Label }"></div>
+
+                    <!-- /ko -->
+
+                    <!-- ko with: $parent.Refinements[$index() + 1] -->
+
+                    <!-- ko if: Enabled -->
+
+                    <div class="color-button" data-bind="attr: { style: 'background: ' + Hex, id: cleanVAId('refiner', 'Color', Label), title: Label }, color: Selected"></div>
+
+                    <!-- /ko -->
+
+                    <!-- ko ifnot: Enabled -->
+
+                    <div class="color-button color-button-disabled" data-bind="attr: { style: 'background: ' + Hex, id: cleanVAId('refiner', 'Color', Label), title: Label }"></div>
+
+                    <!-- /ko -->
+
+                    <!-- /ko -->
+
+                    <!-- ko with: $parent.Refinements[$index() + 2] -->
+
+                    <!-- ko if: Enabled -->
+
+                    <div class="color-button" data-bind="attr: { style: 'background: ' + Hex, id: cleanVAId('refiner', 'Color', Label), title: Label }, color: Selected"></div>
+
+                    <!-- /ko -->
+
+                    <!-- ko ifnot: Enabled -->
+
+                    <div class="color-button color-button-disabled" data-bind="attr: { style: 'background: ' + Hex, id: cleanVAId('refiner', 'Color', Label), title: Label }"></div>
+
+                    <!-- /ko -->
+
+                    <!-- /ko -->
+
+                    <!-- ko with: $parent.Refinements[$index() + 3] -->
+
+                    <!-- ko if: Enabled -->
+
+                    <div class="color-button" data-bind="attr: { style: 'background: ' + Hex, id: cleanVAId('refiner', 'Color', Label), title: Label }, color: Selected"></div>
+
+                    <!-- /ko -->
+
+                    <!-- ko ifnot: Enabled -->
+
+                    <div class="color-button color-button-disabled" data-bind="attr: { style: 'background: ' + Hex, id: cleanVAId('refiner', 'Color', Label), title: Label }"></div>
+
+                    <!-- /ko -->
+
+                    <!-- /ko -->
+
+                </div>
+
+            </div>
+
+            <!-- /ko -->
+
+        </div>
+
+    </div>
+
+</script>
+
+
+
+<script id="filterFooter" type="text/html">
+
+    <button type="button" id="reset" class="btn btn-default" data-bind="click: $root.resetAnav">Reset</button>
+
+    <button type="button" id="search-button-in-va" class="btn btn-primary" data-bind="click: $root.performSearch">Search</button>
+
+</script>
+
+
+
+<script id="VirtualAssistantRefiners" type="text/html">
+
+    <div class="col-xs-12 hidden-xs hidden-sm">
+
+        <!-- ko if: AutoSuggest().Data -->
+
+        <div class="row">
+
+            <div class="col-xs-12" data-bind="foreach: AutoSuggest().Data">
+
+                <!-- ko if: $index() % 4 == 0 -->
+
+                <div class="row">
+
+                    <div class="col-md-3" data-bind="template: { name: Label == 'Color' ? 'virtualAssistantColorTemplate' : 'virtualAssistantRefinerTemplate' }"></div>
+
+                    <!-- ko with: $parent.AutoSuggest().Data[$index() + 1] -->
+
+                    <div class="col-md-3" data-bind="template: { name: Label == 'Color' ? 'virtualAssistantColorTemplate' : 'virtualAssistantRefinerTemplate' }"></div>
+
+                    <!-- /ko -->
+
+                    <!-- ko with: $parent.AutoSuggest().Data[$index() + 2] -->
+
+                    <div class="col-md-3" data-bind="template: { name: Label == 'Color' ? 'virtualAssistantColorTemplate' : 'virtualAssistantRefinerTemplate' }"></div>
+
+                    <!-- /ko -->
+
+                    <!-- ko with: $parent.AutoSuggest().Data[$index() + 3] -->
+
+                    <div class="col-md-3" data-bind="template: { name: Label == 'Color' ? 'virtualAssistantColorTemplate' : 'virtualAssistantRefinerTemplate' }"></div>
+
+                    <!-- /ko -->
+
+                </div>
+
+                <!-- /ko -->
+
+            </div>
+
+        </div>
+
+        <!-- /ko -->
+
+        <div class="filter-footer" data-bind="template: { name: 'filterFooter' }"></div>
+
+    </div>
+
+</script>
+
+
+
+<script id="ProductInfoVirtualAssistant" type="text/html">
+
+    <div class="col-xs-12">
+
+        <!-- ko if: AutoSuggest().Data -->
+
+        <div class="row">
+
+            <div class="col-md-1">
+
+                <img class="max-width-100" data-bind="attr:{src:AutoSuggest().Data.Image}"/>
+
+            </div>
+
+            <div class="col-md-9 " data-bind="html:AutoSuggest().Data.DisplayName">
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6" data-bind="foreach: AutoSuggest().Data.SupportRefiners">
+
+                <!-- ko if: $index() % 2 == 0 -->
+
+                <div class="row">
+
+                    <div class="col-md-6" data-bind="template: { name: 'productInfoRefinerTemplate' }"></div>
+
+                    <!-- ko with: $parent.AutoSuggest().Data.SupportRefiners[$index() + 1] -->
+
+                    <div class="col-md-6" data-bind="template: { name: 'productInfoRefinerTemplate' }"></div>
+
+                    <!-- /ko -->
+
+                </div>
+
+                <!-- /ko -->
+
+            </div>
+
+            <div class="col-md-6" data-bind="foreach: AutoSuggest().Data.ProductRefiners">
+
+                <!-- ko if: $index() % 2 == 0 -->
+
+                <div class="row">
+
+                    <div class="col-md-6" data-bind="template: { name: 'productInfoRefinerTemplate' }"></div>
+
+                    <!-- ko with: $parent.AutoSuggest().Data.ProductRefiners[$index() + 1] -->
+
+                    <div class="col-md-6" data-bind="template: { name: 'productInfoRefinerTemplate' }"></div>
+
+                    <!-- /ko -->
+
+                </div>
+
+                <!-- /ko -->
+
+            </div>
+
+
+
+        </div>
+
+        <!-- /ko -->
+
+        <div class="filter-footer" data-bind="template: { name: 'filterFooter' }"></div>
+
+    </div>
+
+</script>
+
+
+
+<script src="/unifiedsearch/bundles/virtualassistant?v=qtvK2599a9687Tod3hywXwdhdCcUd5N79FZPSFHf4pQ1"></script>
+
+
+
+            
+
+<div class="queryhistory-dropdown dell-emc-queryhistory-dropdown" data-bind="visible: queryHistoryVisible">
+
+    <div class="row" id="searchQueryHistory" data-bind="template: SearchQueryHistory().TemplateName, attr:{ template: 'SearchQueryHistory().TemplateName' }"></div>
+
+</div>
+
+
+
+<script id="SearchQueryHistory" type="text/html">
+
+    <div class="col-xs-12 autosuggest autosuggest-container" data-bind="attr: { 'template': 'SearchQueryHistory' }">
+
+        <div class="recent-search-header">Recent Searches
+
+        </div>
+
+        <!-- ko if: QueryHistoryData-->
+
+        <ul data-bind="foreach: QueryHistoryData()">
+
+            <li data-bind="html: $data, event: { mousedown: $root.queryClicked }, attr: { 'id': 'search-query-history-' +$index()}"></li>
+
+        </ul>
+
+        <!-- /ko -->
+
+    </div>
+
+</script>
+
+
+
+<script src="/unifiedsearch/bundles/searchqueryhistory?v=h4IRyEfDPygAwYGJy7-AI664eXzCz_EtFHZXjsXs82M1"></script>
+
+
+
+        </header>
+
+
+
+        <div id="mobile-tablet-indicator" class="hidden-md hidden-lg"></div>
+
+        <div class="visible-xs mobile-indicator"></div>
+
+
+
+        <div id="page-container">
+
+            <div id="offCanvasWrapper" style="display: none;">
+
+                <div class="offcanvas-back-button">
+
+    <strong>
+
+        <span class="icon-ui-arrowleft" aria-hidden="true">Close</span>
+
+    </strong>
+
+</div>
+
+<iframe class="iframe-off-canvas" src="about:blank"> </iframe>
+
+
+
+            </div>
+
+            <div class="backtotop hidden-xs" id="backtotopbutton"><span class="glyphicon glyphicon-menu-up"></span></div>
+
+            
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="searchTerm" value="" />
+
+
+
+<input type="hidden" id="profile" value="{&quot;AccessGroup&quot;:null,&quot;AccessGroupId&quot;:null,&quot;Country&quot;:&quot;us&quot;,&quot;CurrencyCode&quot;:null,&quot;CustomerSet&quot;:null,&quot;Language&quot;:&quot;en&quot;,&quot;Region&quot;:null,&quot;RoleName&quot;:null,&quot;RoleId&quot;:null,&quot;SalesCatalog&quot;:null,&quot;SalesSegment&quot;:null,&quot;Segment&quot;:&quot;gen&quot;,&quot;STPShopEnabled&quot;:false,&quot;IncludeGlobalPortalFlag&quot;:false,&quot;GlobalPortalProfile&quot;:null}" />
+
+
+
+<script type="text/javascript">
+
+    var profile = JSON.parse($('#profile').val());
+
+</script>
+
+
+
+
+
+<link href="/unifiedsearch/content/promotedDocumentRule?v=_icGx8nZDfbAAklmC9CVbOcCd3gUaDuNQLdoEjosvb41" rel="stylesheet"/>
+
+
+
+<div id="promoteDocument" style="display: none">
+
+    <div class="modal-body">
+
+        <form>
+
+            <h3 class="media-heading"><b>Promoted Document Rule</b></h3>
+
+            <hr/>
+
+            <!-- ko if: RuleGroupId() === '' -->
+
+            <h4>Promoted Document Rule is not available for this query, Would like to add it?</h4>
+
+            <!-- /ko -->
+
+            <!-- ko ifnot: RuleGroupId() === '' -->
+
+            <div class="form-group" data-bind="foreach: Querys">
+
+                <!-- ko if: $index() === 0 -->
+
+                <label>Queries</label>&nbsp;
+
+                <span class="boarderSpan" data-bind="html: Query"></span>&nbsp;
+
+                <!-- /ko -->
+
+                <!-- ko ifnot: $index() === 0 -->
+
+                <span class="boarderSpan" data-bind="html: Query"></span>&nbsp;
+
+                <!-- /ko -->
+
+            </div>
+
+            <div class="form-group">
+
+                <table data-bind="foreach: DocumentAnalysis()" class="document-table">
+
+                    <!-- ko if: $index() === 0 -->
+
+                    <thead>
+
+                        <tr data-bind="foreach: $data">
+
+                            <th data-bind="text: $data"></th>
+
+                        </tr>
+
+                    </thead>
+
+                    <!-- /ko -->
+
+                    <!-- ko ifnot: $index() === 0 -->
+
+                    <tbody>
+
+                    <tr data-bind="foreach: $data, visible: ($data[0] !== '')">
+
+                        <!-- ko if: $index() === 0 -->
+
+                        <td class="documenttdtable-override" data-bind="html: $data">
+
+                        </td>
+
+                        <!-- /ko -->
+
+                        <!-- ko ifnot: $index() === 0 -->
+
+                        <td><h4 data-bind="attr:{class: $data.cssclass, title: $data.title}, style: { color : $data.color }"></h4></td>
+
+                        <!-- /ko -->
+
+                    </tr>
+
+                    </tbody>
+
+                    <!-- /ko -->
+
+                </table>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="startDate">Start Date:</label>&nbsp;
+
+                <span data-bind="html: StartDate" id="startDate"></span>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="endDate">End Date:</label>&nbsp;
+
+                <span data-bind="html: EndDate" id="endDate"></span>
+
+            </div>
+
+            <!-- /ko -->
+
+        </form>
+
+    </div>
+
+    <div class="modal-footer">
+
+        <span class="error" hidden="hidden" id="promoteDocumentRuleError"></span>
+
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="$('#promoteDocument').toggle();" data-bind="text: (RuleGroupId() === '' ? 'No' : 'Close')"></button>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<script src="/unifiedsearch/bundles/promotedDocumentRule?v=Ek9YBn_sbYAoScjOe_eEPfHjb1mAV_zbZZ8n7Tuu30I1"></script>
+
+
+
+
+
+<script type="text/javascript">
+
+    var promotedDocumentSearchAPIUrl = '//pilot.search.dell.com/queryunderstandingapi/PromotedDocuments/';
+
+    var spellCheckSearchAPIUrl = '';
+
+    var linguisticsSearchAPIUrl = '';
+
+    var relavancyWBSUrl = 'http://storefront.oldev.preol.dell.com/prod/search/relevancy/wbs/';
+
+    $(document).ready(function () {
+
+        $("#endDate").datepicker();
+
+        $("#startDate").datepicker();
+
+    });
+
+</script>
+
+
+
+<div id="main-content" class="main-content" style="position:relative;">
+
+    <!-- ko if: (isShowTabbedView == true && isPremier == false) -->
+
+    <div class="row tabbed-view-container" style="display:none;">
+
+        <div class="container-fluid mobile-tabs">
+
+            <div class="col-lg-offset-1 col-lg-10 tabbed-view">
+
+                
+
+                <ul id="myTab" class="nav specialevents-tabs">
+
+                    <li role="presentation" class="active">
+
+                        <a href="#products" id="productsTab">Products and Deals</a>
+
+                    </li>
+
+
+
+                    <li role="presentation" class="">
+
+                        <a href="#deals" id="dealsTab">Featured Deals</a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- /ko -->
+
+    <!-- ko if: showStickyNavigation == true -->
+
+    <div data-bind="visible: StickyDisplayResults" class="displayresults" style="display:none;">
+
+        <div class="row">
+
+            <div id="userDisplayMessage" class="message-bar" data-bind="visible:premierResultsExist() || premierZeroResults()">
+
+                <div class="blue-message-bar" data-bind="visible:premierResultsExist() && IsSnpFullCatalogEnabled()">
+
+                    <i class="alert-info-cir" aria-hidden="true"></i>
+
+                    <div class="message">Not finding what you’re looking for? Your search results may be limited by your organization. Contact your Dell Representative for more details.</div>
+
+                    <button class="btn-alert-close" aria-label="close dialog">
+
+                        <i class="alert-close" aria-hidden="true" data-bind="click: toggleMessageBar"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="yellow-message-bar" data-bind="visible:premierZeroResults">
+
+                    <i class="alert-notice" aria-hidden="true"></i>
+
+                    <div class="message" data-bind="visible:IsSnpFullCatalogEnabled">Not finding what you’re looking for? Your search results may be limited by your organization. Contact your Dell Representative for more details.</div>
+
+                    <div data-bind="visible:!IsSnpFullCatalogEnabled()" class="message">Your product search results have been limited by your organization. Contact your organization’s Site Administrator or Dell Representative for details.</div>
+
+                    <button class="btn-alert-close" aria-label="close dialog">
+
+                        <i class="alert-close" aria-hidden="true" data-bind="click: toggleMessageBar"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="row" data-bind="if: leftNavEnabled && leftNavResults().length > 0 || categories().length > 0">
+
+                <div class="filter-results-button col-md-3">
+
+                    <button class="left-nav-header link-like-button mobile-only" data-bind="click: toggleLeftNav">
+
+                        <!--<span class="glyphicon glyphicon-triangle-right"></span>
+
+                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+
+                        <span class="glyphicon glyphicon-plus pull-right"></span>
+
+                        <span class="glyphicon glyphicon-minus pull-right"></span>-->
+
+                        <span>Filter Results</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <div id="resultsLeftNav" data-bind="visiblity: showLeftNav">
+
+                <ul id="searchResultLeftNav" class="result-list" data-bind="template: { name: getTemplate, foreach: leftNavResults() }"></ul>
+
+            </div>
+
+
+
+            <div id="results" data-bind="css: (showLeftNav && leftNavResults().length > 0) ? 'col-sm-9 col-md-9 col-lg-8' : 'col-md-12 no-left-nav'">
+
+                <ul id="searchResult" data-bind="template: { name: getTemplate, foreach: mainResults() }, css: isGridView(mainResults()) ? 'result-grid' : 'result-list', attr: { 'result-count': ResultCount() }"></ul>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="margin-top-30 margin-bottom-30" data-bind="visible: Loading" style="display:none;">
+
+        <img id="loading-image" class="centered" src="/unifiedsearch/Content/images/loading_animation_square.gif" alt="" />
+
+    </div>
+
+    <!-- /ko -->
+
+    <!-- ko if: showStickyNavigation == false -->
+
+    <div data-bind="visible: DisplayResults" style="display: none;">
+
+        <div class="row">
+
+
+
+            <div id="userDisplayMessage" class="message-bar" data-bind="visible:premierResultsExist() || premierZeroResults()">
+
+                <div class="blue-message-bar" data-bind="visible:premierResultsExist() && IsSnpFullCatalogEnabled()">
+
+                    <i class="alert-info-cir" aria-hidden="true"></i>
+
+                    <div class="message">Not finding what you’re looking for? Your search results may be limited by your organization. Contact your Dell Representative for more details.</div>
+
+                    <button class="btn-alert-close" aria-label="close dialog">
+
+                        <i class="alert-close" aria-hidden="true" data-bind="click: toggleMessageBar"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="yellow-message-bar" data-bind="visible:premierZeroResults">
+
+                    <i class="alert-notice" aria-hidden="true"></i>
+
+                    <div class="message" data-bind="visible:IsSnpFullCatalogEnabled">Not finding what you’re looking for? Your search results may be limited by your organization. Contact your Dell Representative for more details.</div>
+
+                    <div data-bind="visible:!IsSnpFullCatalogEnabled()" class="message">Your product search results have been limited by your organization. Contact your organization’s Site Administrator or Dell Representative for details.</div>
+
+                    <button class="btn-alert-close" aria-label="close dialog">
+
+                        <i class="alert-close" aria-hidden="true" data-bind="click: toggleMessageBar"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="row" data-bind="if: leftNavEnabled && leftNavResults().length > 0 || categories().length > 0">
+
+                <div class="filter-results-button col-md-3">
+
+                    <button class="left-nav-header link-like-button mobile-only" data-bind="click: toggleLeftNav">
+
+                        <!--<span class="glyphicon glyphicon-triangle-right"></span>
+
+                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+
+                        <span class="glyphicon glyphicon-plus pull-right"></span>
+
+                        <span class="glyphicon glyphicon-minus pull-right"></span>-->
+
+                        <span>Filter Results</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <div id="resultsLeftNav" data-bind="visiblity: showLeftNav">
+
+                <ul id="searchResultLeftNav" class="result-list" data-bind="template: { name: getTemplate, foreach: leftNavResults() }"></ul>
+
+            </div>
+
+            <div id="results" data-bind="css: (showLeftNav && leftNavResults().length > 0) ? 'col-sm-9 col-md-9 col-lg-8' : 'col-md-12 no-left-nav'">
+
+                <ul id="searchResult" data-bind="template: { name: getTemplate, foreach: mainResults() }, css: isGridView(mainResults()) ? 'result-grid' : 'result-list', attr: { 'result-count': ResultCount() }"></ul>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="margin-top-30 margin-bottom-30" data-bind="visible: Loading">
+
+        <img id="loading-image" class="centered" src="/unifiedsearch/Content/images/loading_animation_square.gif" alt="" />
+
+    </div>
+
+    <!-- /ko -->
+
+</div>
+
+
+
+                <script type="text/javascript" src="https://www.dell.com/koa/vocaas/en/js/microsurvey"></script>
+
+    <div id="microsurvey" skip-attr="country,language"></div>
+
+    <br />
+
+
+
+        </div>
+
+
+
+        
+
+
+
+        <footer>
+
+            <div id="footer">
+
+                
+
+
+
+
+
+    <script language="javascript">
+
+    var uxExperiments = [{"Id":"DegradedMasthead","Description":"Premier Experience - DegradedMasthead","Layer":"Premier Experience"},{"Id":"ProductsFromElasticPhrasing","Description":"Systems Specifications - ProductsFromElasticPhrasing","Layer":"Systems Specifications"},{"Id":"ShowPowerBars","Description":"Systems Specifications - ShowPowerBars","Layer":"Systems Specifications"},{"Id":"DellTech","Description":"Systems Specifications - DellTech","Layer":"Systems Specifications"},{"Id":"ShowSignalBars","Description":"Systems Specifications - ShowSignalBars","Layer":"Systems Specifications"},{"Id":"productsfromelasticwithshingleddataboosting","Description":"Systems Specifications - productsfromelasticwithshingleddataboosting","Layer":"Systems Specifications"},{"Id":"searche","Description":"Systems Specifications - searche","Layer":"Systems Specifications"},{"Id":"fast","Description":"Systems Specifications - fast","Layer":"Systems Specifications"},{"Id":"ShowAutoSuggestCategories","Description":"Category Suggestions - ShowAutoSuggestCategories","Layer":"Category Suggestions"},{"Id":"ShowStickyNavigation","Description":"ShowStickyNavigation - ShowStickyNavigation","Layer":"ShowStickyNavigation"},{"Id":"CompatibleProducts","Description":"TopCompatibleProducts - CompatibleProducts","Layer":"TopCompatibleProducts"},{"Id":"Turn On Location Services","Description":"Location Services - Turn On Location Services","Layer":"Location Services"},{"Id":"Use Dynamic VA","Description":"Navigation - Use Dynamic VA","Layer":"Navigation"},{"Id":"Show Left Nav","Description":"Navigation - Show Left Nav","Layer":"Navigation"},{"Id":"DellEMCD","Description":"Navigation - DellEMCD","Layer":"Navigation"},{"Id":"DellEMCL","Description":"Navigation - DellEMCL","Layer":"Navigation"},{"Id":"AutoCategorize","Description":"ProductCategories - AutoCategorize","Layer":"ProductCategories"},{"Id":"TwoTopProducts","Description":"Trending Products - TwoTopProducts","Layer":"Trending Products"},{"Id":"OneTopProduct","Description":"Trending Products - OneTopProduct","Layer":"Trending Products"},{"Id":"UnlimitedTopProducts","Description":"Trending Products - UnlimitedTopProducts","Layer":"Trending Products"},{"Id":"Show Technical Specifications","Description":"Accessory Product Stack - Show Technical Specifications","Layer":"Accessory Product Stack"},{"Id":"ProductSelector","Description":"ProductSelector - ProductSelector","Layer":"ProductSelector"},{"Id":"PromoteProductsByActivity","Description":"Analytics-Activity - PromoteProductsByActivity","Layer":"Analytics-Activity"},{"Id":"SortCategoriesByActivity","Description":"Analytics-Category - SortCategoriesByActivity","Layer":"Analytics-Category"},{"Id":"Masthead / Footer","Description":"Layout - Masthead / Footer","Layer":"Layout"},{"Id":"EnablePremierEnhancedExperience","Description":"Premier Enhanced Experience - EnablePremierEnhancedExperience","Layer":"Premier Enhanced Experience"},{"Id":"CaptureBoomerangMetrics","Description":"Boomerang - CaptureBoomerangMetrics","Layer":"Boomerang"},{"Id":"GridView","Description":"ResultLayout - GridView","Layer":"ResultLayout"},{"Id":"ProdDisambiguator","Description":"Product Disambiguation - ProdDisambiguator","Layer":"Product Disambiguation"},{"Id":"Reset on Change Category","Description":"Sorting - Reset on Change Category","Layer":"Sorting"},{"Id":"Reset On New Search","Description":"Sorting - Reset On New Search","Layer":"Sorting"},{"Id":"EstimatedShipDateControllerTime","Description":"Estimated Ship Date - EstimatedShipDateControllerTime","Layer":"Estimated Ship Date"},{"Id":"ShowPromotedBanner","Description":"Badges - ShowPromotedBanner","Layer":"Badges"},{"Id":"NewPromotedDocuments","Description":"Document Ranking - NewPromotedDocuments","Layer":"Document Ranking"},{"Id":"Show Financing","Description":"Financing - Show Financing","Layer":"Financing"},{"Id":"ShowTabbedView","Description":"ShowTabbedView - ShowTabbedView","Layer":"ShowTabbedView"},{"Id":"ShowMicroFeedback","Description":"Micro Feedback - ShowMicroFeedback","Layer":"Micro Feedback"},{"Id":"ShowContactUsDrawer","Description":"Dell Contact Us Drawer - ShowContactUsDrawer","Layer":"Dell Contact Us Drawer"}];
+
+    var appliedUXExperiments = ["DegradedMasthead","searche","ShowAutoSuggestCategories","DellEMCL","AutoCategorize","UnlimitedTopProducts","PromoteProductsByActivity","SortCategoriesByActivity","Masthead / Footer","CaptureBoomerangMetrics","GridView","Reset On New Search","NewPromotedDocuments","ShowTabbedView","ShowMicroFeedback","ShowContactUsDrawer"];
+
+    </script>
+
+
+
+
+
+<!-- Dell Footer -->
+
+<div class="dell-footer" data-bind="css: UseDellEMCTheme ? 'dell-emc-footer' : ''">
+
+    <div class="container">
+
+        <div class="row">
+
+                <div class="col-xs-12 col-sm-3">
+
+                    <h5 class="footer-header triangle-right" id="do-more-with-dell">Do more with Dell</h5>
+
+                    <ul class="hidden-xs">
+
+                            <li class="footer-link">
+
+                                <a href="//www.dell.com/learn/campaigns/segmentor-usmpp?s=eep" id="employee-and-student-discounts">Employee &amp; Student Discounts</a>
+
+                            </li>
+
+                            <li class="footer-link">
+
+                                <a href="//www.delltechnologies.com/partner/en-us/partner/partner.htm" id="partner-program">Partner Program</a>
+
+                            </li>
+
+                            <li class="footer-link">
+
+                                <a href="//www.dell.com/en-us/dfh/shop/dell-refurbished/cp/outlet-dfh" id="dell-outlet">Dell Outlet</a>
+
+                            </li>
+
+                            <li class="footer-link">
+
+                                <a href="//dfs.dell.com/Pages/DFSHomePage.aspx" id="make-a-payment">Make a Payment</a>
+
+                            </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+
+                    <h5 class="footer-header triangle-right" id="about-dell">About Dell</h5>
+
+                    <ul class="hidden-xs">
+
+                            <li class="footer-link">
+
+                                <a href="//www.dell.com/learn/about-dell-investor?s=corp" id="investors">Investors</a>
+
+                            </li>
+
+                            <li class="footer-link">
+
+                                <a href="//www.dell.com/learn/about-dell?s=corp" id="company-information">Company Information</a>
+
+                            </li>
+
+                            <li class="footer-link">
+
+                                <a href="//www.dell.com/learn/cr?s=corp" id="corporate-social-responsibility">Corporate Social Responsibility</a>
+
+                            </li>
+
+                            <li class="footer-link">
+
+                                <a href="//www.dell.com/learn/us/en/uscorp1/legal_docs/dell-modern-slavery-statement.pdf" id="anti-slavery-and-human-trafficking">Anti-Slavery &amp; Human Trafficking</a>
+
+                            </li>
+
+                            <li class="footer-link">
+
+                                <a href="//www.dell.com/learn/customer-engagement?s=corp" id="customer-engagement">Customer Engagement</a>
+
+                            </li>
+
+                            <li class="footer-link">
+
+                                <a href="//jobs.dell.com/" id="careers">Careers</a>
+
+                            </li>
+
+                            <li class="footer-link">
+
+                                <a href="//www.dell.com/learn/about-dell-newsroom?s=corp" id="dell-newsroom">Dell Newsroom</a>
+
+                            </li>
+
+                            <li class="footer-link">
+
+                                <a href="//www.dell.com/en-us/dt/index.htm" id="dell-technologies">Dell Technologies</a>
+
+                            </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+
+                    <h5 class="footer-header triangle-right" id="legal">Legal</h5>
+
+                    <ul class="hidden-xs">
+
+                            <li class="footer-link">
+
+                                <a href="//www.dell.com/learn/policies-cookies-ads-emails?s=corp" id="cookies,-ads-and-emails">Cookies, Ads &amp; Emails</a>
+
+                            </li>
+
+                            <li class="footer-link">
+
+                                <a href="//www.dell.com/learn/policies-privacy?s=corp" id="privacy-statement">Privacy Statement</a>
+
+                            </li>
+
+                            <li class="footer-link">
+
+                                <a href="//www.dell.com/learn/terms?s=corp" id="legal-and-regulatory">Legal &amp; Regulatory</a>
+
+                            </li>
+
+                            <li class="footer-link">
+
+                                <a href="//www.dell.com/learn/terms-of-sale?s=corp" id="terms-of-sale">Terms of Sale</a>
+
+                            </li>
+
+                            <li class="footer-link">
+
+                                <a href="//www.dell.com/learn/trademarks?s=corp" id="trademarks">Trademarks</a>
+
+                            </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+
+                    <h5 class="footer-header triangle-right" id="community">Community</h5>
+
+                    <ul class="hidden-xs">
+
+                            <li class="footer-link">
+
+                                <a href="//www.dell.com/support/home?app=community" id="the-dell-emc-community">The Dell EMC Community</a>
+
+                            </li>
+
+                            <li class="footer-link">
+
+                                <a href="//www.dell.com/{l}-{c}/blog/" id="blog">Blog</a>
+
+                            </li>
+
+                            <li class="footer-link">
+
+                                <a href="//www.dell.com/{l}-{c}/dt/events/index.htm" id="events">Events</a>
+
+                            </li>
+
+                    </ul>
+
+                </div>
+
+        </div>
+
+        <!-- ko if: profile.Country === "us" && profile.Language === "en" -->
+
+        <div class="row footer-legal">
+
+            <div class="col-xs-12 col-sm-offset-2 col-sm-8"></div>
+
+            <!-- ko ifnot: profile.Segment === "bsd"-->
+
+            <div class="col-xs-12 col-sm-offset-2 col-sm-8"><strong><span style="text-decoration: underline;">^DELL PREFERRED ACCOUNT (DPA):</span></strong><strong> </strong>Offered to U.S. residents by WebBank, Member FDIC, who determines qualifications for and terms of credit. Taxes, shipping, and other charges are extra and vary. Dell and the Dell logo are trademarks of Dell Inc. </div>
+
+            <!-- /ko-->
+
+            <!-- ko ifnot: profile.Segement === "dhs" -->
+
+            <div class="col-xs-12 col-sm-offset-2 col-sm-8"><strong>^Dell Business Credit:</strong> Offered to business customers by WebBank, Member FDIC, who determines qualifications for and terms of credit. Taxes, shipping and other charges are extra and vary. Minimum monthly payments are the greater of $15 or 3% of the new balance shown on the monthly billing statement. Dell and the Dell logo are trademarks of Dell Inc. </div>
+
+            <!-- /ko -->
+
+        </div>
+
+        <!-- /ko -->
+
+    </div>
+
+</div>
+
+<!-- End Dell Footer -->
+
+<div id="secret-footer" class="navbar navbar-inverse navbar-fixed-bottom" data-bind="visible: SecretFooter">
+
+    <div class="container">
+
+        <div class="navbar-header">
+
+            <button type="button" id="bottom-nav-toggle" class="navbar-toggle secret-footer-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-label="bottom Nav Toggle">
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand" href="/unifiedsearch/" id="dell-search-ux-button">Dell.Search</a>
+
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav">
+
+                <li class="dropdown dropup">
+
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" id="bottom-nav-experiments">Experiments<strong class="caret"></strong></a>
+
+                    <ul class="dropdown-menu dropdown-selection" id="expid" data-bind="foreach: Experiments">
+
+                        <li><a href="javascript:void(0);" data-bind="html: Description, css: { 'active-selection': $root.HasExperiment(Id) }, attr: { id: Id }, click: $root.toggleAppliedExperiment"></a></li>
+
+                        <!-- ko if: $index() == $parent.Experiments().length - 1 -->
+
+                        <li class="divider"></li>
+
+                        <!-- /ko -->
+
+                    </ul>
+
+                </li>
+
+                <li id="search-feedback" class="dropdown dropup">
+
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" id="bottom-nav-feedback">Feedback<strong class="caret"></strong></a>
+
+                    <div class="row dropdown-menu feedback-dropdown">
+
+                        <form class="navbar-form" data-bind="submit: submitSearchFeedback">
+
+                            <div class="form-group">
+
+                                <div class="btn-group" data-toggle="buttons" data-bind="click: selectFeedbackValue">
+
+                                    <label class="btn btn-success">
+
+                                        <input type="radio" name="feedbackvalue" value="strong" id="option1" autocomplete="off"> Strong Result
+
+                                    </label>
+
+                                    <label class="btn btn-warning">
+
+                                        <input type="radio" name="feedbackvalue" value="marginal" id="option2" autocomplete="off"> Marginal Result
+
+                                    </label>
+
+                                    <label class="btn btn-danger">
+
+                                        <input type="radio" name="feedbackvalue" value="weak" id="option3" autocomplete="off"> Weak Result
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                            <div id="search-feedback-input" style="display: none;">
+
+                                <textarea class="dont-steal-focus" rows="3" id="feedback" title="Search Feedback" placeholder="Enter comments about the search results"></textarea>
+
+                                <input class="dont-steal-focus width-100p margin-bottom-5" type="text" id="feedback-email" placeholder="Email"/>
+
+                                <button type="submit" class="btn btn-primary" id="submit-search-feedback">Submit</button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </li>
+
+                <li id="user-info" class="dropdown dropup">
+
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" id="bottom-nav-user-info">User Info<strong class="caret"></strong></a>
+
+                    <ul class="dropdown-menu dropdown-selection" id="user-info-list" data-bind="with: UserInfo">
+
+                        <li>Country: <span data-bind="text: country"></span></li>
+
+                        <li>Language: <span data-bind="text: language"></span></li>
+
+                        <li>Segment: <span data-bind="text: segment"></span></li>
+
+                        <li>Customer Set: <span data-bind="text: customerSet"></span></li>
+
+                    </ul>
+
+                </li>
+
+                <li id="recommendations" class="dropdown dropup">
+
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" id="bottom-nav-recommendations">Recommendations<strong class="caret"></strong></a>
+
+                    <ul class="dropdown-menu dropdown-selection" id="recommendations-list" data-bind="with: Recommendations">
+
+                        <li><a href="javascript:void(0);" data-bind="html: Description, attr: { id: Id }, click: $root.recommendationClick"></a></li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+            <ul>
+
+                <li id="demo" class="navbar-text" data-bind="html: geolocation"></li>
+
+            </ul>
+
+            <ul class="nav navbar-right">
+
+                <li class="navbar-text">
+
+                    Version : <span id="build-number" data-bind="text: buildNumber"></span>
+
+                    <!-- ko if: SliceName() -->
+
+                    - <span id="slice-name" data-bind="text: sliceName"></span>
+
+                    <!-- /ko -->
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script src="/unifiedsearch/bundles/footer?v=w_95Ek6zRYba3_aHYAuTPqGUp9ZVq-lyXWGEvME_Uw41"></script>
+
+
+
+            </div>
+
+        </footer>
+
+
+
+        <script id="contact-drawer-script" src="https://afcs.dellcdn.com/csb/contact-drawer/bundles/js/contact-drawer_v1.js"></script>
+
+
+
+<div id="dell-contactus-drawer"></div>
+
+<script>
+
+    $(function () {
+
+        try {
+
+            var segment = Dell.Metrics.sc.segment;
+
+
+
+            // gen segment in pilot search is equal to corp segment in dell.com
+
+            if (segment.toLowerCase() == 'gen')
+
+                segment = 'corp';
+
+
+
+            Dell.ContactDrawer.init({
+
+                targetElementId: $("#dell-contactus-drawer"),
+
+                country: Dell.Metrics.sc.country,
+
+                language: Dell.Metrics.sc.language,
+
+                segment: segment,
+
+                pageId: "dell_unified_search"
+
+            });
+
+        } catch (e) {
+
+            console.log('Dell Contact Us Drawer Error : ' + e);
+
+        }
+
+    });
+
+</script>    <script>
+
+        console.log('Dell Contact Us Drawer Enabled.');
+
+    </script>
+
+
+
+    </div>
+
+
+
+    
+
+    <script src="/unifiedsearch/bundles/search?v=PhNDnxveY6qG7iHlCuBSl0F8Yg-rpuv-V5_bDuwht6I1"></script>
+
+
+
+    <script src="/unifiedsearch/bundles/productSelector?v=XVcjUllAMywzMHl3vOH-ieoJe1ClVSYqdWt44KNZL-s1"></script>
+
+
+
+
+
+
+
+    <!-- Google Analytics -->
+
+    <script>
+
+        (function (i, s, o, g, r, a, m) {
+
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+
+                (i[r].q = i[r].q || []).push(arguments);
+
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g;
+
+            m.parentNode.insertBefore(a, m);
+
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+
+
+        ga('create', 'UA-99694258-1', 'auto');
+
+        ga('send', 'pageview');
+
+    </script>
+
+
+
+    <script>
+
+        function gotoStandardConfigurations() {
+
+            var standardConfigUrl = 'https://www.dell.com/premier/std-configs/{0}/{1}/{2}';
+
+            if (standardConfigUrl) {
+
+                var standardConfigFormattedUrl = standardConfigUrl.format(c, l, cs);
+
+                if (standardConfigFormattedUrl) {
+
+                    window.location.href = standardConfigFormattedUrl;
+
+                }
+
+            }
+
+        };
+
+    </script>
+
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            var ua = window.navigator.userAgent;
+
+            var msie = ua.indexOf("MSIE ");
+
+            if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) { // If Internet Explorer, return version number
+
+                var head = document.querySelector("head")
+
+                var tnt = document.querySelector("#tnt_ATJS_style")
+
+                head.removeChild(tnt);
+
+            }
+
+        });
+
+    </script>
+
+<script type="text/javascript"  src="/UCFGgxm2/vZY/GWl/u6hn-izKTh/3twYtpk6VEJtpQt7iV/XmE7QS8hAQ/RwIweT/NfUgkB"></script><noscript><img src="https://pilot.search.dell.com/akam/13/pixel_32e5dea9?a=dD03OWIxODE2YTQ2NGVkNTYwNDJiYjE3NGJmM2ZlMTViY2Y5YzBmZDNkJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+
+</html>
+

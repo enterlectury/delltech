@@ -1,0 +1,902 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <base href="https://democenter.dell.com/">
+
+    <meta charset="utf-8" />
+
+    <meta name="robots" content="index,follow">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="Description" content="Dell Demo Center is a highly scalable, multi-cloud-based service that provides 24/7 self-service access to virtual labs and interactive product simulations">
+
+    <title>Demo Center</title>
+
+    <base href="/" />
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css?v=z8OR40MowJ8GgK6P89Y-hiJK5-cclzFHzLhFQLL92bg" />
+
+    <link rel="stylesheet" href="/css/site.css?v=VkHKHcB5eI7_tfD8oWz6RZnYanmiOr-6nXjCa-6AiA4" />
+
+    <link rel="stylesheet" href="/DemoCenterMvc.styles.css?v=6aNDNIcrdGIJyCkSKZFWYZmoHI-ZV_vIFvcHsLSSIjg" />
+
+    <link rel="stylesheet" href="/css/videos.css?v=wv12upL_veJ91Qd9AHsWxUiId3Jz_5SVApO2wkhINZw" />
+
+    <link rel="stylesheet" href="/css/demoroom.css?v=Yx6e72dxyrNIglSOjGUZTPXKZCZ3fwSdt7ZOaxnjmVM" />
+
+    
+
+    
+
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/13.0.0/bootstrap/bootstrap-main.css" integrity="sha384-sj+OaGqBprEhxgBZC8n60aGqCEDJX1KBBJgt498q8eqbW3WjXAnjjWfvM7mOV7vV" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha384-NXgwF8Kv9SSAr+jemKKcbvQsz+teULH/a5UNJvZc6kP47hZgl62M1vGnw6gHQhb1" crossorigin="anonymous"></script>
+
+<script src="https://kendo.cdn.telerik.com/2026.1.212/js/kendo.all.min.js" integrity="sha384-mLcAmM+HtxOVd9MOLKGbooZ/rF99ZEuzz5HNohPxjcc44V8J8hy0sZSc1n48KeJu" crossorigin="anonymous"></script>
+
+<script src="https://kendo.cdn.telerik.com/2026.1.212/js/kendo.aspnetmvc.min.js" integrity="sha384-HTiqIQg3GgJr977M/A+QET4/T/rITkHPd08icCtzzR7aGQzKvPGFbHNxYcBvYPQ/" crossorigin="anonymous"></script>
+
+
+
+<script nonce="b90bb012531542dda8cc3debda4f2d58" src="/js/kendo-ui-license.js?v=GCLfFRArQjg33tipq2hotIsvGPZxXPuBL6Cf6dQ8xYE"></script>
+
+
+
+    <!-- Telerik Blazor scripts -->
+
+     <!-- Latest Version 2.49.0 -->
+
+<!-- <link rel="stylesheet" crossorigin href="https://dds.dell.com/components/2.49.0/css/dds-reboot.min.css" />-->
+
+
+
+
+
+<link href="/lib/dds/dds-bundle.min.css?v=cEn5QTJcuSLw0eURhckMoLGu-ZIbzQ9WZzgGt_uczlE" rel="stylesheet" /> 
+
+
+
+<script src="/lib/dds/index.min.js?v=5Ggq7za4oNMsmLr3WGYLDMJZ6UGrGuNm66KE2DlvK9s"></script>
+
+
+
+
+
+    <link rel="stylesheet" crossorigin href="/plugins/DemoCenter/css/democenter.css?v=ZpdIOK7czk2RaKTmJ12SV69sckM8bKk1ekVzQCZJjJ0" />
+
+    
+
+    <style>
+
+        #ot-sdk-btn-floating, .ot-floating-button {
+
+            bottom: 0px !important;
+
+        }
+
+
+
+        #onetrust-consent-sdk{position: fixed !important; z-index:999 !important;}
+
+        #onetrust-pc-sdk.otPcCenter{ top: 10% !important; }
+
+    </style>
+
+<script nonce="a8bf246563f99a15e96dec4cda4bae25">bazadebezolkohpepadr="130462952"</script><script type="text/javascript" src="https://democenter.dell.com/akam/13/7c6b46d" nonce="a8bf246563f99a15e96dec4cda4bae25" defer></script></head>
+
+<body style="overflow-y: hidden;">
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">democenter.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8D5KdDiGvelBrm4JxQcM-wsyDalzgwUniMf7NqOeu0IhOln7fDHLje5vQrRDryrhV5gxRwIVnaegd18HSoFky6QJZzfr8yQ5_PzyM3GhEp32hSnobtkH2sJiY_uhfne9kUAcffm0gQxrDMH0ASiczpc" />
+
+    <script nonce="b90bb012531542dda8cc3debda4f2d58">
+
+        Dell = window.Dell || {};
+
+        Dell.Metrics = Dell.Metrics || {};
+
+        Dell.Metrics.sc = Dell.Metrics.sc || {};
+
+        Dell.Metrics.sc.country = "us";
+
+        Dell.Metrics.sc.language = "en";
+
+        Dell.Metrics.sc.segment = "corp";
+
+        Dell.Metrics.sc.customerset = "";
+
+        Dell.Metrics.sc.cms = "democenter";
+
+        Dell.Metrics.sc.pagename = "us|en|corp|democenter|home";
+
+        Dell.Metrics.sc.applicationname = "democenter";
+
+
+
+        function onMarkNotificationsAsReadClick(username) {
+
+            $.ajax({
+
+                type: "POST",
+
+                url: "/UserNotifications/MarkAllUserNotificationsAsRead",
+
+                data: { username: username },
+
+                success: function(response) {
+
+                    if (response.success) {
+
+                        $("#dc__usernotificationsgrid").data("kendoGrid").dataSource.read();
+
+                    } else {
+
+                        alert("Error: " + response.error);
+
+                    }
+
+                },
+
+                error: function() {
+
+                    alert("An error occurred while marking all Notifications as Read.");
+
+                }
+
+            });
+
+        }
+
+
+
+        function onDeleteNotificationClick(userNotificationId, username) {
+
+            $.ajax({
+
+                type: "POST",
+
+                url: "/UserNotifications/DeleteUserNotification",
+
+                data: { id: userNotificationId, username: username },
+
+                success: function(response) {
+
+                    if (response.success) {
+
+                        $("#dc__usernotificationsgrid").data("kendoGrid").dataSource.read();
+
+                    } else {
+
+                        alert("Error: " + response.error);
+
+                    }
+
+                },
+
+                error: function() {
+
+                    alert("An error occurred while processing your request.");
+
+                }
+
+            });
+
+        }
+
+
+
+        function onUserNotificationsDataBound(e) {
+
+            var totalItems = this.dataSource.total();
+
+            console.log("Total items read:", totalItems);
+
+            if (totalItems <= 0) {
+
+                $(".dc__usernotification__badge--positioning").hide();
+
+                $(".dc__notifications-mark-read-button").hide();
+
+                $("#noMessages").show();
+
+                 // $("#dc__popover-usernotifications-trigger").prop("disabled", true);
+
+            } else {
+
+                $(".dds__badge__label").text(totalItems);// + "+");
+
+                $(".dc__usernotification__badge--positioning").show();
+
+                $(".dc__notifications-mark-read-button").show();
+
+                $("#noMessages").hide();
+
+                // $("#dc__popover-usernotifications-trigger").prop("disabled", false);
+
+            }
+
+        }
+
+    </script>
+
+
+
+    <header b-5oecqyqcbl>
+
+        
+
+        
+
+    </header>
+
+    <div b-5oecqyqcbl class="dds__w-100">
+
+        
+
+        <main b-5oecqyqcbl role="main">
+
+            
+
+<a href="#mh-main" class="skip-nav-link">Skip to main content</a>
+
+
+
+
+
+<div class="top-row auth dds__container-fluid">
+
+    <div class="dds__container--comfy">
+
+        <div class="dds__row">
+
+            <div class="dds__col-auto dds__my-auto dds__d-inline-flex">
+
+                    <div>
+
+                        <a href="/" class="dds__my-auto dds__w-50 dds__h-100 dds__d-block dds__ml-0" aria-label="Dell Technologies" role="link">
+
+                            <img class="dellTechLogo" src="/images/delltech-logo-prm-blue-rgb-proof.svg" />
+
+                        </a>
+
+                    </div>
+
+            </div>
+
+            <div class="dds__col dds__d-sm-none dds__d-md-flex">
+
+                    <div class="dds__col dds__d-none dds__d-xl-flex">
+
+                        <div class="dds__col"></div>
+
+                        <div class="dds__col">
+
+                            <span class="tb-icon-container">
+
+                                <span class="k-icon k-i-search searchIcon"></span>
+
+
+
+                                <span class="k-textbox k-input dds__input-text dds__rounded-0 search-input-text-small dds__p-0 dds__h-100 k-input-solid k-rounded-md k-input-md">
+
+                                    <form id="TopSearchform" name="TopSearchform">
+
+                                        <input placeholder="Search Demo Center" name="SearchCatalog" id="SearchCatalog" data-id="a4fb0d7a-c9cd-40d0-8e12-7b203a2d6eac" class="k-input-inner" tabindex="0" maxlength="256" aria-label="Search and explore the latest and most popular demo labs">
+
+                                    </form>
+
+                                </span>
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+            </div>
+
+
+
+                <div class="dds__col-auto dds__my-auto dds__action-menu" data-dds="action-menu" data-trigger="#action-menu" id="actionmenu-signin">
+
+                    <button id="action-menu" type="button" class="dds__button dds__button--sm dds__button--tertiary sign-in-button dds__body-3" aria-label="sign-in menu button">
+
+                        <div class="dds__d-flex dds__justify-content-middle">
+
+                            <div>
+
+                                <span class="dds__align-middle"><span class="dds__icon dds__icon dds__icon--user dds__body-2"></span></span><span class="dds__my-auto dds__ml-2">Sign In</span>
+
+                                <span class="dds__align-middle dds__ml-1"><span class="dds__icon dds__icon--chevron-down"></span></span>
+
+                            </div>
+
+                        </div>
+
+                    </button>
+
+                    <div class="dds__action-menu__container dds__action-menu__container-signin" tabindex="-1" role="presentation" aria-hidden="true">
+
+                        <div class="dds__p-4">
+
+                            <div class="options-header">
+
+                                <h6>Welcome to Demo Center</h6>
+
+                                <p class="dds__body-2">Demo Center requires Authentication in order<br />to start a Lab session. Please Sign In by clicking <br />one of the options below.</p>
+
+                            </div>
+
+                            <ul class="dds__action-menu__menu" role="menu" tabindex="-1">
+
+                                <li class="dds__action-menu__link" role="none"><a class="dds__button dds__button--primary dds__w-100 dds__ml-0 sign-in" role="menuitem" href="/login?returnUrl=https://democenter.dell.com/&amp;loginType=DICustomer"><div><span class="dds__my-auto dds__ml-0">Customer Sign In</span></div></a></li>
+
+                                <li class="dds__action-menu__separator" role="separator"></li>
+
+                                <li class="dds__link--standalone" role="none">
+
+                                    <a class="dds__button dds__button--secondary dds__w-100 dds__ml-0 dds__link--standalone" role="menuitem" href="/login?returnUrl=https://democenter.dell.com/partner/dashboard&amp;loginType=DIPartner">
+
+                                        <div>
+
+                                            <span class="dds__align-middle">
+
+                                                <span class="dds__icon dds__icon dds__icon--partners dds__body-2"></span>
+
+                                            </span>
+
+                                            <span class="dds__my-auto dds__ml-4">Partner Sign In</span>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li class="dds__link--standalone dds__mt-2" role="none">
+
+                                    <a class="dds__button dds__button--secondary dds__w-100 dds__ml-0 dds__link--standalone" role="menuitem" href="/login?returnUrl=https://democenter.dell.com/employee/dashboard&amp;loginType=DIEmployee">
+
+                                        <div>
+
+                                            <span class="dds__align-middle">
+
+                                                <span class="dds__icon dds__icon dds__icon--user-directory dds__body-2"></span>
+
+                                            </span>
+
+                                            <span class="dds__my-auto dds__ml-4">Employee Sign In</span>
+
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="content" style="    overflow-y: scroll;height: calc(100vh - 72px);">
+
+    <div class="dds__container-fluid dds__text-white dc__landing-page-menu-section dds__d-sm-none dds__d-xl-block">
+
+        <div class="dds__container--comfy  dds__h-100 ">
+
+            <div class="dds__flex dds__d-inline-flex dds__align-items-left dds__justify-content-center dds__text-start dds__w-100 dc__landing-page-menu">
+
+                <nav id="company-logodc" class="dds__row dds__my-auto dds__w-100 dds__pl-0">
+
+                    <div aria-current="page" >Demo Center</div>
+
+                    <a href="/catalog" class="dds__link--standalone dds__body-2 blue-900 dds__ml-5">Demo Library</a>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="dds__container-fluid dds__text-white dds__p-5 dc__landing-page-content-section dds__d-sm-none dds__d-xl-block">
+
+        <div class="dds__container--comfy dds__w-100 dds__d-flex dds__align-items-center ">
+
+            <div class="content-section-details-top dds__h-100 dds__w-100 dds__d-flex dds__align-items-center">
+
+                <div class="dds__w-100 dds__d-flex dds__d-inline-flex">
+
+                    <div class="dds__col-auto dds__display-3 dds__d-sm-none dds__d-xl-block dds__pl-5 dds__pr-5 dds__pt-5 dds__pb-5 dc__landing-page-hero-message">
+
+                        <h2>Test-drive our newest Technologies</h2>
+
+                        <div class="blue-200 dds__mt-3 dds__mb-3"><h4>The latest tech at your fingertips</h4></div>
+
+                        <div><h5>Explore a product for the first time with a self-guided
+
+                            <br />demo or step through complex scenarios in a fully guided
+
+                            <br />virtual lab. Put yourself in the driver’s seat and experience
+
+                            <br /> the latest products and solutions.</h5>
+
+                        </div>
+
+                        <div class="dds__mt-2">
+
+                            <a href="/catalog" class="dds__button dds__button-md dds__link--standalone white-color">Explore Hands-on Labs</a>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="dds__col dds__d-flex dds__d-inline-flex dds__align-items-center dds__justify-content-center dds__text-center dc__landing-page-topic-background">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="dds__container-fluid content-section-middle dds__text-black-50 dds__pb-4" id="mh-main">
+
+        <div class="dds__container-fluid dds__h-100">
+
+            <div class="dds__row dds__text-center dds__pt-5">
+
+                <div class="dds__col-2 dds__mb-3">
+
+                    <h1 class="dds__h3 primary-icon-color">Custom Filtered Labs and Demos​</h1>
+
+                    <span class="dds__h4 font-weight-300 gray-900">The best in labs, hand-picked for you by Dell Technologies’ experts. <br />Get technical, faster.</span>
+
+                </div>
+
+            </div>
+
+            <div class="dds__row dds__text-center dds__justify-content-center dds__mt-3">
+
+                <div class="dds__col-12 dds__col--md-6 dds__col--lg-4 dds__mb-3">
+
+                    <a href="/catalog?portfolio=Modern Workplace" style="color: inherit;text-decoration: none;display: block;height: 100%;" aria-label="card Explore">
+
+                        <div class="dds__card dds__elevation-2 dc__card-elevation dds__text-left">
+
+                            <div class="dds__card__media" style="background-color:#3170C5;">
+
+                                <img src="/images/LandingPage_ModernWorkplace_2.png" alt="Modern Workplace" >
+
+                            </div>
+
+                            <div class="dds__card__content">
+
+                                <div class="dds__card__header"><span class="dds__card__header__text"><h5>Modern Workplace</h5></span></div>
+
+                                <div class="dds__card__body"><p class="primary-color">See how we can help you streamline your IT, enabling secure productivity and collaboration from anywhere.</p></div>
+
+                                <div class="dds__card__action dds__justify-content-start">
+
+                                    <div class="dds__body-3 gray-900" aria-label="unlock the potential of AI">Discover the Modern Workplace</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="dds__col-12 dds__col--md-6 dds__col--lg-4 dds__mb-3">
+
+                    <a href="/catalog?portfolio=Modern Data Center%20%26%20Multicloud" style="color: inherit;text-decoration: none;display: block;height: 100%;" aria-label="card Explore">
+
+                        <div class="dds__card dds__elevation-2 dc__card-elevation dds__text-left">
+
+                            <div class="dds__card__media" style="background-color:#0A227A;"><img src="/images/LandingPage_ModernDatacenterAndMulticloud_2.png" alt="Modern Data Center"></div>
+
+                            <div class="dds__card__content">
+
+                                <div class="dds__card__header"><span class="dds__card__header__text"><h5>Modern Data Center & Multicloud</h5></span></div>
+
+                                <div class="dds__card__body"><p class="primary-color">Meet today’s business needs and accelerate innovation with smart, flexible and resilient technologies infused with AI</p></div>
+
+                                <div class="dds__card__action dds__justify-content-start">
+
+                                    <div class="dds__body-3 gray-900" aria-label="unlock the potential of AI">Innovate with Data</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+
+                </div>
+
+                <div class="dds__col-12 dds__col--md-6 dds__col--lg-4 dds__mb-3">
+
+                    <a href="/catalog?portfolio=Artificial Intelligence" style="color: inherit;text-decoration: none;display: block;height: 100%;" aria-label="card Explore">
+
+                        <div class="dds__card dds__elevation-2 dc__card-elevation dds__text-left">
+
+                            <div class="dds__card__media" style="background-color:#002A58;"><img src="/images/LandingPage_AI_2.png" alt="Artificial Intelligence"></div>
+
+                            <div class="dds__card__content">
+
+                                <div class="dds__card__header"><span class="dds__card__header__text"><h5>Artificial Intelligence</h5></span></div>
+
+                                <div class="dds__card__body"><p class="primary-color">Embrace Generative AI at scale and unlock the potential of AI across your organization</p></div>
+
+                                <div class="dds__card__action dds__justify-content-start">
+
+                                    <div class="dds__body-3 gray-900" aria-label="unlock the potential of AI">Unlock the potential of AI</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    
+
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8D5KdDiGvelBrm4JxQcM-wsyDalzgwUniMf7NqOeu0IhOln7fDHLje5vQrRDryrhV5gxRwIVnaegd18HSoFky6QJZzfr8yQ5_PzyM3GhEp32hSnobtkH2sJiY_uhfne9kUAcffm0gQxrDMH0ASiczpc" />
+
+
+
+<div b-c5upkrai9s role="contentinfo" style="position: relative">
+
+    <div b-c5upkrai9s class="dds__container-fluid content-section content-section-footer dds__d-none dds__d-md-block" style="position: absolute !important; bottom: 0px !important;top: 0px !important;">
+
+        <div b-c5upkrai9s class="dds__container--comfy dds__h-100">
+
+            <div b-c5upkrai9s class="dds__row dds__h-100">
+
+                <div b-c5upkrai9s class="dds__col-auto dds__mt-2 dds__mb-2 dds__my-auto"><div b-c5upkrai9s class="dds__body-2">Copyright &#xA9; 2026 Dell Inc.</div></div>
+
+                <div b-c5upkrai9s class="dds__col-auto dds__mt-2 dds__mb-2 dds__my-auto"><div b-c5upkrai9s class="dds__body-2"><a b-c5upkrai9s href="https://www.dell.com/en-us/lp/legal/policies-privacy-country-specific-privacy-policy" class="dds__link--standalone dds__body-2 footer-text-color" target="_blank" rel="noopener noreferrer">Privacy</a></div></div>
+
+                <div b-c5upkrai9s class="dds__col-auto dds__mt-2 dds__mb-2 dds__my-auto"><div b-c5upkrai9s class="dds__body-2"><a b-c5upkrai9s href="https://www.dell.com/en-us/lp/legal/terms-of-sale" class="dds__link--standalone dds__body-2 footer-text-color" target="_blank" rel="noopener noreferrer">Terms of Use</a></div></div>
+
+                <div b-c5upkrai9s class="dds__col-auto dds__mt-2 dds__mb-2 dds__my-auto"><div b-c5upkrai9s class="dds__body-2"><a b-c5upkrai9s href="https://www.dell.com/accessibility" class="dds__link--standalone dds__body-2 footer-text-color" target="_blank" rel="noopener noreferrer">Accessibility</a></div></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div b-c5upkrai9s class="dds__m-2" style="position: absolute;top: 75px;">
+
+        <div b-c5upkrai9s id="ot-sdk-btn-floating" class="ot-floating-button dell-cookiebtn-zindex" data-title="Manage Your Cookies" style="visibility: visible !important; position: absolute !important; bottom: 0px !important;top: 0px !important;">
+
+            <div b-c5upkrai9s class="ot-floating-button__front custom-persistent-icon">
+
+                <button b-c5upkrai9s type="button" class="ot-floating-button__open dell-cookie-border" aria-label="Manage Your Cookies" style="cursor: pointer; min-width: 40px; height: 40px; border-radius: 0.375rem; position: relative; padding: 1px 1px 1px 3px; background-image: linear-gradient(90deg, rgb(6, 114, 203), rgb(3, 74, 143)); border: 0.0625rem solid rgb(3, 74, 143);">
+
+                    <span b-c5upkrai9s class="cookie-icon">
+
+                        <svg b-c5upkrai9s width="34" height="34" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                            <path b-c5upkrai9s d="M9.8251 14.363C10.4671 14.363 10.9876 13.8426 10.9876 13.2005C10.9876 12.5585 10.4671 12.038 9.8251 12.038C9.18307 12.038 8.6626 12.5585 8.6626 13.2005C8.6626 13.8426 9.18307 14.363 9.8251 14.363Z" fill="white"></path>
+
+                            <path b-c5upkrai9s d="M6.33755 10.6505C6.97958 10.6505 7.50005 10.13 7.50005 9.488C7.50005 8.84597 6.97958 8.3255 6.33755 8.3255C5.69552 8.3255 5.17505 8.84597 5.17505 9.488C5.17505 10.13 5.69552 10.6505 6.33755 10.6505Z" fill="white"></path>
+
+                            <path b-c5upkrai9s d="M12.4501 19.0505C13.0921 19.0505 13.6126 18.5301 13.6126 17.888C13.6126 17.246 13.0921 16.7255 12.4501 16.7255C11.8081 16.7255 11.2876 17.246 11.2876 17.888C11.2876 18.5301 11.8081 19.0505 12.4501 19.0505Z" fill="white"></path>
+
+                            <path b-c5upkrai9s d="M16.9874 15.3005C17.6295 15.3005 18.15 14.7801 18.15 14.138C18.15 13.496 17.6295 12.9755 16.9874 12.9755C16.3454 12.9755 15.825 13.496 15.825 14.138C15.825 14.7801 16.3454 15.3005 16.9874 15.3005Z" fill="white"></path>
+
+                            <path b-c5upkrai9s fill-rule="evenodd" clip-rule="evenodd" d="M8.34399 0.774475L8.46883 1.74205C8.7209 3.69559 10.3922 5.21303 12.45 5.21303C12.8948 5.21303 13.2185 5.1788 13.5628 5.06402L14.3517 4.80104L14.5321 5.61283C14.6716 6.24049 14.8722 6.82593 15.186 7.32803L15.1881 7.33139L15.1902 7.33478C16.7393 9.87279 20.0703 10.6947 22.6029 9.18167L23.4804 8.65745L23.7171 9.65181C23.9209 10.5079 24 11.3929 24 12.2255C24 18.8272 18.6017 24.2255 12 24.2255C5.39829 24.2255 0 18.8272 0 12.2255C0 7.26344 3.0412 2.94379 7.44103 1.14387L8.34399 0.774475ZM7.19786 2.90534C3.79036 4.65352 1.5 8.19937 1.5 12.2255C1.5 17.9988 6.22671 22.7255 12 22.7255C17.7733 22.7255 22.5 17.9988 22.5 12.2255C22.5 11.8004 22.4767 11.3678 22.4247 10.9408C19.3458 12.1864 15.7009 11.0469 13.9119 8.11961C13.6213 7.65391 13.4138 7.15862 13.2602 6.66607C12.9902 6.70214 12.724 6.71303 12.45 6.71303C9.98192 6.71303 7.90792 5.11462 7.19786 2.90534Z" fill="white"></path>
+
+                        </svg>
+
+                    </span>
+
+                </button>
+
+            </div><div b-c5upkrai9s class="ot-floating-button__back custom-persistent-icon">
+
+                <button b-c5upkrai9s type="button" class="ot-floating-button__close" aria-label="Close Preferences" aria-hidden="true" style="display: none;">
+
+                    <!--?xml version="1.0" encoding="UTF-8"?--> <svg b-c5upkrai9s role="presentation" tabindex="-1" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"><g b-c5upkrai9s id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g b-c5upkrai9s id="Banner_02" class="ot-floating-button__svg-fill" transform="translate(-318.000000, -725.000000)" fill="#292B2E" fill-rule="nonzero"><g b-c5upkrai9s id="Group-2" transform="translate(305.000000, 712.000000)"><g b-c5upkrai9s id="icon/16px/white/close"><polygon b-c5upkrai9s id="Line1" points="13.3333333 14.9176256 35.0823744 36.6666667 36.6666667 35.0823744 14.9176256 13.3333333"></polygon><polygon b-c5upkrai9s id="Line2" transform="translate(25.000000, 25.000000) scale(-1, 1) translate(-25.000000, -25.000000) " points="13.3333333 14.9176256 35.0823744 36.6666667 36.6666667 35.0823744 14.9176256 13.3333333"></polygon></g></g></g></g></svg>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<script nonce="b90bb012531542dda8cc3debda4f2d58">
+
+    $(document).ready(function () {
+
+        var authenticated = "false";
+
+        if(authenticated == "false")
+
+            InializeSignInMenu(false, false);
+
+
+
+        var registered = "false";
+
+        if ((authenticated == "true") && (registered == "false")) {
+
+            ShowRegistrationModal();
+
+        }
+
+        var page = "us|en|corp|democenter|home";
+
+        SetAnalytics("us", "en", page, "", "Public");
+
+
+
+        // const msgbarelement = document.getElementById("partner-message-bar");
+
+        // const msgAPI = DDS.MessageBar(msgbarelement);
+
+        // msgbarelement.addEventListener("ddsMessageBarHiddenEvent", (e) => {
+
+
+
+        //     // Make an AJAX request to set the session value
+
+        //     $.ajax({
+
+        //         type: "POST",
+
+        //         url: "/Home/SetSessionPartnerMsgClosed",
+
+        //         success: function (data) {
+
+        //         },
+
+        //         error: function () {
+
+        //         }
+
+        //     });
+
+        // });
+
+        // var showMsg = "false";
+
+        // if (showMsg == "true") {
+
+        //     msgAPI.show();
+
+        // }
+
+
+
+    });
+
+</script>
+
+        </main>
+
+    </div>
+
+
+
+    <div b-5oecqyqcbl id="profileModalDiv"></div>
+
+    <div b-5oecqyqcbl id="registrationModalDiv"></div>
+
+
+
+    <script nonce="b90bb012531542dda8cc3debda4f2d58" type="text/javascript">
+
+            $(document).ready(function () {
+
+                var token = $('input[name="__RequestVerificationToken"]').val();
+
+                $.ajaxSetup({
+
+                    headers: { 'RequestVerificationToken': token }
+
+                });
+
+
+
+                if (document.getElementById("actionmenu-signout"))
+
+                {
+
+                    const elementSignOut = document.getElementById("actionmenu-signout");
+
+                    DDS.ActionMenu(elementSignOut);
+
+                }
+
+                if (document.getElementById("actionmenu-signin")) {
+
+                    const elementSignOut = document.getElementById("actionmenu-signin");
+
+                    DDS.ActionMenu(elementSignOut);
+
+                }
+
+
+
+                const element = document.getElementById("dc__popover-usernotifications");
+
+                DDS.Popover(element, { trigger: "#dc__popover-usernotifications-trigger", placement:"right-end" });
+
+            });
+
+
+
+        $('#TopSearchform').submit(function (e) {
+
+            var searchTerm = $("#SearchCatalog").val();
+
+            e.preventDefault();
+
+            if(false)
+
+            {
+
+                window.location.href = "/employee/catalog?searchterm=" + encodeURIComponent(searchTerm);
+
+            }
+
+            else
+
+            {
+
+                window.location.href = "/catalog?searchterm=" + encodeURIComponent(searchTerm);
+
+            }
+
+        });
+
+
+
+
+
+        window.SetFocusToElement = (element) => {
+
+            if (element != null) {
+
+                element.focus();
+
+            }
+
+        };
+
+
+
+        window.VlpOpen = (args) => {
+
+            window.open(args);
+
+        };
+
+
+
+        window.clipboardCopy = {
+
+            copyText: function (text) {
+
+                navigator.clipboard.writeText(text).then(function () {
+
+                })
+
+                    .catch(function (error) {
+
+                    });
+
+            }
+
+        };
+
+         
+
+
+
+    </script>
+
+
+
+
+
+    <script nonce="b90bb012531542dda8cc3debda4f2d58" src="/lib/microsoft/dist/browser/signalr.min.js"></script>
+
+    <script nonce="b90bb012531542dda8cc3debda4f2d58" src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script nonce="b90bb012531542dda8cc3debda4f2d58" src="/js/site.min.js?v=3dXr2ArvVlRM_7DnfHKOHRulPxJE8S8iX4LbxQac2-Y"></script>
+
+    <script nonce="b90bb012531542dda8cc3debda4f2d58" async src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+
+    <script nonce="b90bb012531542dda8cc3debda4f2d58" async src="/lib/jquery-ajax-unobtrusive/dist/jquery.unobtrusive-ajax.min.js"></script>
+
+    <script src="/lib/dom-purify/purify.min.js?v=ojXEbnBKphYLr3ouhgifkThu3o0hSkWV_Rlr1Udej88"></script>
+
+
+
+
+
+    
+
+<noscript><img src="https://democenter.dell.com/akam/13/pixel_7c6b46d?a=dD00NTU0NDczMzI2ZDE2MTVjMWE2MDUxOWVjNTMxOGFjYWRjZmFlMmZhJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+
+</html>
+
+
+
+
+

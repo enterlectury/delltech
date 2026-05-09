@@ -1,0 +1,4556 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+  <base href="https://msftacademy.dell.com/">
+  
+      <title>Dell MSFT Academy</title>
+      <link rel="shortcut icon" href="https://msftacademy.dell.com/pluginfile.php/1/theme_space/favicon/1773396433/favicon%20%282%29.ico" />
+  
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  
+  
+  
+  
+  <script src="https://msftacademy.dell.com/local/mlib/static.php?file=theme/space/addons/overlayscrollbars/OverlayScrollbars.min.js"></script>
+  
+      <meta name="product" content="mLMS"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Dell MSFT Academy, " />
+<link rel="stylesheet" type="text/css" href="https://msftacademy.dell.com/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://msftacademy.dell.com/theme/styles.php/space/1773396433_1766142314/all" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/msftacademy.dell.com","sesskey":"pAnwGTFK7T","sessiontimeout":"28800","themerev":"1773396433","slasharguments":1,"theme":"space","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1773396433","admin":"admin","svgicons":true,"usertimezone":"Europe\/London","contextid":2,"langrev":1777345328,"templaterev":"1773396433"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/msftacademy.dell.com\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/msftacademy.dell.com\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/msftacademy.dell.com\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/msftacademy.dell.com\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/msftacademy.dell.com\/theme\/yui_combo.php?m\/1773396433\/","combine":true,"comboBase":"https:\/\/msftacademy.dell.com\/theme\/yui_combo.php?","ext":false,"root":"m\/1773396433\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_othercompleted-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_role-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_messageteacher-form":{"requires":["base","io","io-form","node","json","moodle-core-notification"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_teamsmeeting-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/msftacademy.dell.com\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/msftacademy.dell.com\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1773396433\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/msftacademy.dell.com\/lib\/javascript.php\/1773396433\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/msftacademy.dell.com\/lib\/javascript.php\/1773396433\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.8\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<link rel="stylesheet" href="https://msftacademy.dell.com/pluginfile.php/1/local_publicfiles/publicfiles/67/additionalhtmltopofbody.css"><meta name="description" content="Dell Microsoft AcademyWorld class accreditation and sales tools around the Microsoft Portfolio" />
+<meta name="description" content="Dell Microsoft AcademyWorld class accreditation and sales tools around the Microsoft Portfolio" />
+<style>    :root {
+    --maple-primary: #00468b;
+    --maple-primary-color: 0,70,139;
+    --maple-primary-20: rgba(0,70,139,.20);
+    --maple-primary-10: rgba(0,70,139,.10);
+    --maple-primary-5: rgba(0,70,139,.05);
+    --maple-secondary: #00468b;
+    --maple-secondary-color: 0,70,139;
+    --maple-secondary-20: rgba(0,70,139,.20);
+    --maple-secondary-10: rgba(0,70,139,.10);
+    --maple-secondary-5: rgba(0,70,139,.05);
+    --borderradius: 5px;
+    --btnborderwidth: 1px;
+    --btnborderradius: 5px;
+    --bigborderradius: 16px;
+}:root {
+    --maple-background: #f1f1f1;
+    --white-10: rgba(255,255,255,.1);
+}
+#nav-drawer .site-name { color: #fff; white-space: normal; }
+#region-main-box .card.block h5.card-title {		
+    margin: -1rem -1rem 1rem -1rem;
+    padding: 1rem!important;
+    background-color: var(--maple-primary-10);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: var(--maple-secondary);
+}
+#topBarContainer .s-top { background-color: var(--maple-primary)!important; }
+#page-wrapper #page { background-color: var(--maple-background)!important; }
+#nav-drawer { background-color: var(--maple-secondary)!important; }
+
+.btn-primary, .btn-default, .btn-submit, .allcoursegrades a, .createstep, #page-tag-search #tag-search-box form input[type="submit"], .notification-area .content-area .footer a, #changenumsections a, #page-admin-grade-edit-letter-index #region-main .mdl-align a, .logselecform input[type="submit"], #page-mod-forum-subscribers .subscribertable tr td.actions .actionbutton, input.form-submit, #id_addidnumbers, .addbloglink a, .progress-actions a, .discussionsubscription a, .block .footer a, .mod_quiz-next-nav, .newlink a, .checkforupdates [type="submit"], .continuebutton [type="submit"], .bookexit, #newentryform .btn-secondary, #page-mod-quiz-summary .submitbtns [type="submit"], .path-mod-quiz .othernav a.mod_quiz-next-nav, #enabletemplateeditor, .usp-finish [type="submit"], .block_blog_menu [type="submit"], .forum-post-footer a, .btn-dark, [data-region="actions"] p a, .quizattemptcounts a, #page-enrol-index .box [type="submit"], #core-cache-rescan-definitions a, .edit-link a, #page-admin-mod-glossary-formats .generalbox [type="submit"], [data-action="addstandardtag"], .addcomponent, .editprofile span a, .questionflag.editable, .custompages-add, .postratingmenusubmit, #buttonscell input[type="submit"] {
+    background-color: var(--maple-primary)!important;
+    border-color: var(--maple-primary)!important;
+    box-shadow: none!important;
+}
+
+.btn-primary:hover, .btn-default:hover, .btn-submit:hover, .allcoursegrades a:hover, .createstep:hover, #page-tag-search #tag-search-box form input[type="submit"]:hover, .notification-area .content-area .footer a:hover, #changenumsections a:hover, #page-admin-grade-edit-letter-index #region-main .mdl-align a:hover, .logselecform input[type="submit"]:hover, #page-mod-forum-subscribers .subscribertable tr td.actions .actionbutton:hover, input.form-submit:hover, #id_addidnumbers:hover, .addbloglink a:hover, .progress-actions a:hover, .discussionsubscription a:hover, .block .footer a:hover, .mod_quiz-next-nav:hover, .newlink a:hover, .checkforupdates [type="submit"]:hover, .continuebutton [type="submit"]:hover, .bookexit:hover, #newentryform .btn-secondary:hover, #page-mod-quiz-summary .submitbtns [type="submit"]:hover, .path-mod-quiz .othernav a.mod_quiz-next-nav:hover, #enabletemplateeditor:hover, .usp-finish [type="submit"]:hover, .block_blog_menu [type="submit"]:hover, .forum-post-footer a:hover, .btn-dark:hover, [data-region="actions"] p a:hover, .quizattemptcounts a:hover, #page-enrol-index .box [type="submit"]:hover, #core-cache-rescan-definitions a:hover, .edit-link a:hover, #page-admin-mod-glossary-formats .generalbox [type="submit"]:hover, [data-action="addstandardtag"]:hover, .addcomponent:hover, .editprofile span a:hover, .questionflag.editable:hover, .custompages-add:hover, .postratingmenusubmit:hover, #buttonscell input[type="submit"]:hover {
+    background-color: var(--maple-primary)!important;
+    border-color: var(--maple-primary)!important;
+    box-shadow: none!important;
+    filter: brightness(120%);
+
+}
+
+/*.block.block_iomad_company_admin.card, .block.block_iomad_company_admin.card .card-body*/ 
+#nav-drawer .list-group-item, #nav-drawer .c-flat-nav {
+    background: transparent!important;
+    box-shadow: none!important;
+}
+
+#nav-drawer .c-flat-nav a .nav-icon,
+#nav-drawer .list-group-item ul li a, #nav-drawer .c-flat-nav ul li a { 
+    color: white!important;
+    opacity: .8!important;
+}
+#nav-drawer .c-flat-nav.my-4:last-child {
+    background-color: white!important;
+}
+
+#nav-drawer .list-group-item ul li a.active, #nav-drawer .c-flat-nav ul li a.active {
+    background-color: var(--white-10)!important;
+    opacity: 1!important;
+}
+
+#nav-drawer .c-flat-nav a .icon, #nav-drawer .c-flat-nav a .form-control-static img, .form-control-static #nav-drawer .c-flat-nav a img, #nav-drawer .c-flat-nav a .fdescription img, .fdescription #nav-drawer .c-flat-nav a img, #nav-drawer .c-flat-nav a .editor_atto_notification .atto_info img, .editor_atto_notification .atto_info #nav-drawer .c-flat-nav a img {
+    opacity: 1!important;
+    filter: brightness(500%);
+}
+
+.block.card, .block_recentlyaccessedcourses {
+    box-shadow: rgba(0,0,0,.05) 0 1px 0,rgba(0,0,0,.05) 0 2px 6px,rgba(0,0,0,.05) 0 0px 20px!important;
+    /*border: 1.5px solid var(--maple-primary)!important;*/
+}
+
+
+.block.block_iomad_company_admin {
+    /*display: none!important;*/
+}
+
+a {
+    color: var(--maple-primary);
+}
+.sidebar-btn { background-color: var(--maple-secondary); }
+.sidebar-btn:hover { background-color: var(--maple-secondary);
+    filter: brightness(120%); }
+
+input:checked + .m3-switch-slider { background-color: var(--maple-secondary)!important; }
+
+.badge-primary, .path-backup .backup_progress .backup_stage.backup_stage_current { background-color: var(--maple-secondary); }
+.btn-special, .settings-menu .btn-secondary {
+    background-color: var(--maple-secondary)!important; border-color: var(--maple-secondary)!important;
+    box-shadow: none!important;
+}
+.btn-special:hover, .settings-menu .btn-secondary:hover {
+    background-color: var(--maple-primary)!important; border-color: var(--maple-primary)!important;
+    box-shadow: none!important;
+}
+
+p a:before, nav a:before, ul a:before, ol a:before, dt a:before, dd a:before, .tab-pane .col-3 a:before, .tab-pane .col-xs-3 a:before, [role="tabpanel"] h4 a:before, #page-user-preferences .card-body a:before, .recipename a:before {
+    background-color: var(--maple-primary);
+}
+
+.card-body{background-color: #fff!important; border-radius: var(--borderradius);}@media(max-width: 900px) {
+
+  #kb-gif {
+
+display: none;
+
+}
+
+.gif-dec{
+
+float: none;
+
+}
+
+}
+
+
+
+
+
+.sectionname{
+
+color:#007DB8!important;
+
+ text-transform: uppercase!important;
+
+font-size: 1.3rem!important;
+
+font-weight: 600!important;
+
+margin-top: 24px;
+
+margin-bottom: 16px;
+
+}
+
+.rise { 
+
+transition: all .2s ease-in-out; 
+
+}
+
+.rise:hover { 
+
+transform: scale(1.05); 
+
+}
+
+
+
+.accr-img{
+
+transition: all .2s ease-in-out; 
+
+}
+
+.accr-img:hover{
+
+transform: scale(0.95); 
+
+transition: all .2s ease-in-out; 
+
+}
+
+
+
+#id_categoryid{
+
+background-color: #fafafa!important;
+
+border: 1px solid #f0f0f0!important;
+
+}
+
+.btn-link{
+
+background-color: #fafafa!important;
+
+transition: all .2s ease-in-out; 
+
+}
+
+.btn-link:hover{
+
+background-color: #e4e8f0!important;
+
+transition: all .2s ease-in-out; 
+
+}
+
+.custom-select{
+
+background-color: #fafafa!important;
+
+border: 0px solid #f0f0f0!important;
+
+colour: 
+
+}
+
+
+
+
+
+.bp-kb-cat {
+
+    font-size: 16px !important;
+
+}
+
+
+
+
+
+#page-mod-quiz-view .quizinfo, #page-mod-quiz-view #page .quizgradefeedback, #page-mod-quiz-view #page .quizattempt {
+
+    margin: 0px;
+
+}
+
+#page-content h2:first-of-type, [role="main"] h2:first-of-type {
+
+    margin-bottom: 4px;
+
+}
+
+#fitem_id_categoryid, #fitem_id_course_name {
+
+    width: 50%!important;
+
+}
+
+@media (min-width: 768px)
+
+#fitem_id_categoryid .col-md-9, #fitem_id_course_name .col-md-9, #fitem_id_categoryid .col-md-9 input, #fitem_id_course_name .col-md-9 input {
+
+    max-width: 100%!important;
+
+}
+
+.section .instancename {
+
+    font-weight: 500;
+
+    font-size: 1.2rem;
+
+}
+
+#paging-control-limit-container-0{
+
+margin-top: 32px;
+
+}
+
+
+
+
+
+
+
+#mycourse_filter_container_top {
+
+    margin-top: 24px!important;
+
+padding-top: 8px;
+
+}
+
+label[for="filter_id"] {
+
+    display: none;
+
+}
+
+
+
+#menufilter_id {
+
+    display: none;
+
+}
+
+
+
+.block_iomad_reports .iomadlink_container>a {
+
+    padding: 16px 16px!important;
+
+    margin: 8px!important;
+
+}
+
+.block_iomad_reports .iomadlink_container>a:hover {
+
+    background-color: #00447c;
+
+}
+
+.activity{
+
+    max-width: 800px;
+
+    padding: 20px!important;
+
+margin-top: 16px!important;
+
+margin-bottom: 16px!important;
+
+    border-radius: 8px!important;
+
+    background-color: #fafafa!important;
+
+box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 4px;
+
+transition: all .2s ease-in-out; 
+
+}
+
+
+
+.activity:hover {
+
+     background-color: #f0f0f0!important;
+
+box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 4px;
+
+transition: all .2s ease-in-out; 
+
+}
+
+
+
+.contentafterlink {
+
+    padding-left: 14px!important;
+
+}
+
+.quizinfo{
+
+width: fit-content;
+
+}
+
+
+
+.m3-course-card .m3-course-card-btn-view {
+
+    background-color: #0076CE!important;
+
+    color: white!important;
+
+    border-radius: 16px!important;
+
+    margin-top: 8px!important;
+
+    border: 0px!important;
+
+}
+
+.m3-course-card-title {
+
+    margin-bottom: 0px!important;
+
+}
+
+
+
+h2{
+
+font-size: 1.5rem!important;
+
+font-weight: 600!important;
+
+    margin-top: 1rem!important;
+
+color: #00447C!important;
+
+}
+
+
+
+.carousel-indicators {
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: 0px!important;
+
+margin-bottom: 0px!important;
+
+}
+
+
+
+.card-text:last-child {
+
+    margin-bottom: 0px!important;
+
+}
+
+
+
+.atto_image_button_text-top.img-fluid, .atto_image_button_text-top.img-responsive, .atto_image_button_middle.img-fluid, .atto_image_button_middle.img-responsive, .atto_image_button_text-bottom.img-fluid, .atto_image_button_text-bottom.img-responsive {
+
+    border-radius: 8px!important;
+
+}
+
+.card-body img {
+
+    border-radius: 8px!important;
+
+}
+
+
+
+.course-over-img{
+
+    border-radius: 8px!important;
+
+}
+
+
+
+#region-main-box .card.block h5.card-title {
+
+    margin: -1rem!important;
+
+}
+
+
+
+.custom-select {
+
+    background-color: #eee!important;
+
+    border: 1px solid #9b9b9b!important;
+
+}
+
+
+
+.categoryname {
+
+    font-size: 1rem!important;
+
+}
+
+
+
+
+
+.nav-tabs .nav-link {
+
+    padding: 1rem!important;
+
+}
+
+
+
+.d-flex {
+
+    padding: 0px!important;
+
+}
+
+.m3-mtdata .mtlabel {
+
+    padding-bottom: 2px;
+
+}
+
+
+
+
+
+/* DASHBOARD CUSTOM WIDGET MENU */
+
+        .grid-container {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+
+            gap: 0px; /* gap between grid items */
+
+            padding: 0px;
+
+            max-width: 90%;
+
+          margin: auto;
+
+        }
+
+        .grid-container2 {
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+
+            gap: 0px; /* gap between grid items */
+
+            padding: 0px;
+
+        }
+
+        .grid-item {
+
+            padding: 4px;
+
+            text-align: center;
+
+            transition: transform 0.5s; 
+
+            position: relative;
+
+           min-height: 24px;
+
+        }
+
+                .grid-item:hover {
+
+	                transform: scale(0.95);
+
+                }
+
+        
+
+        .accr-img {
+
+	        border-radius: 8px;
+
+        }
+
+
+
+        /* Responsive design */
+
+        @media (max-width: 1200px) {
+
+            .grid-container {
+
+                grid-template-columns: repeat(3, 1fr); /* 3 columns for screens up to 1200px wide */
+
+            }
+
+        }
+
+
+
+        @media (max-width: 900px) {
+
+            .grid-container {
+
+                grid-template-columns: repeat(2, 1fr); /* 2 columns for screens up to 900px wide */
+
+            }
+
+        }
+
+
+
+        @media (max-width: 600px) {
+
+            .grid-container {
+
+                grid-template-columns: 1fr; /* 1 column for screens up to 600px wide */
+
+            }
+
+             .grid-container2 {
+
+                grid-template-columns: repeat(2, 1fr); /* 2 columns for screens up to 600px wide */
+
+
+
+            }
+
+        }
+
+
+
+/* SIDE BAR */
+
+.s-top {
+
+box-shadow: none!important;
+
+}
+
+.os-viewport-native-scrollbars-invisible#os-dummy-scrollbar-size, .os-viewport-native-scrollbars-invisible.os-viewport {
+
+background: #ffffff!important;
+
+}
+
+
+
+.dropdown-menu .dropdown-item a{
+
+background-color: #0f6fc5;
+
+}
+
+
+
+#nav-drawer .list-group-item, #nav-drawer .c-flat-nav {
+
+    box-shadow: none !important;
+
+    margin-left: -4px;
+
+}
+
+
+
+#nav-drawer .c-nav .nav-icon, #nav-drawer .c-flat-nav .nav-icon {
+
+    width: 30px;
+
+    display: inline-flex;
+
+    -webkit-transition: all 350ms ease;
+
+    -o-transition: all 350ms ease;
+
+    transition: all 350ms ease;
+
+    background: rgba(0, 118, 206, 1);
+
+    padding: 8px;
+
+    margin-left: -22px;
+
+    border-radius: 0px 16px 16px 0px;
+
+}
+
+#nav-drawer .c-flat-nav a .nav-icon, #nav-drawer .list-group-item ul li a, #nav-drawer .c-flat-nav ul li a {
+
+    opacity: 0.5 !important;
+
+     transition: 0.5s;
+
+}
+
+#nav-drawer .c-flat-nav a .nav-icon, #nav-drawer .list-group-item ul li a, #nav-drawer .c-flat-nav ul li a :hover{
+
+    opacity: 0.8 !important;
+
+}
+
+#nav-drawer .c-flat-nav ul li a.active {
+
+    padding-left: 0px;
+
+}
+
+#nav-drawer .list-group-item ul li a.active, #nav-drawer .c-flat-nav ul li a.active {
+
+    opacity: 1 !important;
+
+    margin-left: 5px;
+
+}
+
+
+
+.m-l-0, .m-x-0 {
+
+    font-size: 16px;
+
+    color: #0672cb;
+
+    padding-left: 8px!important;
+
+}
+
+
+
+
+
+/* BADGES WIDGET */
+
+ul.badges {
+
+    min-width: 252px;
+
+}
+
+.bp-kb-cat {
+
+    font-size: 16px !important;
+
+}
+
+.badges a{
+
+display: block !important;
+
+}
+
+.badge-name{
+
+font-size: 0.8rem !important;
+
+font-weight: 500 !important;
+
+}
+
+.block ul.badges a .badge-name {
+
+    text-align: center;
+
+    display: none;
+
+}
+
+.badges li .expireimage {
+
+    width: 10px;
+
+    height: 10px;
+
+    left: 0px;
+
+    top: 0;
+
+    position: absolute;
+
+    z-index: 10;
+
+    opacity: .85;
+
+}
+
+.block_badges ul.badges li {
+
+    display: block;
+
+    border: 2px solid white;
+
+    min-width: 110px;
+
+}
+
+
+
+/*LEARNING PATHS*/
+
+#iomad_learningpaths .pathdescription.card .lpbutton{
+
+margin-top: 0px!important;
+
+}</style>
+  
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+</head>
+<body  id="page-site-index" class="format-site course path-site dir-ltr lang-en yui-skin-sam yui3-skin-sam msftacademy-dell-com pagelayout-frontpage course-1 context-2 notloggedin ">
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">msftacademy.dell.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+
+<div id="page-wrapper">
+
+    <div id="page">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script src="https://msftacademy.dell.com/lib/javascript.php/1773396433/lib/babel-polyfill/polyfill.min.js"></script>
+<script src="https://msftacademy.dell.com/lib/javascript.php/1773396433/lib/polyfills/polyfill.js"></script>
+<script src="https://msftacademy.dell.com/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://msftacademy.dell.com/theme/jquery.php/core/jquery-3.4.1.min.js"></script>
+<script src="https://msftacademy.dell.com/lib/javascript.php/1773396433/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<!-- Start: Cookie Consent Policy -->
+
+<style type="text/css">
+
+#cookieNotice.display-right {
+
+    left: 30px;
+
+    bottom: 60px;
+
+    max-width: 395px;
+
+}
+
+#cookieNotice.light {
+
+    background-color: #fff;
+
+    /*background-color: var(--cookieNoticeProLight);*/
+
+    color: #393d4d;
+
+    /*color: var(--cookieNoticeProDark);*/
+
+}
+
+#cookieNotice {
+
+    box-sizing: border-box;
+
+    position: fixed;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 6px 6px rgb(0 0 0 / 25%);
+
+    font-family: inherit;
+
+    z-index: 999997;
+
+}
+
+#cookieNotice #closeIcon {
+
+    width: 20px;
+
+    height: 20px;
+
+    cursor: pointer;
+
+    color: #bfb9b9;
+
+    overflow: hidden;
+
+    opacity: .85;
+
+    z-index: 999999;
+
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    background: url(../images/close-icon.svg) 0 0 / 20px 20px no-repeat;
+
+}
+
+#cookieNotice * {
+
+    margin: 0;
+
+    padding: 0;
+
+    text-decoration: none;
+
+    list-style: none;
+
+    box-sizing: border-box;
+
+}
+
+#cookieNotice .title-wrap {
+
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+
+    background: url(../images/cookie-icon.svg) 0 0 / 40px 40px no-repeat;
+
+    padding-left: 45px;
+
+    height: 40px;
+
+}
+
+#cookieNotice .title-wrap svg {
+
+    margin-right: 10px;
+
+}
+
+#cookieNotice h4 {
+
+    font-family: inherit;
+
+    font-weight: 700;
+
+    font-size: 18px;
+
+}
+
+#cookieNotice.light p, #cookieNotice.light ul {
+
+    color: #393d4d;
+
+    color: var(--cookieNoticeProDark);
+
+}
+
+#cookieNotice p, #cookieNotice ul {
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+
+}
+
+#cookieNotice .btn-wrap {
+
+    display: flex;
+
+    flex-direction: row;
+
+    font-weight: 700;
+
+    justify-content: center;
+
+    margin: 0 -5px 0 -5px;
+
+    flex-wrap: wrap;
+
+}
+
+#cookieNotice .btn-wrap button {
+
+    flex-grow: 1;
+
+    padding: 0 7px;
+
+    margin: 0 5px 10px 5px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    min-width: 130px;
+
+    line-height: 36px;
+
+    border: none;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    transition: box-shadow .3s;
+
+}
+
+#cookieNotice button {
+
+    outline: 0;
+
+    border: none;
+
+    appearance: none;
+
+    -webkit-appearance: none;
+
+    appearance: none;
+
+}
+
+#cookieNotice .btn-wrap button:hover {
+
+    transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),transform .4s cubic-bezier(.25,.8,.25,1);
+
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
+
+    transform: translate3d(0,-1px,0);
+
+}
+
+.cookie-btn-primary{
+
+    color:#ffffff;
+
+    background:#115cfa;
+
+    border: 1px solid #115cfa;
+
+}
+
+</style>
+
+
+
+<div id="cookieNotice" class="light display-right" style="display: none;">
+
+    <div id="closeIcon" style="display: none;">
+
+    </div>
+
+    <div class="title-wrap">
+
+        <h4>Cookie Consent</h4>
+
+    </div>
+
+    <div class="content-wrap">
+
+        <div class="msg-wrap">
+
+            <p>This website uses cookies or similar technologies, to enhance your browsing experience and provide personalized recommendations. By continuing to use our website, you agree to our  <a style="color:#115cfa;" target="_blank" href="https://maplelms.com/privacy-policy">Privacy Policy</a></p>
+
+            <div class="btn-wrap">
+
+                <button class="cookie-btn-primary" onclick="acceptCookieConsent();">Accept</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript">
+
+// Create cookie
+
+function setCookie(cname, cvalue, exdays) {
+
+    const d = new Date();
+
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+
+    let expires = "expires="+ d.toUTCString();
+
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+
+}
+
+
+
+// Delete cookie
+
+function deleteCookie(cname) {
+
+    const d = new Date();
+
+    d.setTime(d.getTime() + (24*60*60*1000));
+
+    let expires = "expires="+ d.toUTCString();
+
+    document.cookie = cname + "=;" + expires + ";path=/";
+
+}
+
+
+
+// Read cookie
+
+function getCookie(cname) {
+
+    let name = cname + "=";
+
+    let decodedCookie = decodeURIComponent(document.cookie);
+
+    let ca = decodedCookie.split(';');
+
+    for(let i = 0; i <ca.length; i++) {
+
+        let c = ca[i];
+
+        while (c.charAt(0) == ' ') {
+
+            c = c.substring(1);
+
+        }
+
+        if (c.indexOf(name) == 0) {
+
+            return c.substring(name.length, c.length);
+
+        }
+
+    }
+
+    return "";
+
+}
+
+
+
+// Set cookie consent
+
+function acceptCookieConsent(){
+
+    deleteCookie('user_cookie_consent');
+
+    setCookie('user_cookie_consent', 1, 30);
+
+    document.getElementById("cookieNotice").style.display = "none";
+
+}
+
+</script>
+
+<script type="text/javascript">
+
+let cookie_consent = getCookie("user_cookie_consent");
+
+if(cookie_consent != ""){
+
+    document.getElementById("cookieNotice").style.display = "none";
+
+}else{
+
+    document.getElementById("cookieNotice").style.display = "block";
+
+}
+
+</script>
+
+
+
+<!-- End: Cookie Consent Policy -->
+
+
+
+
+
+
+
+<!-- custom BIG PICTURE -->
+
+<style>
+
+body {
+
+    font-family: "Roboto",sans-serif;
+
+}
+
+
+
+#page-wrapper #page {
+
+    background-color: #FFFFFF!important;
+
+}
+
+a {
+
+    color: #00447C !important;
+
+}
+
+marquee{
+
+/*display:none!important;*/
+
+}
+
+#topBarContainer .s-top {
+
+    background-color: #FFFFFF!important;
+
+}
+
+.s-top {
+
+    border-bottom: 0px solid #e8e8e8;
+
+box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+}
+
+
+
+.c-logo-mobile {
+
+background-color: #00447C!important;
+
+}
+
+
+
+.mobile-topbar-btn {
+
+    background-color: rgb(255 255 255 / 20%);
+
+border: 0px;
+
+}
+
+
+
+#nav-drawer {
+
+    background: rgb(0,118,206);
+
+background: linear-gradient(0deg, rgba(0,118,206,1) 0%, rgba(0,68,124,1) 100%);
+
+}
+
+.m-l-0, .m-x-0 {
+
+    font-size: 16px;
+
+}
+
+
+
+*/.btn{
+
+background: linear-gradient(0deg, rgba(0,118,206,1) 0%, rgba(0,68,124,1) 100%);
+
+}*/
+
+
+
+.btn-primary{
+
+color: #0076CE !important;
+
+}
+
+.sidebar-btn:hover {
+
+    background-color: #0076CE;
+
+}
+
+
+
+#region-main-box .card.block  h5.card-title{
+
+    margin: -1rem -1rem 1rem -1rem;
+
+    padding: 1rem!important;
+
+    background-color: white;
+
+    border-top-left-radius: 16px;
+
+    border-top-right-radius: 16px;
+
+    color: #007DB8;
+
+border-bottom-color: #EEEEEE;
+
+    border-bottom-style: solid;
+
+    border-bottom-width: 0;
+
+}
+
+
+
+*/
+
+*/
+
+
+
+#nav-drawer .c-flat-nav ul li a.active{
+
+    background-color: #0076CE !important;
+
+    opacity: 1!important;
+
+}
+
+
+
+.m3-course-card.style-1 {
+
+    border: 0px solid !important;
+
+   background-color: rgb(255 255 255 / 20%);
+
+}
+
+
+
+.m3-course-card.style-1 .m3-course-card-body {
+
+border-bottom-left-radius: 5px;
+
+border-bottom-right-radius: 5px;
+
+border-top-right-radius: 0px;
+
+border-top-left-radius: 0px;
+
+}
+
+
+
+.card{
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+border-radius: 16px!important;
+
+margin-bottom: 0.5rem;
+
+}
+
+.card-body{
+
+border: 0px solid transparent;
+
+border-radius: 16px!important;
+
+}
+
+.card-title {
+
+    font-size: 21px;
+
+}
+
+.card-text p {
+
+    font-size: 16px;
+
+}
+
+
+
+.card, .well, .que .history, .groupinfobox {
+
+    background-color: rgb(255 255 255 / 30%)
+
+}
+
+
+
+
+
+.mb-3, .my-3 {
+
+    padding: 1rem;
+
+}
+
+.btn-success {
+
+    background-color: rgb(255 255 255 / 20%);
+
+    border-color: rgb(255 255 255 / 20%);
+
+}
+
+.btn-success:active {
+
+    background-color: #0076CE;
+
+    border-color: #0076CE;
+
+}
+
+.btn-success:hover {
+
+    background-color: rgb(255 255 255 / 20%);
+
+    border-color: rgb(255 255 255 / 20%);
+
+font-weight: bold;
+
+}
+
+.m3-course-card.style-1 .m3-course-card-progress-wrap {
+
+    height: 0rem;
+
+}
+
+.nav-tabs .nav-link {
+
+    border: 0px solid transparent;
+
+}
+
+
+
+
+
+.m-b-1, .m-y-1 {
+
+    margin-bottom: 1rem!important;
+
+    margin-top: 1rem!important;
+
+}
+
+.btn-special, .settings-menu .btn-secondary {
+
+    background-color: #70076CE!important;
+
+    border: 0px solid !important;
+
+    box-shadow: none!important;
+
+}
+
+h1 {
+
+color: #0076CE;
+
+}
+
+.block_myoverview .card-body {
+
+    padding: 1rem!important;
+
+    margin: 0.5rem!important;
+
+}
+
+.m3-course-card.style-1 {
+
+    border: 0px solid !important;
+
+    background-color: rgb(255 255 255 / 20%);
+
+}
+
+.m3-course-card.style-1 .m3-course-card-shortname-wrap {
+
+    font-size: .8rem;
+
+    background-color: rgb(255 255 255 / 20%)
+
+    padding: 8px 0.8rem;
+
+}
+
+.m3-course-card.style-1 .m3-course-card-content {
+
+    min-height: 4rem;
+
+}
+
+
+
+.card-text:last-child {
+
+    margin-bottom: 10px;
+
+margin-top: 10px;
+
+}
+
+
+
+.pathdescription{
+
+padding: 0.5rem;
+
+}
+
+
+
+.card-ouline-primary{
+
+padding: 1rem;
+
+margin-bottom: 1rem;
+
+}
+
+
+
+.p-t-1, .p-y-1 {
+
+    padding: 1rem!important;
+
+}
+
+.pr-3 {
+
+    padding: 1rem!important;
+
+}
+
+@media (max-width: 767.98px)
+
+.nav-tabs .nav-link.active:not(:disabled):not(.disabled):active, .nav-tabs .nav-link.active:not(:disabled):not(.disabled).active, .show>.nav-tabs .nav-link.active.dropdown-toggle, .nav-pills .nav-link.active:not(:disabled):not(.disabled):active, .nav-pills .nav-link.active:not(:disabled):not(.disabled).active, .show>.nav-pills .nav-link.active.dropdown-toggle {
+
+    background-color: rgb(255 255 255 / 20%);
+
+    border-color: rgb(255 255 255 / 20%);
+
+}
+
+
+
+.que .formulation {
+
+    color: #444444;
+
+    background-color: rgb(0 118 206 / 5%);
+
+}
+
+
+
+.mb-2, .my-2 {
+
+    margin: 1rem;
+
+}
+
+
+
+#region-main {
+
+    border-width: 0!important;
+
+border-radius: 16px;
+
+box-shadow: rgba(0,0,0,.05) 0 1px 0,rgba(0,0,0,.05) 0 2px 6px,rgba(0,0,0,.05) 0 0px 20px!important;
+
+}
+
+#page-user-profile #region-main, #page-my-index #region-main {
+
+box-shadow: none!important;
+
+}
+
+
+
+#page-user-profile #region-main .node_category h3.lead, #page-course-view-topics #region-main .node_category h3.lead {
+
+    border-top-left-radius: 16px;
+
+    border-top-right-radius: 16px;
+
+}
+
+
+
+
+
+
+
+
+
+#navBar .search-box { display: none!important; }
+
+#navBar .top-icons-nav .popover-region i.icon { color: #0076CE!important; }
+
+#topBarContainer .s-top .badge { height: 34px;
+
+    border-radius: 8px!important;
+
+    padding: 0px 20px!important;
+
+    background-color: #0076CE!important;
+
+    color: #fff!important;
+
+ }
+
+ .content-item-container.notification .content-item-body .notification-message { color: #fff!important; }
+
+ .content-item-container .content-item-footer .timestamp { color: #fff!important; }
+
+ .content-item-container.notification a.view-more { color: #fff!important; }
+
+
+
+/* Learning Path */
+
+@media (min-width: 768px) {
+
+ #iomad_learningpaths .pathdescription.card .col-md-4 {
+
+    flex: 0 0 60%;
+
+    max-width: 60%;
+
+ }
+
+ #iomad_learningpaths .pathdescription.card .col-md-8 {
+
+    flex: 0 0 40%;
+
+    max-width: 40%;
+
+ }
+
+}
+
+
+
+ #iomad_learningpaths .pathdescription.card {
+
+    padding: 32px!important;
+
+    margin-bottom: 24px!important;
+
+    border: 0!important;
+
+ }
+
+ #iomad_learningpaths .pathdescription.card .progress {
+
+    height: 20px!important;
+
+ }
+
+ #iomad_learningpaths .pathdescription.card .progress-bar {
+
+    background-image: none!important;
+
+    background-color: #6fa21a!important;
+
+ }
+
+ #iomad_learningpaths .pathdescription.card .lpbutton {
+
+    margin-top: 16px;
+
+    padding: 4px 16px;
+
+    font-size: 16px;
+
+    border-radius: 8px;
+
+    background-color: #0076CE!important;
+
+ }
+
+ #iomad_learningpaths .pathdescription.card .lpbutton:hover {
+
+    background-color: #00447C!important;
+
+ }
+
+
+
+/* Latest badges */
+
+.block_badges ul.badges li { display: block; border: 2px solid white; }
+
+.block_badges ul.badges li .badge-name { font-size: 16px; font-weight: 600; }
+
+.block_badges ul.badges li img { width: 60px!important; }
+
+.block_badges ul.badges li a::before { height: 0!important; }
+
+.block_badges ul.badges li:hover {
+
+    border: 2px solid #00447C;
+
+    border-radius: 16px;
+
+}
+
+@media (min-width: 768px) {
+
+.block_badges ul.badges li { display: inline-block; width: 24%; }
+
+}
+
+
+
+/* Course Cards */
+
+.m3-course-card .progress { height: 16px!important;margin-top: 3px!important;  } 
+
+.m3-course-card .progress-bar { background-color: #6fa21a!important; background: #6fa21a!important;  } 
+
+.m3-course-card .m3-course-card-btn-view { background-color: #0076CE!important; color: white!important; border-radius: 16px!important;
+
+    margin-top: 34px!important;
+
+}
+
+.m3-course-card .m3-course-card-btn-view:hover { background-color: #00447C!important;  } 
+
+.m3-course-card .m3-course-card-title { font-size: 24px!important;
+
+    font-weight: 600!important;
+
+    line-height: 32px!important;
+
+    white-space: normal!important;
+
+    margin-bottom: 16px!important;
+
+    min-height: 64px;
+
+} 
+
+.m3-course-card .m3-course-card-title a { color: #0076CE!important; font-weight: 600!important;
+
+} 
+
+
+
+
+
+
+
+.search-input-wrapper { width: auto!important; }
+
+.search-input-wrapper form.show { position: unset!important; }
+
+
+
+
+
+
+
+
+
+#page-my-index #inst137 .card-body { /*padding: 32px!important;*/ }
+
+#page-my-index #inst137 .card-text { margin: 0!important; }
+
+#page-my-index #inst137 .card-text img, .img-dashboard { border-radius: 16px; }
+
+
+
+.topkb #bp-kb-search,
+
+.bp-kb-search input {
+
+    display: block;
+
+    border: 2px solid #eeeeee!important;
+
+    padding: 20px 30px 20px 60px;
+
+    box-shadow: none!important;
+
+    border-radius: 36px;
+
+    font-size: 1rem;
+
+}
+
+.topkb #bp-kb-search::placeholder,
+
+.bp-kb-search input::placeholder {
+
+    color: #C8C9C7;    
+
+}
+
+.topkb #bp-kb-search,
+
+.bp-kb-search input {
+
+    background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 689.42 690.37'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23c8c9c7;%7D%3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M453.11,499.82c-118.5,96.31-293.47,73.46-387.01-37.48C-24.24,355.18-21.07,194.62,70.03,92.81,165.88-14.3,328.42-30.27,442.81,53.09c63.89,46.56,102.36,109.75,113.08,188.75,10.69,78.77-9.31,149.44-58.15,213.87,1.74,1.18,3.78,2.14,5.29,3.64,57.67,57.58,115.31,115.2,172.88,172.89,3.16,3.16,6.21,6.6,8.53,10.39,7.93,12.95,6.26,27.7-3.98,38.66-8.7,9.32-24.67,11.97-37.01,5.58-4.8-2.49-9.5-5.68-13.32-9.48-57.74-57.51-115.33-115.16-172.94-172.81-1.41-1.41-2.6-3.03-4.07-4.76ZM63.78,280.4c1.98,120.91,95.22,215.73,216.31,215.56,120.71-.16,215.35-94.32,215.44-215.54,.09-121.08-94.23-215.76-215.67-215.78-121.76-.02-214.24,95.26-216.08,215.75Z'/%3E%3C/svg%3E"), #fff;
+
+    background-size: 16px;
+
+    background-repeat: no-repeat;
+
+    background-origin: padding-box;
+
+    background-position: 30px 27px;
+
+}
+
+
+
+#block-region-side-pre .bp-kb-search input { background-position: 16px 16px; padding: 10px 15px 10px 40px!important; }
+
+
+
+.bp-kb-cat-wrap { margin-right: 0; margin-left: 0; }
+
+.bp-kb-heading { padding-left: .625rem; font-size: 18px!important; font-weight: 600; color: #0076CE; }
+
+.bp-kb-cat-wrap .col-md-4 { padding-left: .625rem; padding-right: .625rem; }
+
+a.bp-kb-cat { 
+
+    display: block;
+
+    background-color: #0076CE;
+
+    color: #ffffff!important;
+
+    padding: 12px;
+
+    border-radius: 16px;
+
+    text-decoration: none;
+
+    margin-top: 1.25rem;
+
+    font-size: 18px;
+
+ }
+
+a.bp-kb-cat::after { 
+
+    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20.63 26.25'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23eee;fill-rule:evenodd;%7D%3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M.94,26.25c-.25,0-.49-.1-.66-.27-.18-.18-.27-.41-.27-.66V.94c0-.25,.1-.49,.27-.66,.17-.18,.41-.28,.66-.28s.49,.1,.66,.28c.18,.18,.28,.41,.28,.66V25.31c0,.25-.1,.49-.28,.66-.17,.18-.41,.27-.66,.27ZM5.62,13.12c0,.25,.1,.49,.27,.66,.17,.18,.41,.27,.66,.27h10.86l-4.02,4.02c-.18,.18-.28,.42-.28,.66s.1,.49,.28,.66c.18,.18,.41,.28,.66,.28s.49-.1,.66-.28l5.62-5.62c.09-.09,.16-.19,.2-.3s.07-.24,.07-.36-.02-.24-.07-.36-.12-.22-.2-.3l-5.62-5.62c-.18-.18-.41-.28-.66-.28s-.49,.1-.66,.28c-.18,.18-.28,.42-.28,.66s.1,.49,.28,.66l4.02,4.02H6.56c-.25,0-.49,.1-.66,.27-.18,.18-.27,.41-.27,.66Z'/%3E%3C/svg%3E");
+
+    height: 20px;
+
+    width: 20px;
+
+    color: white;
+
+    position: absolute;
+
+    right: 30px;
+
+    top: 33px;
+
+ }
+
+a.bp-kb-cat:hover {
+
+    background-color: #00447C;
+
+ }
+
+
+
+ .topkb {
+
+    margin: auto;
+
+ }
+
+.topkb #msearch_result_content {
+
+    display: none;
+
+    position: absolute;
+
+    top: 60px;
+
+    width: 500px;
+
+    z-index: 6;
+
+    box-shadow: rgba(0, 0, 0, .05) 0 1px 0, rgba(0, 0, 0, .05) 0 2px 6px, rgba(0, 0, 0, .05) 0 0px 20px !important;
+
+}
+
+.topkb #msearch_result_content:has(ul) {
+
+    display: block;
+
+}
+
+.topkb #bp-kb-search, .bp-kb-search input {
+
+    background-position: 15px 12px;
+
+    padding: 10px 10px 10px 38px !important;
+
+}
+
+@media (max-width: 768px){
+
+    .topkb { display: none!important; }
+
+}
+
+
+
+
+
+#page-admin-setting-themesettingspace #admin-website,
+
+#page-admin-setting-themesettingspace #admin-cwebsiteurl {
+
+    display: none;
+
+}
+
+
+
+
+
+ .bp-w-contacts .bp-contact-list { border-bottom: 1px solid #eeeeee;
+
+    margin-top: 10px;
+
+    padding-bottom: 6px; }
+
+ .bp-w-contacts .bp-contact-list .bp-contact-title { font-weight: 600; margin-bottom: 0; }
+
+ .bp-w-contacts .bp-contact-list .bp-contact-subtitle { margin-bottom: 0; }
+
+ .bp-w-contacts .bp-contact-list .bp-contact-email { position: relative; }
+
+ .bp-w-contacts .bp-contact-list .bp-contact-email a{ color: #808080!important; padding-left: 18px; }
+
+ .bp-w-contacts .bp-contact-list .bp-contact-email::before {
+
+    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12.25 9.62'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:gray;%7D%3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M11.82,0H.44c-.24,0-.44,.19-.44,.44V9.19c0,.24,.2,.43,.44,.43H11.82c.24,0,.43-.19,.43-.43V.44c0-.25-.19-.44-.43-.44Zm-1.3,.98l-4.39,3.42L1.73,.98H10.52Zm.75,7.66H.99V1.51l4.67,3.63c.13,.11,.3,.16,.47,.16s.33-.05,.47-.16L11.27,1.51v7.13Z'/%3E%3C/svg%3E");
+
+   /* height: 9px;*/
+
+    width: 14px;
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+ }
+
+
+
+.bp-w-links-wrap {  }
+
+ a.bp-w-links {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: #4c4c4c!important;
+
+    position: relative;
+
+    font-size: 16px;
+
+ }
+
+a.bp-w-links::after { 
+
+    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14.5 14.5'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23444;%7D%3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M14.42,.62c-.1-.24-.3-.44-.54-.54-.12-.05-.25-.08-.38-.08h-5c-.55,0-1,.45-1,1s.45,1,1,1h2.59L5.79,7.29c-.39,.39-.39,1.02,0,1.41,.39,.39,1.02,.39,1.41,0L12.5,3.41v2.59c0,.55,.45,1,1,1s1-.45,1-1V1c0-.13-.03-.26-.08-.38Z'/%3E%3Cpath class='cls-1' d='M11,7c-.55,0-1,.45-1,1v4.5H2V4.5H6.5c.55,0,1-.45,1-1s-.45-1-1-1H1c-.55,0-1,.45-1,1V13.5c0,.55,.45,1,1,1H11c.55,0,1-.45,1-1v-5.5c0-.55-.45-1-1-1Z'/%3E%3C/svg%3E");
+
+    width: 16px;
+
+    position: absolute;
+
+    right: 0;
+
+    top: 0;
+
+ }
+
+.block.block_badges .card-text.content { max-height: 200px;
+
+    overflow-y: auto;
+
+    overflow-x: hidden; }
+
+.m3-mtdata.mi-badges { max-height: 300px;
+
+    overflow: auto; }
+
+ .badge-primary, .path-backup .backup_progress .backup_stage.backup_stage_current { color: #fff!important; }
+
+.block_myoverview .card-title, [data-region="recentlyaccessedcourses-view"] .card-title { font-size: 21px!important; }
+
+ .block.block_calendar_upcoming.card { background: #fff; }
+
+#page-my-index .activity_navigation_header { margin-bottom: 0!important; }
+
+</style>
+
+<style>
+
+a.list-group-item[data-key="completionreports"] {
+
+    display: none !important;
+
+}
+
+.m3-hero-title { color: #fff!important }
+
+.m3-hero-button-wrap .btn {
+
+    background: var(--maple-primary);
+
+    color: #fff!important;
+
+    border-color: white!important;
+
+    font-weight: 600;
+
+}
+
+.m3-hero-button-wrap .btn:hover {
+
+    color: #fff!important;
+
+}
+
+.m3-sidebar-button-wrap .btn {
+
+color: #fff!important;
+
+    font-weight: 600!important;
+
+}
+
+.m3-sidebar-button-wrap .btn:hover {
+
+color: var(--maple-primary)!important;
+
+}
+
+[id^="message-drawer-toggle"] { display: none!important; }
+
+.actiondescription { font-size: .9rem!important; font-family: "Roboto", sans-serif!important }
+
+#page-local-mycourse-index #region-main .container .nav.nav-tabs li.p-4:nth-child(2),
+
+.page-context-header #message-user-button,
+
+.page-context-header #toggle-contact-button { display: none; }
+
+.aw_header .tools a { color: white!important; }
+
+.fp-navbar.card, .fp-content.card { padding: 15px!important; }
+
+
+
+/* Quiz Button */
+
+#page-mod-quiz-view .quizstartbuttondiv .btn-secondary {
+
+    background-color: #6fa21a!important;
+
+    color: white!important; }
+
+
+
+/* Group icon course editing screen  */
+
+body.editing #list-editing-container .action-menu-item { display: none; }
+
+
+
+/* Learning path */
+
+#iomad_learningpaths .path_courses .card .col-md-11 .card { margin-top: 15px; }
+
+#iomad_learningpaths .path_courses .card .col-md-11 .card .coursetitle { margin-top: 15px; }
+
+#iomad_learningpaths .path_courses .card .col-md-11 .card .col-md-8 .card-block { padding-right: 20px; }
+
+
+
+/* Notifications */
+
+#page-message-output-popup-notifications #region-main .content-item-container.notification .content-item-body .notification-message { color: black!important; }
+
+#page-message-output-popup-notifications #region-main .content-item-container .content-item-footer .timestamp { color: black!important; }
+
+#page-message-output-popup-notifications #region-main .content-item-container.notification.selected .content-item-body .notification-message,
+
+#page-message-output-popup-notifications #region-main .content-item-container.selected .content-item-footer .timestamp,
+
+#page-message-output-popup-notifications #region-main .content-item-container.notification.unread .content-item-body .notification-message,
+
+#page-message-output-popup-notifications #region-main .content-item-container.unread .content-item-footer .timestamp {
+
+    color: #fff!important;
+
+}
+
+
+
+@media (min-width: 320px) and (max-width: 1199.98px) {
+
+#showMobileTopBar {background-color: transparent!important; }
+
+#topBarContainer #showMobileTopBar  #mobileTopBarBtn { color: #ffffff!important; }
+
+/* .c-logo-mobile { top: 0!important; left: 0!important; right: 0!important; border-radius: 0!important; } */
+
+}
+
+.no-overflow table { min-width: 0; width: 100%; }
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+
+    #page-my-index #page {  padding:  80px 8px 0!important; }
+
+    .card .card-body { padding: .625rem!important; }
+
+    #region-main-box .card.block h5.card-title { margin: -.625rem!important; }
+
+    #page-my-index #settingsMenu { margin: 0; }
+
+    .nav-tabs .nav-link.active:not(:disabled):not(.disabled).active { background-color: #eeeeee; }
+
+    #iomad_learningpaths .path_courses .card .card { padding: 15px; }
+
+    .settings-menu { margin: 0; }
+
+    .page-header-headings h1 { margin-bottom: 0!important; }
+
+    .format-flexsections .course-content ul.flexsections li.section { margin-top: 0; }
+
+    #region-main-box .activity_navigation_header { margin-bottom: 0!important; }
+
+    #region-main { padding: 15px; }
+
+
+
+}
+
+.switchfilter .filter-btn-wrapper #save_filter_link { border: 1px solid #e4e8f0; background: #fff; }
+
+
+
+
+
+
+
+a.list-group-item[data-key="recommendcourse"] {
+
+    display: none !important;
+
+}
+
+
+
+a.list-group-item[data-key="melimu_custom_survey"] {
+
+    display: none !important;
+
+}
+
+
+
+a.list-group-item[data-key="privatefiles"] {
+
+    display: none !important;
+
+}
+
+a.list-group-item[data-key="mycourse"] {
+
+    display: none !important;
+
+}  
+
+.menubar .dropdown-menu-right [data-title="messages,message"] { display: none; }
+
+#page-login-forgot_password #id_searchbyusername { display: none; }
+
+nav.m3-nav-portfolio .nav-item.active span { color: #fff!important; }
+
+#iomad_learningpaths .pathdescription.card .card-block .alert-warning, #iomad_learningpaths .pathdescription.card .card-block .progress, #iomad_learningpaths .path_courses .col-md-6.px-3 .progress, #iomad_learningpaths .path_courses .col-md-6.px-3 .alert-warning { display: none; }
+
+
+
+#topBarContainer { margin-bottom: -8px; }
+
+#topBarContainer marquee i {
+
+    color: #0076CE;
+
+    font-size: .8rem;
+
+    vertical-align: middle;
+
+}
+
+#topBarContainer marquee span {
+
+    color: #ccc!important;
+
+}
+
+#topBarContainer marquee span:last-child {
+
+    display: none;
+
+}
+
+#topBarContainer marquee { padding-top: 4px; }
+
+
+
+.m3-course-hero a {
+
+    color: #0076CE!important;
+
+}
+
+
+
+/* Start: Reports block */
+
+.block_iomad_reports div.iomadlink, div.iomadlinkreports { width: auto; }
+
+.block_iomad_reports  .iomadlink_container>a { min-height: 0!important; background-color: #1177cc;
+
+    color: #fff!important;
+
+    padding: 10px 14px;
+
+    border-radius: 16px;
+
+    display: block;
+
+    margin: 0 0 10px; }
+
+.block_iomad_reports div.iomadlink, div.iomadlinkreports .actiondescription { width: auto!important; }
+
+.block_iomad_reports div.iomadlink, div.iomadlinkreports .iomadicon img,
+
+.block_iomad_reports div.iomadlink, div.iomadlinkreports .iomadicon br { display: none; }
+
+/* End: Reports block */
+
+/* Start: My course tab from profile page */
+
+.m3-nav-portfolio .nav-item:has(.fa-graduation-cap) { display: none; }
+
+/* End: My course tab from profile page */
+
+
+
+table td .commands, table th .commands { margin: 0!important; }
+
+.dataTables_scroll.dtfc-has-left td, .dataTables_scroll.dtfc-has-left th {
+
+    min-width: 116px;
+
+}
+
+#page-local-report_completion-index .tablecontainer .c3 { min-width: 252px; }
+
+
+
+#cohortfilter { display: none }
+
+.m3-course-card  .m3-course-card-title {
+
+    font-size: 1.4em!important;
+
+    font-weight: 600!important;
+
+    line-height: 1.2em!important;
+
+}
+
+.no-overflow:has(.dropdown-menu.show) {
+
+    overflow: inherit!important;
+
+}
+
+
+
+#page-message-output-popup-notifications .notification-area .footer { margin-top: 30px; }
+
+#page-report-progress-index #completion-progress-wrapper + ul.progress-actions { margin-top: 30px; }
+
+#mod_quiz_preflight_form { padding-right: 1rem;
+
+    padding-bottom: 1rem; }
+
+.que .qtext { font-size: 1.05rem; }
+
+
+
+.que .formulation {
+
+
+
+    color: #444444;
+
+
+
+    background-color: rgba(0,118,206,.02);
+
+
+
+    border-radius: 8px;
+
+
+
+}
+
+
+
+ 
+
+
+
+.que.multichoice .answer div.r0, .que.multichoice .answer div.r1 {
+
+
+
+    display: flex;
+
+
+
+    margin: 0.8rem 0;
+
+
+
+    align-items: flex-start;
+
+
+
+    background-color: rgba(0,118,206,.04);
+
+
+
+    border-radius: 8px;
+
+
+
+    padding-top: 0.5rem;
+
+
+
+    padding-bottom: 0.5rem;
+
+
+
+    padding-right: 0.5rem;
+
+
+
+}
+
+#loginright .btn.btn-info[title="support"] { background: #fff; border-color: #fff; }
+
+.que .qtext p span {
+
+    font-size: 1.25rem!important;
+
+}
+
+#page-local-report_companies-index .alert.alert-primary img { height: 60px!important;
+
+    background: #084f8b;
+
+    padding: 4px;
+
+    border-radius: 5px;
+
+}
+
+</style><link href="https://msftacademy.dell.com/local/mlib/static.php?file=local%2Fmelimu_config%2Fcss%2Fglobal_head.css&amp;rev=1773396433" rel="stylesheet" type="text/css" /><script>
+    var acessibility_text_size = 0;
+    var acessibility_color_adjustments = 0;
+    </script><script src="https://msftacademy.dell.com/local/mlib/static.php?file=local%2Fmelimu_config%2Fjs%2Fglobal_head.js&amp;rev=1773396433" ></script><script type="text/javascript">_USER_ROLES = [];</script>
+    
+        <div class="c-logo-mobile d-lg-none text-center">
+          <a href="https://msftacademy.dell.com" class="navbar-brand has-logo d-none d-sm-inline">
+              <h1 class="logo d-none d-sm-block my-0">
+                  <img src="//msftacademy.dell.com/pluginfile.php/1/theme_space/mobiletopbarlogo/1773396433/Microsoft%20Academy%20w%20logo%2025%404x.png" alt="Dell MSFT Academy" class="img-fluid">
+              </h1>
+              <h1 class="hidden site-name text-center">Dell MSFT Academy</h1>
+          </a>
+        </div>
+    
+        <div id="topBarContainer">
+            
+
+  <div id="topBar1" class="s-top s-top--sidebar justify-content-center   topbar-text">
+
+    
+        
+      <div class="d-sm-inline d-lg-none">
+          <button type="button" class="sidebar-btn" aria-expanded="false" aria-controls="nav-drawer" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav" title="Toggle navigation drawer"></button>
+      </div>
+    
+      <div class="d-sm-inline d-lg-none">
+          <button id="showMobileTopBar" type="button" class="mobile-topbar-btn" title="Toggle top menubar">
+            <i class="fas fa-th-large" id="mobileTopBarBtn"></i>
+            <i class="fas fa-times hidden" id="mobileTopBarCloseBtn"></i>
+          </button>
+      </div>
+    
+
+    <div id="navBar" class="s-top-container c-container row no-gutters justify-content-start align-items-center">
+
+      
+          <div data-region="drawer-toggle" class="d-sm-none d-lg-inline">
+              <button id="sidebarBtn" type="button" class="sidebar-btn ml-md-0 mr-md-3" aria-expanded="false" aria-controls="nav-drawer" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav" aria-label="toggle-drawer" title="Toggle navigation drawer">
+                <i class="fas fa-indent opened"></i>
+                
+                <i class="fas fa-outdent closed"></i>
+      
+              </button>
+          </div>
+      <div class="logo d-sm-none d-lg-inline px-sm-3 px-md-2 col-sm-12 col-md-auto text-sm-center text-md-left">
+          <a href="https://msftacademy.dell.com"><img src="//msftacademy.dell.com/pluginfile.php/1/theme_space/customlogotopbar/1773396433/Microsoft%20Academy%20logo%2025%404x.png" alt="Dell MSFT Academy" /></a>
+      </div>
+
+
+      <div class="c-nav-user nav ml-sm-0 ml-md-auto align-items-center justify-content-sm-end justify-content-lg-center">
+
+          <div class="c-top-text c-menu-sep p-md-0 mr-md-3 pr-md-3 text-sm-center text-lg-left"><div class="topkb"><input type="text" class="form-control" id="bp-kb-search" placeholder="Search the KB..."></input>
+
+<div id="msearch_result_content"></div></div>
+
+
+
+</div>
+          <div class="search-box d-block">
+          
+          </div>
+
+          <!-- navbar_plugin_output -->
+          <div class="top-icons-nav c-menu-sep mr-md-3"></div>
+
+          <div class="c-lang-menu c-menu-sep d-sm-none d-lg-inline"><div class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-69f37e682229369f37e681d1167" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="Language" aria-controls="drop-down-menu-69f37e682229369f37e681d1167">
+        English ‎(en)‎
+    </a>
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-69f37e682229369f37e681d1167" aria-labelledby="drop-down-69f37e682229369f37e681d1167">
+                <a class="dropdown-item" role="menuitem" href="https://msftacademy.dell.com/?lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
+                <a class="dropdown-item" role="menuitem" href="https://msftacademy.dell.com/?lang=en_us" title="English (United States) ‎(en_us)‎">English (United States) ‎(en_us)‎</a>
+                <a class="dropdown-item" role="menuitem" href="https://msftacademy.dell.com/?lang=es" title="Español - Internacional ‎(es)‎">Español - Internacional ‎(es)‎</a>
+                <a class="dropdown-item" role="menuitem" href="https://msftacademy.dell.com/?lang=fr" title="Français ‎(fr)‎">Français ‎(fr)‎</a>
+                <a class="dropdown-item" role="menuitem" href="https://msftacademy.dell.com/?lang=ko" title="한국어 ‎(ko)‎">한국어 ‎(ko)‎</a>
+                <a class="dropdown-item" role="menuitem" href="https://msftacademy.dell.com/?lang=ja" title="日本語 ‎(ja)‎">日本語 ‎(ja)‎</a>
+                <a class="dropdown-item" role="menuitem" href="https://msftacademy.dell.com/?lang=zh_cn" title="简体中文 ‎(zh_cn)‎">简体中文 ‎(zh_cn)‎</a>
+    </div>
+</div></div>
+
+          
+
+          <!-- user_menu -->
+          <div class="c-user-menu">
+              <div class="usermenu"><span class="login"><a class="login-btn" href="https://msftacademy.dell.com/login/index.php">Log in<i class="ml-2 fas fa-sign-in-alt"></i></a></span></div>
+          </div>
+
+      </div>
+      <!-- search_box -->
+    </div>
+
+  </div>
+
+            
+            
+            
+            
+            
+        </div>
+
+    <div class="c-top-logo l-container">
+        <div class=" c-hero-without-logo">
+        <div class="row no-gutters"><div class="logo"><img src="https://msftacademy.dell.com/pluginfile.php/1/theme_iomad/companylogo/0x300/1/EMEA.png" alt="Dell MSFT Academy" /></div></div>
+
+        <div id="settingsMenu" class="settings-menu ">
+          <div id="headerBtn" class="header-settings-menu-box">
+              
+          </div>
+          
+        </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+<div id="HTMLBlock3" class="s-block-3 s-special-box s-special-box-bg-gradient" style="background-image: url(//msftacademy.dell.com/pluginfile.php/1/theme_space/fphtmlblock3bgimg/1773396433/home-bg-cover2.jpg);">
+  <div class="l-container s-special-box row section-padding no-gutters justify-content-center align-items-center">
+    <div class="col-sm-11 col-md-7 text-center">
+      
+      
+      <div class="c-special-box-desc m-t-1"><p dir="ltr" style="text-align: center;"><img src="https://msftacademy.dell.com/pluginfile.php/1/local_publicfiles/publicfiles/161/MSFT%20Academy%20Dell%20w%404x.png" alt="Dell MSFT Academy logo" width="259" height="150" class="img-fluid atto_image_button_text-bottom"></p><br>
+
+<h3 style="text-align: center;">World-class accreditation and sales tools around the Microsoft Portfolio&nbsp;</h3><h5 style="text-align: center; "><span style="">Use the link below to Log-in or Register to the portal</span><br></h5></div>
+      <a href="#block2" class="c-block-3-btn m-t-2 btn btn-primary">Login links</a>
+    </div>
+  </div>
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+<div id="block2" class="s-block-2 l-container s-special-box section-padding row no-gutters justify-content-sm-center justify-content-lg-between">
+  <div class=" col-sm-11 col-md-8 col-lg-6 m-auto text-center">
+    
+    
+  </div>
+
+  <div class="col-12 row no-gutters justify-content-between py-0 px-1">
+    <div id="block2-1" class=" col-sm-12 col-md-6">
+      <div  class="m-2 p-3" style="background: #EEEEEE; border-radius: 8px;">
+        
+        
+        <h3 class="h3 c-block2-title"><h3 style="text-align: left;"><img src="/pluginfile.php/1/local_publicfiles/publicfiles/24/EMEA.png" alt="EMEA" width="315" height="100" class="img-fluid atto_image_button_text-bottom"><br></h3></h3>
+        <div class="c-special-box-desc"><p dir="ltr" style="text-align: left;">If you are from a country in the <strong>EMEA Region</strong> use this link to login or register to the portal.</p></div>
+        <a href="/login/index.php?id=1&amp;code=EMEA" class="m-t-2 btn btn-primary">EMEA Login</a>
+      </div>
+    </div>
+    <div id="block2-2" class=" col-sm-12 col-md-6">
+      <div  class="m-2 p-3" style="background: #EEEEEE; border-radius: 8px;">
+        
+        
+        <h3 class="h3 c-block2-title"><h3 style="text-align: left;"><img src="/pluginfile.php/1/local_publicfiles/publicfiles/25/APJC.png" alt="APJ&amp;C" width="315" height="100" class="atto_image_button_text-bottom"><br></h3></h3>
+        <div class="c-special-box-desc"><p dir="ltr" style="text-align: left;">If you are from a country in the <strong>APJ&amp;C Region</strong> use this link to login or register to the portal.<br></p></div>
+        <a href="/login/index.php?id=2&amp;code=APJC" class="m-t-2 btn btn-primary">APJ&C Login</a>
+      </div>
+    </div>
+    <div id="block2-3" class=" col-sm-12 col-md-6">
+      <div  class="m-2 p-3" style="background: #EEEEEE; border-radius: 8px;">
+        
+        
+        <h3 class="h3 c-block2-title"><h3 style="text-align: left;"><img src="/pluginfile.php/1/local_publicfiles/publicfiles/27/North%20America.png" alt="North America" width="315" height="100" class="atto_image_button_text-bottom"><br></h3></h3>
+        <div class="c-special-box-desc">If you are from a country in the <strong>North America Region</strong> use this link to login or register to the portal.<br></div>
+        <a href="https://msftacademy.dell.com/login/index.php?id=3&amp;code=North%20America" class="m-t-2 btn btn-primary">NORTH-AMERICA Login</a>
+      </div>
+    </div>
+    <div id="block2-4" class=" col-sm-12 col-md-6">
+      <div  class="m-2 p-3" style="background: #EEEEEE; border-radius: 8px;">
+        
+        
+        <h3 class="h3 c-block2-title"><h3 style="text-align: left;"><img src="/pluginfile.php/1/local_publicfiles/publicfiles/26/Latin%20America.png" alt="Latin America" width="315" height="100" class="atto_image_button_text-bottom"><br></h3></h3>
+        <div class="c-special-box-desc"><p dir="ltr">If you are from a country in the <strong>Latin America Region</strong> use this link to login or register to the portal.</p></div>
+        <a href="https://msftacademy.dell.com/login/index.php?id=4&amp;code=Latin%20America" class="m-t-2 btn btn-primary">LATIN-AMERICA Login</a>
+      </div>
+    </div>
+  </div>
+
+  
+
+</div>
+
+<hr class="hr my-0" />
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+<div id="HTMLBlock4" class="s-block-4 l-container s-special-box section-padding">
+
+  <div class=" col-sm-11 col-md-8 col-lg-6 text-center m-auto">
+  <h4 class="c-special-box-subtitle">Dell MSFT Academy</h4>
+  
+  <div class="lead"><p style="text-align: center; ">Powered&nbsp;by&nbsp;<a href="https://www.ebigpicture.co.uk/" target="_blank" rel="noopener">Big Picture</a>&nbsp;in collaboration with Maple LMS for&nbsp;<strong><a href="https://www.dell.com/" target="_blank">Dell Technologies</a></strong>.<br></p>
+
+<p style="text-align: center; ">© 2023 Big Picture | Registered in England and Wales No. 3215394</p></div>
+  </div>
+  <div class="col-12 mt-5">
+    <style>
+
+#block2 { 
+
+padding-top: 32px; 
+
+padding-bottom: 64px;
+
+}
+
+#page-content{
+
+display: none;
+
+}
+
+#HTMLBlock4{ 
+
+padding-top: 32px; 
+
+padding-bottom: 0px; 
+
+}
+
+.c-user-menu{
+
+display: none;
+
+}
+
+.s-special-box-bg-dark {
+
+background-size: cover;
+
+background-repeat: no-repeat; 
+
+}
+
+.c-block-3-btn{
+
+background-color: #0076ce !important;
+
+}
+
+.s-special-box-bg-dark { 
+
+background-size: cover !important; 
+
+}
+
+</style>
+  </div>
+
+</div>
+
+
+
+    
+    
+    
+    
+<div class="l-block-8 l-container mt-5">
+    <div id="page-content" class="s-block-8 row no-gutters page-main-content">
+        <div id="region-main-box">
+            <section id="region-main" >
+                <span class="notifications" id="user-notifications"></span>
+
+
+                <div role="main"><span id="maincontent"></span><div class="box py-3 generalbox sitetopic card-content"><ul class="section img-text"><li class="activity quiz modtype_quiz " id="module-702"><div><div class="mod-indent-outer w-100"><div class="mod-indent"></div><div><div class="activityinstance"><a class="aalink" onclick="" href="https://msftacademy.dell.com/mod/quiz/view.php?id=702"><img src="https://msftacademy.dell.com/theme/image.php/space/quiz/1773396433/icon" class="iconlarge activityicon" alt="" role="presentation" aria-hidden="true" /><span class="instancename">Quick Quiz (copy)</span></a></div></div></div></div></li></ul></div><br /><link href="https://msftacademy.dell.com/local/mlib/static.php?file=local%2Fmelimu_config%2Fcss%2Fglobal_footer.css&amp;rev=1773396433" rel="stylesheet" type="text/css" /><script src="https://msftacademy.dell.com/local/mlib/static.php?file=local%2Fmelimu_config%2Fjs%2Fglobal_footer.js&amp;rev=1773396433" ></script><div class="modal fade" id="course-summary-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-course-info" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title coursename_head"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-center">
+                    <div class="spinner-border text-success" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div><!-- Modal -->
+<div class="modal right fade" id="helpPopup" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Help</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body">
+      <div id="help_search_form">
+      <form class="form-inline" id="help_search_form">
+        <input type="query" class="form-control form-control-sm w-100" id="help_search_query" placeholder="Query">
+        <button type="button" class="btn btn-primary btn-sm" id="help_search_button">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-magnifying-glass"><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" class=""></path></svg>
+        </button>  
+      </form>
+      </div>
+      <div id="help_search_result" class="mt-4">
+      <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+      </div>
+      <!--<div class="modal-footer">
+
+      </div>-->
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal right fade" id="accessibilityPopup" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Accessibility</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body">
+      <h4>Text size</h4>
+<div class="btn-group d-flex" role="group" aria-label="Text size">
+  <button type="button" class="btn btn-secondary btn-block" id="accTextSm">A-</button>
+  <button type="button" class="btn btn-secondary btn-block" id="accTextMd">A</button>
+  <button type="button" class="btn btn-secondary btn-block" id="accTextLg">A+</button>
+</div>
+<h4 class="mt-3">Color Adjustments</h4>
+<button type="button" class="btn btn-secondary btn-block" id="accMonochrome">Monochrome</button>
+<button type="button" class="btn btn-secondary btn-block mt-2" id="accLowSat">Low Saturation</button>
+<button type="button" class="btn btn-secondary btn-block mt-2" id="accHighSat">High Saturation</button>
+<button type="button" class="btn btn-secondary btn-block mt-2" id="accHighCont">High Contrast</button>
+<button type="button" class="btn btn-secondary btn-block mt-2" id="accInvertColors">Invert Colors</button>
+<button type="button" class="btn btn-secondary btn-block mt-2" id="accChangeColors">Change Hue</button>
+<button type="button" class="btn btn-secondary btn-block mt-2" id="accResetColors">Reset Color Adjustments</button>
+      </div>
+      <!--<div class="modal-footer">
+
+      </div>-->
+    </div>
+  </div>
+</div></div>
+                
+                
+
+            </section>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    </div>
+
+    <div id="nav-drawer" data-region="drawer" class="nav-drawer-with-logo  d-print-none moodle-has-zindex closed" aria-hidden="true">
+
+    <div class="c-logo text-center">
+      <a href="https://msftacademy.dell.com" class="navbar-brand has-logo d-none d-sm-inline">
+
+         
+
+          <h1 class="logo d-none d-sm-block">
+              <img src="//msftacademy.dell.com/pluginfile.php/1/theme_space/customlogosidebar/1773396433/Delle%20Technologies%404x.png" alt="Dell MSFT Academy" class="img-fluid">
+          </h1>
+
+          <h1 class="hidden site-name text-center">Dell MSFT Academy</h1>
+        
+      </a>
+    </div>
+
+
+    
+
+    <nav class="c-flat-nav mt-0 m-b-1 list-group" aria-label="">
+      <ul class="m-1 p-0">
+          
+            <li>
+                <a class="list-group-item list-group-item-action active active_tree_node " href="https://msftacademy.dell.com/" data-key="home" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="1" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="1" data-hidden="0" data-preceedwithhr="0" >
+                    <div class="c-nav-item-container">
+                    <span class="nav-icon">
+                        <i class="icon fas fa-home fa-fw " aria-hidden="true"  aria-label=""></i>
+                    </span>
+                    <span class="text m-l-0">Home</span>
+                    </div>
+                </a>
+            </li>
+          
+            <li>
+                <a class="list-group-item list-group-item-action  " href="https://msftacademy.dell.com/course/index.php" data-key="allcourses" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                    <div class="c-nav-item-container">
+                    <span class="nav-icon">
+                        <i class="icon fas fa-graduation-cap fa-fw " aria-hidden="true"  aria-label=""></i>
+                    </span>
+                    <span class="text m-l-0">All Courses</span>
+                    </div>
+                </a>
+            </li>
+      </ul>
+    </nav>
+
+
+    <nav class="c-flat-nav my-4"><div class="c-flat-nav-items">                  <a href="https://msftacademy.dell.com/static/EMEA-BDM-Contacts.html" title="" >MTS Contacts</a>
+</div></nav>
+
+
+
+</div>
+
+
+    
+    <footer id="page-footer" class="position-fixed py-1 w-100">
+    
+      <div class="c-container">
+    
+            
+    
+            <div class="s-footer--copy row no-gutters">
+    
+              <div class="s-footer--additional col-12 contact p-0">
+                  <ul class="mb-0 text-center">
+                      <li class="d-sm-block d-lg-inline mb-lg-0 mr-sm-0 mr-lg-4"><i class="mx-2 fas fa-globe-africa d-none"></i><a href="https://maplelms.com" target="_blank" class="  text-white text-decoration-none">powered by MapleLMS</a></li>
+                      
+                      
+                  </ul>
+              </div>
+    
+    
+              <div class="col-12 my-3 p-0 d-none">
+                <span class="copy">Dell MSFT Academy</span>
+              </div>
+    
+            </div>
+    
+            <div class="o-course-footer">
+                <div id="course-footer"></div>
+                <div class="tool_usertours-resettourcontainer"></div>
+            </div>
+    
+            <div class="o-standard-footer-html"><script>
+    var acessibility_text_size = 0;
+    var acessibility_color_adjustments = 0;
+    </script></div>
+    
+      </div>
+    
+    </footer>
+    
+    
+    
+<script>
+
+$('#navBar input[type="text"]#bp-kb-search').on("keypress", function(e) {
+
+  if(e.keyCode == 13) {
+
+    e.preventDefault();
+
+    return false;
+
+  }
+
+});
+
+$('#navBar input[type=text]#bp-kb-search ').on("keyup",function(){
+
+        $q = $(this).val();
+
+        if($q.length >= 3) {
+
+                if(xhr){
+
+                xhr.abort();
+
+                }
+
+                var xhr = $.post("/search/engine/algolia/type.php?q="+$q,function(data){
+
+                 if(data){
+
+                  $('#navBar #msearch_result_content').remove();
+
+                  $(data).insertAfter('#navBar input[type=text]#bp-kb-search');
+
+                  $('#navBar #msearch_result_content').append('<div class="mt-3" style="margin-bottom: 6px;"><p dir="ltr" style="text-align: left; font-size: 0.9rem;">If you can\'t find what you\'re looking for, send us your request by email using the link below.&nbsp;</p></div><div><a href="https://msftacademy.dell.com/static/helpdesk.html" style=" font-size: 1rem;">Knowledge Base Helpdesk <i class="fas fa-chevron-right ml-1"></i></a></div>');
+
+                 }
+
+                });
+
+        }else{
+
+$('#navBar #msearch_result_content').hide();
+
+}
+
+ });
+
+$(document).ready(function(){
+
+    if ($('#navBar .topkb')) {
+
+        $('#navBar .topkb').insertAfter($('#navBar .logo'));
+
+    }
+
+});
+
+</script>
+
+<script>
+
+$('#region-main input[type="text"]#bp-kb-search').on("keypress", function(e) {
+
+  if(e.keyCode == 13) {
+
+    e.preventDefault();
+
+    return false;
+
+  }
+
+});
+
+$('#region-main input[type=text]#bp-kb-search ').on("keyup",function(){
+
+        $q = $(this).val();
+
+        if($q.length >= 3) {
+
+                if(xhr){
+
+                xhr.abort();
+
+                }
+
+                var xhr = $.post("/search/engine/algolia/type.php?q="+$q,function(data){
+
+                 if(data){
+
+                  $('#region-main #msearch_result_content').remove();
+
+                  $(data).insertAfter('#region-main input[type=text]#bp-kb-search');
+
+                  $('#region-main #msearch_result_content').append('<div class="mt-3" style="margin-bottom: 6px;"><p dir="ltr" style="text-align: left; font-size: 0.9rem;">If you can\'t find what you\'re looking for, send us your request by email using the link below.&nbsp;</p></div><div><a href="https://msftacademy.dell.com/static/helpdesk.html" style=" font-size: 1rem;">Knowledge Base Helpdesk <i class="fas fa-chevron-right ml-1"></i></a></div>');
+
+                 }
+
+                });
+
+        }else{
+
+$('#region-main #msearch_result_content').hide();
+
+}
+
+ });
+
+
+
+</script>
+
+
+
+<script>
+
+$('#block-region-side-pre input[type="text"]#bp-kb-search').on("keypress", function(e) {
+
+  if(e.keyCode == 13) {
+
+    e.preventDefault();
+
+    return false;
+
+  }
+
+});
+
+$('#block-region-side-pre input[type=text]#bp-kb-search ').on("keyup",function(){
+
+        $q = $(this).val();
+
+        if($q.length >= 3) {
+
+                if(xhr){
+
+                xhr.abort();
+
+                }
+
+                var xhr = $.post("/search/engine/algolia/type.php?q="+$q,function(data){
+
+                 if(data){
+
+                  $('#block-region-side-pre #msearch_result_content').remove();
+
+                  $(data).insertAfter('#block-region-side-pre input[type=text]#bp-kb-search');
+
+                  $('#block-region-side-pre #msearch_result_content').append('<div class="mt-3" style="margin-bottom: 6px;"><p dir="ltr" style="text-align: left; font-size: 0.9rem;">If you can\'t find what you\'re looking for, send us your request by email using the link below.&nbsp;</p></div><div><a href="https://msftacademy.dell.com/static/helpdesk.html" style=" font-size: 1rem;">Knowledge Base Helpdesk <i class="fas fa-chevron-right ml-1"></i></a></div>');
+
+                 }
+
+                });
+
+        }else{
+
+$('#block-region-side-pre #msearch_result_content').hide();
+
+}
+
+ });
+
+
+
+</script>
+
+
+
+<style>
+
+
+
+#msearch_result_content {
+
+    position: relative;
+
+    top: 0;
+
+    background-color: #fff;
+
+    padding: 16px;
+
+   /* box-shadow: var(--m3-card-shadow);  */
+
+    border-radius: 16px;
+
+    z-index: 1; 
+
+}
+
+#msearch_result_content ul {
+
+    list-style-type: none;
+
+    padding-left: 0;
+
+    margin: 0; 
+
+}
+
+#msearch_result_content ul li {
+
+    background-color: #f1f1f1;
+
+    padding: 8px 12px;
+
+    border-radius: var(--m3-small-radius);
+
+    margin-bottom: 6px;
+
+}
+
+#msearch_result_content ul li:last-child {
+
+    margin-bottom: 0;
+
+}
+
+#msearch_result_content.msearch_result_content ul li:hover {
+
+    transition: all .2s ease-in;
+
+    background-color: var(--maple-primary)!important;
+
+    color: white!important;
+
+}
+
+#msearch_result_content.msearch_result_content ul li:hover a {
+
+    color: #fff!important;
+
+}
+
+#navBar .search-input-wrapper .icon.fas.fa-search { color: #212121!important; margin-top: 0; }
+
+
+
+#topBarContainer .s-top .nav-link:hover #msearch_result_content.msearch_result_content ul li { color: #212121!important; }
+
+#topBarContainer .s-top .nav-link #msearch_result_content.msearch_result_content ul li:hover { color: #fff!important; }
+
+
+
+
+
+</style>
+
+<script>
+
+$( document ).ready(function() {
+
+$("#page-login-forgot_password #id_searchbyusername").remove();
+
+    $('#navBar #searchBtnClose').click(function(){
+
+    $('#msearch_result_content').hide();
+
+    });
+
+
+
+    var sidebarmenu = "#nav-drawer .c-flat-nav ul.m-1";
+
+    var kbbutton = '<li><a class="list-group-item list-group-item-action  root_node " href="https://msftacademy.dell.com/my/#knowledgeBase" data-key="" data-isexpandable="0" data-indent="0" data-showdivider="1" data-type="" data-nodetype="" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0"><div class="c-nav-item-container"><span class="nav-icon"><i class="icon fas fa-book fa-fw " aria-hidden="true" aria-label=""></i></span><span class="text m-l-0">Knowledge Base</span></div></a></li> <li><a class="list-group-item list-group-item-action  root_node " href="https://msftacademy.dell.com/user/profile.php" data-key="" data-isexpandable="0" data-indent="0" data-showdivider="1" data-type="" data-nodetype="" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0"><div class="c-nav-item-container"><span class="nav-icon"><i class="icon fas fa-user fa-fw " aria-hidden="true" aria-label=""></i></span><span class="text m-l-0">My Profile</span></div></a></li>';
+
+    $(sidebarmenu).append(kbbutton);
+
+
+
+});
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+// sign up page change
+
+var myRe = /\/login\/signup\.php/; //regular expression to use
+
+var myEd = /\/user\/edit\.php/; //regular expression to use
+
+if (myRe.test(window.location.href) || myEd.test(window.location.href)) {
+
+
+
+    $(document).ready(function() {
+
+                // ############ EMEA ############
+
+                if ($('#fitem_id_profile_field_EMEASubRegion').length) {
+
+
+
+                    $fitem = $('#fitem_id_country').clone();
+
+                    $('#fitem_id_country').remove();
+
+                    $('#fitem_id_profile_field_EMEASubRegion').after($fitem);
+
+                    if ($('#id_profile_field_EMEAentry').val() != 'Dell Employee') {
+
+                        $("#id_profile_field_EMEAInternalDellRole").prop("required", false);
+
+                        $("#id_profile_field_EMEADellSegmentLevel").prop("required", false);
+
+                        $('#fitem_id_profile_field_EMEAInternalDellRole').hide();
+
+                        $('#fitem_id_profile_field_EMEADellSegmentLevel').hide();
+
+                    }
+
+                    $('#id_profile_field_EMEAentry').on("change", function() {
+
+                        if ($(this).val() == 'Dell Employee') {
+
+                            $("#id_profile_field_EMEAInternalDellRole").prop("required", true);
+
+                            $("#id_profile_field_EMEADellSegmentLevel").prop("required", true);
+
+                            var dellro = $("#fitem_id_profile_field_EMEAInternalDellRole .col-md-3").html();
+
+                            var dellseg = $("#fitem_id_profile_field_EMEADellSegmentLevel .col-md-3").html();
+
+                            var recsym = '<span class="float-sm-right text-nowrap ml-1"><abbr class="initialism text-danger" title="Required"><i class="icon fas fa-exclamation-triangle text-danger small-icon mx-2 fa-fw " aria-hidden="true" title="Required" aria-label="Required"></i></abbr></span>';
+
+                            dellseg = dellseg + recsym;
+
+                            dellro = dellro + recsym;
+
+                            $("#fitem_id_profile_field_EMEAInternalDellRole .col-md-3").html(dellro);
+
+                            $("#fitem_id_profile_field_EMEADellSegmentLevel .col-md-3").html(dellseg);
+
+                            $('#fitem_id_profile_field_EMEAInternalDellRole').show();
+
+                            $('#fitem_id_profile_field_EMEADellSegmentLevel').show();
+
+                            $('#id_profile_field_EMEADellSegmentLevel').val('');
+
+                            $('#id_profile_field_EMEAInternalDellRole').val('');
+
+                        } else {
+
+                            $("#id_profile_field_EMEAInternalDellRole").prop("required", false);
+
+                            $("#id_profile_field_EMEADellSegmentLevel").prop("required", false);
+
+                            $('#fitem_id_profile_field_EMEAInternalDellRole').hide();
+
+                            $('#fitem_id_profile_field_EMEADellSegmentLevel').hide();
+
+                            $('#id_profile_field_EMEADellSegmentLevel').val('');
+
+                            $('#id_profile_field_EMEAInternalDellRole').val('');
+
+                        }
+
+                    });
+
+
+
+                    CEE = ['AL', 'AM', 'AZ', 'BY', 'BA', 'BG', 'HR', 'CY', 'CZ', 'GE', 'GR', 'HU', 'KZ', 'XK', 'KG', 'LT', 'MK', 'MT', 'MD', 'ME', 'PL', 'RO', 'RS', 'SK', 'SI', 'TJ', 'TM', 'UA', 'UZ', 'C6'];
+
+                    CNE = ['FI', 'CH', 'AT', 'NO', 'DK', 'SE', 'C5','IL'];
+
+                    FRANCE = ['FR'];
+
+                    GERMANY = ['DE'];
+
+                    META = ['ZA', 'TR', 'AE', 'C0', 'C1', 'C2', 'C3'];
+
+                    UK = ['GB'];
+
+                    WER = ['IT', 'PT', 'BE', 'LU', 'ES', 'IE', 'NL', 'C4'];
+
+                    All_EMEA = ['C7'];
+
+                    var opt = $("#id_country").find('option');
+
+                    $('#id_profile_field_EMEASubRegion').on("change", function() {
+
+                        $("#id_country").find('option').remove();
+
+                        $("#id_country").append(opt);
+
+                        $("#id_country").val('');
+
+                        if ($(this).val() == 'CEE') {
+
+                            $("#id_country > option").each(function() {
+
+                                if ($.inArray(this.value, CEE) === -1 && this.value) {
+
+                                    $(this).remove();
+
+                                }
+
+                            });
+
+                        }
+
+                        if ($(this).val() == 'CNE') {
+
+                            $("#id_country > option").each(function() {
+
+                                if ($.inArray(this.value, CNE) === -1 && this.value) {
+
+                                    $(this).remove();
+
+                                }
+
+                            });
+
+                        }
+
+                        if ($(this).val() == 'FRANCE') {
+
+                            $("#id_country > option").each(function() {
+
+                                if ($.inArray(this.value, FRANCE) === -1 && this.value) {
+
+                                    $(this).remove();
+
+                                }
+
+                            });
+
+                        }
+
+                        if ($(this).val() == 'GERMANY') {
+
+                            $("#id_country > option").each(function() {
+
+                                if ($.inArray(this.value, GERMANY) === -1 && this.value) {
+
+                                    $(this).remove();
+
+                                }
+
+                            });
+
+                        }
+
+                        if ($(this).val() == 'META') {
+
+                            $("#id_country > option").each(function() {
+
+                                if ($.inArray(this.value, META) === -1 && this.value) {
+
+                                    $(this).remove();
+
+                                }
+
+                            });
+
+                        }
+
+                        if ($(this).val() == 'UK') {
+
+                            $("#id_country > option").each(function() {
+
+                                if ($.inArray(this.value, UK) === -1 && this.value) {
+
+                                    $(this).remove();
+
+                                }
+
+                            });
+
+                        }
+
+                        if ($(this).val() == 'WER') {
+
+                            $("#id_country > option").each(function() {
+
+                                if ($.inArray(this.value, WER) === -1 && this.value) {
+
+                                    $(this).remove();
+
+                                }
+
+                            });
+
+                        }
+
+                        if ($(this).val() == 'All EMEA') {
+
+                            $("#id_country > option").each(function() {
+
+                                if ($.inArray(this.value, All_EMEA) === -1 && this.value) {
+
+                                    $(this).remove();
+
+                                }
+
+                            });
+
+                        }
+
+
+
+                    });
+
+
+
+                }
+
+
+
+
+
+                // ############ APJC ############
+
+                if ($('#fitem_id_profile_field_APJCSubRegion').length) {
+
+
+
+                    $fitem = $('#fitem_id_country').clone();
+
+                    $('#fitem_id_country').remove();
+
+                    $('#fitem_id_profile_field_APJCSubRegion').after($fitem);
+
+                    if ($('#id_profile_field_APJCentry').val() != 'Dell Employee') {
+
+                        $("#id_profile_field_APJCInternalDellRole").prop("required", false);
+
+                        $("#id_profile_field_APJCDellSegmentLevel").prop("required", false);
+
+                        $('#fitem_id_profile_field_APJCInternalDellRole').hide();
+
+                        $('#fitem_id_profile_field_APJCDellSegmentLevel').hide();
+
+                    }
+
+                    $('#id_profile_field_APJCentry').on("change", function() {
+
+                            if ($(this).val() == 'Dell Employee') {
+
+                                $("#id_profile_field_APJCInternalDellRole").prop("required", true);
+
+                                $("#id_profile_field_APJCDellSegmentLevel").prop("required", true);
+
+                                var dellro = $("#fitem_id_profile_field_APJCInternalDellRole .col-md-3").html();
+
+                                var dellseg = $("#fitem_id_profile_field_APJCDellSegmentLevel .col-md-3").html();
+
+                                var recsym = '<span class="float-sm-right text-nowrap ml-1"><abbr class="initialism text-danger" title="Required"><i class="icon fas fa-exclamation-triangle text-danger small-icon mx-2 fa-fw " aria-hidden="true" title="Required" aria-label="Required"></i></abbr></span>';
+
+                                dellseg = dellseg + recsym;
+
+                                dellro = dellro + recsym;
+
+                                $("#fitem_id_profile_field_APJCInternalDellRole .col-md-3").html(dellro);
+
+                                $("#fitem_id_profile_field_APJCDellSegmentLevel .col-md-3").html(dellseg);
+
+                                $('#fitem_id_profile_field_APJCInternalDellRole').show();
+
+                                $('#fitem_id_profile_field_APJCDellSegmentLevel').show();
+
+                                $('#id_profile_field_APJCDellSegmentLevel').val('');
+
+                                $('#id_profile_field_APJCInternalDellRole').val('');
+
+                            } else {
+
+                                $("#id_profile_field_APJCInternalDellRole").prop("required", false);
+
+                                $("#id_profile_field_APJCDellSegmentLevel").prop("required", false);
+
+                                $('#fitem_id_profile_field_APJCInternalDellRole').hide();
+
+                                $('#fitem_id_profile_field_APJCDellSegmentLevel').hide();
+
+                                $('#id_profile_field_APJCDellSegmentLevel').val('');
+
+                                $('#id_profile_field_APJCInternalDellRole').val('');
+
+                            }
+
+            });
+
+                            ANZ = ['AU', 'NZ', 'C25'];
+
+                            GrChina = ['CN', 'HK', 'TW', 'C26'];
+
+                            India = ['IN'];
+
+                            Japan = ['JP'];
+
+                            Korea = ['KR'];
+
+                            AEM = ['C27', 'BD', 'C28', 'VN', 'C29', 'C30', 'C31', 'C32', 'C33', 'C34'];
+
+                            SouthAsia = ['SG', 'MY', 'PH', 'ID', 'TH', 'C35'];
+
+                            AllAPJC = ['C40'];
+
+                            APJALL=['C43'];
+
+                            var opt = $("#id_country").find('option');
+
+                            $('#id_profile_field_APJCSubRegion').on("change", function() {
+
+                                $("#id_country").find('option').remove();
+
+                                $("#id_country").append(opt);
+
+                                $("#id_country").val('');
+
+                                if ($(this).val() == 'ANZ') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, ANZ) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                                if ($(this).val() == 'Gr. China') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, GrChina) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                                if ($(this).val() == 'India') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, India) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                                if ($(this).val() == 'Japan') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, Japan) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                                if ($(this).val() == 'Korea') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, Korea) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                                if ($(this).val() == 'Asia Emerging Market') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, AEM) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                                if ($(this).val() == 'South Asia') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, SouthAsia) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                                if ($(this).val() == 'All APJ&C') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, AllAPJC) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                                if ($(this).val() == 'APJ all countries') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, APJALL) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                                
+
+
+
+                            });
+
+
+
+                        }
+
+
+
+
+
+             // ############ LatinAmerica ############
+
+                if ($('#fitem_id_profile_field_LatinAmericaSubRegion').length) {
+
+
+
+                    $fitem = $('#fitem_id_country').clone();
+
+                    $('#fitem_id_country').remove();
+
+                    $('#fitem_id_profile_field_LatinAmericaSubRegion').after($fitem);
+
+                    if ($('#id_profile_field_LatinAmericaentry').val() != 'Dell Employee') {
+
+                        $("#id_profile_field_LatinAmericaInternalDellRole").prop("required", false);
+
+                        $("#id_profile_field_LatinAmericaDellSegmentLevel").prop("required", false);
+
+                        
+
+                        $('#fitem_id_profile_field_LatinAmericaInternalDellRole').hide();
+
+                        $('#fitem_id_profile_field_LatinAmericaDellSegmentLevel').hide();
+
+                    
+
+                    }
+
+                    $('#id_profile_field_LatinAmericaentry').on("change", function() {
+
+                            if ($(this).val() == 'Dell Employee') {
+
+                                $("#id_profile_field_LatinAmericaInternalDellRole").prop("required", true);
+
+                                $("#id_profile_field_LatinAmericaDellSegmentLevel").prop("required", true);
+
+                                
+
+                                var dellro = $("#fitem_id_profile_field_LatinAmericaInternalDellRole .col-md-3").html();
+
+                                var dellseg = $("#fitem_id_profile_field_LatinAmericaDellSegmentLevel .col-md-3").html();
+
+                                var recsym = '<span class="float-sm-right text-nowrap ml-1"><abbr class="initialism text-danger" title="Required"><i class="icon fas fa-exclamation-triangle text-danger small-icon mx-2 fa-fw " aria-hidden="true" title="Required" aria-label="Required"></i></abbr></span>';
+
+                                dellseg = dellseg + recsym;
+
+                                dellro = dellro + recsym;
+
+                               
+
+                                $("#fitem_id_profile_field_LatinAmericaInternalDellRole .col-md-3").html(dellro);
+
+                                $("#fitem_id_profile_field_LatinAmericaDellSegmentLevel .col-md-3").html(dellseg);
+
+                                $('#fitem_id_profile_field_LatinAmericaInternalDellRole').show();
+
+                                $('#fitem_id_profile_field_LatinAmericaDellSegmentLevel').show();
+
+                                $('#id_profile_field_LatinAmericaDellSegmentLevel').val('');
+
+                                $('#id_profile_field_LatinAmericaInternalDellRole').val('');
+
+                                
+
+                            } else {
+
+                                $("#id_profile_field_LatinAmericaInternalDellRole").prop("required", false);
+
+                                $("#id_profile_field_LatinAmericaDellSegmentLevel").prop("required", false);
+
+                                $('#fitem_id_profile_field_LatinAmericaInternalDellRole').hide();
+
+                                $('#fitem_id_profile_field_LatinAmericaDellSegmentLevel').hide();
+
+                                $('#id_profile_field_LatinAmericaDellSegmentLevel').val('');
+
+                                $('#id_profile_field_LatinAmericaInternalDellRole').val('');
+
+                                
+
+                               
+
+                            }
+
+            });
+
+            SOCO= ['AR','CL','UY','PY','BO','C36'];
+
+            NOLA= ['PA','CR','HN','GT','VE','PR','AI','AG','AW','BS','BB','BZ','BM','VG','KY','CU','CW','DM','DO','SV','FK','GF','GL','GD','GP','GY','HT','JM','MQ','MS','NL','NI','KN','C39','PM','VC','SR','TT','TC','VG','C37']
+
+            ANDEAN= ['CO','PE','EC','C38'];
+
+            BRASIL= ['BR'];
+
+            MEXICO= ['MX'];
+
+            AllLA = ['C41'];
+
+                            var opt = $("#id_country").find('option');
+
+                            $('#id_profile_field_LatinAmericaSubRegion').on("change", function() {
+
+                                $("#id_country").find('option').remove();
+
+                                $("#id_country").append(opt);
+
+                                $("#id_country").val('');
+
+                                if ($(this).val() == 'SOCO') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, SOCO) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                                if ($(this).val() == 'NOLA') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, NOLA) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                                if ($(this).val() == 'ANDEAN') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, ANDEAN) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                                if ($(this).val() == 'BRASIL') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, BRASIL) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                                if ($(this).val() == 'MEXICO') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, MEXICO) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                                if ($(this).val() == 'All Latin America') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, AllLA) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                               
+
+                               
+
+
+
+
+
+                            });
+
+
+
+                        }
+
+                        
+
+                         // ############ NorthAmerica ############
+
+                if ($('#fitem_id_profile_field_NorthAmericaSubRegion').length) {
+
+
+
+                    $fitem = $('#fitem_id_country').clone();
+
+                    $('#fitem_id_country').remove();
+
+                    $('#fitem_id_profile_field_NorthAmericaSubRegion').after($fitem);
+
+                    if ($('#id_profile_field_NorthAmericaentry').val() != 'Dell Employee') {
+
+                        $("#id_profile_field_NorthAmericaInternalDellRole").prop("required", false);
+
+                        $("#id_profile_field_NorthAmericaDellSegmentLevel").prop("required", false);
+
+                        $('#fitem_id_profile_field_NorthAmericaInternalDellRole').hide();
+
+                        $('#fitem_id_profile_field_NorthAmericaDellSegmentLevel').hide();
+
+                            $("#id_profile_field_NorthAmericaSubSegmentLevel").prop("required", false);
+
+                        $('#fitem_id_profile_field_NorthAmericaSubSegmentLevel').hide();
+
+                    }
+
+                    $('#id_profile_field_NorthAmericaentry').on("change", function() {
+
+                            if ($(this).val() == 'Dell Employee') {
+
+                                $("#id_profile_field_NorthAmericaInternalDellRole").prop("required", true);
+
+                                $("#id_profile_field_NorthAmericaDellSegmentLevel").prop("required", true);
+
+                                var dellro = $("#fitem_id_profile_field_NorthAmericaInternalDellRole .col-md-3").html();
+
+                                var dellseg = $("#fitem_id_profile_field_NorthAmericaDellSegmentLevel .col-md-3").html();
+
+                                var recsym = '<span class="float-sm-right text-nowrap ml-1"><abbr class="initialism text-danger" title="Required"><i class="icon fas fa-exclamation-triangle text-danger small-icon mx-2 fa-fw " aria-hidden="true" title="Required" aria-label="Required"></i></abbr></span>';
+
+                                dellseg = dellseg + recsym;
+
+                                dellro = dellro + recsym;
+
+                                $("#fitem_id_profile_field_NorthAmericaInternalDellRole .col-md-3").html(dellro);
+
+                                $("#fitem_id_profile_field_NorthAmericaDellSegmentLevel .col-md-3").html(dellseg);
+
+                                $('#fitem_id_profile_field_NorthAmericaInternalDellRole').show();
+
+                                $('#fitem_id_profile_field_NorthAmericaDellSegmentLevel').show();
+
+                                $('#id_profile_field_NorthAmericaDellSegmentLevel').val('');
+
+                                $('#id_profile_field_NorthAmericaInternalDellRole').val('');
+
+                                
+
+                                 dellsubseg = $("#fitem_id_profile_field_NorthAmericaSubSegmentLevel .col-md-3").html() + recsym;
+
+                                       $("#id_profile_field_NorthAmericaSubSegmentLevel").prop("required", true);
+
+                                        $("#fitem_id_profile_field_NorthAmericaSubSegmentLevel .col-md-3").html(dellsubseg);
+
+                              $('#fitem_id_profile_field_NorthAmericaSubSegmentLevel').show();
+
+                                 $('#id_profile_field_NorthAmericaSubSegmentLevel').val('');
+
+                            } else {
+
+                                $("#id_profile_field_NorthAmericaInternalDellRole").prop("required", false);
+
+                                $("#id_profile_field_NorthAmericaDellSegmentLevel").prop("required", false);
+
+                                $('#fitem_id_profile_field_NorthAmericaInternalDellRole').hide();
+
+                                $('#fitem_id_profile_field_NorthAmericaDellSegmentLevel').hide();
+
+                                $('#id_profile_field_NorthAmericaDellSegmentLevel').val('');
+
+                                $('#id_profile_field_NorthAmericaInternalDellRole').val('');
+
+                                  $("#id_profile_field_NorthAmericaSubSegmentLevel").prop("required", false);
+
+                              $('#fitem_id_profile_field_NorthAmericaSubSegmentLevel').hide();
+
+                                 $('#id_profile_field_NorthAmericaSubSegmentLevel').val('');
+
+                            }
+
+            });
+
+                US= ['US'];
+
+                Canada= ['CA'];
+
+                AllNA=['C42']
+
+                            var opt = $("#id_country").find('option');
+
+                            $('#id_profile_field_NorthAmericaSubRegion').on("change", function() {
+
+                                $("#id_country").find('option').remove();
+
+                                $("#id_country").append(opt);
+
+                                $("#id_country").val('');
+
+                                if ($(this).val() == 'United States') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, US) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                                if ($(this).val() == 'Canada') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, Canada) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                                if ($(this).val() == 'All North America') {
+
+                                    $("#id_country > option").each(function() {
+
+                                        if ($.inArray(this.value, AllNA) === -1 && this.value) {
+
+                                            $(this).remove();
+
+                                        }
+
+                                    });
+
+                                }
+
+                               
+
+
+
+
+
+                            });
+
+
+
+                        }
+
+                   
+
+            });
+
+            }
+
+            $(document).ready(function() {
+
+                $('li dt', '.node_category').each(function(i, d) {
+
+                    if ($(this).text() == 'Internal Dell Role' || $(this).text() == 'Dell Segment Level') {
+
+                        $(this).parents('dl').hide();
+
+                    }
+
+                });
+
+
+
+            });
+
+</script>
+
+<script type="text/javascript">
+
+    // BP-154
+
+    function makeRequired() {
+
+        var requiredFieldName = arguments[0];
+
+        if ($(requiredFieldName).length === 0) {
+
+            console.error("Element not found: " + requiredFieldName);
+
+            return;
+
+        }
+
+        $(requiredFieldName).attr('required', true);
+
+        var parentElement = $(requiredFieldName).closest('.col-md-9').prev('.col-md-3');
+
+        if (parentElement.length > 0) {
+
+            parentElement.append(
+
+                '<span class="float-sm-right text-nowrap ml-1">' +
+
+                    '<abbr class="initialism text-danger" title="Required">' +
+
+                        '<i class="icon fas fa-asterisk text-danger small-icon mx-2 fa-fw" ' +
+
+                            'aria-hidden="true" title="Required" aria-label="Required"></i>' +
+
+                    '</abbr>' +
+
+                '</span>'
+
+            );
+
+        } else {
+
+            console.warn("Parent element not found for: " + requiredFieldName);
+
+        }
+
+    }
+
+    makeRequired('#id_country');
+
+    // BP-154 end
+
+
+
+    </script><script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://msftacademy.dell.com/lib/requirejs.php/1773396433/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://msftacademy.dell.com/lib/javascript.php/1773396433/lib/jquery/jquery-3.4.1.min',
+        jqueryui: 'https://msftacademy.dell.com/lib/javascript.php/1773396433/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://msftacademy.dell.com/lib/javascript.php/1773396433/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://msftacademy.dell.com/lib/javascript.php/1773396433/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");require(['core/first'], function() {
+require(['core/prefetch']);
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('en');
+});;
+M.util.js_pending('block_iomad_company_admin/admin'); require(['block_iomad_company_admin/admin'], function(amd) {amd.init(); M.util.js_complete('block_iomad_company_admin/admin');});;
+
+require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+    CustomEvents.define('#single_select69f37e681d1163', [CustomEvents.events.accessibleChange]);
+    $('#single_select69f37e681d1163').on(CustomEvents.events.accessibleChange, function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f69f37e681d1162').submit();
+        }
+    });
+});
+;
+
+require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+    CustomEvents.define('#single_select69f37e681d1166', [CustomEvents.events.accessibleChange]);
+    $('#single_select69f37e681d1166').on(CustomEvents.events.accessibleChange, function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f69f37e681d1165').submit();
+        }
+    });
+});
+;
+
+require(['jquery'], function($) {
+
+  var searchbar = $("#searchField"),
+      searchbox = $(".search-box"),
+      searchbarToggle = $("#searchBtn"),
+      searchbarClose = $("#searchBtnClose");
+
+  searchbarToggle.on("click", function(e) {
+     e.preventDefault();
+     searchbar.toggleClass("show");
+     searchbox.toggleClass("active");
+  });
+
+  searchbarClose.on("click", function(e) {
+     searchbar.removeClass("show");
+     searchbox.removeClass("active");
+  });
+
+  var mobileTopBar = $(".s-top-container"),
+      mobileTopBarBtn = $("#showMobileTopBar");
+      mobileTopBarToggle = $("#mobileTopBarBtn, #mobileTopBarCloseBtn, .topbar-backdrop");
+
+  mobileTopBarBtn.on("click", function(e) {
+     e.preventDefault();
+     mobileTopBar.toggleClass("show");
+     mobileTopBarToggle.toggleClass("hidden");
+  });
+
+  var sidebar = $("#nav-drawer"),
+      sidebarToggle = $(".sidebar-btn, .sidebar-btn--close");
+      pageWrapper = $("#page-wrapper, #page-footer .c-container");
+      topBarWrapper = $(".s-top");
+
+  /*
+   * Bootstrap Cookie Alert by Wruczek
+   * https://github.com/Wruczek/Bootstrap-Cookie-Alert
+   * Released under MIT license
+   */
+  (function () {
+      "use strict";
+
+      var customAlert = document.querySelector("#customAlert");
+      var closeCustomAlert = document.querySelector("#customAlertClose");
+
+      if (!customAlert) {
+         return;
+      }
+
+      customAlert.offsetHeight; // Force browser to trigger reflow (https://stackoverflow.com/a/39451131)
+
+      // Show the alert if we cant find the "closeCustomAlert" cookie
+      if (!getCookie("closeCustomAlert")) {
+          customAlert.classList.add("show");
+      }
+
+      // When clicking on the agree button, create a 1 year
+      // cookie to remember user's choice and close the banner
+      closeCustomAlert.addEventListener("click", function () {
+          setCookie("closeCustomAlert", true, 1);
+          customAlert.classList.remove("show");
+      });
+
+      // Cookie functions from w3schools
+      function setCookie(cname, cvalue, exdays) {
+          var d = new Date();
+          d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+          var expires = "expires=" + d.toUTCString();
+          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      }
+
+      function getCookie(cname) {
+          var name = cname + "=";
+          var decodedCookie = decodeURIComponent(document.cookie);
+          var ca = decodedCookie.split(';');
+          for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) === ' ') {
+                  c = c.substring(1);
+              }
+              if (c.indexOf(name) === 0) {
+                  return c.substring(name.length, c.length);
+              }
+          }
+          return "";
+      }
+  })();
+
+
+});
+
+;
+
+M.util.js_pending('theme_space/loader');
+require(['theme_space/loader'], function() {
+    M.util.js_complete('theme_space/loader');
+});
+require(['theme_space/backtotop'], function(mod) {
+    mod.init();
+});
+
+M.util.js_pending('theme_space/drawer');
+require(['theme_space/drawer'], function(drawer) {
+    drawer.init();
+    M.util.js_complete('theme_space/drawer');
+});
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(2, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random69f37e681d1168'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random69f37e681d1168'); });
+})();
+//]]>
+</script>
+
+    <div class="topbar-backdrop hidden"></div>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      //The first argument are the elements to which the plugin shall be initialized
+      //The second argument has to be at least a empty object or a object with your desired options
+      OverlayScrollbars(document.querySelectorAll('#nav-drawer, .sidebar-accordion-body'),
+      {scrollbars :
+          {
+            visibility       : "auto",
+            autoHide         : "l",
+            autoHideDelay    : 800,
+            dragScrolling    : true,
+            clickScrolling   : false,
+            touchSupport     : true
+          }
+      });
+      OverlayScrollbars(document.querySelectorAll('.region-main-settings-menu .dropdown-menu, .course-contacts-ext-content, .dropdown-scrollable'),
+      {scrollbars :
+          {
+            visibility       : "auto",
+            autoHide         : "never",
+            autoHideDelay    : 800,
+            dragScrolling    : true,
+            clickScrolling   : false,
+            touchSupport     : true
+          }
+      });
+      OverlayScrollbars(document.querySelectorAll('.s-courses .course-box-content-desc, .form-description pre, .accordion-nav-content'),
+      {scrollbars :
+          {
+            visibility       : "auto",
+            dragScrolling    : true,
+            clickScrolling   : false,
+            touchSupport     : true
+          }
+      });
+    });
+    
+    $(".course_category_tree").on("click", "[data-toggle='collapse'], .collapseexpand, .content .subcategories .category .info, .course_category_tree .category.with_children>.info>.categoryname, .category.with_children:not(.collapsed), .category.with_children" ,function(){
+      OverlayScrollbars(document.querySelectorAll('.course-contacts-ext-content, .course-box-content-desc'),
+      {scrollbars :
+          {
+            visibility       : "auto",
+            autoHide         : "never",
+            autoHideDelay    : 800,
+            dragScrolling    : true,
+            clickScrolling   : false,
+            touchSupport     : true
+          }
+      });
+    });
+    
+    window.onscroll = function() {stickyNav()};
+    
+    var navbar = document.getElementById("topBarContainer");
+    var navbarH = navbar.offsetHeight;
+    var settingsBtn = document.getElementById("settingsMenu");
+    var sticky = navbar.offsetTop + 300;
+    
+    function stickyNav() {
+      if (window.pageYOffset > sticky) {
+        navbar.classList.add("sticky-nav1");
+        settingsBtn.classList.add("sticky");
+        settingsBtn.style.top = 10 + navbarH + "px";
+      } else {
+        navbar.classList.remove("sticky-nav1");
+        settingsBtn.classList.remove("sticky")
+        settingsBtn.style.top = "-15px";
+      }
+    }
+    
+    </script>
+    
+    
+    <script src="https://msftacademy.dell.com/theme/space/addons/bootstrapnavbar/bootstrap-4-navbar.min.js"></script>
+    
+    
+    
+
+</body>
+</html>

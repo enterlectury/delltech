@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="https://portal.viasso.rsa.com/">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- Restrict page being indexed by web crawler  -->
+    <meta name="robots" content="noindex, nofollow">
+    <script data-main="main.js?cachets=20260309074744" src="libs/require.js?cachets=20260309074744"></script>
+
+    <link href="libs/templates/bootstrap-4.6.2/bootstrap.min.css" rel="stylesheet"/>
+    <link href="libs/templates/wciStyle/wci.css" rel="stylesheet" type="text/css">
+    <link href="libs/templates/portal.css?cachets=20260309074744" rel="stylesheet"/>
+    <link href="libs/templates/font-awesome.min.css" rel="stylesheet"/>
+    <link href="libs/templates/icomoon.css?cachets=20260309074744" rel="stylesheet"/>
+    <!--[if lt IE 9]>
+    <script src="libs/html5shiv.js"></script>
+    <script src="libs/respond.js"></script>
+        <link href="libs/templates/iefix.css?cachets=20260309074744" rel="stylesheet"/>
+    <![endif]-->
+
+    <link type="image/x-icon" id="favicon_icon" href="favicon.ico?cachets=20260309074744" rel="icon">
+    <link type="image/x-icon" id="shortcut_icon" href="favicon.ico?cachets=20260309074744" rel="shortcut icon">
+    <link rel="apple-touch-icon-precomposed" href="/libs/templates/img/apple-touch-icon.png">
+</head>
+<body class="webauth" id="main" ontouchstart="">
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+">
+    🔍 Preview of <span style="color:#7eb3ff;">portal.viasso.rsa.com</span>
+</div>
+<div style="height: 48px;"></div>
+
+<div id="dynamicContent">
+    <div id="verification_screen" class="container">
+        <div class="col-lg-6 offset-lg-3 box">
+            <div class="main-verification">
+                <div id="progress"></div>
+                <div id="verification_factor" class="verification-div">
+                    <div id="loading-screen">
+                            <div class="col-xs-12 text-center">
+                                <div class="loading-verification-box">
+                                    <!-- Using gif for IE9 and CSS animation for others -->
+                                    <!--[if lte IE 9]><img src="libs/templates/img/progress-circle.fw.gif"/><![endif]-->
+                                    <!--[if ! lte IE 9]><!-->
+                                    <div class="loading-img"></div><!--<![endif]-->
+                                    <br/>
+                                    <label id="locationPermission" class="loading-text" >&nbsp;</label>
+                                </div>
+                            </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- index.html -->
+</body>
+</html>
