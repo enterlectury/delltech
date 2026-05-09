@@ -1,0 +1,14 @@
+.git
+.github
+node_modules
+.DS_Store
+.env
+.env.local
+.cache
+.vscode
+.idea
+.sass-cache
+wrangler.jsonc
+wrangler.toml
+package.json
+package-lock.json
